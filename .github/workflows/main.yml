@@ -36,27 +36,13 @@ jobs:
       
       - name: Commit files
         run: |
-          ls -lah
+          cp norme-di-progetto/main.pdf norme-di-progetto.pdf
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git commit -m "Add changes" -a
+          git add .
+          git commit -m "Add changes"
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ github.ref }}
-      
-      
-      ## STUDIO DI FATTIBILIÀ
-      - name: Compile Studio di fattibilità
-        uses: vinay0410/tectonic-action@master
-        env:
-            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          tex_path: studio-di-fattibilita/main.tex
-
-      - name: Upload PDF
-        uses: actions/upload-artifact@v2
-        with:
-          name: PDF
-          path: main.pdf
