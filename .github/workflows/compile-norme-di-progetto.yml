@@ -6,7 +6,7 @@ name: Build PDF Norme di progetto
 on:
   push:
     paths:
-    - 'norme-di-progetto/*'
+    - norme-di-progetto/**
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
