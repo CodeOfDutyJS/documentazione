@@ -2,6 +2,8 @@
 
 Copiare `template-documento` e rinominarlo per creare un nuovo documento.
 
+I file PDF vengono generati automaticamente dalle [Actions](https://github.com/CodeOfDutyJS/documentazione/actions) di Github :octocat:.
+
 ----
 
 |Documento|Download|
