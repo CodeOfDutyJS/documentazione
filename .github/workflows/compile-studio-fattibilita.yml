@@ -25,6 +25,12 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Set up Git repository
         uses: actions/checkout@v2
+      
+      - name: Setup Python
+        uses: actions/setup-python@v2.1.4
+      
+      - name: Add glossario
+        run: python _glo_replace.py studio-di-fattibilita/main.tex glossario.txt
         
       ## NORME DI PROGETTO
       - name: Compile Studio di fattibilità
