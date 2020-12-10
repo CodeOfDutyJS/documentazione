@@ -37,7 +37,7 @@ jobs:
           cp norme-di-progetto/main.pdf norme-di-progetto.pdf
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add .
+          git add norme-di-progetto/main.pdf norme-di-progetto.pdf
           git commit -m "Generati PDF delle norme di progetto"
       - name: Push changes
         uses: ad-m/github-push-action@master
