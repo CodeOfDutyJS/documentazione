@@ -49,4 +49,5 @@ jobs:
             È stato generato un nuovo PDF delle norme di progetto.
             Verrà aggiunto automaticamente.
           labels: automerge
+          delete-branch: yes
 
