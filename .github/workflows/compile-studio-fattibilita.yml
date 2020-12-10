@@ -37,7 +37,7 @@ jobs:
           cp studio-di-fattibilita/main.pdf studio-di-fattibilita.pdf
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add .
+          git add studio-di-fattibilita/main.pdf studio-di-fattibilita.pdf
           git commit -m "Generati PDF dello studio di fattibilità"
       - name: Push changes
         uses: ad-m/github-push-action@master
