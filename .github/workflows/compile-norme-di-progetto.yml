@@ -43,6 +43,7 @@ jobs:
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3.5.2
         with:
+          token: ${{ secrets.ACTION_TOKEN }}
           branch: PDF/norme-di-progetto
           title: Update PDF delle norme di progetto
           body: |
