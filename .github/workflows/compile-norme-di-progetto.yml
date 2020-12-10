@@ -32,15 +32,15 @@ jobs:
         with:
           tex_path: norme-di-progetto/main.tex
       
-      - name: Commit files
+      - name: Copy file
         run: |
           cp norme-di-progetto/main.pdf norme-di-progetto.pdf
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add norme-di-progetto/main.pdf norme-di-progetto.pdf
           git commit -m "Generati PDF delle norme di progetto"
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ github.ref }}
+          - name: Create Pull Request
+            
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v3.5.2
+
