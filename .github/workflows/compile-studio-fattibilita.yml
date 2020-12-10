@@ -46,7 +46,7 @@ jobs:
         uses: peter-evans/create-pull-request@v3.5.2
         with:
           token: ${{ secrets.ACTION_TOKEN }}
-          branch: PDF/norme-di-progetto
+          branch: PDF/studio-di-fattibilita
           title: Update PDF dello studio di fattibilità
           body: |
             È stato generato un nuovo PDF dello studio di fattibilità.
