@@ -48,5 +48,5 @@ jobs:
           body: |
             È stato generato un nuovo PDF delle norme di progetto.
             Verrà aggiunto automaticamente.
-          label: automerge
+          labels: automerge
 
