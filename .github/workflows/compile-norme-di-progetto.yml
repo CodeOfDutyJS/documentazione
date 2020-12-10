@@ -5,8 +5,11 @@ name: Build PDF Norme di progetto
 # Controls when the action will run. 
 on:
   push:
+    branches: [ master ]
     paths:
     - norme-di-progetto/**
+    paths-ignore: 
+    - '**.pdf'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
