@@ -5,8 +5,10 @@ name: Build PDF Studio di fattibilità
 # Controls when the action will run. 
 on:
   push:
+    branches: [ master ]
     paths:
-    - studio-di-fattibilita/**
+    - 'studio-di-fattibilita/**'
+    - '!**.pdf'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -39,8 +41,15 @@ jobs:
           git config --local user.name "GitHub Action"
           git add studio-di-fattibilita/main.pdf studio-di-fattibilita.pdf
           git commit -m "Generati PDF dello studio di fattibilità"
-      - name: Push changes
-        uses: ad-m/github-push-action@master
+      
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v3.5.2
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ github.ref }}
+          token: ${{ secrets.ACTION_TOKEN }}
+          branch: PDF/norme-di-progetto
+          title: Update PDF dello studio di fattibilità
+          body: |
+            È stato generato un nuovo PDF dello studio di fattibilità.
+            Verrà aggiunto automaticamente.
+          labels: automerge
+          delete-branch: true
