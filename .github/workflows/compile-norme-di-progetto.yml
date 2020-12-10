@@ -39,7 +39,6 @@ jobs:
           git config --local user.name "GitHub Action"
           git add norme-di-progetto/main.pdf norme-di-progetto.pdf
           git commit -m "Generati PDF delle norme di progetto"
-          - name: Create Pull Request
             
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3.5.2
