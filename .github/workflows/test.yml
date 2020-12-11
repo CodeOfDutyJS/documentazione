@@ -1,0 +1,56 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Build PDF Studio di fattibilità
+
+# Controls when the action will run. 
+on:
+  push:
+    branches: [ master ]
+    paths:
+    - 'studio-di-fattibilita/**'
+    - '!**.pdf'
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - name: Set up Git repository
+        uses: actions/checkout@v2
+      
+      - name: Setup Python
+        uses: actions/setup-python@v2.1.4
+      
+      - name: Add glossario
+        run: python _glo_replace.py /studio-di-fattibilita/ glossario.txt
+        
+      ## NORME DI PROGETTO
+      - name: Compile Studio di fattibilità
+        uses: vinay0410/tectonic-action@master
+        env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tex_path: studio-di-fattibilita/main.tex
+      
+      - name: Rename file
+        run: |
+          mv studio-di-fattibilita/main.pdf studio-di-fattibilita.pdf
+      
+      - name: Upload in release
+        id: upload-release-asset 
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: https://uploads.github.com/repos/CodeOfDutyJS/documentazione/releases/1/assets
+          asset_path: studio-di-fattibilita.pdf
+          asset_name: studio-di-fattibilita.pdf
+          asset_content_type: application/pdf
