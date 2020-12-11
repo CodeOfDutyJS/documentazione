@@ -55,8 +55,6 @@ jobs:
         with:
           tag_name: wip/studio-di-fattibilita
           release_name: '[WIP] PDF Studio di fattibilità'
-          draft: false
-          prerelease: true
       
       - name: Upload in release
         id: upload-release-asset 
