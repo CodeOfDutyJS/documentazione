@@ -31,6 +31,8 @@ for f in fileList:
         textData = textData.replace(word + "(", wordReplacement + "(")
         textData = textData.replace(word + ")", wordReplacement + ")")
         textData = textData.replace(word + "\n", wordReplacement + "\n")
+        textData = textData.replace(word + ";", wordReplacement + ";")
+        textData = textData.replace(word + "\"", wordReplacement + "\"")
 
     text.seek(0)
     text.truncate()
