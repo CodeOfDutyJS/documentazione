@@ -30,9 +30,9 @@ for f in fileList:
         textData = textData.replace(word + ":", wordReplacement + ":")
         textData = textData.replace(word + "(", wordReplacement + "(")
         textData = textData.replace(word + ")", wordReplacement + ")")
-        textData = textData.replace("{" + word + "}", "{" + wordReplacement + "}")
-        textData = textData.replace("{" + word, "{" + wordReplacement)
-        textData = textData.replace(word + "}", wordReplacement + "}")
+        #textData = textData.replace("{" + word + "}", "{" + wordReplacement + "}")
+        #textData = textData.replace("{" + word, "{" + wordReplacement)
+        #textData = textData.replace(word + "}", wordReplacement + "}")
         textData = textData.replace(word + "\n", wordReplacement + "\n")
 
     text.seek(0)
