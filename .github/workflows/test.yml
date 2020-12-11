@@ -50,8 +50,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: wip
-          release_name: In lavorazione
+          tag_name: wip2
+          release_name: In lavorazione2
           draft: false
       - run: echo ${{ steps.create_release.outputs.upload_url }}
       - name: Upload in release
