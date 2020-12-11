@@ -50,7 +50,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          upload_url: https://uploads.github.com/repos/CodeOfDutyJS/documentazione/releases/1/assets
+          upload_url: https://uploads.github.com/repos/CodeOfDutyJS/documentazione/releases/1/assets?name=studio-di-fattibilita.pdf
           asset_path: studio-di-fattibilita.pdf
           asset_name: studio-di-fattibilita.pdf
           asset_content_type: application/pdf
