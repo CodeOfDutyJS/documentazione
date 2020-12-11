@@ -8,5 +8,5 @@ I file PDF vengono generati automaticamente dalle [Actions](https://github.com/C
 
 |Documento|Download|
 |-|-|
-|Studio di fattibilià|[:bookmark_tabs:](https://github.com/CodeOfDutyJS/documentazione/raw/master/studio-di-fattibilita.pdf)|
+|Studio di fattibilià|[:bookmark_tabs:](https://github.com/CodeOfDutyJS/documentazione/releases/download/wip%2Fstudio-di-fattibilita/studio-di-fattibilita.pdf)|
 |Norme di progetto|[:bookmark_tabs:](https://github.com/CodeOfDutyJS/documentazione/raw/master/norme-di-progetto.pdf)|
