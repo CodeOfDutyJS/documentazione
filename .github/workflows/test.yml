@@ -48,7 +48,7 @@ jobs:
         uses: dev-drprasad/delete-tag-and-release@v0.1.2
         with:
           delete_release: true # default: false
-          tag_name: v0.1.0 # tag name to delete
+          tag_name: wip-studio-di-fattibilita # tag name to delete
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       
@@ -58,8 +58,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: '[WIP] PDF Studio di fattibilità'
-          release_name: PDF
+          tag_name: wip-studio-di-fattibilita
+          release_name: '[WIP] PDF Studio di fattibilità'
           draft: false
           prerelease: true
       
