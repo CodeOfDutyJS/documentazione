@@ -38,24 +38,30 @@ jobs:
         with:
           tex_path: norme-di-progetto/main.tex
       
-      - name: Copy file
-        run: |
-          cp norme-di-progetto/main.pdf norme-di-progetto.pdf
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add norme-di-progetto/main.pdf norme-di-progetto.pdf
-          git commit -m "Generati PDF delle norme di progetto"
-          git reset --hard
-            
-      - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v3.5.2
+      - name: Remove previous tag and release
+        uses: dev-drprasad/delete-tag-and-release@v0.1.2
         with:
-          token: ${{ secrets.ACTION_TOKEN }}
-          branch: PDF/norme-di-progetto
-          title: Update PDF delle norme di progetto
-          body: |
-            È stato generato un nuovo PDF delle norme di progetto.
-            Verrà aggiunto automaticamente.
-          labels: automerge
-          delete-branch: true
-
+          delete_release: true # default: false
+          tag_name: wip/norme-di-progetto # tag name to delete
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: wip/norme-di-progetto
+          release_name: '[WIP] PDF Norme di progetto'
+      
+      - name: Upload in release
+        id: upload-release-asset 
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: norme-di-progetto/main.pdf
+          asset_name: norme-di-progetto.pdf
+          asset_content_type: application/pdf
