@@ -1,36 +1,37 @@
 import sys
+import os
 
-textPath=sys.argv[1]
-gloPath=sys.argv[2]
+textPath = os.getcwd() + sys.argv[1]
+gloPath= sys.argv[2]
+fileList=[]
+tmp = os.listdir(textPath)
+for word in tmp:
+    if word.endswith(".tex"):
+        fileList.append(word)
 
-try:
-    text = open(textPath, "r")
-except:
-    print("failed to open text file")
-try:
-    glossary = open(gloPath, "r")
-except:
-    print("failed to open glossary file")
+for f in fileList:
+    try:
+        text = open(textPath + f , "r+")
+    except:
+        print("failed to open text file")
+    try:
+        glossary = open(gloPath, "r")
+    except:
+        print("failed to open glossary file")
+    glossaryList=glossary.read().splitlines()
+    glossary.close()
+    textData=text.read()
 
-glossaryList=glossary.read().splitlines()
-glossary.close()
-textData=text.read()
-text.close()
+    for word in glossaryList:
+        wordReplacement= word + "\glo{}"
+        textData = textData.replace(word + " ",wordReplacement+ " ")
+        textData = textData.replace(word+ ",",wordReplacement+",")
+        textData = textData.replace(word + ".", wordReplacement+".")
+        textData = textData.replace(word + ":", wordReplacement + ":")
+        textData = textData.replace(word + "(", wordReplacement + "(")
 
-for word in glossaryList:
-    wordReplacement= word + "\glo{}"
-    textData = textData.replace(word + " ",wordReplacement+ " ")
-    textData = textData.replace(word+ ",",wordReplacement+",")
-    textData = textData.replace(word + ".", wordReplacement+".")
-    textData = textData.replace(word + ":", wordReplacement + ":")
-
-try:
-    text=open(textPath,"wt")
-except:
-    print("failed to open in write")
-
-text.write(textData)
-
-
-
+    text.seek(0)
+    text.truncate()
+    text.write(textData)
+    text.close()
 
