@@ -44,23 +44,13 @@ jobs:
         run: |
           mv studio-di-fattibilita/main.pdf studio-di-fattibilita.pdf
       
-      - name: Create Release
-        id: create_release
-        uses: actions/create-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          tag_name: wip2
-          release_name: In lavorazione2
-          draft: false
-      - run: echo ${{ steps.create_release.outputs.upload_url }}
       - name: Upload in release
         id: upload-release-asset 
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          upload_url: https://uploads.github.com/repos/CodeOfDutyJS/documentazione/releases/35170513/assets{?name,label}
           asset_path: studio-di-fattibilita.pdf
           asset_name: studio-di-fattibilita.pdf
           asset_content_type: application/pdf
