@@ -31,8 +31,7 @@ jobs:
       
       - name: Add glossario
         run: python _glo_replace.py /studio-di-fattibilita/ glossario.txt
-        
-      ## NORME DI PROGETTO
+
       - name: Compile Studio di fattibilità
         uses: vinay0410/tectonic-action@master
         env:
@@ -40,15 +39,11 @@ jobs:
         with:
           tex_path: studio-di-fattibilita/main.tex
       
-      - name: Rename file
-        run: |
-          mv studio-di-fattibilita/main.pdf studio-di-fattibilita.pdf
-      
       - name: Remove previous tag and release
         uses: dev-drprasad/delete-tag-and-release@v0.1.2
         with:
           delete_release: true # default: false
-          tag_name: wip-studio-di-fattibilita # tag name to delete
+          tag_name: wip/studio-di-fattibilita # tag name to delete
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       
@@ -58,7 +53,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: wip-studio-di-fattibilita
+          tag_name: wip/studio-di-fattibilita
           release_name: '[WIP] PDF Studio di fattibilità'
           draft: false
           prerelease: true
@@ -70,6 +65,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: studio-di-fattibilita.pdf
-          asset_name: 'Studio di fattibilità.pdf'
+          asset_path: studio-di-fattibilita/main.pdf
+          asset_name: studio-di-fattibilita.pdf
           asset_content_type: application/pdf
