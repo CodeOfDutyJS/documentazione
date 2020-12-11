@@ -30,3 +30,7 @@ Apache Kafka
 Pathfinding
 framework
 Framework
+AWS
+LaTeX
+latex
+Latex
