@@ -6,6 +6,7 @@ blockchain
 Blockchain
 ethereum
 Ethereum
+smart-contract
 API
 IAAS
 PAAS
