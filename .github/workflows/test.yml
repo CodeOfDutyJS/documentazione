@@ -52,5 +52,5 @@ jobs:
         with:
           upload_url: https://uploads.github.com/repos/CodeOfDutyJS/documentazione/releases/35170513/assets{?name,label}
           asset_path: studio-di-fattibilita.pdf
-          asset_name: studio-di-fattibilita.pdf
+          asset_name: studio-di-fattibilita2.pdf
           asset_content_type: application/pdf
