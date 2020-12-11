@@ -4,14 +4,14 @@ import os
 textPath = os.getcwd() + sys.argv[1]
 gloPath= sys.argv[2]
 fileList=[]
-tmp = os.listdir(textPath)
-for word in tmp:
-    if word.endswith(".tex"):
-        fileList.append(word)
+for root, dir, files in os.walk(textPath):
+    for file in files:
+        if file.endswith(".tex"):
+            fileList.append(os.path.join(root,file))
 
 for f in fileList:
     try:
-        text = open(textPath + f , "r+")
+        text = open( f , "r+")
     except:
         print("failed to open text file")
     try:
@@ -29,6 +29,7 @@ for f in fileList:
         textData = textData.replace(word + ".", wordReplacement+".")
         textData = textData.replace(word + ":", wordReplacement + ":")
         textData = textData.replace(word + "(", wordReplacement + "(")
+        textData = textData.replace(word + "\n", wordReplacement + "\n")
 
     text.seek(0)
     text.truncate()
