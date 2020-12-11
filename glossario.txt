@@ -1,2 +1,32 @@
-prova
-sole
+proponente
+Proponente
+committente
+Committente
+blockchain
+Blockchain
+ethereum
+Ethereum
+API
+IAAS
+PAAS
+NFC
+e-commerce
+E-commerce
+serverless
+Serverless
+microservizi
+Microservizi
+BFF
+payment-provider
+business logic
+Machine Learning
+machine learning
+Machine learning
+back-end
+front-end
+Angular
+Leaflet
+Apache Kafka
+Pathfinding
+framework
+Framework
