@@ -30,7 +30,7 @@ jobs:
         uses: actions/setup-python@v2.1.4
       
       - name: Add glossario
-        run: python _glo_replace.py studio-di-fattibilita/main.tex glossario.txt
+        run: python _glo_replace.py /studio-di-fattibilita/ glossario.txt
         
       ## NORME DI PROGETTO
       - name: Compile Studio di fattibilità
