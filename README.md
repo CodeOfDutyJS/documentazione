@@ -6,7 +6,7 @@ I file PDF vengono generati automaticamente dalle [Actions](https://github.com/C
 
 ----
 
-|Documento|Download|
+|Documento||
 |-|-|
-|Studio di fattibilià|[:bookmark_tabs:](https://github.com/CodeOfDutyJS/documentazione/releases/download/wip%2Fstudio-di-fattibilita/studio-di-fattibilita.pdf)|
-|Norme di progetto|[:bookmark_tabs:](https://github.com/CodeOfDutyJS/documentazione/releases/download/wip%2Fnorme-di-progetto/norme-di-progetto.pdf)|
+|Studio di fattibilià|[![Download](https://img.shields.io/badge/⏬%20WIP-Studio%20di%20fattibilità-orange)](https://github.com/CodeOfDutyJS/documentazione/releases/download/wip%2Fstudio-di-fattibilita/studio-di-fattibilita.pdf)|
+|Norme di progetto|[![Download](https://img.shields.io/badge/⏬%20WIP-Norme%20di%20progetto-orange)](https://github.com/CodeOfDutyJS/documentazione/releases/download/wip%2Fnorme-di-progetto/norme-di-progetto.pdf)|
