@@ -8,7 +8,7 @@
             \gappto\metricstable{\\}
             \gappto\metricstable{\hline}
         \else\ifnum\ni=6
-            \xappto\metricstable{\noexpand\multicolumn{5}{| l |}{NOTE:\y}}
+            \xappto\metricstable{\noexpand\multicolumn{5}{| l |}{NOTE: \y}}
             \gappto\metricstable{\\}
             \gappto\metricstable{\hline}
         \else
@@ -29,3 +29,5 @@
 \metricstable
 
 \end{longtabu}
+
+\undef\metricstable{}
