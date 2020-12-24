@@ -1,0 +1,31 @@
+\newcommand*\metricstable{}
+\foreach \x [count=\nj] in \productquality
+{
+    \foreach \y [count=\ni] in \x
+    {
+        \ifnum\ni=5
+            \xappto\metricstable{\y}
+            \gappto\metricstable{\\}
+            \gappto\metricstable{\hline}
+        \else\ifnum\ni=6
+            \xappto\metricstable{\noexpand\multicolumn{5}{| l |}{NOTE:\y}}
+            \gappto\metricstable{\\}
+            \gappto\metricstable{\hline}
+        \else
+            \xappto\metricstable{\y&}
+        \fi\fi
+    }
+}
+
+% Impostazioni della tabella
+\tabulinesep = 2mm % padding
+\taburowcolors [1] 2{pari .. dispari} % colori delle righe
+\begin{longtabu} to \textwidth {| X[0.5, c m] | X[0.6,c m] | X[0.9,c m] | X[0.8,c m] | X[1.2,c m]|} % larghezza delle colonne
+\hline
+\rowcolor{header} % colore dell'header
+
+\textbf{Codice} & \textbf{Nome} & \textbf{Formula} & \textbf{Valore sufficiente} & \textbf{Valore ottimo}\\
+\hline
+\metricstable
+
+\end{longtabu}
