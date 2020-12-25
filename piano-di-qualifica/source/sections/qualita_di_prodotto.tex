@@ -1,6 +1,41 @@
 \section{Qualità di Prodotto}
+In questa sezione sono indicati valori sufficienti e ottimi delle metriche individuate e descritte nelle Norme di Progetto.
+In particolare una misurazione di qualità per essere considerata soddisfatta deve essere superiore al valore sufficiente indicato. 
+Il valore ottimo individua un obiettivo di qualità da raggiungere o mantenere per l'intera durata dell'attività di progetto.
+\subsection{ISO 9126}
+Per la Qualità di Prodotto il team ha deciso di seguire i principi di ISO 9126.
+Lo Standard definisce 6 caratteristiche di qualità che deve possedere un prodotto: funzionalità, affidabilità, efficienza, usabilità, manutenibilità e portabilità. 
+Non sono state individuate metriche di portabilità in quanto è stata considerata una caratteristica non rilevante nel prodotto sviluppato. 
+ISO 9126 oltre a 6 caratteristiche individua 3 tipologie di misurazioni: della qualità interna, esterna e qualità in uso. 
+In questa sezione non è tenuto conto della distinzione e non sono presenti metriche di qualità in uso, che richiedono necessariamente l'utilizzo del prodotto da parte di un utente.
+
 \subsection{Funzionalità}
+\def\productquality{
+    {   , 
+        Correttezza dello scambio dei dati,
+        $N_{err}$, 
+        -,
+        0
+    },
+}
+\input{source/tables/metriche_qualita.tex}
+
 \subsection{Affidabilità}
+\def\productquality{
+    {   , 
+        Densità di errori,
+        $N_{err}/SLOC$, 
+        -,
+        -,
+        è stato ritenuto prematuro definire valori sufficienti e ottimi per la metrica
+    },
+}
+\input{source/tables/metriche_qualita.tex}
+
 \subsection{Efficienza}
+
+
 \subsection{Usabilità}
+
+
 \subsection{Manutenibilità}
