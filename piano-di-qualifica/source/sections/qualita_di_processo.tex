@@ -2,6 +2,7 @@
 Per ottenere la più alta qualità delle attività e processi, e per rientrare nelle tempistiche stipulate nel Piano di progetto, verrà analizzato ed applicato l' ISO/IEC/IEEE 12207:1995.
 
 Sono stati scelti quindi i processi ritenuti più adeguati ed attinenti al progetto i quail sono stati divisi in due categorie: primari e di supporto. Verrano di seguito riportate i processi appartenenti a tali categorie, e i loro obiettivi e metriche in modo da ottenere una qualità quantificabile.
+Una maggiore informazione e descrizione delle metriche si trovano nel documento: \textit{Norme di progetto}.
     \subsection{Processi primari}
         \subsubsection{Fornitura}
             \paragraph{Obiettivi}
@@ -20,38 +21,32 @@ Sono stati scelti quindi i processi ritenuti più adeguati ed attinenti al proge
            \paragraph{Metriche}
            alcunee metriche per la pianificazione sono usate per calcolarne delle altre e la loro formula è semplicemente data dal volre intero che hanno
             \def\productquality{
-            {   , 
-                Budget at Completion,
+            {   Budget at Completion,
                 numero intero, 
                 $ \pm 5 \% $ del preventivo,
                 pari al preventivo
             },
-            {   , 
-                Earned value,
+            {   Earned value,
                 BAC - $\%$ di lavoro completato, 
                 $ >0$,
                 $ >0$
             },
-            {   , 
-                Planned value,
+            {   Planned value,
                 valore pianificato nel momento del calcolo, 
                 $ >0$,
                 $ >0$
             },
-            {   , 
-                Acual cost,
+            {  Acual cost,
                numero intero, 
                 0 < AC $\leq$ budget totale,
                 0 < AC $\leq$ PV
             },
-            {   , 
-                Schedule variance,
+            {   Schedule variance,
                SV = EV - PV, 
                 $ >0$,
                 $ 0$
             },
-            {   , 
-                Cost variance,
+            {    Cost variance,
                CV = EV - AC, 
                 $ >0$,
                 $ \geq 0$
@@ -65,5 +60,39 @@ Sono stati scelti quindi i processi ritenuti più adeguati ed attinenti al proge
         
         \subsection{Processi di supporto}
             \subsubsection{Documentazione}
+            In questo processo vengono descritte gli obiettivi e processi per una stesura di qualità della documentazione, parte molto importante del progetto. Vengono quindi trattate misure per facilitare la lettura dei documenti.
+            
+            \paragraph{Strategie e Obiettivi}
+            \begin{itemize}
+                \item \textbf{Facilità di lettura}: mantenere il testo ad un livello di difficoltà di lettura comprensibile e stimato dalle metriche in modo da non affaticare la lettura dei documenti ed aumentare la produttività
+                \item \textbf{Numero di parole}: il numero di parole complessivo non deve essere troppio ampio. Lo scopo è mantenere solo il materiale utile al gruppo all'interno dei documenti
+                \item \textbf{Ortografia}: il testo non deve contenere errori ortografici o grammaticali
+                \item \textbf{Aggiornamento}: i documenti devono seguire le metriche indicate e devono essere aggiornati se si riconoscono criteri più utili al progetto.
+            \end{itemize}
+            
+            \paragraph{Metriche}
+            Le metriche da applicare alla documentazione sono le seguenti:
+            
+             \def\productquality{
+                            {   Gunning's fog index,
+                                $0.4*(\frac{ Parole}{Frasi} + 100* \frac{Complesse}{ Frasi})$, 
+                                $ \geq 16$,
+                                $ \geq 12 $
+                            },
+                            {   Gulpease index,
+                                $89 + (300*Frasi - 10*\frac{Lettere}{Parole}$, 
+                                $40 < IG \leq 100$,
+                                $80 < IG \leq 100$
+                            },
+                            {   Correttezza ortografica,
+                                numero totale di errori, 
+                                0,
+                                0
+                            },
+                        }
+\input{source/tables/metriche_qualita.tex}
+            
             \subsubsection{Quality assurance}
             \subsubsection{Verification process}
+
+    
