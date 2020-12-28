@@ -14,9 +14,9 @@ La funzionalità rappresenta la capacità del software di fornire le funzioni, e
 \def\productquality{
     {
         Correttezza dello scambio dei dati,
-        $N_{err} = \#\ di\ errori$, 
+        $D_{err} = \#\ di\ errori$, 
         -,
-        $N_{err} = 0$,
+        $D_{err} = 0$,
         un valore sufficiente sarà deciso in fasi successive del progetto
     },
 }
@@ -27,7 +27,7 @@ Rappresenta la capacità di un prodotto software di mantenere il livello di pres
 \def\productquality{
     {
         Densità di errori,
-        $E_{density} = N_{err}/SLOC$, 
+        $E_{density} = A_{err}/B_{tests}$, 
         -,
         -,
         è stato ritenuto prematuro definire valori sufficienti e ottimi per la metrica
@@ -46,7 +46,7 @@ Rappresenta la capacità di un prodotto software di essere comprensibile, di pot
     },
     {
         Numero di click,
-        $C_{click} = \#\ di\ click$,
+        $C_{click}(t) = \#\ di\ click$,
         $C_{click} \leq 6$,
         $C_{click} \leq 4$,
         il task misurato è descritto nelle Norme di Progetto
@@ -80,7 +80,7 @@ Capacità di un prodotto software di essere modificato. Le modifiche possono in 
 \def\productquality{
     {
         Complessità ciclomatica,
-        $C_{cycl} = N_{err}/SLOC$, 
+        $v(G) = e - n + 2p$, 
         -,
         -,
         è stato ritenuto prematuro definire valori sufficienti e ottimi per la metrica
@@ -89,11 +89,11 @@ Capacità di un prodotto software di essere modificato. Le modifiche possono in 
         Indipendenza dei test,
         $I_{test} = A_{ind}/B_{tests}$,
         $I_{test} \geq 0.90$,
-        $I_{test} = 0$
+        $I_{test} = 1$
     },
     {
         Facilità di comprensione,
-        $A_{comm}/SLOC$,
+        $F_{compr} = A_{comm}/SLOC$,
         -,
         -,
         non sono stati forniti valori sufficienti e ottimi in quanto ritenuto prematuro
