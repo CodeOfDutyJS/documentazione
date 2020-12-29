@@ -39,3 +39,7 @@ D3.js
 Repository
 repository
 UML
+diagramma di Gantt
+Diagramma di Gantt
+IEEE 830-1998
+ISO 9126

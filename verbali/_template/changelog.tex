@@ -1,0 +1,29 @@
+\newcommand*\mytablecontents{}
+\foreach \x [count=\nj] in \modifiche
+{
+    \foreach \y [count=\ni] in \x
+    {
+        \ifnum\ni=5
+            \xappto\mytablecontents{\y}
+            \gappto\mytablecontents{\\}
+            \gappto\mytablecontents{\hline}
+        \else
+            \xappto\mytablecontents{\y&}
+        \fi
+    }
+}
+
+\section*{Diario delle modifiche}
+
+% Impostazioni della tabella
+\tabulinesep = 2mm % padding
+\taburowcolors [1] 2{pari .. dispari} % colori delle righe
+\begin{longtabu} to \textwidth {| X[0.5, c m] | X[0.6,c m] | X[0.9,c m] | X[0.8,c m] | X[1.2,l m]|} % larghezza delle colonne
+\hline
+\rowcolor{header} % colore dell'header
+
+\textbf{Versione} & \textbf{Data} & \textbf{Nominativo} & \textbf{Ruolo} & \multicolumn{1}{c|}{\textbf{Descrizione}}\\
+\hline
+\mytablecontents
+
+\end{longtabu}
