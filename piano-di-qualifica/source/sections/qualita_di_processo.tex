@@ -3,10 +3,35 @@ Per ottenere la più alta qualità delle attività e processi, e per rientrare n
 
 Sono stati scelti quindi i processi ritenuti più adeguati ed attinenti al progetto i quail sono stati divisi in due categorie: primari e di supporto. Verrano di seguito riportate i processi appartenenti a tali categorie, e i loro obiettivi e metriche in modo da ottenere una qualità quantificabile.
 Una maggiore informazione e descrizione delle metriche si trovano nel documento: \textit{Norme di progetto}.
+
     \subsection{Processi primari}
+    
+    
         \subsubsection{Fornitura}
-            \paragraph{Obiettivi}
+        Il processo di fornitura contiene le attività e le task del fornitore, come l'analisi e la determinazione di procedure e risorse necessarie per lo svolgimento del progetto.
+        
+            \paragraph{Strategie e Obiettivi}
+            \begin{itemize}
+                \item \textbf{Analisi}: il fornitore conduce una revisione dei requisiti e definisce una proposta in risposta alla richiesta del proponente. Definisce quindi i requisiti classificandoli in obbligatori, desiderabili e opzionali
+                \item \textbf{Approvazione e consegna}: il prodotto deve essere in primo luogo approvato e in seguit consegnato secondo le specifiche di contratto e secondo le metriche descritte in questo documento.
+                \item \textbf{Qualità}: ottenere e mantenere la qualità dei processi e del prodotto mediante le loro metriche basate anche sulle specifiche richieste dal proponente.
+            \end{itemize}
+            
+            
             \paragraph{Metriche}
+            Metriche
+            \def\productquality{
+            {   Percentuale dei requisiti soddisfatti,
+                $ \frac{ReqSoddisfatti}{ReqTotali}$, 
+                $ 100 \% $,
+                $ 100 \% $
+            },
+        }
+ \input{source/tables/metriche_qualita.tex}
+
+            
+            
+          
             
         \subsubsection{Pianificazione}
         L'attività di pianificazione ingloba il monitoramento delle risorse quali i tempi a disposizione i costi e la divisione dei ruoli e la loro distribuzione.La scelta di mettere la Pianificazione come processo primario è data dalla sua importanza nel progetto. Inoltre viene esposta maggiormente all'interno del documento Piano di progetto.
@@ -21,32 +46,32 @@ Una maggiore informazione e descrizione delle metriche si trovano nel documento:
            \paragraph{Metriche}
            alcunee metriche per la pianificazione sono usate per calcolarne delle altre e la loro formula è semplicemente data dal volre intero che hanno
             \def\productquality{
-            {   Budget at Completion,
+            {   Budget at Completion [BG],
                 numero intero, 
                 $ \pm 5 \% $ del preventivo,
                 pari al preventivo
             },
-            {   Earned value,
+            {   Earned value [EV],
                 BAC - $\%$ di lavoro completato, 
                 $ >0$,
                 $ >0$
             },
-            {   Planned value,
+            {   Planned value [PV],
                 valore pianificato nel momento del calcolo, 
                 $ >0$,
                 $ >0$
             },
-            {  Acual cost,
+            {  Acual cost [AC],
                numero intero, 
                 0 < AC $\leq$ budget totale,
                 0 < AC $\leq$ PV
             },
-            {   Schedule variance,
+            {   Schedule variance [SV],
                SV = EV - PV, 
                 $ >0$,
                 $ 0$
             },
-            {    Cost variance,
+            {    Cost variance [CV],
                CV = EV - AC, 
                 $ >0$,
                 $ \geq 0$
@@ -57,6 +82,19 @@ Una maggiore informazione e descrizione delle metriche si trovano nel documento:
 
         
     \subsubsection{Sviluppo}
+    Il processo contiene le attività di design, scrittura del codice e accettazione del codice software.
+    
+        \paragraph{Strategie e obiettivi}
+        \begin{itemize}
+            \item \textbf{Architettura}: si stabilisce un primo livello di architettura nel quale si identificano gli elementi portanti della struttura del prodotto trasformando quindi i requisiti software in un'architettura che ne decrive il Top-level.
+            \item \textbf{Design}: lo sviluppatore deve sviluppare un design dettagliato per ogni unità software.
+            \item \textbf{Integrazione di sistema}: Il piano di integrazione deve integrare tutti gli elementi software.
+        \end{itemize}
+        
+        \paragraph{Metriche}
+        Le metriche di questo processo non sono ancora state stabilite, in quanto è stato ritenuto prematuro definire matriche oggettive in questa fase del progetto.Inoltre il documento nella durata del progetto verrà modificato e raffinato per migliorarne l'usabilità e la qualità.
+        
+        
         
         \subsection{Processi di supporto}
             \subsubsection{Documentazione}
@@ -71,7 +109,7 @@ Una maggiore informazione e descrizione delle metriche si trovano nel documento:
             \end{itemize}
             
             \paragraph{Metriche}
-            Le metriche da applicare alla documentazione sono le seguenti:
+            Metriche
             
              \def\productquality{
                             {   Gunning's fog index,
@@ -91,8 +129,66 @@ Una maggiore informazione e descrizione delle metriche si trovano nel documento:
                             },
                         }
 \input{source/tables/metriche_qualita.tex}
+
+\textit{Parole} = numero totale di parole del documento
+
+\textit{Frasi} = numero totale di parole del documento
+
+\textit{Complesse} = numero di parole ritenute complesse nel documento
+
+\textit{Lettere} = numero totale di lettere del documento
             
             \subsubsection{Quality assurance}
-            \subsubsection{Verification process}
+            Questo processo è orientato alla quantificazione della qualità. Assicura quindi un grado di qualità minimo e orienta verso un grado di qualità ottimo totale del progetto.
+            
+            \paragraph{Strategie e obiettivi}
+            \begin{itemize}
+                \item \textbf{Metriche}: tenere conto sempre delle metriche di ogni processo. Che implica quindi la loro misurazione e il loro monitoraggio
+                \item \textbf{Garanziaa della qualità}: garantire sempre un grado di soddisfacimento sufficiente delle metriche.
+            \end{itemize}
+            
+            \paragraph{Metriche}
+            metriche
+            \def\productquality{
+                {   Percentuale di metriche soddisfatte,
+                    $\frac{Soddisfatte}{Totali}$,
+                    $ \geq 60 \%$,
+                    $ \geq 80 \% $
+                },
+            }
+\input{source/tables/metriche_qualita.tex}
 
-    
+\textit{Soddisfatte} = numero di metriche con valore soddifacente
+
+\textit{Totali} = numero totale di metriche
+ 
+            \subsubsection{Verification process}
+            Il processo di verifica è il metodo per determinare se il prodotto software ha i requisiti e le condizioni imposte, e nella ricerca e correzione di anomalie. Quindi si controllano costo e performance del prodotto. Inoltre il processo di verifica deve essere introdotto il prima possibile e deve essere automatizzato.
+            
+            \paragraph{Strategie e oboiettivi}
+            \begin{itemize}
+                \item \textbf{Anomalie}: le anomalie vanno individuate e corrette
+                \item \textbf{Strumenti}: vanno applicate gli strumenti per una corretta verifica e le metriche per la quantizzazione della qualità.
+            \end{itemize}
+            
+            \paragraph{Metriche}
+            Metriche per il processo di verifica:
+            
+            \def\productquality{
+                {   Code coverage,
+                    $\frac{Testate}{Totali}$,
+                    $ 75 \%$,
+                    $ 100 \% $
+                },
+                {   Numero di test superati,
+                    numero intero,
+                    = numero totale di test,
+                    = numero totale di test
+                },
+            }
+\input{source/tables/metriche_qualita.tex}
+
+\textit{Testate} = numero totale di linee di codice testate
+
+\textit{Totali} = numero totale di linee di codice
+            
