@@ -1,0 +1,75 @@
+\babel@toc {nil}{}
+\contentsline {section}{\numberline {1}Introduzione}{3}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Scopo del documento}{3}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Scopo del progetto}{3}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Glossario}{3}{subsection.1.3}%
+\contentsline {section}{\numberline {2}Processi Primari}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Fornitura}{3}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Sviluppo}{3}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}Scopo}{3}{subsubsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2}Aspettative}{3}{subsubsection.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.3}Descrizione}{3}{subsubsection.2.2.3}%
+\contentsline {subsubsection}{\numberline {2.2.4}Attività}{3}{subsubsection.2.2.4}%
+\contentsline {paragraph}{\numberline {2.2.4.1}Analisi dei Requisiti}{3}{paragraph.2.2.4.1}%
+\contentsline {paragraph}{\numberline {2.2.4.2}Progettazione}{3}{paragraph.2.2.4.2}%
+\contentsline {paragraph}{\numberline {2.2.4.3}Codifica}{3}{paragraph.2.2.4.3}%
+\contentsline {subsubsection}{\numberline {2.2.5}Strumenti}{4}{subsubsection.2.2.5}%
+\contentsline {section}{\numberline {3}Processi di Supporto}{4}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Documentazione}{4}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}Scopo}{4}{subsubsection.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.2}Ciclo di vita del Documento}{4}{subsubsection.3.1.2}%
+\contentsline {subsubsection}{\numberline {3.1.3}Template LaTex e automazione}{4}{subsubsection.3.1.3}%
+\contentsline {paragraph}{\numberline {3.1.3.1}Struttura}{4}{paragraph.3.1.3.1}%
+\contentsline {paragraph}{\numberline {3.1.3.2}Automazione}{4}{paragraph.3.1.3.2}%
+\contentsline {subsubsection}{\numberline {3.1.4}Pagine}{4}{subsubsection.3.1.4}%
+\contentsline {paragraph}{\numberline {3.1.4.1}Frontespizio}{5}{paragraph.3.1.4.1}%
+\contentsline {paragraph}{\numberline {3.1.4.2}Diario delle modifiche}{5}{paragraph.3.1.4.2}%
+\contentsline {paragraph}{\numberline {3.1.4.3}Indice}{5}{paragraph.3.1.4.3}%
+\contentsline {paragraph}{\numberline {3.1.4.4}Intestazione del contenuto}{5}{paragraph.3.1.4.4}%
+\contentsline {paragraph}{\numberline {3.1.4.5}Piè di pagina}{5}{paragraph.3.1.4.5}%
+\contentsline {paragraph}{\numberline {3.1.4.6}Note}{6}{paragraph.3.1.4.6}%
+\contentsline {subsubsection}{\numberline {3.1.5}Norme di stile}{6}{subsubsection.3.1.5}%
+\contentsline {paragraph}{\numberline {3.1.5.1}Immagini}{6}{paragraph.3.1.5.1}%
+\contentsline {paragraph}{\numberline {3.1.5.2}Date}{6}{paragraph.3.1.5.2}%
+\contentsline {paragraph}{\numberline {3.1.5.3}Nomi di file}{6}{paragraph.3.1.5.3}%
+\contentsline {paragraph}{\numberline {3.1.5.4}Glossario}{6}{paragraph.3.1.5.4}%
+\contentsline {paragraph}{\numberline {3.1.5.5}Stile del testo}{6}{paragraph.3.1.5.5}%
+\contentsline {paragraph}{\numberline {3.1.5.6}Riferimenti a documenti}{6}{paragraph.3.1.5.6}%
+\contentsline {paragraph}{\numberline {3.1.5.7}Elenchi}{6}{paragraph.3.1.5.7}%
+\contentsline {paragraph}{\numberline {3.1.5.8}Sigle}{7}{paragraph.3.1.5.8}%
+\contentsline {subsubsection}{\numberline {3.1.6}Elementi grafici}{7}{subsubsection.3.1.6}%
+\contentsline {paragraph}{\numberline {3.1.6.1}Figure}{7}{paragraph.3.1.6.1}%
+\contentsline {paragraph}{\numberline {3.1.6.2}Immagini}{7}{paragraph.3.1.6.2}%
+\contentsline {subsubsection}{\numberline {3.1.7}Strumenti per la stesura}{7}{subsubsection.3.1.7}%
+\contentsline {paragraph}{\numberline {3.1.7.1}LaTeX}{7}{paragraph.3.1.7.1}%
+\contentsline {paragraph}{\numberline {3.1.7.2}TexLive}{7}{paragraph.3.1.7.2}%
+\contentsline {paragraph}{\numberline {3.1.7.3}Overleaf}{7}{paragraph.3.1.7.3}%
+\contentsline {subsection}{\numberline {3.2}Verifica}{8}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Validazione}{8}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Strumenti}{8}{subsection.3.4}%
+\contentsline {section}{\numberline {4}Processi Organizzativi}{8}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Gestione Organizzativa}{8}{subsection.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.1}Scopo}{8}{subsubsection.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.2}Aspettative}{8}{subsubsection.4.1.2}%
+\contentsline {subsubsection}{\numberline {4.1.3}Descrizione}{8}{subsubsection.4.1.3}%
+\contentsline {subsubsection}{\numberline {4.1.4}Ruoli di progetto}{9}{subsubsection.4.1.4}%
+\contentsline {paragraph}{\numberline {4.1.4.1}Responsabile di progetto}{9}{paragraph.4.1.4.1}%
+\contentsline {paragraph}{\numberline {4.1.4.2}Amministratore di progetto}{9}{paragraph.4.1.4.2}%
+\contentsline {paragraph}{\numberline {4.1.4.3}Analista}{9}{paragraph.4.1.4.3}%
+\contentsline {paragraph}{\numberline {4.1.4.4}Progettista}{9}{paragraph.4.1.4.4}%
+\contentsline {paragraph}{\numberline {4.1.4.5}Programmatore}{10}{paragraph.4.1.4.5}%
+\contentsline {paragraph}{\numberline {4.1.4.6}Verificatore}{10}{paragraph.4.1.4.6}%
+\contentsline {subsubsection}{\numberline {4.1.5}Procedure}{10}{subsubsection.4.1.5}%
+\contentsline {paragraph}{\numberline {4.1.5.1}Gestione delle comunicazioni}{10}{paragraph.4.1.5.1}%
+\contentsline {subparagraph}{Comunicazioni interne}{10}{section*.3}%
+\contentsline {subparagraph}{Comunicazioni esterne}{10}{section*.4}%
+\contentsline {paragraph}{\numberline {4.1.5.2}Gestione degli incontri}{10}{paragraph.4.1.5.2}%
+\contentsline {subparagraph}{Incontri interni}{10}{section*.5}%
+\contentsline {subparagraph}{Verbali di riunioni interne}{10}{section*.6}%
+\contentsline {subparagraph}{Incontri esterni del team}{11}{section*.7}%
+\contentsline {subparagraph}{Verbali di riunioni esterne}{11}{section*.8}%
+\contentsline {paragraph}{\numberline {4.1.5.3}Gestione degli strumenti per la coordinazione}{11}{paragraph.4.1.5.3}%
+\contentsline {subparagraph}{Sistema di Ticketing}{11}{section*.9}%
+\contentsline {paragraph}{\numberline {4.1.5.4}Gestione dei rischi}{11}{paragraph.4.1.5.4}%
+\contentsline {subparagraph}{Codifica dei rischi}{12}{section*.10}%
+\contentsline {subsubsection}{\numberline {4.1.6}Strumenti}{12}{subsubsection.4.1.6}%
