@@ -1,0 +1,29 @@
+\newcommand*\testdescription{}
+\foreach \x [count=\nj] in \testspecification
+{
+    \foreach \y [count=\ni] in \x
+    {
+        \ifnum\ni=4
+            \xappto\testdescription{\y}
+            \gappto\testdescription{\\}
+            \gappto\testdescription{\hline}
+        \else
+            \xappto\testdescription{\y&}
+        \fi\fi
+    }
+}
+
+% Impostazioni della tabella
+\tabulinesep = 2mm % padding
+\taburowcolors [1] 2{pari .. dispari} % colori delle righe
+\begin{longtabu} to \textwidth {| X[0.1,c m] | X[0.2,c m] | X[0.1,c m] | X[0.1,c m]|} % larghezza delle colonne
+\hline
+\rowcolor{header} % colore dell'header
+
+\textbf{} & \textbf{ID test} & \textbf{Descrizione} & \textbf{Esito} & \textbf{ID requisito}\\
+\hline
+\testdescription
+
+\end{longtabu}
+
+\undef\testdescription{}
