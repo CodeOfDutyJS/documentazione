@@ -1,0 +1,57 @@
+\subsection{Requisiti di qualità}
+
+\def\obb{Obbligatorio}
+
+\def\requisitiq{
+    {RQO1, L'utente deve poter scegliere come visualizzare le etichette presenti nel suo dataset all'interno della visualizzazione, \obb, Interno UC3.1},
+    {RQO2, L'utente deve poter scartare le variabili a cui non è interessato o riaggiungere quelle scartate, \obb, Interno UC4},
+    {RQO3, L'utente se ha selezionato l'Heatmap deve poter modificare il range, \obb, Interno UC5.1},
+    {RQO4, L'utente deve poter normalizzare il dataset, \obb, Interno UC5.2},
+    {RQO4.1, L'utente deve poter normalizzare il dataset in modo globale, \obb, Interno UC5.2.1},
+    {RQO4.2, L'utente deve poter normalizzare il dataset per colonna, \obb, Interno UC5.2.2},
+    {RQO4.3, L'utente deve poter normalizzare il dataset per riga, \obb, Interno UC5.2.3},
+    {RQO5, L'utente se ha selezionato l'Heatmap deve poter ordinare le righe , \obb, Interno UC5.3},
+    {RQO5.1, L'utente se ha selezionato l'Heatmap deve poter ordinare le righe in ordine alfabetico, \obb, Interno UC5.3.1},
+    {RQO5.2, L'utente se ha selezionato l'Heatmap deve poter ordinare le righe per cluster gerarchico, \obb, Capitolato UC5.3.2},
+    {RQO6, L'utente se ha selezionato l'Heatmap deve poter assegnare un colore al range , \obb, Interno UC5.4},
+    {RQO7, L'utente deve salvare la visualizzazione come file PNG, \obb, Interno UC9.2},
+    {RQO8, L'utente visualizza un messaggio di errore se carica i files scorrettamente, \obb, Interno UC10},
+}
+
+
+
+
+
+%%%
+%%%
+%%%
+\newcommand*\requisitiqtable{}
+\foreach \x [count=\nj] in \requisitiq
+{
+    \foreach \y [count=\ni] in \x
+    {
+        \ifnum\ni=4
+            \xappto\requisitiqtable{\y}
+            \gappto\requisitiqtable{\\}
+            \gappto\requisitiqtable{\hline}
+        \else
+            \xappto\requisitiqtable{\y & }
+        \fi
+    }
+}
+
+%\subsection{Requisiti funzionali}
+
+% Impostazioni della tabella
+\tabulinesep = 2mm % padding
+\taburowcolors [1] 2{pari .. dispari} % colori delle righe
+\addcontentsline{lot}{table}{Requisiti di qualità}
+\begin{longtabu} to \textwidth {| X[0.2 l m] | X[0.4 l m] |  X[0.2 l m] | X[0.2 l m] |} % larghezza delle colonne
+\hline
+\rowcolor{header} % colore dell'header
+    
+\textbf{Requisito} & \textbf{Descrizione} & \textbf{Classificazione} & \textbf{Fonte} \\
+\hline
+\requisitiqtable
+
+\end{longtabu}

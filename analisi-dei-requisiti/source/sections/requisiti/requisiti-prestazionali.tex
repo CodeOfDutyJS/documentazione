@@ -1,0 +1,46 @@
+\subsection{Requisiti prestazionali}
+
+\def\obb{Obbligatorio}
+
+\def\requisitip{
+    {ciao, fc, \obb, UC1},
+    {Requisito, Descrizione, Classificazione, Fonte},
+}
+
+
+
+
+
+%%%
+%%%
+%%%
+\newcommand*\requisitiptable{}
+\foreach \x [count=\nj] in \requisitip
+{
+    \foreach \y [count=\ni] in \x
+    {
+        \ifnum\ni=4
+            \xappto\requisitiptable{\y}
+            \gappto\requisitiptable{\\}
+            \gappto\requisitiptable{\hline}
+        \else
+            \xappto\requisitiptable{\y & }
+        \fi
+    }
+}
+
+%\subsection{Requisiti funzionali}
+
+% Impostazioni della tabella
+\tabulinesep = 2mm % padding
+\taburowcolors [1] 2{pari .. dispari} % colori delle righe
+\addcontentsline{lot}{table}{Requisiti prestazionali}
+\begin{longtabu} to \textwidth {| X[0.2 l m] | X[0.4 l m] |  X[0.2 l m] | X[0.2 l m] |} % larghezza delle colonne
+\hline
+\rowcolor{header} % colore dell'header
+    
+\textbf{Requisito} & \textbf{Descrizione} & \textbf{Classificazione} & \textbf{Fonte} \\
+\hline
+\requisitiptable
+
+\end{longtabu}
