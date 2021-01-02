@@ -10,21 +10,24 @@ ISO 9126 oltre a 6 caratteristiche individua 3 tipologie di misurazioni: della q
 In questa sezione non è tenuto conto della distinzione e non sono presenti metriche di qualità in uso, che richiedono necessariamente l'utilizzo del prodotto da parte di un utente.
 
 \subsection{Funzionalità}
+La funzionalità rappresenta la capacità del software di fornire le funzioni, espresse ed implicite, necessarie per operare in determinate condizioni, cioè in un determinato contesto.
 \def\productquality{
-    {   , 
+    {
         Correttezza dello scambio dei dati,
-        $N_{err}$, 
+        $D_{err} = \#\ di\ errori$, 
         -,
-        0
+        $D_{err} = 0$,
+        un valore sufficiente sarà deciso in fasi successive del progetto
     },
 }
 \input{source/tables/metriche_qualita.tex}
 
 \subsection{Affidabilità}
+Rappresenta la capacità di un prodotto software di mantenere il livello di prestazione quando viene utilizzato in condizioni specificate. Possibili limitazioni all'affidabilità del software possono essere causate da errori di requisiti, nella progettazione, nel codice. Le evidenze di tali errori possono essere rilevate a seconda delle condizioni in cui il prodotto è utilizzato oppure alle opzioni scelte, piuttosto che al momento in cui è utilizzato.
 \def\productquality{
-    {   , 
+    {
         Densità di errori,
-        $N_{err}/SLOC$, 
+        $E_{density} = A_{err}/B_{tests}$, 
         -,
         -,
         è stato ritenuto prematuro definire valori sufficienti e ottimi per la metrica
@@ -32,10 +35,80 @@ In questa sezione non è tenuto conto della distinzione e non sono presenti metr
 }
 \input{source/tables/metriche_qualita.tex}
 
-\subsection{Efficienza}
-
-
 \subsection{Usabilità}
+Rappresenta la capacità di un prodotto software di essere comprensibile, di poter essere studiato, di risultare attraente da parte di un utente sotto determinate condizioni d'uso.
+\def\productquality{
+    {
+        Qualità della messaggistica,
+        $Q_{mex} = A_{clear}/B_{tot}$, 
+        $Q_{mex} \geq 0.85$,
+        $Q_{mex} = 1$
+    },
+    {
+        Numero di click,
+        $C_{click}(t) = \#\ di\ click$,
+        $C_{click} \leq 6$,
+        $C_{click} \leq 4$,
+        il task misurato è descritto nelle Norme di Progetto
+    },
+    {
+        Site depth,
+        $S_{depth} = td(G)$,
+        $S_{depth} \leq 6$,
+        $S_{depth} \leq 4$
+    },
+}
+\input{source/tables/metriche_qualita.tex}
+
+\subsection{Efficienza}
+La capacità di realizzare le funzioni richieste nel minor tempo possibile ed utilizzando nel miglior modo le risorse necessarie, quando opera in determinate condizioni. 
+\def\productquality{
+    {
+        Response time,
+        $T_{response} = B_{end}-A_{start}$, 
+        -,
+        -,
+        il task a cui fa riferimento la metrica è indicato nelle norme di progetto
+    },
+}
+\input{source/tables/metriche_qualita.tex}
+
 
 
 \subsection{Manutenibilità}
+Capacità di un prodotto software di essere modificato. Le modifiche possono in cludere correzioni o adattamenti del software a modifiche negli ambienti, nei requisiti e nelle specifiche funzionali.
+\def\productquality{
+    {
+        Complessità ciclomatica,
+        $v(G) = e - n + 2p$, 
+        -,
+        -,
+        è stato ritenuto prematuro definire valori sufficienti e ottimi per la metrica
+    },
+    {
+        Indipendenza dei test,
+        $I_{test} = A_{ind}/B_{tests}$,
+        $I_{test} \geq 0.90$,
+        $I_{test} = 1$
+    },
+    {
+        Facilità di comprensione,
+        $F_{compr} = A_{comm}/SLOC$,
+        -,
+        -,
+        non sono stati forniti valori sufficienti e ottimi in quanto ritenuto prematuro
+    },
+    {
+        Sfin,
+        $sfin(u) =  \sum u_{caller}$,
+        $sfin(u) \geq 2$,
+        $sfin(u) \geq 4$
+    },
+    {
+        Sfout, 
+        $sfout(u) = \sum u_{callee}$,
+        $sfout(u) \leq 0$,
+        $sfout(u) = 0$
+    },
+}
+\input{source/tables/metriche_qualita.tex}
