@@ -1,0 +1,28 @@
+\newcommand*\salarysummary{}
+\foreach \x [count=\nj] in \salarycontent
+{
+    \foreach \y [count=\ni] in \x
+    {
+        \ifnum\ni=3
+            \xappto\salarysummary{\y}
+            \gappto\salarysummary{\\}
+            \gappto\salarysummary{\hline}
+        \else
+            \xappto\salarysummary{\y&}
+        \fi
+    }
+}
+
+% Impostazioni della tabella
+\tabulinesep = 2mm % padding
+\taburowcolors [1] 2{pari .. dispari} % colori delle righe
+\begin{longtabu} to \textwidth {| X[0.1, c m] | X[0.1, c m] | X[0.1, c m] |}
+\hline
+\rowcolor{header} % colore dell'header
+\textbf{Ruolo} &
+\textbf{Ore} & 
+\textbf{Costo} \\
+\hline
+\salarysummary
+\end{longtabu}
+\undef\salarysummary{}

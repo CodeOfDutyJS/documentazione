@@ -1,0 +1,33 @@
+\newcommand*\hourlysummary{}
+\foreach \x [count=\nj] in \hourlycontent
+{
+    \foreach \y [count=\ni] in \x
+    {
+        \ifnum\ni=8
+            \xappto\hourlysummary{\y}
+            \gappto\hourlysummary{\\}
+            \gappto\hourlysummary{\hline}
+        \else
+            \xappto\hourlysummary{\y&}
+        \fi
+    }
+}
+
+% Impostazioni della tabella
+\tabulinesep = 2mm % padding
+\taburowcolors [1] 2{pari .. dispari} % colori delle righe
+\begin{longtabu} to \textwidth {| X[0.3, c m] | X[0.1, c m] | X[0.1, c m] | X[0.1, c m] | X[0.1, c m] | X[0.1, c m] | X[0.1, c m] | X[0.1, c m] |}
+\hline
+\rowcolor{header} % colore dell'header
+\textbf{Membro} &
+\textbf{Re} & 
+\textbf{Ad} & 
+\textbf{An} & 
+\textbf{Pt} & 
+\textbf{Pr} & 
+\textbf{Ve} & 
+\textbf{Ore totali} \\
+\hline
+\hourlysummary
+\end{longtabu}
+\undef\hourlysummary{}
