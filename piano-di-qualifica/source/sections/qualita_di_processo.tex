@@ -19,7 +19,9 @@ Una maggiore informazione e descrizione delle metriche si trovano nel documento:
             
             
             \paragraph{Metriche}
-            Metriche
+            
+            \hphantom{}
+            %startTable
             \def\productquality{
             {   Percentuale dei requisiti soddisfatti,
                 $ \frac{ReqSoddisfatti}{ReqTotali}$, 
@@ -27,8 +29,8 @@ Una maggiore informazione e descrizione delle metriche si trovano nel documento:
                 $ 100 \% $
             },
         }
- \input{source/tables/metriche_qualita.tex}
-
+        \input{source/tables/metriche_qualita.tex}
+        %endTable
             
             
           
@@ -44,7 +46,9 @@ Una maggiore informazione e descrizione delle metriche si trovano nel documento:
                 \end{itemize}
                 
            \paragraph{Metriche}
-           alcunee metriche per la pianificazione sono usate per calcolarne delle altre e la loro formula è semplicemente data dal volre intero che hanno
+            
+            \hphantom{}
+           %startTable
             \def\productquality{
             {   Budget at Completion [BG],
                 numero intero, 
@@ -77,10 +81,11 @@ Una maggiore informazione e descrizione delle metriche si trovano nel documento:
                 $ \geq 0$
             },
         }
- \input{source/tables/metriche_qualita.tex}
+        \input{source/tables/metriche_qualita.tex}
+        %endTable
 
-
-    \newpage    
+    \newpage  
+    
     \subsubsection{Sviluppo}
     Il processo contiene le attività di design, scrittura del codice e accettazione del codice software.
     
@@ -92,6 +97,8 @@ Una maggiore informazione e descrizione delle metriche si trovano nel documento:
         \end{itemize}
         
         \paragraph{Metriche}
+        \phantom{} \\
+        
         Le metriche di questo processo non sono ancora state stabilite, in quanto è stato ritenuto prematuro definire matriche oggettive in questa fase del progetto.Inoltre il documento nella durata del progetto verrà modificato e raffinato per migliorarne l'usabilità e la qualità.
         
         
@@ -109,9 +116,10 @@ Una maggiore informazione e descrizione delle metriche si trovano nel documento:
             \end{itemize}
     \newpage
             \paragraph{Metriche}
-            Metriche
             
-             \def\productquality{
+            \hphantom{}
+            %startTable
+         \def\productquality{
                             {   Gunning's fog index,
                                 $0.4*(\frac{ Parole}{Frasi} + 100* \frac{Complesse}{ Frasi})$, 
                                 $ \geq 16$,
@@ -128,16 +136,17 @@ Una maggiore informazione e descrizione delle metriche si trovano nel documento:
                                 0
                             },
                         }
-\input{source/tables/metriche_qualita.tex}
-
-\textit{Parole} = numero totale di parole del documento
-
-\textit{Frasi} = numero totale di parole del documento
-
-\textit{Complesse} = numero di parole ritenute complesse nel documento
-
-\textit{Lettere} = numero totale di lettere del documento
-            
+                    \input{source/tables/metriche_qualita.tex}
+                    %endTable
+                    
+        \textit{Parole} = numero totale di parole del documento
+        
+        \textit{Frasi} = numero totale di parole del documento
+        
+        \textit{Complesse} = numero di parole ritenute complesse nel documento
+        
+        \textit{Lettere} = numero totale di lettere del documento
+                    
             \subsubsection{Quality assurance}
             Questo processo è orientato alla quantificazione della qualità. Assicura quindi un grado di qualità minimo e orienta verso un grado di qualità ottimo totale del progetto.
             
@@ -148,7 +157,8 @@ Una maggiore informazione e descrizione delle metriche si trovano nel documento:
             \end{itemize}
             
             \paragraph{Metriche}
-            metriche
+            \hphantom{}
+            %startTable
             \def\productquality{
                 {   Percentuale di metriche soddisfatte,
                     $\frac{Soddisfatte}{Totali}$,
@@ -156,8 +166,9 @@ Una maggiore informazione e descrizione delle metriche si trovano nel documento:
                     $ \geq 80 \% $
                 },
             }
-\input{source/tables/metriche_qualita.tex}
-
+            \input{source/tables/metriche_qualita.tex}
+            %endTable
+            
 \textit{Soddisfatte} = numero di metriche con valore soddifacente
 
 \textit{Totali} = numero totale di metriche
@@ -173,8 +184,9 @@ Una maggiore informazione e descrizione delle metriche si trovano nel documento:
             \end{itemize}
             
             \paragraph{Metriche}
-            Metriche per il processo di verifica:
             
+            \hphantom{}
+            %startTable
             \def\productquality{
                 {   Code coverage,
                     $\frac{Testate}{Totali}$,
@@ -187,8 +199,9 @@ Una maggiore informazione e descrizione delle metriche si trovano nel documento:
                     = numero totale di test
                 },
             }
-\input{source/tables/metriche_qualita.tex}
-
+            \input{source/tables/metriche_qualita.tex}
+            %endTable
+            
 \textit{Testate} = numero totale di linee di codice testate
 
 \textit{Totali} = numero totale di linee di codi
