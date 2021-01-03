@@ -1,0 +1,14 @@
+name: Calcola indice di Gulpease
+
+on:[workflow_dispatch]
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository contents
+      uses: actions/checkout@v2
+
+    - name: Calcola Gulpease
+      uses: strang3nt/GulpeaseAction@master
