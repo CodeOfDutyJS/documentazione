@@ -1,0 +1,85 @@
+\section{Specifica dei test}
+
+Sono stati determinati, come descritto anche nel documento \textit{Norme di Progetto 1.0.0}, 4 tipi di test ovvero: \textit{Test di unità, Test di Integrazione, Test di sistema, Test di accettazione} e \textit{Test di regressione}. Si adotterà quindi il \textbf{Modello a V} che permette lo sviluppo dei test in parallelo alle attività di analisi e progettazione. Così facendo i test sviluppati saranno in grado di verificare sia la correttezza del programma software sia l'implementazione. Sara disponibile inoltre una tabella degli esiti dei test per una facile consultazione.
+
+Per i test valgono le seguenti sigle:
+
+    \begin{itemize}
+        \item \textbf{I}: per indicare che il è effettivamente implementato.
+        \item \textbf{NI}: per indicare che il test è ancora non implementato.
+    \end{itemize}
+    
+Mentre per lo stato valgono le seguenti sigle:
+
+    \begin{itemize}
+        \item \textbf{S}: il test ha esito soddisfacente.
+        \item \textbf{NS}: il test ha esito non soddisfacente.
+    \end{itemize}
+    
+    
+    \subsection{Test di unità}
+    \subsection{Test di Integrazione}
+    
+    \subsection{Test di Sistema}
+    
+    Per rispettare i requisiti identificati nel documento \textit{Analisi dei Requisiti 1.0.0} e per garantire il funzionamento del prodotto si eseguono i seguenti Test di sistema:
+    
+    \hphantom{}
+    %startTable
+    \def\testspecification{
+    {   RF01 ,
+        TSOF1,
+        Verifica della possibiltà di scelta nell'inserimento dei dati dell'utente,
+        NI},
+    {   RFO1.1,
+        TSOF1.1,
+        Verifica dell'inserimento dati tramite file csv,
+        NI},
+    {   RFO1.2,
+        TSOF1.2,
+        Verifica dell'inserimento dati tramite query al database,
+        NI},
+    {   RFO1.3,
+        TSOF1.3,
+        Verifica dell'apparimento del messaggio d'errore in caso di errore nell'inserimento dei dati,
+        NI},
+    {   RFO1.4,
+        TSOF1.4,
+        Verifica della corretta conversione in JSON dei dati,
+        NI},
+    {   RFO2,
+        TSOF2,
+        Verifica della possibilità di scelta nella visualizzazione dei dati,
+        NI},
+    }
+    \input{source/tables/descrizione_test.tex}
+    %endTable
+    
+    
+    \def\testspecification{    
+    {   RFO2.1,
+        TSOF2.1,
+        Nella scelta per la visualizzazione deve esserci: Scatter Plot Matrix,
+        NI},
+    {   RFO2.2,
+        TSOF2.2,
+        Nella scelta per la visualizzazione deve esserci: Heatmap ,
+        NI},
+    {   RFO2.2.1,
+        TSOF2.2.1,
+        Verifica della possibiltà di sfumatura nel colore dell'Heapmap,
+        NI},
+    {   RFO2.3,
+        TSFF2.3,
+        Nella scelta per la visualizzazione deve esserci:Correlation Heatmap,
+        NI},
+    {   RFO2.4,
+        TSOF2.4,
+        Nella scelta per la visualizzazione deve esserci: Force Field,
+        NI},
+    }
+    \input{source/tables/descrizione_test.tex}
+    %endTable
+    
+    \subsection{Test di accettazione}
+    \subsection{Test di regressione}
