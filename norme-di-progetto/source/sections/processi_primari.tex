@@ -1,6 +1,5 @@
 \section{Processi Primari}
 	\subsection{Fornitura}
-	\subsection{Sviluppo}
 		\subsubsection{Scopo}
 		Il processo di fornitura si occupa di determinare le procedure e le risorse necessarie allo svolgimento del progetto, incluso lo sviluppo del \textit{Piano di Progetto} e l'esecuzione dello stesso. Il processo inizia una volta presa la decisione di rispondere alla proposta dell'acquirente e dopo aver compreso le sue richieste stilando uno \textit{Studio di fattibilità} il processo si compone delle seguenti attività:
 		\begin{itemize}
@@ -15,17 +14,17 @@
 		\subsubsection{Descrizione}
 		Questa sezione norma le fasi di progettazione, sviluppo e consegna del prodotto \textit{HD viz}. 
 		\subsubsection{Attività}
-		    \paragraph{Studio di Fattibilità}
+		    \myparagraph{Studio di Fattibilità}
 		    Gli analisti redigono uno \textit{Studio di Fattibilità} per ogni capitolato, indicando:
 		    \begin{itemize}
-		        \item \textbf{Informazioni genereali}: informazioni riguardanti il nome del progetto, il proponente e il committente;
+		        \item \textbf{Informazioni generali}: informazioni riguardanti il nome del progetto, il proponente e il committente;
 		        \item \textbf{Descrizione capitolato}: descrizione suntuaria del capitolato e delle aspettative e richieste sul prodotto finale;
 		        \item \textbf{Finalità del progetto}: descrizione del prodotto finito;
 		        \item \textbf{Aspetti positivi}: caratteristiche che rendono il gruppo più disponibile a proporre un'offerta verso il proponente;
 		        \item \textbf{Criticità e fattori di rischio}: aspetti negativi con potenziali ripercussioni sullo svolgimento del progetto;
 		        \item \textbf{Conclusioni}: breve spiegazione sul perchè il capitolato è stato scartato o accettato dal gruppo.
 		    \end{itemize}
-			\paragraph{Piano di Progetto}
+			\myparagraph{Piano di Progetto}
 			Il Responsabile di Progetto con gli amministratori redige un \textit{Piano di progetto} volto a fornire un preventivo ed una pianificazione dettagliata sullo svolgimento del progetto al proponente contiene:
 			\begin{itemize}
 			    \item \textbf{Analisi dei Rischi}: vengono elencati i rischi che potrebbero presentarsi durante lo svolgimento del progetto, insieme ad una indicazione probabilistica del loro effettivo avvenimento e le modalità con le quali si intende mitigare questi rischi;
@@ -34,17 +33,445 @@
 			    \item \textbf{Preventivo}: qui viene fatta la stima dello sforzo previsto in termini di ore di lavoro, e dei costi associati con l'esecuzione di processo, riportando in dettaglio organigramma e il programma degli orari richiesti per una consegna puntuale del progetto. Viene quindi fornito un preventivo iniziale basato su queste stime;
 			    \item \textbf{Consuntivo}: il documento viene aggiornato periodicamente con un consuntivo dei costi effettivi dello sviluppo, corredato di una spiegazione su un eventuale differenza con il preventivo.
 			\end{itemize}
-			\paragraph{Piano di Qualifica}
+			\myparagraph{Piano di Qualifica}
 			I verificatori devono redigere un \textit{Piano di Qualifica}, contenente tutte le informazioni riguardanti il controllo di qualità  per i processi e il prodotto, basato su quantificazioni misurabili. Il \textit{Piano di Qualifica} contiene:
 			\begin{itemize}
-			    \item \textbf{Qualità di processo}: vengono cercati negli standard i processi da attuare, individuati degli obiettivi di qualità e le metriche corrispondenti, vengono stilati metodi per perseguire gli obiettivi posti;
+			    \item \textbf{Qualità di processo}: vengono cercati negli standard i processi da attuare, individuati degli obiettivi di qualità e le metriche corrispondenti, vengono stilati metodi per perseguire gli obiettivi posti, il documento di riferimento è la ISO-15504;
 			    \item \textbf{Qualità di prodotto}: vengono identificate delle metriche corrispondenti agli attributi del prodotto e definiti degli obiettivi di qualità, il documento di riferimento è la ISO-9126;
-			    \item \textbf{Specifiche dei test}: vengono definiti i test di accettazione, sistema, integrazione, di modulo e unita volti ad assicurare la qualità del prodotto;
+			    \item \textbf{Specifiche dei test}: vengono definiti i test che garantiscono la qualità del prodotto;
 			    \item \textbf{Resoconti di verifica ed esiti delle revisioni}: qui sono riportati gli esiti delle attività di verifica e delle revisioni.
 			\end{itemize}
-			\paragraph{Strumenti}
+			\subsection{Metriche}
+			Di seguito vengono elencate le metriche i quali valori vanno normati nel piano di qualifica. 
+La modalità di rilevazione non è indicata per tutte le metriche: tale dato sarà 
+inserito in fasi successive del progetto.
+\subsubsection{Metriche di processo}
+Queste sono le metriche inerenti alla qualità di processo.
+\myparagraph{Percentuale di requisiti soddisfatti}
+La percentuale in centesimi dei requisiti saddisfatti
+\par{Formula}
+La formula che individua la metrica è:
+\begin{displaymath}
+ PROS = Rs / Rt *100
+\end{displaymath}
+Rs = requisiti soddisfatti
+Rt = requisiti totali
+
+
+\myparagraph{Budget at completion}
+Budget totale allocato per il progetto.
+Musirazione: numero intero
+
+
+\myparagraph{Earned value}
+Utilizzato anche nel calcolo di \textit{SV} e \textit{CV}. Abbreviato EV, indica il valore del lavoro compiuto fino al momento del calcolo
+\par{Formula}
+La formula che individua la metrica è:
+\begin{displaymath}
+  BAC * \% di lavoro cmpletato
+\end{displaymath}
+BAC = Budget at copletion
+
+
+\myparagraph{Planned value}
+Abbreviato in PV, rappresenta il valore del lavoro pianificato al momento del calcolo. Utilizzato anche nel calcolo di \textit{SV} e \textit{CV}
+\par{Formula}
+La formula che individua la metrica è:
+\begin{displaymath}
+  BAC * \% di lavoro pianif icato
+\end{displaymath}
+BAC = Budget at copletion
+
+
+\myparagraph{Actual Cost}
+per il calcolo in altre metriche l'abbreviazione è AC.
+rappresenta il denaro speso fino al momento del calcolo.
+La misurazione avviene con il rilevamento dell'intero che rappresenta l'AC pertanto non ha Formule
+
+
+\myparagraph{Schedule variance}
+Rappresenta l'anticipo o il ritardo nello svolgimento del progetto rispetto al valore pianificato. Abbreviato in \textit{SV}.
+\par{Formula}
+La formula che individua la metrica è:
+\begin{displaymath}
+  \textit{SV} = \textit{EV} - \textit{PV}
+\end{displaymath}
+\textit{SV} = Schedule variance
+\textit{EV} = Earned value
+\textit{PV} = Planned value
+
+
+\myparagraph{Cost variance}
+Rappresenta la differenza tra il lavoro completato e quello pianificato, ed è abbreviato in \textit{CV}
+\par{Formula}
+La formula che individua la metrica è:
+\begin{displaymath}
+  \textit{CV} = \textit{EV} - \textit{AC}
+\end{displaymath}
+\textit{CV} = Cost variance
+\textit{EV} = Earned value
+\textit{AC} = actual cost
+
+
+\myparagraph{Gunning's fog index}
+L'indice di Gunning fog equivale all'indice della facilità di lettura di un testo. In particolare Stima gli anni di educazione scolastica per complrendere il testo.
+\par{Formula}
+La formula che individua la metrica è:
+\begin{displaymath}
+  \textit{IGF} = 0.4·(\frac{ \textit{Parole}}{\textit{Frasi}} + 100· \frac{\textit{Complesse}}{ \textit{Frasi}}
+\end{displaymath}
+\textit{IGF} = Gunning's fog index
+\textit{Parole} = numero complessivo di parole
+\textit{Frasi} = numero complessivo di frasi
+\textit{Complesse} = numero complessivo di parole ritenute complesse
+\textit{Frasi} = numero complessivo di frasi
+
+
+\myparagraph{Gulpease index}
+Rappresenta la leggibilità di un testo valutando la lunghezza delle parole e delle frasi al numero totale di lettere
+\par{Formula}
+La formula che individua la metrica è:
+\begin{displaymath}
+\textit{IG} = 89 + \frac{300 * \textit{Frasi} - 10* \textit{Lettere}}{\textit{Parole}}
+\end{displaymath}
+\textit{IG} = Gulpease index
+\textit{Frasi} = numero complessivo di frasi
+\textit{Lettere} = numero complessivo di lettere
+\textit{Parole} = numero complessivo di parole
+
+
+\myparagraph{Correttezza ortografica}
+Rappresenta il numero totale di errori ortografici presenti. Essendo un valore intero che non è composto da altri sottoelemento non ha una formula
+\par{Modalità di rilevazione}
+Viene calcolato durante la verifica di un documento.
+
+
+\myparagraph{Percentuale di metriche soddisfatte}
+Indica la percentuale in centesimi del numero di metriche con valore soddisfacente. Una basso valore percentuale è indice quindi di una bassa qualità.
+\par{Formula}
+La formula che individua la metrica è:
+\begin{displaymath}
+  \textit{PMS} = \frac{\textit{Soddisfatte}}{\textit{Totali}}
+\end{displaymath}
+  \textit{PMS} = Percentuale di metriche soddisfatte
+  \textit{Soddisfatte} = numero totale di metriche con valore soddisfaciente
+  \textit{Totali} = numero totale di metriche calcolate
+
+
+
+\myparagraph{Code coverage}
+Indica il valore percentuale in centesimi del numero di righe di codice testate.
+\par{Formula}
+La formula che individua la metrica è:
+\begin{displaymath}
+  \textit{CC} = \frac{\textit{Testate}}{\textit{Totali}}
+\end{displaymath}
+ \textit{CC} = Code coverage
+ \textit{Testate} = numero di righe testate
+ \textit{Totali} = numero di righe totali
+
+
+\myparagraph{Numero di test superati}
+Indica il nuemero totale intero di test superati. Questa metrica non ha formula in quanto il valore è dato dal calcolo del programmatore in fase di test del codice.
+\subsubsection{Metriche di prodotto}
+Queste sono le Metriche inerenti alla qualità di prodotto.
+\myparagraph{Correttezza dello scambio dei dati}
+Il prodotto software ha bisogno di dati provenienti da fonti esterne. Questa 
+metrica misura che i dati ricevuti da tali fonti non siano modificati o errati 
+in qualsiasi modo. Per dato si intende l'informazione più atomica possibile
+\textit{ESEMPIO: in una banca dati anagrafica un dato può essere la data di 
+nascita, oppure il cognome.}
+\par{Formula}
+La formula che individua la metrica è:
+\begin{displaymath}
+  D_{err} = \#\ di\ errori
+\end{displaymath}
+Ossia $N_{err}$ è il numero di errori totali rilevati sui dati importati 
+nell'applicativo.
+
+\myparagraph{Densità di errori}
+Indica il numero di errori rilevati sul codice tramite i test di unità, è una 
+misura del rapporto tra il totale dei test di unità errati e il totale dei test 
+di unità eseguiti.
+\par{Formula}
+\begin{displaymath}
+  E_{density} = A_{err}/B_{tests}
+\end{displaymath}
+Dove:
+\begin{itemize}
+  \item[] $E_{density} =$ densità di errori;
+  \item[] $A_{err} =$ totale test di unità errati;  
+  \item[] $B_{tests} =$ totale test di unità eseguiti.
+\end{itemize}
+
+\myparagraph{Qualità della messaggistica}
+È una metrica che indica la chiarezza dei messaggi di errore o di avviso 
+all'utente. Per essere chiaro un messaggio deve avere le seguenti 
+caratteristiche:
+\begin{itemize}
+  \item deve indicare qual'è l'errore, o il motivo dell'avviso;
+  \item deve indicare una o più azioni correttive.
+\end{itemize}
+Messaggi che non rispettano le suddette caratteristiche non saranno considerati 
+chiari.
+\par{Formula}
+\begin{displaymath}
+  Q_{mex} = A_{clear}/B_{tot}
+\end{displaymath}
+Dove:
+\begin{itemize}
+  \item[] $Q_{mex} =$ qualità della messaggistica;
+  \item[] $A_{clear} =$ totale messaggi considerati chiari; 
+  \item[] $B_{tot} =$ totale messaggi all'utente.
+\end{itemize}
+\par{Modalità di rilevazione}
+Gli avvisi e gli errori segnalati all'utente sono contati manualmente.
+
+\myparagraph{Numero di click}
+Conta il numero di click necessari per completare uno specifico task. Il task 
+in analisi è il seguente: 
+\begin{itemize}
+  \item click necessari per importare un set di dati nell'applicativo.
+\end{itemize}
+\textit{Sarà fornita una descrizione più precisa del task in fasi successive 
+dell'attività di progetto.}
+\par{Formula}
+\begin{displaymath}
+  C_{click}(t) = \#\ di\ click
+\end{displaymath}
+Dove:
+\begin{itemize}
+  \item[] $C_{click} =$ indica il numero totale di click per completare il 
+task; 
+  \item[] $t =$ è il task da misurare.
+\end{itemize}
+\par{Modalità di rilevazione}
+Per ottenere valori ai fini della metrica saranno eseguiti dei test 
+sull'applicativo in funzione.
+
+\myparagraph{Site depth}
+È la profondità dell'albero che rappresenta la struttura dell'applicativo.
+\par{Formula}
+\begin{displaymath}
+  S_{depth} = td(G)
+\end{displaymath}
+Dove:
+\begin{itemize}
+  \item[] $S_{depth} =$ è la profondità della struttura del prodotto;
+  \item[] $td(G) =$ è la funzione che calcola la massima profondità (tree 
+depth).
+\end{itemize}
+
+\myparagraph{Response time}
+Metrica di tempo che misura la durata di uno specifico task in secondi. Il 
+task misurato è:
+\begin{itemize}
+  \item caricamento di un set di dati all'interno del progetto.
+\end{itemize}
+\textit{In fasi successive del progetto saranno fornite ulteriori specifiche 
+riguardanti al task (ad esempio quale set di dati viene utilizzato per la 
+misurazione).}
+\par{Formula}
+\begin{displaymath}
+  T_{response} = B_{end}-A_{start}
+\end{displaymath}
+Dove:
+\begin{itemize}
+  \item[] $T_{response} =$ durata totale del task;
+  \item[] $B_{end} =$ termine del task;
+  \item[] $A_{start} =$ inizio del task.
+\end{itemize}
+
+\myparagraph{Complessità ciclomatica}
+La complessità ciclomatica è la misura della quantità dei possibili percorsi di 
+branching di una porzione di codice. Il codice è rappresentato tramite un 
+grafo orientato con un nodo di start e finish dove gli altri nodi rappresentano 
+istruzioni decisionali, la complessità ciclomatica è quindi il numero di 
+cammini lineari indipendenti dal nodo start al nodo finish.
+\par{Formula}
+\begin{displaymath}
+  v(G) = e - n + 2p
+\end{displaymath}
+Dove:
+\begin{itemize}
+  \item[] $v(G) =$ complessità ciclomatica del grafo G;
+  \item[] $e =$ numero di archi del grafo;
+  \item[] $n =$ numero di nodi del grafo;
+  \item[] $p =$ numero di componenti connesse.
+\end{itemize}
+
+\myparagraph{Indipendenza dei test}
+Questa metrica misura l'indipendenza dei test, ossia:
+\begin{itemize}
+  \item un test non deve fare affidamento su altri test o elementi esterni;
+  \item un test deve essere ripetibile e il suo risultato deve rimanere 
+invariato.
+\end{itemize}
+\par{Formula}
+\begin{displaymath}
+  I_{test} = A_{ind}/B_{tests}
+\end{displaymath}
+Dove:
+\begin{itemize}
+  \item[] $I_{test} =$ è l'indice di indipendenza dei test;
+  \item[] $A_{ind} =$ numero di test considerati indipendenti;
+  \item[] $B_{tests}$ numero totale di test.
+\end{itemize}
+
+\myparagraph{Facilità di comprensione}
+È un indice che misura la facilità di comprensione del codice. Un codice 
+sorgente facilmente comprensibile avrà bisogno di meno commenti, viceversa 
+codice complicato avrà più commenti.
+\par{Formula}
+\begin{displaymath}
+  F_{compr} = A_{comm}/SLOC
+\end{displaymath}
+Dove:
+\begin{itemize}
+  \item[] $F_{compr} =$ indice della facilità di comprensione;
+  \item[] $A_{comm} =$ numero totale di righe di commento;
+  \item[] $SLOC =$ numero di righe del codice sorgente.
+\end{itemize}
+
+\myparagraph{Sfin}
+Structural Fan-In, indica il numero di procedure che chiamano una specifica 
+procedura. L'oggetto della misura sono le unità architetturali.
+\par{Formula}
+\begin{displaymath}
+  sfin(u) =  \sum u_{caller}
+\end{displaymath}
+Dove:
+\begin{itemize}
+  \item[] $sfin(u) =$ calcolo dello sfin dell'unità $u$;
+  \item[] $\sum u_{caller} =$ somma delle unità che utilizzano $u$.
+\end{itemize}
+
+\myparagraph{Sfout}
+Structural Fan-Out, indica il numero di procedure di cui necessita una 
+specifica procedura. L'oggetto della misura sono le unità architetturali. 
+\par{Formula}
+\begin{displaymath}
+  sfout(u) = \sum u_{callee}
+\end{displaymath}
+Dove:
+\begin{itemize}
+  \item[] $sfout(u) =$ calcolo dello sfout dell'unità $u$;
+  \item[] $\sum u_{callee} =$ somma delle unità utilizzate da $u$.
+\end{itemize}
+			\subsubsection{Strumenti}
 			Qui vengono riportati gli strumenti utilizzati nel processo di fornitura:
 			
-		\subsubsection{Sviluppo}
+		\subsection{Sviluppo}
+		\subsubsection{Scopo}
+		Il processo di sviluppo contiene le attività da svolgere al fine di ottenere il prodotto finale.
+		\subsubsection{Attività}
+		\myparagraph{Analisi dei requisiti}
+		Gli analisti redigono un'\textit{Analisi dei Requisiti} volta  individuare ed elencare casi d'uso e requisiti, al fine di esemplificare il problema da trattare.
+		\mysubparagraph{Scopo}
+		L'analisi dei requisiti deve definire lo scopo del lavoro e mettere in evidenza funzionalità e requisiti in modo da fornire riferimenti tracciabili sia ai programmatori che ai verificatori.
+		\mysubparagraph{Contenuti}
+		\mysubparagraph{Descrizione}
+		Descrizione delle finalità del prodotto, degli attori in causa, dei vincoli imposti dal proponente, e delle assunzioni fatte dagli analisti.
+		\mysubparagraph{Casi d'uso}
+		I casi d'uso rappresentano una lista di azioni necessarie alla realizzazione di un obbiettivo desiderabile all'interazione fra un attore ed il sistema.
+		La struttura dei casi d'uso è così definita:
+		\begin{itemize}
+		    \item attore
+		    \item descrizione
+		    \item precondizione
+		    \item postcondizione
+		    \item scenario principale
+		    \item estensioni
+		    \item generalizzazioni
+		    \item specializzazioni
+		\end{itemize}
+		Ogni caso d'uso adotta un codice identificativo in questa forma:\\
 		
-		\subsubsection{Strumenti}
+	    \centerline{\textbf{UC[codiceCaso].[codiceSpecializzazione]}}\\
+	    dove:
+	    \begin{itemize}
+	        \item \textbf{codiceCaso}: è il codice identificativo del caso;
+	        \item \textbf{codiceSpecializzazione}: è il codice della specializzazione.
+	    \end{itemize}
+	    \mysubparagraph{Requisiti}
+	    I requisiti sono identificati dal seguente codice:\\
+	    \centerline{\textbf{R[tipo][classe][identificativo]}}\\
+	    dove:
+	    \begin{itemize}
+	        \item \textbf{tipo}: può essere:
+	        \begin{itemize}
+	            \item \textbf{F}: requisito funzionale;
+	            \item \textbf{V}: vincolo;
+	            \item \textbf{Q}: requisito di qualità;
+	            \item \textbf{P}: requisito prestazionale. 
+	        \end{itemize}
+	        \item \textbf{classe}: può essere:
+	        \begin{itemize}
+	            \item \textbf{O}: obbligatorio;
+	            \item \textbf{F}: facoltativo;
+	            \item \textbf{D}: desiderabile;
+	        \end{itemize}
+	        \item \textbf{identificativo}: identificativo progressivo del requisito.
+	    \end{itemize}
+	    tutti i requisiti sono contenuti in tabelle composte da quattro (4) colonne, i cui attributi sono:
+	    \begin{itemize}
+	        \item \textbf{Requisito}: codice del requisito;
+	        \item \textbf{Descrizione}: descrizione del requisito;
+	        \item \textbf{Classificazione}: la classe del requisito;
+	        \item \textbf{Fonte}: fonte da cui il requisito è stato estrapolato.
+	    \end{itemize}
+	    le tabelle sono divise per tipo di requisito, e ad ogni requisito corrisponde una riga di una ed una sola tabella.
+		\myparagraph{Progettazione}
+		Messi in mostra i requisiti stilati nell'\textit{Analisi dei requisiti} gli analisti ricercano una possibile soluzione al problema compreso, identificando un'architettura di alto livello che comprenda una lista di sottosistemi hardware e software, specificandone le funzionalità ed assicurandosi che comprendano un'implementazione di tutti i requisiti tracciati.
+		\mysubparagraph{Prodotti}
+		Vengono prodotte due parti, la \textbf{Technology baseline} e la \textbf{Product baseline}.
+		\mysubparagraph{Technology baseline}
+		Redatta dal progettista, contiene le specifiche di progettazione architetturale di alto livello, l'insieme di diagrammi UML che la definiscono ed i test d'integrazione.\newline
+		include quindi:
+		\begin{itemize}
+		    \item \textbf{Tecnologie}: devono essere descritte e giustificate le tecnologie adottate, elencandone svantaggi e vantaggi, ed esponendone il ruolo nel progetto;
+		    \item \textbf{Design Pattern}: descrizione dei design pattern adottati, corredati di descrizione, motivazione della scelta, diagrammi UML che li descrivano;
+		    \item \textbf{Diagrammi UML}:
+		    \begin{itemize}
+		        \item Diagrammi delle classi;
+		        \item Diagrammi di package;
+		        
+		        \item Diagrammi di attività;
+		        \item Diagrammi di sequenza.
+		    \end{itemize}
+		    \item \textbf{Tracciamento}: tracciamento dei componenti ai relativi requisiti che soddisfano.
+		\end{itemize}
+		\myparagraph{Product Baseline}
+		Redatta dai progettisti dovrà contenere:
+		\begin{itemize}
+		    \item \textbf{Definizione delle classi}: descrizione delle classi utilizzate;
+		    \item \textbf{Tracciamento delle classi}: collegamento delle classi ai relativi requisiti;
+		    \item \textbf{Test di unità}: definizione dei test di unità al fine di stabilire il corretto funzionamento delle classi.
+		\end{itemize}
+		\myparagraph{Codifica}
+		\mysubparagraph{Scopo}
+	    Scopo della sezione è normare lo stile di codifica da utilizzare nella programmazione, intesa come effettiva implementazione software del prodotto. Lo stile di codifica è da considerarsi come parte integrante della qualità del prodotto stesso.
+	    \mysubparagraph{Indentazione}
+	    L'indentazione viene effettuata con tre spazi, e non con il carattere tab. Quando si parla di "tabulare" o di "tabulazione" si deve intendere, appunto, l'inserire tre spazi.
+	    \mysubparagraph{Blocchi innestati}
+	    Ciascun blocco innestato viene tabulato una volta.
+	    \mysubparagraph{Parentesizzazione}
+	    le parentesi di delimitazione di un blocco di codice vanno inserite nel seguente modo:
+	    \begin{itemize}
+	        \item la prima và inserita alla fine della prima riga, preceduta da uno spazio;
+	        \item la seconda su una nuova riga, senza caratteri di spazio antecedenti;
+	    \end{itemize}
+	    
+	    \mysubparagraph{Casing}
+	    \begin{itemize}
+	        \item \textbf{Classi}: i nomi delle classi iniziano con la lettera maiuscola;
+	        \item \textbf{Costanti}: vanno scritte tutte in maiuscolo;
+	        \item \textbf{Variabili}: camel case, iniziano con la lettera minuscola;
+	        \item \textbf{Metodi}: camel case, iniziano con la lettera minuscola.
+	    \end{itemize}
+	    \mysubparagraph{Metodi}
+	    Il codice deve essere il più leggibile possibile. A tal fine, e anche al fine di esemplificare i test, è desiderabile che i metodi siano composti da poche righe di codice, con nomi quanto più corti possibile ma al contempo descrittivi.
+	    \mysubparagraph{Lingua}
+	    Il codice insieme ad i commenti viene scritto in inglese.
+	    \mysubparagraph{Ricorsione}
+	    Evitare il più possibile la ricorsione.
