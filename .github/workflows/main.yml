@@ -32,6 +32,6 @@ jobs:
         aspell --lang en dump master | aspell --lang it expand | tr ' ' '\n' > it-en.dic
     - name: Spell check
       run: |
-         ::set-env name=PROVA::$(pyspelling -c .github/workflows/config.yaml)
+         echo ::set-env name=PROVA::$(pyspelling -c .github/workflows/config.yaml)
     - name: Ciao
       run: echo $PROVA
