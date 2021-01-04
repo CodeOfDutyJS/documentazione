@@ -1,0 +1,231 @@
+\subsubsection{Fonte - Requisiti}
+
+\paragraph{Capitolato}
+$\medspace$
+\begin{multicols}{3}
+    \begin{itemize}
+        \item RFO1
+        \item RFO1.1
+        \item RFO1.2
+        \item RFO2
+        \item RFO2.1
+        \item RFO2.2
+        \item RFF2.3
+        \item RFO2.4
+        \item RFO2.5
+        \item RFF2.6
+        \item RFO5.3.2
+        \item RFO6
+        \item RFF6.1
+        \item RFO7
+        \item RFF7.2
+        \item RFF7.3
+        \item RFO9
+        \item RVO1
+        \item RVD2
+        \item RVD2.1
+        \item RVO4
+    \end{itemize}
+\end{multicols}
+
+\paragraph{Interno}
+$\medspace$
+\begin{multicols}{3}
+    \begin{itemize}
+        \item RFO1.3
+        \item RFO1.4
+        \item RFF2.3
+        \item RFF2.6
+        \item RFO3
+        \item RFO3.1
+        \item RFO4
+        \item RFO5
+        \item RFO5.1
+        \item RFO5.2
+        \item RFO5.2.1
+        \item RFO5.2.2
+        \item RFO5.2.3
+        \item RFO5.3
+        \item RFO5.3.1
+        \item RFO5.4
+        \item RFO6
+        \item RFF6.1.1
+        \item RFF6.1.2
+        \item RFF7.1
+        \item RFO8.1
+        \item RFO8.2
+        \item RFO9.2
+        \item RFO10
+        \item RQO1
+        \item RQO2
+        \item RQO3
+        \item RQO4
+        \item RQO5
+        \item RQO6
+        \item RQO7
+        \item RQO8
+        \item RQO9
+        \item RQO10
+        \item RQO11
+        \item RVD2.2
+        \item RVD2.3
+        \item RVD2.4
+        \item RVO3
+        \item RVD5
+        \item RVD6
+        \item RVD7
+        \item RVD8
+        \item RVD9
+    \end{itemize}
+\end{multicols}
+
+\paragraph{UC1}
+$\medspace$
+\begin{multicols}{3}
+    \begin{itemize}
+        \item RFO1
+        \item RFO1.1
+        \item RFO1.2
+    \end{itemize}
+\end{multicols}
+
+\paragraph{UC2}
+$\medspace$
+\begin{multicols}{3}
+    \begin{itemize}
+        \item RFO2
+        \item RFO2.1
+        \item RFO2.2
+        \item RFF2.3
+        \item RFO2.4
+        \item RFO2.5
+        \item RFF2.6
+    \end{itemize}
+\end{multicols}
+
+\paragraph{UC3}
+$\medspace$
+\begin{multicols}{3}
+    \begin{itemize}
+        \item RFO3
+        \item RFO3.1
+    \end{itemize}
+\end{multicols}
+
+\paragraph{UC4}
+$\medspace$
+\begin{multicols}{3}
+    \begin{itemize}
+        \item RFO4
+        \item RVO4
+    \end{itemize}
+\end{multicols}
+
+\paragraph{UC5}
+$\medspace$
+\begin{multicols}{3}
+    \begin{itemize}
+        \item RFO2.2.1
+        \item RFO5.1
+        \item RFO5.2
+        \item RFO5.2.2
+        \item RFO5.2.3
+        \item RFO5.3
+        \item RFO5.3.1
+        \item RFO5.3.2
+        \item RFO5.4
+    \end{itemize}
+\end{multicols}
+
+\paragraph{UC6}
+$\medspace$
+\begin{multicols}{3}
+    \begin{itemize}
+        \item RFO6
+        \item RFF6.1
+        \item RFF6.1.1
+        \item RFF6.1.2
+    \end{itemize}
+\end{multicols}
+
+\paragraph{UC7}
+$\medspace$
+\begin{multicols}{3}
+    \begin{itemize}
+        \item RFO7
+        \item RFF7.1
+        \item RFF7.2
+        \item RFF7.3
+    \end{itemize}
+\end{multicols}
+
+\paragraph{UC8}
+$\medspace$
+\begin{multicols}{3}
+    \begin{itemize}
+        \item RFO8.1
+        \item RFO8.2
+    \end{itemize}
+\end{multicols}
+
+\paragraph{UC9}
+$\medspace$
+\begin{multicols}{3}
+    \begin{itemize}
+        \item RFO9
+        \item RFO9.2
+    \end{itemize}
+\end{multicols}
+
+\paragraph{UC10}
+$\medspace$
+\begin{multicols}{3}
+    \begin{itemize}
+        \item RFO10
+    \end{itemize}
+\end{multicols}
+
+%startTable
+\def\fonte{
+    {ciao, { fc\\vv\\b\\n\\o\\p}},
+    {Requisito, Descrizione},
+}
+%endTable
+
+
+
+
+
+%%%
+%%%
+%%%
+\newcommand*\fontetable{}
+\foreach \x [count=\nj] in \fonte
+{
+    \foreach \y [count=\ni] in \x
+    {
+        \ifnum\ni=2
+            \xappto\fontetable{\y}
+            \gappto\fontetable{\\}
+            \gappto\fontetable{\hline}
+        \else
+            \xappto\fontetable{\y & }
+        \fi
+    }
+}
+
+%\subsection{Requisiti funzionali}
+
+% Impostazioni della tabella
+% \tabulinesep = 2mm % padding
+% \taburowcolors [1] 2{pari .. dispari} % colori delle righe
+% \addcontentsline{lot}{table}{Requisiti prestazionali}
+% \begin{longtabu} to \textwidth {| X[0.5 l m] | X[0.5 l m] } % larghezza delle colonne
+% \hline
+% \rowcolor{header} % colore dell'header
+    
+% \textbf{Fonte} & \textbf{Requisito} \\
+% \hline
+% \fontetable
+
+% \end{longtabu}
