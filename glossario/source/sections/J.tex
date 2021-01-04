@@ -1,0 +1,22 @@
+\section{J}
+
+%startTable
+\def\definizioniJ{
+    {Albero, è una pianta},
+    {Angelo, è una pianta},
+}
+%endTable
+
+\begin{description}
+\foreach \x [count=\nj] in \definizioniJ
+{
+    \foreach \y [count=\ni] in \x
+    {
+        \ifnum\ni=1
+            \item[\y] \hfill\\
+        \else
+            \y
+        \fi
+    }
+}
+\end{description}
