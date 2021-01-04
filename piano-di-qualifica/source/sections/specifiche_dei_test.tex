@@ -19,67 +19,239 @@ Mentre per lo stato valgono le seguenti sigle:
     
     \subsection{Test di unità}
     \subsection{Test di Integrazione}
-    
+ 
     \subsection{Test di Sistema}
     
-    Per rispettare i requisiti identificati nel documento \textit{Analisi dei Requisiti 1.0.0} e per garantire il funzionamento del prodotto si eseguono i seguenti Test di sistema:
+    Per rispettare i requisiti identificati nel documento \textit{Analisi dei Requisiti 1.0.0} e per garantire il funzionamento del prodotto si eseguono i seguenti Test di sistema:\\
     
+    \subsubsection{Test di sistema per i requisiti funzionali}
     \hphantom{}
     %startTable
     \def\testspecification{
-    {   RF01 ,
-        TSOF1,
+    {   TSOF1,
         Verifica della possibiltà di scelta nell'inserimento dei dati dell'utente,
-        NI},
-    {   RFO1.1,
-        TSOF1.1,
+        NI,
+        RF01
+    },
+    {   TSOF1.1,
         Verifica dell'inserimento dati tramite file csv,
-        NI},
-    {   RFO1.2,
-        TSOF1.2,
+        NI,
+        RFO1.1
+    },
+    {   TSOF1.2,
         Verifica dell'inserimento dati tramite query al database,
-        NI},
-    {   RFO1.3,
-        TSOF1.3,
+        NI,
+        RFO1.2
+    },
+    {   TSOF1.3,
         Verifica dell'apparimento del messaggio d'errore in caso di errore nell'inserimento dei dati,
-        NI},
-    {   RFO1.4,
-        TSOF1.4,
+        NI,
+        RFO1.3
+    },
+    {   TSOF1.4,
         Verifica della corretta conversione in JSON dei dati,
-        NI},
-    {   RFO2,
-        TSOF2,
+        NI,
+        RFO1.4
+    },
+     {   TSOF2,
         Verifica della possibilità di scelta nella visualizzazione dei dati,
-        NI},
-    }
-    \input{source/tables/descrizione_test.tex}
-    %endTable
-    
-    
-    \def\testspecification{    
-    {   RFO2.1,
-        TSOF2.1,
+        NI,
+        RFO2
+    },
+    {   TSOF2.1,
         Nella scelta per la visualizzazione deve esserci: Scatter Plot Matrix,
-        NI},
-    {   RFO2.2,
-        TSOF2.2,
+        NI,
+        RFO2.1
+    },
+    {   TSOF2.2,
         Nella scelta per la visualizzazione deve esserci: Heatmap ,
-        NI},
-    {   RFO2.2.1,
-        TSOF2.2.1,
+        NI,
+        RFO2.2
+    },
+    {   TSOF2.2.1,
         Verifica della possibiltà di sfumatura nel colore dell'Heapmap,
-        NI},
-    {   RFO2.3,
-        TSFF2.3,
+        NI,
+        RFO2.2.1
+    },
+    {   TSFF2.3,
         Nella scelta per la visualizzazione deve esserci:Correlation Heatmap,
-        NI},
-    {   RFO2.4,
-        TSOF2.4,
+        NI,
+        RFO2.3
+    },
+    {   TSOF2.4,
         Nella scelta per la visualizzazione deve esserci: Force Field,
-        NI},
+        NI,
+        RFO2.4
+    },
+    {   TSOF2.5,
+        Nella scelta per la visualizzazione deve esserci: Linear Projection,
+        NI,
+        RFO2.5
+    },
+    {   TSOF2.6,
+        Nella scelta per la visualizzazione deve esserci: Parallel Coordinates,
+        NI,
+        RFO2.6
+    },
+    {   TSOF3,
+        Verifica della possibile scelta delle lables presenti nel dataset,
+        NI,
+        RFO3
+    },
+    {   TSOF3.1,
+        Verifica delle possibilità di visualizzazione delle lables presenti nel dataset,
+        NI,
+        RFO3.1
+    },
+    {   TSOF4,
+        Verifica della possibilità di scartare features e di inserire features scartate,
+        NI,
+        RFO4
+    },
+    {   TSOF5,
+        Verifica della modifica delle impostazioni della visualizzazione Heatmap,
+        NI,
+        RFO5
+    },
+    {   TSOF5.1,
+        Verifica della modifica del range dei dati all'interno della visualizzazione Heatmap,
+        NI,
+        RFO5.1
+    },
+    {   TSOF5.2,
+        Verifica della possibile normalizzazione del database in modo globale e per riga,
+        NI,
+        RFO5.2 RFO5.2.1 RFO5.2.2
+    },
+    {   TSOF5.3,
+        Dopo la selezione dell'Heatmap si verifica la possibilità di ordinare il dataset in ordine alfabetico e in cluster,
+        NI,
+        RFO5.3 RFO5.3.1 RFO5.3.2
+    },
+    {   TSOF5.4,
+        Si Verifica la possibilità di assegnazione del colre al range nella visualizzazione Heatmap,
+        NI,
+        RFO5.4
+    },
+    {   TSOF6,
+        Si verifica la possibilità di scelta nell'Heatmap di una metrica a distanza,
+        NI,
+        RFO6
+    },
+    {   TSFF6.1,
+        Si verifica la possibilità di scelta di una funzione di distanza nelle visualizzazioni Heatmap e nel Force Field,
+        NI,
+        RFF6.1
+    },
+    {   TSOF6.1.1,
+        Si verifica la possibilità di scelta della distanza Eclidea nelle visualizzioni Heatmap e Force Field,
+        NI,
+        RFF6.1.1 RFF6.1.2
+    },
+    {   TSOF7,
+        Si verifica la possibilità di scelta di un algoritmo per la riduzione dei componenti nella visualizzaione Linear Projection,
+        NI,
+        RFO7
+    },
+    {   TSFF7.1,
+        Si verifica la presenza nelle scelte dei seguenti algoritmi per la riduzione dei componenti: PCA UMAP e t-SNE,
+        NI,
+        RFF7.1 RFF7.2 RFF7.3
+    },
+    {   TSOF8.1,
+        Si verifica che il sistema elabori i dati con le impostazioni di default e con le impostazioni dell'utente,
+        NI,
+        RFO8.1 RFO8.2
+    },
+    {   TSOF9,
+        Si verifica che la visualizzazione creata dal sistema sia visibile a schermo,
+        NI,
+        RFO9},
+    {   TSOF9.2,
+        Si verifica che la visualizzazione creata dal sistema sia salvabile in formato PNG,
+        NI,
+        RFO9.2
+    },
+    {   TSOF10,
+        Si verifica che un messaggio di errore compari a schermo se i files sono caricati scorrettamente,
+        NI,
+        RFO10
+    },
     }
     \input{source/tables/descrizione_test.tex}
     %endTable
+    
+    \subsubsection{Test di sistema per i requisiti di qualità}
+        %startTable
+    \def\testspecification{
+    {   TSOQ1,
+        Si verifica che i dati ricevuti da fonti esterne non siano modificati o errati,
+        NI,
+        RQO1
+    },
+    {   TSOQ2,
+        Si verifica che il numero di errori rilevati nel codice rispetti il valore specifiato nella metruca: Densità di errori,
+        NI,
+        RQO2
+    },
+    {   TSOQ3,
+        Si verifica che i messaggi di errore e avviso siano chiari da comprendere per l'utente con l'uso della metrica: Qualità della messaggistica,
+        NI,
+        RQO3
+    },
+    {   TSOQ4,
+        Si verifica che il numero di click per svolgere ogni task deve essere minore del valore sufficiente data dalla mterica: Numero di click,
+        NI,
+        RQO4
+    },
+    {   TSOQ5,
+        Si verifica che la profondità della struttura dell'applicativo deve essere minore del valore sufficiente dato dalla metrica: Site depth,
+        NI,
+        RQO5
+    },
+    {   TSOQ6,
+        Si verifica che la durata di ogni task deve essere minore del valore sufficiente specificato dalla metrica: Response time,
+        NI,
+        RQO6
+    },
+    {   TSOQ7,
+        Si verifica che la quantità dei possibili percorsi di branchink rispetti la metrica: Complessità ciclomatica,
+        NI,
+        RQO7
+    },
+    {   TSOQ8,
+        Si verifica che la percentuale di test indipendenti rispetti la metrica: Indipendenza dei test,
+        NI,
+        RQO8
+    },
+    {   TSOQ9,
+        Si verifica che l'indice di comprensione del codice ovvero il rapporto tra codice e commento rispetti il vaolore sufficiente dato dalla metrica: Facilità di comprensione,
+        NI,
+        RQO9
+    },
+    {   TSOQ10,
+        Si verifica che il numero di procedure che chiamono un'altra procedura sia minore del valore sufficiente dato dalla metrica: Structural Fan-In,
+        NI,
+        RQO10
+    },
+    {   TSOQ11,
+        Si verifica che il numero di procedure che necessita ogni altra procedura sia inferiore al valore sufficiente dato dalla metrica: Structural Fan-Out,
+        NI,
+        RQO11
+    },
+      }
+    \input{source/tables/descrizione_test.tex}
+    %endTable  
+        
+       \subsubsection{Test di sistema per i requisiti di vincolo}
+        %startTable
+    \def\testspecification{
+    
+      }
+    \input{source/tables/descrizione_test.tex}
+    %endTable
+    
+    
     
     \subsection{Test di accettazione}
     \subsection{Test di regressione}
