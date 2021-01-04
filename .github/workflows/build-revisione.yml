@@ -37,7 +37,7 @@ jobs:
         uses: damix48/latex-action@0.1
         with:
           working_directory: analisi-dei-requisiti/
-          root_file: analisi-dei-requisiti/main.tex
+          root_file: main.tex
       
       - name: Create Release
         id: create_release
@@ -81,7 +81,7 @@ jobs:
         uses: damix48/latex-action@0.1
         with:
           working_directory: norme-di-progetto/
-          root_file: norme-di-progetto/main.tex
+          root_file: main.tex
       
       - name: Create Release
         id: create_release
