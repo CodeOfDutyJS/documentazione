@@ -1,10 +1,21 @@
 \subsection{Requisiti di qualità}
 
 \def\obb{Obbligatorio}
+\def\pdq{Piano di Qualifica}
 
 %startTable
 \def\requisitiq{
-    {RQO1, L'utente deve poter scegliere come visualizzare le labels presenti nel suo dataset all'interno della visualizzazione, \obb, Interno UC3.1},
+    {RQO1, Correttezza dello scambio dei dati{,} i dati ricevuti da fonti esterne non sono modificati o errati, \obb, Interno{,} \pdq{} 0.1.1},
+    {RQO2, Densità di errori{,} il numero di errori rilevati sul codice tramite i test di unità deve rispettare il valore sufficiente specificato, \obb, Interno{,} \pdq{} 0.1.2},
+    {RQO3, Qualità della messaggistica{,} i messaggi di errore e di avviso all'utente devono essere chiari, \obb, Interno{,} \pdq{} 0.1.3},
+    {RQO4, Numero di click{,} il numero di click per svolgere un determinato task deve essere minore del valore sufficiente specificato, \obb, Interno{,} \pdq{} 0.1.4},
+    {RQO5, Site depth{,} la profondità dell’albero che rappresenta la struttura dell’applicativo deve essere minore del valore sufficiente specificato, \obb, Interno{,} \pdq{} 0.1.5},
+    {RQO6, Response time{,} la durata di uno specifico task in secondi deve essere minore del valore sufficiente specificato, \obb, Interno{,} \pdq{} 0.1.6},
+    {RQO7, Complessità ciclomatica{,} la quantità dei possibili percorsi di branching di una porzione di codice deve essere minore del valore sufficiente specificato, \obb, Interno{,} \pdq{} 0.1.7},
+    {RQO8, Indipendenza dei test{,} la percentuale di test indipendenti sul totale dei test deve essere maggiore del valore sufficiente specificato, \obb, Interno{,} \pdq{} 0.1.8},
+    {RQO9, Facilità di comprensione{,} l'indice di comprensione del codice è il rapporto tra il numero di righe di commento e il numero di righe del codice e deve essere maggiore del valore sufficiente specificato, \obb, Interno{,} \pdq 0.1.9},
+    {RQO10, Lo Structural Fan-In{,} cioè il numero di procedure che chiamano una specifica procedura{,} deve essere maggiore del valore sufficiente specificato, \obb, Interno{,} \pdq{} 0.1.10},
+    {RQO11, Lo Structural Fan-Out{,} cioè il numero di procedure di cui necessita una specifica procedura{,} deve essere minore del valore sufficiente specificato, \obb, Interno{,} \pdq{} 0.1.11},
 }
 %endTable
 
