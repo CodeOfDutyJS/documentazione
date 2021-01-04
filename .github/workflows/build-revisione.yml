@@ -30,14 +30,7 @@ jobs:
       
       - name: Add glossario
         run: python _glo_replace.py /analisi-dei-requisiti/ glossario.txt
-
-      - name: Compile Analisi dei requisiti
-        uses: vinay0410/tectonic-action@master
-        env:
-            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          tex_path: analisi-dei-requisiti/main.tex
-        
+       
       - name: Compile LaTeX document
         uses: damix48/latex-action@0.1
         with:
@@ -79,13 +72,6 @@ jobs:
       
       - name: Add glossario
         run: python _glo_replace.py /norme-di-progetto/ glossario.txt
-
-      - name: Compile Analisi dei requisiti
-        uses: vinay0410/tectonic-action@master
-        env:
-            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          tex_path: norme-di-progetto/main.tex
         
       - name: Compile LaTeX document
         uses: damix48/latex-action@0.1
