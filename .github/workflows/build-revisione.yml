@@ -14,21 +14,20 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
-
-  analisi:
-#     needs: [setup]
-    # The type of runner that the job will run on
+  build:
+    name: Build PDFs and upload to release
     runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Set up Git repository
         uses: actions/checkout@v2
       
-      - name: Setup Python
+      - name: Setup Python enviroment
         uses: actions/setup-python@v2.1.4
+      
+      ## ANALISI DEI REQUISITI
+      - name: Analisi dei requisiti
+        run: echo "Start build analisi dei requisiti"
       
       - name: Add glossario
         run: python _glo_replace.py /analisi-dei-requisiti/ glossario.txt
@@ -39,40 +38,9 @@ jobs:
           working_directory: analisi-dei-requisiti/
           root_file: main.tex
       
-      - name: Create Release
-        id: create_release
-        uses: actions/create-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          tag_name: ${{ github.ref }}
-          release_name: Release ${{ github.ref }}
-          draft: false
-          prerelease: false
-      - name: Upload Release Asset
-        id: upload-release-asset 
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps 
-          asset_path: analisi-dei-requisiti/main.pdf
-          asset_name: analisi-dei-requisiti.pdf
-          asset_content_type: application/pdf
-  
-  norme:
-#     needs: [setup]
-    # The type of runner that the job will run on
-    runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
-    steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - name: Set up Git repository
-        uses: actions/checkout@v2
-      
-      - name: Setup Python
-        uses: actions/setup-python@v2.1.4
+      ## ANALISI DEI REQUISITI
+      - name: Norme di progetto
+        run: echo "Start build norme di progetto"
       
       - name: Add glossario
         run: python _glo_replace.py /norme-di-progetto/ glossario.txt
@@ -82,7 +50,8 @@ jobs:
         with:
           working_directory: norme-di-progetto/
           root_file: main.tex
-      
+        
+        ## RELEASE
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
@@ -93,13 +62,25 @@ jobs:
           release_name: Release ${{ github.ref }}
           draft: false
           prerelease: false
-      - name: Upload Release Asset
-        id: upload-release-asset 
+      
+      - name: Upload Analisi dei requisiti
+        id: upload-analisi
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps 
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: analisi-dei-requisiti/main.pdf
+          asset_name: analisi-dei-requisiti.pdf
+          asset_content_type: application/pdf      
+      
+      - name: Upload Norme di progetto
+        id: upload-norme
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: norme-di-progetto/main.pdf
           asset_name: norme-di-progetto.pdf
           asset_content_type: application/pdf
