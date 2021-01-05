@@ -1,0 +1,199 @@
+\section{Qualità di processo}
+Per ottenere la più alta qualità delle attività e processi, e per rientrare nelle tempistiche stipulate nel Piano di progetto, sono istanziati alcuni dei processi, ritenuti più adeguati ed attinenti al progetto, descritti dall'ISO/IEC/IEEE 12207:1995.
+
+Verrano di seguito riportati i processi, insieme ai loro obiettivi e metriche in modo da ottenere una qualità quantificabile. Maggiori informazioni e la descrizione delle metriche si trovano nel documento: \textit{Norme di progetto}.
+
+    \subsection{Processi primari}
+    
+    
+        \subsubsection{Fornitura}
+        Il processo di fornitura contiene le attività e le task del fornitore, come l'analisi e la determinazione di procedure e risorse necessarie per lo svolgimento del progetto.
+        
+            \paragraph{Strategie e Obiettivi}
+            \begin{itemize}
+                \item \textbf{Analisi}: Il fornitore conduce una revisione dei requisiti e definisce una proposta in risposta alla richiesta del proponente. Definisce quindi i requisiti classificandoli in obbligatori, desiderabili e opzionali;
+                \item \textbf{Approvazione e consegna}: il prodotto deve essere in primo luogo approvato e in seguit consegnato secondo le specifiche di contratto e secondo le metriche descritte in questo documento;
+                \item \textbf{Qualità}: ottenere e mantenere la qualità dei processi e del prodotto mediante le loro metriche basate anche sulle specifiche richieste dal proponente.
+            \end{itemize}
+            
+            
+            \paragraph{Metriche}
+            
+            \hphantom{}
+            %startTable
+            \def\productquality{
+            {   Percentuale dei requisiti soddisfatti,
+                $ \frac{ReqSoddisfatti}{ReqTotali}$, 
+                $ 100 \% $,
+                $ 100 \% $
+            },
+        }
+        \input{source/tables/metriche_qualita.tex}
+        %endTable
+            
+        \newpage    
+        \subsubsection{Pianificazione}
+        L'attività di pianificazione ingloba il monitoraggio delle risorse: i tempi a disposizione, i costi, la divisione dei ruoli e la loro distribuzione.
+            \paragraph{Strategie e Obiettivi}
+                \begin{itemize}
+                    \item \textbf{Costi}: Analizzare e quantificare costi e tempistiche;
+                    \item \textbf{Metriche}: per fare in modo che i costi non si discostino più di un margine prescelto devono essere usate le metriche scelte;
+                    \item \textbf{Calendarizzazione}: per assicurare che le tempistiche dello svolgimento del progetto siano adeguate bisogna seguire le direttive della calendarizzazione del progetto;
+                    \item \textbf{Aggiornamenti}: mantenere aggiornato il gruppo ed i verbali durante tutti il progetto in modo da quantificare il cambiamento delle risorse.
+                \end{itemize}
+                
+           \paragraph{Metriche}
+            
+            \hphantom{}
+           %startTable
+            \def\productquality{
+            {   Budget at Completion [BG],
+                numero intero, 
+                $ \pm 5 \% $ del preventivo,
+                pari al preventivo
+            },
+            {   Earned value [EV],
+                BAC - $\%$ di lavoro completato, 
+                $ >0$,
+                $ >0$
+            },
+            {   Planned value [PV],
+                valore pianificato nel momento del calcolo, 
+                $ >0$,
+                $ >0$
+            },
+            {  Acual cost [AC],
+               numero intero, 
+                0 < AC $\leq$ budget totale,
+                0 < AC $\leq$ PV
+            },
+            {   Schedule variance [SV],
+               SV = EV - PV, 
+                $ >0$,
+                $ 0$
+            },
+            {    Cost variance [CV],
+               CV = EV - AC, 
+                $ >0$,
+                $ \geq 0$
+            },
+        }
+        \input{source/tables/metriche_qualita.tex}
+        %endTable
+
+    \newpage  
+    
+    \subsubsection{Sviluppo}
+    Il processo contiene le attività di design, scrittura del codice e accettazione del codice software.
+    
+        \paragraph{Strategie e obiettivi}
+        \begin{itemize}
+            \item \textbf{Architettura}: Si stabilisce un primo livello di architettura nel quale si identificano gli elementi portanti della struttura del prodotto trasformando quindi i requisiti software in un'architettura che ne decrive il Top-level;
+            \item \textbf{Design}: lo sviluppatore deve sviluppare un design dettagliato per ogni unità software.
+            \item \textbf{Integrazione di sistema}: Il piano di integrazione deve integrare tutti gli elementi software.
+        \end{itemize}
+        
+        \paragraph{Metriche}
+        \phantom{} \\
+
+        Le metriche di questo processo non sono ancora state stabilite, in quanto è stato ritenuto prematuro definirle in questa fase del progetto.Inoltre il documento nella durata del progetto verrà modificato e raffinato per migliorarne l'usabilità e la qualità.
+        
+        
+        
+        \subsection{Processi di supporto}
+            \subsubsection{Documentazione}
+            In questo processo vengono descritti gli obiettivi e processi per una stesura di qualità della documentazione, parte molto importante del progetto. Vengono quindi trattate misure per facilitare la lettura dei documenti.
+            
+            \paragraph{Strategie e Obiettivi}
+            \begin{itemize}
+                \item \textbf{Facilità di lettura}: Mantenere il testo ad un livello di difficoltà di lettura comprensibile è stimato dalle metriche in modo da non rendere la lettura dei documenti faticosa;
+                \item \textbf{Numero di parole}: il numero di parole complessivo non deve essere troppio ampio. Lo scopo è mantenere solo il materiale utile al gruppo all'interno dei documenti;
+                \item \textbf{Ortografia}: il testo non deve contenere errori ortografici o grammaticali;
+                \item \textbf{Aggiornamento}: i documenti devono seguire le metriche indicate e devono essere aggiornati se si riconoscono criteri più utili al progetto.
+            \end{itemize}
+    \newpage
+            \paragraph{Metriche}
+            
+            \hphantom{}
+            %startTable
+         \def\productquality{
+                            {   Gunning's fog index,
+                                $0.4*(\frac{ Parole}{Frasi} + 100* \frac{Complesse}{ Frasi})$, 
+                                $ \geq 16$,
+                                $ \geq 12 $
+                            },
+                            {   Gulpease index,
+                                $89 + (300*Frasi - 10*\frac{Lettere}{Parole}$, 
+                                $40 < IG \leq 100$,
+                                $80 < IG \leq 100$
+                                %\textit{Parole} = numero totale di parole del documento
+                                %\textit{Frasi} = numero totale di parole del documento
+                                %\textit{Complesse} = numero di parole ritenute complesse nel documento
+                                %\textit{Lettere} = numero totale di lettere del documento
+                            },
+                            {   Correttezza ortografica,
+                                numero totale di errori, 
+                                0,
+                                0
+                            },
+                        }
+                    \input{source/tables/metriche_qualita.tex}
+                    %endTable
+                    
+                    
+            \subsubsection{Quality assurance}
+            Questo processo è orientato alla quantificazione della qualità. Assicura quindi un grado di qualità minimo e orienta verso un grado di qualità ottimo totale del progetto.
+            
+            \paragraph{Strategie e obiettivi}
+            \begin{itemize}
+                \item \textbf{Metriche}: Tenere sempre conto delle metriche di ogni processo. Che implica la loro misurazione e il loro monitoraggio;
+                \item \textbf{Garanziaa della qualità}: garantire sempre un grado di soddisfacimento sufficiente delle metriche.
+            \end{itemize}
+            
+            \paragraph{Metriche}
+            \hphantom{}
+            %startTable
+            \def\productquality{
+                {   Percentuale di metriche soddisfatte,
+                    $\frac{Soddisfatte}{Totali}$,
+                    $ \geq 60 \%$,
+                    $ \geq 80 \% $
+                },
+            }
+            \input{source/tables/metriche_qualita.tex}
+            %endTable
+            
+\textit{Soddisfatte} = numero di metriche con valore soddifacente
+
+\textit{Totali} = numero totale di metriche
+ 
+            \newpage
+            \subsubsection{Verification process}
+            Il processo di verifica è il metodo per determinare se il prodotto software ha i requisiti e le condizioni imposte, e per ricercare e correggere anomalie. Quindi si controllano costo e performance del prodotto. Inoltre il processo di verifica deve essere introdotto il prima possibile e deve essere automatizzato.
+            
+            \paragraph{Strategie e obiettivi}
+            \begin{itemize}
+                \item \textbf{Anomalie}: Le anomalie vanno individuate e corrette;
+                \item \textbf{Strumenti}: vanno applicati gli strumenti per una corretta verifica e le metriche per la quantificazione della qualità.
+            \end{itemize}
+            
+            \paragraph{Metriche}
+            
+            \hphantom{}
+            %startTable
+            \def\productquality{
+                {   Code coverage,
+                    $\frac{Testate}{Totali}$,
+                    $ 75 \%$,
+                    $ 100 \% $
+                    %\textit{Testate} = numero totale di linee di codice testate
+                    %\textit{Totali} = numero totale di linee di codice
+                },
+                {   Numero di test superati,
+                    numero intero,
+                    = numero totale di test,
+                    = numero totale di test
+                },
+            }
+            \input{source/tables/metriche_qualita.tex}
+             %endTable

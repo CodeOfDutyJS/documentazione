@@ -52,6 +52,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
+          prerelease: true
           tag_name: wip/norme-di-progetto
           release_name: '[WIP] PDF Norme di progetto'
       

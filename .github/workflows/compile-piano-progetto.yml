@@ -52,6 +52,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
+          prerelease: true
           tag_name: wip/piano-di-progetto
           release_name: '[WIP] PDF Piano di progetto'
       
