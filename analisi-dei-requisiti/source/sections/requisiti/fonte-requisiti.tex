@@ -1,7 +1,7 @@
 \subsubsection{Fonte - Requisiti}
 
 \paragraph{Capitolato}
-$\medspace$
+\quad
 \begin{multicols}{3}
     \begin{itemize}
         \item RFO1
@@ -29,7 +29,7 @@ $\medspace$
 \end{multicols}
 
 \paragraph{Interno}
-$\medspace$
+\quad
 \begin{multicols}{3}
     \begin{itemize}
         \item RFO1.3
@@ -80,7 +80,7 @@ $\medspace$
 \end{multicols}
 
 \paragraph{UC1}
-$\medspace$
+\quad
 \begin{multicols}{3}
     \begin{itemize}
         \item RFO1
@@ -90,7 +90,7 @@ $\medspace$
 \end{multicols}
 
 \paragraph{UC2}
-$\medspace$
+\quad
 \begin{multicols}{3}
     \begin{itemize}
         \item RFO2
@@ -104,7 +104,7 @@ $\medspace$
 \end{multicols}
 
 \paragraph{UC3}
-$\medspace$
+\quad
 \begin{multicols}{3}
     \begin{itemize}
         \item RFO3
@@ -113,7 +113,7 @@ $\medspace$
 \end{multicols}
 
 \paragraph{UC4}
-$\medspace$
+\quad
 \begin{multicols}{3}
     \begin{itemize}
         \item RFO4
@@ -122,7 +122,7 @@ $\medspace$
 \end{multicols}
 
 \paragraph{UC5}
-$\medspace$
+\quad
 \begin{multicols}{3}
     \begin{itemize}
         \item RFO2.2.1
@@ -138,7 +138,7 @@ $\medspace$
 \end{multicols}
 
 \paragraph{UC6}
-$\medspace$
+\quad
 \begin{multicols}{3}
     \begin{itemize}
         \item RFO6
@@ -149,7 +149,7 @@ $\medspace$
 \end{multicols}
 
 \paragraph{UC7}
-$\medspace$
+\quad
 \begin{multicols}{3}
     \begin{itemize}
         \item RFO7
@@ -160,7 +160,7 @@ $\medspace$
 \end{multicols}
 
 \paragraph{UC8}
-$\medspace$
+\quad
 \begin{multicols}{3}
     \begin{itemize}
         \item RFO8.1
@@ -169,7 +169,7 @@ $\medspace$
 \end{multicols}
 
 \paragraph{UC9}
-$\medspace$
+\quad
 \begin{multicols}{3}
     \begin{itemize}
         \item RFO9
@@ -178,54 +178,9 @@ $\medspace$
 \end{multicols}
 
 \paragraph{UC10}
-$\medspace$
+\quad
 \begin{multicols}{3}
     \begin{itemize}
         \item RFO10
     \end{itemize}
 \end{multicols}
-
-%startTable
-\def\fonte{
-    {ciao, { fc\\vv\\b\\n\\o\\p}},
-    {Requisito, Descrizione},
-}
-%endTable
-
-
-
-
-
-%%%
-%%%
-%%%
-\newcommand*\fontetable{}
-\foreach \x [count=\nj] in \fonte
-{
-    \foreach \y [count=\ni] in \x
-    {
-        \ifnum\ni=2
-            \xappto\fontetable{\y}
-            \gappto\fontetable{\\}
-            \gappto\fontetable{\hline}
-        \else
-            \xappto\fontetable{\y & }
-        \fi
-    }
-}
-
-%\subsection{Requisiti funzionali}
-
-% Impostazioni della tabella
-% \tabulinesep = 2mm % padding
-% \taburowcolors [1] 2{pari .. dispari} % colori delle righe
-% \addcontentsline{lot}{table}{Requisiti prestazionali}
-% \begin{longtabu} to \textwidth {| X[0.5 l m] | X[0.5 l m] } % larghezza delle colonne
-% \hline
-% \rowcolor{header} % colore dell'header
-    
-% \textbf{Fonte} & \textbf{Requisito} \\
-% \hline
-% \fontetable
-
-% \end{longtabu}
