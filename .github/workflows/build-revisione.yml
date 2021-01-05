@@ -59,6 +59,8 @@ jobs:
       - name: Get latest created release info
         id: latest_release_info
         uses: jossef/action-latest-release-info@v1.1.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Upload ${{ matrix.documenti }}
         id: upload-analisi
