@@ -1,6 +1,6 @@
 \section{Specifica dei test}
 
-Sono stati determinati, come descritto anche nel documento \textit{Norme di Progetto 1.0.0}, 4 tipi di test ovvero: \textit{Test di unità, Test di Integrazione, Test di sistema, Test di accettazione} e \textit{Test di regressione}. Si adotterà quindi il \textbf{Modello a V} che permette lo sviluppo dei test in parallelo alle attività di analisi e progettazione. Così facendo i test sviluppati saranno in grado di verificare sia la correttezza del programma software sia l'implementazione. Sara disponibile inoltre una tabella degli esiti dei test per una facile consultazione.
+Sono stati determinati, come descritto anche nel documento \textit{Norme di Progetto 1.0.0}, 4 tipi di test ovvero: \textit{Test di unità, Test di Integrazione, Test di sistema, Test di accettazione} e \textit{Test di regressione}. Si adotterà quindi il \textbf{Modello a V}\glo{} che permette lo sviluppo dei test in parallelo alle attività di analisi e progettazione. Così facendo i test sviluppati saranno in grado di verificare sia la correttezza del programma software sia l'implementazione. Sara disponibile inoltre una tabella degli esiti dei test per una facile consultazione.
 
 Per i test valgono le seguenti sigle:
 
@@ -16,164 +16,147 @@ Mentre per lo stato valgono le seguenti sigle:
         \item \textbf{NS}: il test ha esito non soddisfacente.
     \end{itemize}
     
-    
-    \subsection{Test di unità}
-    \subsection{Test di Integrazione}
+
  
-    \subsection{Test di Sistema}
-    
+\subsection{Test di Sistema}
+
     Per rispettare i requisiti identificati nel documento \textit{Analisi dei Requisiti 1.0.0} e per garantire il funzionamento del prodotto si eseguono i seguenti Test di sistema:\\
     
-    \subsubsection{Test di sistema per i requisiti funzionali}
+\subsubsection{Test di sistema per i requisiti funzionali}
     \hphantom{}
+
     %startTable
     \def\testspecification{
     {   TSOF1,
-        Verifica della possibiltà di scelta nell'inserimento dei dati dell'utente,
+        \raggedright Si verifica che l'utente possa di caricare i dati per la visualizzazione tramite file csv,
         NI,
-        RF01
-    },
-    {   TSOF1.1,
-        Verifica dell'inserimento dati tramite file csv,
-        NI,
-        RFO1.1
+         RF01 RFO1.1
     },
     {   TSOF1.2,
-        Verifica dell'inserimento dati tramite query al database,
+        \raggedright Si verifica che l'uente possa inserire i dati tramite query al database,
         NI,
-        RFO1.2
+         RFO1.2
     },
     {   TSOF1.3,
-        Verifica dell'apparimento del messaggio d'errore in caso di errore nell'inserimento dei dati,
+        \raggedright Si verifica che un messaggio d'errore appari in caso di errore nell'inserimento dei dati,
         NI,
-        RFO1.3
+         RFO1.3
     },
     {   TSOF1.4,
-        Verifica della corretta conversione in JSON dei dati,
+        \raggedright Si verifica che la conversione in JSON dei dati avvenga in modo corretto,
         NI,
         RFO1.4
     },
      {   TSOF2,
-        Verifica della possibilità di scelta nella visualizzazione dei dati,
+     \raggedright Si verifica la possibilità di scelta nella visualizzazione dei dati. In particolare devono essere presenti le seguenti visualizzazioni:
+        \unexpanded{
+        \begin{itemize}
+            \item Scatter Plot Matrix
+            \item Heatmap
+            \item Correlation Heatmap
+            \item Force Field
+            \item Linear Projection
+        \end{itemize}},
         NI,
-        RFO2
-    },
-    {   TSOF2.1,
-        Nella scelta per la visualizzazione deve esserci: Scatter Plot Matrix,
-        NI,
-        RFO2.1
-    },
-    {   TSOF2.2,
-        Nella scelta per la visualizzazione deve esserci: Heatmap ,
-        NI,
-        RFO2.2
+        RFO2 RFO2.1 RFO2.2 RFO2.3 RFO2.4 RFO2.5
     },
     {   TSOF2.2.1,
-        Verifica della possibiltà di sfumatura nel colore dell'Heapmap,
+       \raggedright  Si verifica che l'utente possa scegliere il colore della sfumatura nella visualizzazione Heatmap,
         NI,
         RFO2.2.1
     },
-    {   TSFF2.3,
-        Nella scelta per la visualizzazione deve esserci:Correlation Heatmap,
+    {   TSFF2.6,
+        \raggedright Si verifica che nella scelta per la visualizzazione deve esserci: Parallel Coordinates,
         NI,
-        RFO2.3
-    },
-    {   TSOF2.4,
-        Nella scelta per la visualizzazione deve esserci: Force Field,
-        NI,
-        RFO2.4
-    },
-    {   TSOF2.5,
-        Nella scelta per la visualizzazione deve esserci: Linear Projection,
-        NI,
-        RFO2.5
-    },
-    {   TSOF2.6,
-        Nella scelta per la visualizzazione deve esserci: Parallel Coordinates,
-        NI,
-        RFO2.6
+        RFF2.6
     },
     {   TSOF3,
-        Verifica della possibile scelta delle lables presenti nel dataset,
+        \raggedright  Si verifica che l'utente possa scegliere quali labels far vedere nella visualizzazoine,
         NI,
         RFO3
     },
     {   TSOF3.1,
-        Verifica delle possibilità di visualizzazione delle lables presenti nel dataset,
+        \raggedright Si verifica che l'utente possa scegliere come visualizzare le lables presenti nel dataset,
         NI,
         RFO3.1
     },
     {   TSOF4,
-        Verifica della possibilità di scartare features e di inserire features scartate,
+        \raggedright Si verifica la possibilità di scartare features e di inserire features scartate,
         NI,
         RFO4
     },
     {   TSOF5,
-        Verifica della modifica delle impostazioni della visualizzazione Heatmap,
+        \raggedright Si verifica che l'utente possa modificare il range dei dati all'interno della visualizzazione Heatmap,
         NI,
-        RFO5
-    },
-    {   TSOF5.1,
-        Verifica della modifica del range dei dati all'interno della visualizzazione Heatmap,
-        NI,
-        RFO5.1
+        RFO5 RFO5.1
     },
     {   TSOF5.2,
-        Verifica della possibile normalizzazione del database in modo globale e per riga,
+        \raggedright Si verifica la possibilità di normalizzazione del database in modo globale e per riga,
         NI,
         RFO5.2 RFO5.2.1 RFO5.2.2
     },
     {   TSOF5.3,
-        Dopo la selezione dell'Heatmap si verifica la possibilità di ordinare il dataset in ordine alfabetico e in cluster,
+        \raggedright Dopo la selezione dell'Heatmap si verifica la possibilità di ordinare il dataset in ordine alfabetico e in cluster,
         NI,
         RFO5.3 RFO5.3.1 RFO5.3.2
     },
     {   TSOF5.4,
-        Si Verifica la possibilità di assegnazione del colre al range nella visualizzazione Heatmap,
+        \raggedright Si Verifica la possibilità di assegnazione del colre al range nella visualizzazione Heatmap,
         NI,
         RFO5.4
     },
     {   TSOF6,
-        Si verifica la possibilità di scelta nell'Heatmap di una metrica a distanza,
+        \raggedright Si verifica la possibilità di scelta nell'Heatmap di una matrice a distanza per il calcolo della distanza,
         NI,
         RFO6
     },
     {   TSFF6.1,
-        Si verifica la possibilità di scelta di una funzione di distanza nelle visualizzazioni Heatmap e nel Force Field,
+        \raggedright Si verifica la possibilità di scelta di una funzione di distanza nelle visualizzazioni Heatmap e nel Force Field. In particolare la distanza Euclidea,
         NI,
-        RFF6.1
+        RFF6.1 RFF6.1.1
     },
-    {   TSOF6.1.1,
-        Si verifica la possibilità di scelta della distanza Eclidea nelle visualizzioni Heatmap e Force Field,
+    {   TSFF6.2,
+        \raggedright Si verifica la possibilità di scelta di una funzione di distanza nelle visualizzazioni Heatmap e nel Force Field. In particolare la distanza di Manhattan,
         NI,
-        RFF6.1.1 RFF6.1.2
+        RFF6.1.2
     },
     {   TSOF7,
-        Si verifica la possibilità di scelta di un algoritmo per la riduzione dei componenti nella visualizzaione Linear Projection,
+        \raggedright Si verifica la possibilità di scelta di un algoritmo per la riduzione dei componenti nella visualizzaione Linear Projection,
         NI,
         RFO7
     },
     {   TSFF7.1,
-        Si verifica la presenza nelle scelte dei seguenti algoritmi per la riduzione dei componenti: PCA UMAP e t-SNE,
+        \raggedright Si verifica che l'utente possa scegliere tra i seguenti algoritmi per la riduzione dei componenti:
+        \unexpanded{
+        \begin{itemize}
+            \item PCA
+            \item UMAP
+            \item t-SNE
+        \end{itemize}},
         NI,
         RFF7.1 RFF7.2 RFF7.3
     },
     {   TSOF8.1,
-        Si verifica che il sistema elabori i dati con le impostazioni di default e con le impostazioni dell'utente,
+        \raggedright Si verifica che il sistema elabori i dati con impostazioni di default,
         NI,
-        RFO8.1 RFO8.2
+        RFO8.1
+    },
+    {   TSOF8.2,
+        \raggedright Si verifica che il sistema elabori i dati con impostazioni di personalizzate dell'utente,
+        NI,
+        RFO8.1
     },
     {   TSOF9,
-        Si verifica che la visualizzazione creata dal sistema sia visibile a schermo,
+        \raggedright Si verifica che la visualizzazione creata dal sistema sia visibile a schermo,
         NI,
         RFO9},
     {   TSOF9.2,
-        Si verifica che la visualizzazione creata dal sistema sia salvabile in formato PNG,
+        \raggedright Si verifica che la visualizzazione creata dal sistema sia salvabile in formato PNG,
         NI,
         RFO9.2
     },
     {   TSOF10,
-        Si verifica che un messaggio di errore compari a schermo se i files sono caricati scorrettamente,
+        \raggedright Si verifica che un messaggio di errore compari a schermo se i files sono caricati scorrettamente,
         NI,
         RFO10
     },
@@ -181,61 +164,61 @@ Mentre per lo stato valgono le seguenti sigle:
     \input{source/tables/descrizione_test.tex}
     %endTable
     
-    \subsubsection{Test di sistema per i requisiti di qualità}
+\subsubsection{Test di sistema per i requisiti di qualità}
         %startTable
     \def\testspecification{
     {   TSOQ1,
-        Si verifica che i dati ricevuti da fonti esterne non siano modificati o errati,
+        \raggedright Si verifica che i dati ricevuti da fonti esterne non siano modificati o errati,
         NI,
         RQO1
     },
     {   TSOQ2,
-        Si verifica che il numero di errori rilevati nel codice rispetti il valore specifiato nella metruca: Densità di errori,
+       \raggedright  Si verifica che il numero di errori rilevati nel codice rispetti il valore specifiato nella metrica: Densità di errori,
         NI,
         RQO2
     },
     {   TSOQ3,
-        Si verifica che i messaggi di errore e avviso siano chiari da comprendere per l'utente con l'uso della metrica: Qualità della messaggistica,
+        \raggedright Si verifica che i messaggi di errore e avviso siano chiari da comprendere per l'utente con l'uso della metrica: Qualità della messaggistica,
         NI,
         RQO3
     },
     {   TSOQ4,
-        Si verifica che il numero di click per svolgere ogni task deve essere minore del valore sufficiente data dalla mterica: Numero di click,
+        \raggedright Si verifica che il numero di click per svolgere ogni task deve essere minore del valore sufficiente data dalla mterica: Numero di click,
         NI,
         RQO4
     },
     {   TSOQ5,
-        Si verifica che la profondità della struttura dell'applicativo deve essere minore del valore sufficiente dato dalla metrica: Site depth,
+        \raggedright Si verifica che la profondità della struttura dell'applicativo deve essere minore del valore sufficiente dato dalla metrica: Site depth,
         NI,
         RQO5
     },
     {   TSOQ6,
-        Si verifica che la durata di ogni task deve essere minore del valore sufficiente specificato dalla metrica: Response time,
+        \raggedright Si verifica che la durata di ogni task deve essere minore del valore sufficiente specificato dalla metrica: Response time,
         NI,
         RQO6
     },
     {   TSOQ7,
-        Si verifica che la quantità dei possibili percorsi di branchink rispetti la metrica: Complessità ciclomatica,
+        \raggedright Si verifica che la quantità dei possibili percorsi di branchink rispetti la metrica: Complessità ciclomatica,
         NI,
         RQO7
     },
     {   TSOQ8,
-        Si verifica che la percentuale di test indipendenti rispetti la metrica: Indipendenza dei test,
+        \raggedright Si verifica che la percentuale di test indipendenti rispetti la metrica: Indipendenza dei test,
         NI,
         RQO8
     },
     {   TSOQ9,
-        Si verifica che l'indice di comprensione del codice ovvero il rapporto tra codice e commento rispetti il vaolore sufficiente dato dalla metrica: Facilità di comprensione,
+        \raggedright Si verifica che l'indice di comprensione del codice ovvero il rapporto tra codice e commento rispetti il vaolore sufficiente dato dalla metrica: Facilità di comprensione,
         NI,
         RQO9
     },
     {   TSOQ10,
-        Si verifica che il numero di procedure che chiamono un'altra procedura sia minore del valore sufficiente dato dalla metrica: Structural Fan-In,
+        \raggedright Si verifica che il numero di procedure che chiamono un'altra procedura sia minore del valore sufficiente dato dalla metrica: Structural Fan-In,
         NI,
         RQO10
     },
     {   TSOQ11,
-        Si verifica che il numero di procedure che necessita ogni altra procedura sia inferiore al valore sufficiente dato dalla metrica: Structural Fan-Out,
+        \raggedright Si verifica che il numero di procedure che necessita ogni altra procedura sia inferiore al valore sufficiente dato dalla metrica: Structural Fan-Out,
         NI,
         RQO11
     },
@@ -243,61 +226,61 @@ Mentre per lo stato valgono le seguenti sigle:
     \input{source/tables/descrizione_test.tex}
     %endTable  
         
-       \subsubsection{Test di sistema per i requisiti di vincolo}
+\subsubsection{Test di sistema per i requisiti di vincolo}
         %startTable
     \def\testspecification{
     {   TSOV1,
-        Si verifica che il codice sorgente dell'applicazione sia opn source,
+        \raggedright Si verifica che il codice sorgente dell'applicazione sia opn source,
         NI,
         RVO1
     },
     {   TSDV",
-        Si verifica che l'applicazione sia sviluppata in Javascript con l'utilizzo della libreria d3.js,
+        \raggedright Si verifica che l'applicazione sia sviluppata in Javascript con l'utilizzo della libreria d3.js,
         NI,
         RVD2 RVD2.1
     },
     {   TSDV2.2,
-        Si verifica che il beckend dell'applicazione sia sviluppato con node.js con l'utilizzo del framework express,
+        \raggedright Si verifica che il beckend dell'applicazione sia sviluppato con node.js con l'utilizzo del framework express,
         NI,
         RVD2.2
     },
     {   TSDV2.3,
-        Si verifica che il frontend dell'applicazione sia sviluppato con React con l'utilizzo del framework Ant Design,
+        \raggedright Si verifica che il frontend dell'applicazione sia sviluppato con React con l'utilizzo del framework Ant Design,
         NI,
         RVD2.3
     },
     {   TSOV3,
-        Si verifica che i dati siano convertibili in JSON,
+        \raggedright Si verifica che i dati siano convertibili in JSON,
         NI,
         RVO3
     },
     {   TSOV4,
-        Si verifica che nella visualizzazione Scatter Plot Matrix si possano visualizzare al massimo 5 features,
+        \raggedright Si verifica che nella visualizzazione Scatter Plot Matrix si possano visualizzare al massimo 5 features,
         NI,
         RVO4
     },
     {   TSDV5,
-        Si verifica che la libreria per PCA isa ml-pca,
+        \raggedright Si verifica che la libreria per PCA isa ml-pca,
         NI,
         RVD5
     },
     {   TSDV6,
-        Si verifica che la libreria per Umap sia tsne-js,
+        \raggedright Si verifica che la libreria per Umap sia tsne-js,
         NI,
         RVD6
     },
     {   TSDV7,
-        Si verifica che la libreria per t-SNE sia tsne-js,
+        \raggedright Si verifica che la libreria per t-SNE sia tsne-js,
         NI,
         RVD7
     },
     {   TSDV8,
-        Si verifica che la libreria per le distanze sia ml-distance,
+        \raggedright Si verifica che la libreria per le distanze sia ml-distance,
         NI,
         RVD8
     },
     {   TSDV9,
-        Si verifica che la libreria per la matrice di correlazione sia jeezy,
+        \raggedright Si verifica che la libreria per la matrice di correlazione sia jeezy,
         NI,
         RVD9
     },
@@ -305,4 +288,14 @@ Mentre per lo stato valgono le seguenti sigle:
     \input{source/tables/descrizione_test.tex}
     %endTable
     
+\subsection{Test di unità}
+    I test di Unità hanno l'obbiettivo di verificare il funzionamento di ogni unità che compone l'applicazione. Questi test verrano definiti in una fase successiva, in particolare nella fase in cui verrà richiesta l'implementazione.
     
+\subsection{Test di Integrazione}
+    I test d'integrazione hanno l'obbiettivo di assicurare il funzionamento tra le varie unità, in modo da integrarsi tra loro. Questi test verrano definiti in una fase successiva, in particolare nella fase in cui verrà richiesta l'implementazione.
+    
+\subsection{Test di accettazione}
+    I test di accettazione vengono svolti insieme al proponente per assiucurare il gradimento dell'utente. Questi test verrano definiti in una fase successiva, in particolare nella fase in cui verrà richiesta l'implementazione.
+    
+\subsection{Test di regressione}
+    I test di regressione vengono apportati ogni volta che viene apportata una modifica ad un'unità del softwere.Questi test verrano definiti in una fase successiva, in particolare nella fase in cui verrà richiesta l'implementazione.
