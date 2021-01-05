@@ -14,8 +14,23 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
+  create-release:
+    name: Create Release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: Release ${{ github.ref }}
+          draft: false
+          prerelease: false
 
   build:
+    needs: [create-release]
     name: Build PDFs and upload to release
     runs-on: ubuntu-latest
     strategy:
@@ -29,39 +44,29 @@ jobs:
       - name: Setup Python enviroment
         uses: actions/setup-python@v2.1.4
       
-      ## ANALISI DEI REQUISITI
       - name: ${{ matrix.documenti }}
         run: echo "Start build ${{ matrix.documenti }}"
       
       - name: Add glossario to ${{ matrix.documenti }}
         run: python _glo_replace.py /${{ matrix.documenti }}/ glossario.txt
        
-      - name: Compile analisi dei requisiti LaTeX document
+      - name: Compile ${{ matrix.documenti }} LaTeX document
         uses: damix48/latex-action@0.1
         with:
           working_directory: ${{ matrix.documenti }}/
           root_file: main.tex
       
-      ## RELEASE
-      - name: Create Release
-        id: create_release
-        uses: actions/create-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          tag_name: ${{ github.ref }}
-          release_name: Release ${{ github.ref }}
-          draft: false
-          prerelease: false
-      
-      ## UPLOAD
+      - name: Get latest created release info
+        id: latest_release_info
+        uses: jossef/action-latest-release-info@v1.1.0
+
       - name: Upload ${{ matrix.documenti }}
         id: upload-analisi
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          upload_url: ${{ steps.latest_release_info.outputs.upload_url }}
           asset_path: ${{ matrix.documenti }}/main.pdf
           asset_name: ${{ matrix.documenti }}.pdf
           asset_content_type: application/pdf
