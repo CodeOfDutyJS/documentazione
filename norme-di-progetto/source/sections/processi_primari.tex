@@ -118,7 +118,7 @@ L'indice di Gunning fog equivale all'indice della facilità di lettura di un tes
 \par{Formula}
 La formula che individua la metrica è:
 \begin{displaymath}
-  \textit{IGF} = 0.4·(\frac{ \textit{Parole}}{\textit{Frasi}} + 100· \frac{\textit{Complesse}}{ \textit{Frasi}}
+  \textit{IGF} = 0.4·(\frac{ \textit{Parole}}{\textit{Frasi}} + 100·  \frac{\textit{Complesse}}{ \textit{Frasi}})
 \end{displaymath}
 \textit{IGF} = Gunning's fog index
 \textit{Parole} = numero complessivo di parole
@@ -138,7 +138,7 @@ La formula che individua la metrica è:
 \textit{Frasi} = numero complessivo di frasi
 \textit{Lettere} = numero complessivo di lettere
 \textit{Parole} = numero complessivo di parole
-
+\mysubparagraph{}Per calcolare l'indice viene utilizzato uno script Python, attivato manualmente attraverso una Github Action. Il valore viene quindi calcolato utilizzando i documenti presenti in un preciso momento all'interno della repository.
 
 \myparagraph{Correttezza ortografica}
 Rappresenta il numero totale di errori ortografici presenti. Essendo un valore intero che non è composto da altri sottoelemento non ha una formula
@@ -186,7 +186,7 @@ La formula che individua la metrica è:
 \begin{displaymath}
   D_{err} = \#\ di\ errori
 \end{displaymath}
-Ossia $N_{err}$ è il numero di errori totali rilevati sui dati importati 
+Ossia $D_{err}$ è il numero di errori totali rilevati sui dati importati 
 nell'applicativo.
 
 \myparagraph{Densità di errori}
@@ -370,20 +370,21 @@ Dove:
 		\mysubparagraph{Scopo}
 		L'analisi dei requisiti deve definire lo scopo del lavoro e mettere in evidenza funzionalità e requisiti in modo da fornire riferimenti tracciabili sia ai programmatori che ai verificatori.
 		\mysubparagraph{Contenuti}
+		L'\textit{Analisi dei rischi} contiene le seguenti sezioni:
 		\mysubparagraph{Descrizione}
 		Descrizione delle finalità del prodotto, degli attori in causa, dei vincoli imposti dal proponente, e delle assunzioni fatte dagli analisti.
 		\mysubparagraph{Casi d'uso}
 		I casi d'uso rappresentano una lista di azioni necessarie alla realizzazione di un obbiettivo desiderabile all'interazione fra un attore ed il sistema.
 		La struttura dei casi d'uso è così definita:
 		\begin{itemize}
-		    \item attore
-		    \item descrizione
-		    \item precondizione
-		    \item postcondizione
-		    \item scenario principale
-		    \item estensioni
-		    \item generalizzazioni
-		    \item specializzazioni
+		    \item attore;
+		    \item descrizione;
+		    \item precondizione;
+		    \item postcondizione;
+		    \item scenario principale;
+		    \item estensioni;
+		    \item generalizzazioni;
+		    \item specializzazioni.
 		\end{itemize}
 		Ogni caso d'uso adotta un codice identificativo in questa forma:\\
 		
@@ -452,7 +453,7 @@ Dove:
 		\mysubparagraph{Scopo}
 	    Scopo della sezione è normare lo stile di codifica da utilizzare nella programmazione, intesa come effettiva implementazione software del prodotto. Lo stile di codifica è da considerarsi come parte integrante della qualità del prodotto stesso.
 	    \mysubparagraph{Indentazione}
-	    L'indentazione viene effettuata con tre spazi, e non con il carattere tab. Quando si parla di "tabulare" o di "tabulazione" si deve intendere, appunto, l'inserire tre spazi.
+	    L'indentazione viene effettuata con quattro (4) spazi, e non con il carattere tab. Quando si parla di "tabulare" o di "tabulazione" si deve intendere, appunto, l'inserire quattro (4) spazi.
 	    \mysubparagraph{Blocchi innestati}
 	    Ciascun blocco innestato viene tabulato una volta.
 	    \mysubparagraph{Parentesizzazione}
@@ -475,3 +476,11 @@ Dove:
 	    Il codice insieme ad i commenti viene scritto in inglese.
 	    \mysubparagraph{Ricorsione}
 	    Evitare il più possibile la ricorsione.
+	    \myparagraph{Strumenti}
+	    \mysubparagraph{UML}
+	    Linguaggio di modellizzazione atto a visualizzare un sistema software. Viene utillizzata la versione 2.0 del linguaggio.
+	    \mysubparagraph{Diagrams.net}
+	    Applicazione web per la produzione di diagrammi, viene utilizzata per la produzione dei diagrammi UML.\\
+	    \centerline{\url{https://app.diagrams.net/}}
+	    \mysubparagraph{Google Sheets}
+	    Applicazione web per la creazione di fogli elettronici che permette a più persone di modificare lo stesso foglio.
