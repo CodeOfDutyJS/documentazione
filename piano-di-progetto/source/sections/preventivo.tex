@@ -2,6 +2,7 @@
 Nel Preventivo è indicata la divisione delle ore per ogni fase individuata nella sezione \textit{TODO}, insieme al prospetto economico. All'interno del Riepilogo è presentato il costo totale preventivato. Il tutto è corredato da diagrammi esemplificativi.
 Si noti che nelle tabelle sono state utilizzate delle sigle, definite nelle \textit{Norme di Progetto 1.0}. % mi porto avanti con le versioni
 \subsection{Analisi}
+
     \subsubsection{Prospetto orario}
     %startTable
     \def\hourlycontent{
@@ -16,8 +17,12 @@ Si noti che nelle tabelle sono state utilizzate delle sigle, definite nelle \tex
     }
     %endTable
     \input{source/tables/prospetto_orario.tex}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.8\textwidth]{source/img/analisi_orari.png}
+        \caption{Divisione oraria dell'attività di analisi}
+    \end{figure}
     \subsubsection{Prospetto economico}
-    \subsubsection{Prospetto orario}
     %startTable
     \def\salarycontent{
         {Amministratore,49,20,980},
@@ -30,6 +35,11 @@ Si noti che nelle tabelle sono state utilizzate delle sigle, definite nelle \tex
     }
     %endTable
     \input{source/tables/prospetto_economico.tex}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.8\textwidth]{source/img/analisi_ruoli.png}
+        \caption{costo del personale nella fase di analisi}
+    \end{figure}
 \subsection{Consolidamento dei requisiti}
     \subsubsection{Prospetto orario}
     %startTable
@@ -44,7 +54,12 @@ Si noti che nelle tabelle sono state utilizzate delle sigle, definite nelle \tex
         {Ore totali,2,3,15,2,0,13,35},
     }
     %endTable
-    \input{source/tables/prospetto_orario.tex}
+    \input{source/tables/prospetto_orario.tex} 
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.8\textwidth]{source/img/consolidamento_orari.png}
+        \caption{divisione oraria dell'attività di consolidamento dei requisiti}
+    \end{figure}
     \subsubsection{Prospetto economico}
     %startTable
     \def\salarycontent{
@@ -58,6 +73,11 @@ Si noti che nelle tabelle sono state utilizzate delle sigle, definite nelle \tex
     }
     %endTable
     \input{source/tables/prospetto_economico.tex}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.8\textwidth]{source/img/consolidamento_ruoli.png}
+        \caption{costo del personale nella fase di consolidamento dei requisiti}
+    \end{figure}
 \subsection{Progettazione architetturale}
     \subsubsection{Prospetto orario}
     %startTable
@@ -73,6 +93,11 @@ Si noti che nelle tabelle sono state utilizzate delle sigle, definite nelle \tex
     }
     %endTable
     \input{source/tables/prospetto_orario.tex}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.8\textwidth]{source/img/architettura_orari.png}
+        \caption{divisione oraria dell'attività di progettazione architetturale}
+    \end{figure}
     \subsubsection{Prospetto economico}
     %startTable
     \def\salarycontent{
@@ -86,6 +111,11 @@ Si noti che nelle tabelle sono state utilizzate delle sigle, definite nelle \tex
     }
     %endTable
     \input{source/tables/prospetto_economico.tex}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.8\textwidth]{source/img/architettura_ruoli.png}
+        \caption{costo del personale nella fase di progettazione architetturale}
+    \end{figure}
 \subsection{Progettazione di dettaglio e codifica}
     \subsubsection{Prospetto orario}
     %startTable
@@ -101,6 +131,12 @@ Si noti che nelle tabelle sono state utilizzate delle sigle, definite nelle \tex
     }
     %endTable
     \input{source/tables/prospetto_orario.tex}
+    
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.8\textwidth]{source/img/codifica_orari.png}
+        \caption{divisione oraria dell'attività di progettazione di dettaglio e codifica}
+    \end{figure}
     \subsubsection{Prospetto economico}
     %startTable
     \def\salarycontent{
@@ -114,6 +150,11 @@ Si noti che nelle tabelle sono state utilizzate delle sigle, definite nelle \tex
     }
     %endTable
     \input{source/tables/prospetto_economico.tex}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.8\textwidth]{source/img/codifica_ruoli.png}
+        \caption{costo del personale nella fase di progettazione di dettaglio e codifica}
+    \end{figure}
 \subsection{Validazione e collaudo}
     \subsubsection{Prospetto orario}
     %startTable
@@ -129,6 +170,11 @@ Si noti che nelle tabelle sono state utilizzate delle sigle, definite nelle \tex
     }
     %endTable
     \input{source/tables/prospetto_orario.tex}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.8\textwidth]{source/img/validazione_orari.png}
+        \caption{divisione oraria dell'attività di validazione e collaudo}
+    \end{figure}
     \subsubsection{Prospetto economico}
     %startTable
     \def\salarycontent{
@@ -142,10 +188,16 @@ Si noti che nelle tabelle sono state utilizzate delle sigle, definite nelle \tex
     }
     %endTable
     \input{source/tables/prospetto_economico.tex}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.8\textwidth]{source/img/validazione_ruoli.png}
+        \caption{costo del personale nella fase di validazione e collaudo}
+    \end{figure}
 \subsection{Riepilogo}
     \subsection{Ore totali}
     All'interno di questa sottosezione è contenuto il riepilogo delle ore totali, comprensive dell'investimento, che non sarà rendicontato nell'offerta finale, ossia della fase di analisi.
         \paragraph{Suddivisione del lavoro}
+        
         %startTable
         \def\hourlycontent{
             {Andrea Breggion,11,35,7,18,33,30,134},
@@ -158,8 +210,14 @@ Si noti che nelle tabelle sono state utilizzate delle sigle, definite nelle \tex
             {Ore totali,67,103,85,212,211,260,938},
         }
         %endTable
-        \input{source/tables/prospetto_orario.tex}
+        \input{source/tables/prospetto_orario.tex} 
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=0.8\textwidth]{source/img/totale_orari.png}
+            \caption{divisione oraria complessiva}
+        \end{figure}
         \paragraph{Prospetto economico}
+        
         %startTable
         \def\salarycontent{
             {Amministratore,103,20,2060},
@@ -172,9 +230,15 @@ Si noti che nelle tabelle sono state utilizzate delle sigle, definite nelle \tex
         }
         %endTable
         \input{source/tables/prospetto_economico.tex}
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=0.8\textwidth]{source/img/totale_ruoli.png}
+            \caption{costo del personale complessivo}
+        \end{figure}
     \subsection{Ore rendicontate}
     All'interno di questa sottosezione è contenuto il riepilogo delle ore dedicate all'attività di progetto nonchè il riepilogo dei costi relativi al periodo successivo alla RR.
         \paragraph{Suddivisione del lavoro}
+        
         %startTable
         \def\hourlycontent{
             {Andrea Breggion,5,21,4,18,33,24,105},
@@ -188,7 +252,13 @@ Si noti che nelle tabelle sono state utilizzate delle sigle, definite nelle \tex
         }
         %endTable
         \input{source/tables/prospetto_orario.tex}
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=0.8\textwidth]{source/img/no_investimento_orari.png}
+            \caption{divisione oraria totale senza l'investimento iniziale}
+        \end{figure}
         \paragraph{Prospetto economico}
+        
         %startTable
         \def\salarycontent{
             {Amministratore,54,20,1080},
@@ -201,6 +271,10 @@ Si noti che nelle tabelle sono state utilizzate delle sigle, definite nelle \tex
         }
         %endTable
         \input{source/tables/prospetto_economico.tex}
-        
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=0.8\textwidth]{source/img/consolidamento_orari.png}
+            \caption{costo totale del personale senza l'investimento iniziale}
+        \end{figure}
     \subsection{Conclusioni}
-    All'interno della tabella di cui sopra è indicata l'offerta con cui Code of Duty si presenta al committente prof. Tullio Vardanega. Tale somma ammonta a € 13664.
+    All'interno della tabella di cui sopra è indicata l'offerta con cui Code of Duty si presenta al committente prof. Tullio Vardanega. Tale somma ammonta a \euro\ 13664.
