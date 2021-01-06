@@ -3,11 +3,11 @@
    % \includegraphics{}
     \begin{itemize}
     \item \textbf{Attore}: Utente
-    \item \textbf{Descrizione}: Tra le dimensioni (colonne della matrice) del dataset caricato possono essere presenti delle etichette, cioè campi testuali che descrivono la categoria a cui il dato appartiene, l'applicazione offre un meccanismo tramite cui l'utente può selezionare queste tipo di varibili e separarle dalle varibili numeriche che invece compongono le coordinate del dato n-dimensionale.
+    \item \textbf{Descrizione}: Tra le dimensioni (colonne della matrice) del dataset caricato possono essere presenti delle etichette, cioè campi testuali che descrivono la categoria a cui il dato appartiene, l'applicazione offre un meccanismo tramite cui l'utente può selezionare queste tipo di variabili e separarle dalle variabili numeriche che invece compongono le coordinate del dato n-dimensionale.
     \item \textbf{Precondizione}:
     \begin{itemize}
         \item Eseguito l'upload del dataset come matrice N x M.
-        \item Selezionato una tra i grafici ScatterPlot, LinearProjection, ForceField per la visualizzazione.
+        \item Selezionato una tra i grafici Scatter Plot, Linear Projection, Force Field per la visualizzazione.
     \end{itemize}
     \item \textbf{Postcondizione}: Le variabili selezionate verranno considerate dal sistema come etichette e non faranno parte del dataset durante l'elaborazione dei dati.
     \item \textbf{Scenario Principale}: 
@@ -24,7 +24,7 @@
     \item \textbf{Precondizione}:
     \begin{itemize}
         \item Eseguito l'upload del dataset come matrice N x M
-        \item Selezionato una tra i grafici ScatterPlot, LinearProjection, ForceField per la visualizzazione.
+        \item Selezionato una tra i grafici Scatter Plot, Linear Projection, Force Field per la visualizzazione.
         \item Nel dataset, almeno una variabile è stata selezionata come etichetta.
     \end{itemize}
     \item \textbf{Postcondizione}: Al variare del valore della etichetta X, i punti visualizzati assumono un diverso attributo della classe assegnata a quest'ultima.
@@ -43,7 +43,7 @@
     \item \textbf{Precondizione}: 
      \begin{itemize}
         \item Eseguito l'upload del dataset come matrice N x M.
-        \item Selezionato grafico ScatterPlot oppure LinearProjection per la visualizzazione.
+        \item Selezionato grafico Scatter Plot oppure Linear Projection per la visualizzazione.
     \end{itemize}
     \item \textbf{Postcondizione}: La matrice contiene M-i colonne, dove i è il numero di variabili che l'utente ha scelto di non visualizzare.
     \item \textbf{Scenario Principale}: 
@@ -61,10 +61,10 @@
     \item \textbf{Precondizione}: 
     \begin{itemize}
         \item Eseguito l'upload del dataset come matrice N x M.
-        \item Selezionato grafico ScatterPlot oppure LinearProjection per la visualizzazione.
+        \item Selezionato grafico Scatter Plot oppure Linear Projection per la visualizzazione.
         \item Inserito numero di features da selezionare automaticamente.
     \end{itemize}
-    \item \textbf{Postcondizione}: Viene visualizzato il miglior sottoinsieme di features, contentente il numero di variabili selezionato dall'utente, calcolato dall'algoritmo.
+    \item \textbf{Postcondizione}: Viene visualizzato il miglior sottoinsieme di features, contenente il numero di variabili selezionato dall'utente, calcolato dall'algoritmo.
     \item \textbf{Scenario Principale}: 
     \begin{enumerate}
         \item L'utente seleziona l'opzione di selezione automatica delle features e inserisce il numero di elementi che il sottoinsieme calcolato dovrà contenere.
@@ -85,7 +85,7 @@
     \item \textbf{Precondizione}: 
     \begin{itemize}
         \item Eseguito l'upload del dataset come matrice N x M.
-        \item Selezionato grafico ScatterPlot oppure LinearProjection per la visualizzazione.
+        \item Selezionato grafico Scatter Plot oppure Linear Projection per la visualizzazione.
         \item Selezionata Selezione Automatica delle Features
     \end{itemize}  
     \item \textbf{Postcondizione}: Il numero di features da calcolare è stato inserito.
@@ -134,7 +134,7 @@
  %   \includegraphics{}
     \begin{itemize}
     \item \textbf{Attore}: Utente
-    \item \textbf{Descrizione}: Un dataset può contenere dati non normalizzati, cioè la media è diversa da 0 o la varianza diversa da 1, normalizare il dataset può risultare utile per una migliore visualizzazione dei dati.
+    \item \textbf{Descrizione}: Un dataset può contenere dati non normalizzati, cioè la media è diversa da 0 o la varianza diversa da 1, normalizzare il dataset può risultare utile per una migliore visualizzazione dei dati.
     \item \textbf{Precondizione}: 
     \begin{itemize}
         \item Eseguito l'upload del dataset come matrice N x M.
@@ -320,7 +320,7 @@
     \item \textbf{Precondizione}: 
     \begin{itemize}
         \item Eseguito l'upload del dataset come matrice N x M.
-        \item Selezionato grafico Heatmap o ForceField per la visualizzazione.
+        \item Selezionato grafico Heatmap o Force Field per la visualizzazione.
     \end{itemize}  
     \item \textbf{Postcondizione}: Calcolata matrice di distanza N x N dove \({x_i}_j\) è la distanza tra la riga i e la riga j della matrice di partenza.
     \item \textbf{Scenario Principale}: 
