@@ -135,6 +135,109 @@
 	    Per la stesura dei documenti e la loro compilazione.
 	    \myparagraph{Overleaf}
 	    Per la stesura dei documenti.
+	
+	\subsection{Gestione della configurazione}
+		
+		\subsubsection{Scopo}
+		Lo scopo della configurazione è quello di mantere un ordine tra il software prodotto e la relativa documentazione. Ogni elemento che viene configurato dispone di:
+			\begin{itemize}
+				\item uno stato identificativo che dà informazioni sullo stato dell'elemento
+				\item una locazione precisa nel quale può essere reperito
+			\end{itemize}
+		Inoltre, ogni elemento viene modificato secondo procedure note e sottoposto a versionamento.
+		
+		\subsubsection{Versionamento}
+			
+			\paragraph{Codice di versione del documento}
+			Per tenere traccia di ogni documento, il gruppo ha deciso di ricorrere alla seguente notazione: \textbf{X.Y.Z}, dove
+			\begin{itemize}
+				
+				\item \textbf{X}: indica una versione del documento stabile (approvata dal responsabile di progetto). Numerazione progressiva (da 0) incrementata ogni qualvolta il responsabile di progetto approvi il documento in questione.
+				
+				\item \textbf{Y}: indica una versione del documento in fase di verifica o che è stata soggetta a verifica(da parte di un Verificatore). Numerazione progressiva (da 0), viene azzerata ogni qualvolta il valore 'X' venga incrementato.
+				
+				\item \textbf{Z}: indica una versione instabile di tale documento, e che esso è in fase di lavorazione da parte dei redattori. Numerazione progressiva (da 0), incrementata ogni qualvolta un redattore aggiunge contenuto al documento.
+			\end{itemize}
+			
+			\paragraph{Tecnologie}
+			Come sistema di versionamento è stato scelto Git, il quale dispone del servizio Github per ospitare la repository remota. Altro strumento interessante messo a disposizione da Github è "Github Actions" il quale permette di realizzare un servizio di Continuos Integration.
+			
+			\paragraph{Repository}
+			Per interagire con il sistema di versionamento scelto, ogni componente del gruppo può utilizzare la versione da linea di comando (Git) con opportuni plugin per facilitare l'uso del sistema di versionamento. Alternativamente è possibile utilizzare la versione GUI fornita su Github. La repository è disponibile all'indirizzo:\\
+			\begin{center}
+				$\underline{https://github.com/CodeOfDutyJS/documentazione}$
+			\end{center}
+			
+			\paragraph{Struttura del repository}
+			All'interno del repository è possibile trovare:
+			\begin{itemize}
+				\item \textbf{nome-del-documento}: tutti i documenti sono disponibili al livello più esterno del repository.
+				\item \textbf{\_config e \_template}: permettono la gestione separata della configurazione dei file .tex
+				\item \textbf{.gitignore}: elenca tutti i file da escludere dal versionamento.
+				\item \textbf{glossario.txt}: elenca tutte le parole all'interno del glossario
+				\item \textbf{\_glo\_replace.py}: script in python che genera un pedice G ad ogni occorenza di tutte le parole presentiin "glossario.txt"´
+			\end{itemize}
+			
+			\paragraph{Estensione dei file}
+			Per la documentazione saranno utilizzati solamente le seguenti estensioni di file:
+			\begin{itemize}
+				\item file con estensione .pdf (l'elaborato da consegnare);
+				\item file con estensione .tex per la gestione dei documenti in Latex;
+				\item immagini e file ausiliari di supporto
+			\end{itemize}
+		
+			\paragraph{Branching}
+			Ogni repository verrà gestito in branch ovvero spazi di lavoro separati che permettono di lavorare sul materiale all'interno del repository mantenendo le modifiche di ogni utente nel suo branch personale. Perciò all'interno di ogni repository saranno presenti:
+			\begin{itemize}
+				\item \textbf{Branch master}: branch all'interno del quale viene raccolto il lavoro verificato, e quindi disponibile al rilascio
+				\item \textbf{Branch personali}: branch utilizzati come aree di lavoro per i membri del gruppo.
+			\end{itemize}
+			Il lavoro verrà trasferito da un branch personale al branch master solamente quando il lavoro compiuto all'interno del branch personale verrà verificato tramite una Pull Request. Essa permette di tenere il lavoro in uno "spazio separato" per essere verificato, corretto e successivamente fuso con il ramo master in caso di verifica positiva.
+			
+			\paragraph{Gestione delle modifiche}
+			I membri del gruppo possono modificare i file presenti all'interno di ogni branch personale. È consigliato utilizzare la funzione di commit presente in Git per tenere traccia di ogni cambiamento nella struttura del repository e per identificare l'autore di un determinato cambiamento. Per modificare contenuti e strutture dei file è consigliato contattare il responsabile del file che si vuole modificare, proporre la modifica, e in caso di approvazione effettuare tali modifiche. Nel caso di errori grammaticali è possibile correggere autonomamente i documenti. 
+	
+	\subsection{Gestione della Qualità}
+		\subsubsection{Scopo}
+		Lo scopo è quello di assicurare che il prodotto realizzato offra i servizi richiesti dal cliente, e che essi rispettino gli obbiettivi di qualità prefissati.
+		
+		\subsubsection{Aspettative}
+		Gli obbiettivi della gestione della qualità sono i seguenti:
+		\begin{itemize}
+			\item qualità del prodotto;
+			\item qualità all'interno dell'organizzazione e in particolare nei suoi processi;
+			\item soddisfazione del cliente e proponente
+		\end{itemize}
+		
+		\subsubsection{Descrizione}
+		La trattazione approfondita della gestione della qualità è presente all'interno del \textit{Piano di Qualifica v1.0.0}, all'interno del quale sono descritti tutti i protocolli utilizzati per garantire la qualità durante lo sviluppo del progetto. All'interno di tale documento in particolare sono approfonditi:
+		\begin{itemize}
+			\item gli standard utilizzati;
+			\item i processi di interesse negli standard;
+			\item gli attributi del software più significativi per il progetto
+		\end{itemize}
+		In particolare per ogni processo:
+		\begin{itemize}
+			\item gli obbiettivi da raggiungere;
+			\item le metodologie da applicare;
+			\item le metriche da utilizzare
+		\end{itemize}		
+		
+		\subsubsection{Attività}
+		Le tre attività che caratterizzano il processo sono:
+		\begin{itemize}
+			\item \textbf{Pianificazione}: prefissare obbiettivi di qualità e definire metodologie per perseguirli. È inoltre necessario impiegare in maniera efficiente le risorse a disposizione (materiali e umane)
+			\item \textbf{Valutazione}: applicare ciò che è stato definito nella Pianificazione, monitorando e misurando i risultati
+			\item \textbf{Reazione}: in base ai risultati ottenuti, adattare le metodologie
+		\end{itemize}
+		\subsubsection{Strumenti}
+		Gli strumenti utilizzati per la qualità sono:
+		\begin{itemize}
+			\item \textbf{Standard ISO-12207};
+			\item \textbf{Metriche}
+		\end{itemize}
+	
+	
 	\subsection{Verifica}
 	\subsubsection{Scopo}
 	Lo scopo del processo di verifica è dare prova materiale che un sistema o un elemento del sistema soddisfa i requisiti e specifiche richiesti.
@@ -210,6 +313,7 @@
 	  \item \textbf{identificativo}: identificativo progressivo della specializzazione.
 	\end{itemize}
 	\subsection{Validazione}
+
 	\subsubsection{Scopo}
 	La validazione è il processo che si occupa di stabilire se il prodotto soddisfi o meno i requisiti. Se il software li soddisfa, allora viene validato.
 	\subsubsection{Attività}
@@ -220,3 +324,4 @@
 	    \item \textbf{Implementazione della validazione}: il piano viene implementato ed eseguito;
 	    \item \textbf{Risultati}: i risultati vengono analizzati, assicurandosi che riflettano le aspettative.
 	\end{itemize}
+
