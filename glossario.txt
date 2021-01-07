@@ -1,28 +1,19 @@
 proponente
-Proponente
 committente
-Committente
 blockchain
-Blockchain
 ethereum
-Ethereum
 smart-contract
 API
 IAAS
 PAAS
 NFC
 e-commerce
-E-commerce
 serverless
-Serverless
 microservizi
-Microservizi
 BFF
 payment-provider
 business logic
-Machine Learning
 machine learning
-Machine learning
 back-end
 front-end
 Angular
@@ -30,17 +21,11 @@ Leaflet
 Apache Kafka
 Pathfinding
 framework
-Framework
 AWS
-LaTeX
 latex
-Latex
-D3.js
 d3.js
-Repository
 repository
 UML
 diagramma di Gantt
-Diagramma di Gantt
 IEEE 830-1998
 ISO 9126
