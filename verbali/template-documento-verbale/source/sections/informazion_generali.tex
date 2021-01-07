@@ -1,30 +1,29 @@
 \section{Informazioni generali}
     % popolare tabella - mettere sempre la virgola al termine di una riga
+    %startTable
     \def\modifiche { 
         {Data, YYYY-MM-DD},
         {Ora inizio, hh:mm},
         {Ora fine, hh:mm},
         {Luogo, piattaforma},
+        {Presenze, \unexpanded{
+            \begin{itemize}
+                % default: tutti :-))
+                \item Andrea Breggion;
+                \item Matteo Falsetti;
+                \item Alessandro Flori;
+                \item Andrea Mascari;
+                \item Diego Piola;
+                \item Andrea Signori;
+                \item Damiano Zanardo.
+            \end{itemize}}
+        },
+        {Ordine del giorno, \unexpanded{
+            \begin{itemize}
+                % elenco punti discussi
+                \item punto1.
+            \end{itemize}}
+        },
     }
+    %endTable
     \input{../_template/tables/informazioni_generali_table.tex}
-
-\subsection{Presenze}
-\begin{itemize}
-    % default: tutti :-))
-    \item Andrea Breggion;
-    \item Matteo Falsetti;
-    \item Alessandro Flori;
-    \item Andrea Mascari;
-    \item Diego Piola;
-    \item Andrea Signori;
-    \item Damiano Zanardo.
-\end{itemize}
-\subsection{Ordine del giorno}
-\begin{itemize}
-    % elenco punti discussi
-    \item punto1.
-\end{itemize}
-
-\subsection{Risultato incontro}
-    % attività svolte durante la riunione, decisione
-    % più importante dell'incontro
