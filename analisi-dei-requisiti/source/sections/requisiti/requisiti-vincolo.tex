@@ -1,0 +1,58 @@
+\subsection{Requisiti di vincolo}
+
+\def\obb{Obbligatorio}
+
+%startTable
+\def\requisitiv{
+    {RVO1, Il codice sorgente dell'applicazione essere open source, \obb, Capitolato},    
+    {RVD2, L'applicazione deve essere sviluppata in JavaScript, \obb, Capitolato},
+    {RVD2.1, Le visualizzazioni devono essere sviluppate con la libreria \noexpand\href{https://d3js.org/}{\noexpand\emph{d3.js}}, \obb, Capitolato},
+    {RVD2.2, Il backend deve essere sviluppato con node.js e utilizzare il framework \noexpand\href{https://expressjs.com/}{\noexpand\emph{express}}, Desiderabile, Interno},
+    {RVD2.3, Il frontend deve essere sviluppato con React e utilizzare il framework \noexpand\href{https://ant.design/}{\noexpand\emph{Ant Design}}, Desiderabile, Interno},
+    {RVD2.4, Lo sviluppo dell’applicazione deve implementare test di unità e di integrazione, Desiderabile, Interno},
+    {RVO3, I dati caricati dovranno essere convertiti in JSON per uniformare l'elaborazione e la visualizzazione dei dati provenienti da fonti diverse, \obb, Interno},
+    {RVO4, L'utente se ha selezionato Scatter Plot Matrix come visualizzazione può scegliere al massimo 5 features, \obb, Capitolato \noexpand\hyperref[uc4.1]{UC4.1}},
+    {RVD5, La libreria per PCA deve essere \noexpand\href{https://github.com/mljs/pca}{\noexpand\emph{ml-pca}}, Desiderabile, Interno},
+    {RVD6, La libreria per UMAP deve essere \noexpand\href{https://github.com/PAIR-code/umap-js}{\noexpand\emph{umap-js}}, Desiderabile, Interno},
+    {RVD7, La libreria per t-SNE deve essere \noexpand\href{https://github.com/scienceai/tsne-js}{\noexpand\emph{tsne-js}}, Desiderabile, Interno},
+    {RVD8, La libreria per le distanze deve essere \noexpand\href{https://github.com/mljs/distance}{\noexpand\emph{ml-distance}}, Desiderabile, Interno},
+    {RVD9, La libreria per la matrice di correlazione deve essere \noexpand\href{https://github.com/HarryStevens/jeezy}{\noexpand\emph{jeezy}}, Desiderabile, Interno},
+}
+%endTable
+
+
+
+
+%%%
+%%%
+%%%
+\newcommand*\requisitivtable{}
+\foreach \x [count=\nj] in \requisitiv
+{
+
+    \foreach \y [count=\ni] in \x
+    {
+        \ifnum\ni=4
+            \xappto\requisitivtable{\y}
+            \gappto\requisitivtable{\\}
+            \gappto\requisitivtable{\hline}
+        \else
+            \xappto\requisitivtable{\y & }
+        \fi
+    }
+}
+%\subsection{Requisiti funzionali}
+
+% Impostazioni della tabella
+\tabulinesep = 2mm % padding
+\taburowcolors [1] 2{pari .. dispari} % colori delle righe
+\addcontentsline{lot}{table}{Requisiti di vincolo}
+\begin{longtabu} to \textwidth {| X[0.2 l m] | X[0.4 l m] |  X[0.2 l m] | X[0.2 l m] |} % larghezza delle colonne
+\hline
+\rowcolor{header} % colore dell'header
+    
+\textbf{Requisito} & \textbf{Descrizione} & \textbf{Classificazione} & \textbf{Fonte} \\
+\hline
+\requisitivtable
+
+\end{longtabu}
