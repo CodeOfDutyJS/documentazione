@@ -63,7 +63,7 @@ jobs:
         uses: dev-drprasad/delete-tag-and-release@v0.1.2
         with:
           delete_release: true # default: false
-          tag_name: wip/studio-di-fattibilita # tag name to delete
+          tag_name: wip/verbali # tag name to delete
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       
@@ -74,8 +74,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           prerelease: true
-          tag_name: wip/studio-di-fattibilita
-          release_name: '[WIP] PDF Studio di fattibilità'
+          tag_name: wip/verbali
+          release_name: '[WIP] PDF Verbali'
       
       - name: Upload verbale-interno_2020-12-09 in release
         id: upload-release-asset 
