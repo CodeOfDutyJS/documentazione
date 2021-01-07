@@ -1,5 +1,5 @@
 \section{Qualità di Prodotto}
-In questa sezione sono indicati valori sufficienti e ottimi delle metriche individuate e descritte nelle Norme di Progetto.
+In questa sezione sono indicati valori sufficienti e ottimi delle metriche individuate e descritte nelle \textit{Norme di Progetto 1.0.0}.
 In particolare una misurazione di qualità per essere considerata soddisfatta deve essere superiore al valore sufficiente indicato. 
 Il valore ottimo individua un obiettivo di qualità da raggiungere o mantenere per l'intera durata dell'attività di progetto.
 \subsection{ISO 9126}
@@ -10,7 +10,8 @@ ISO 9126 oltre a 6 caratteristiche individua 3 tipologie di misurazioni: della q
 In questa sezione non è tenuto conto della distinzione e non sono presenti metriche di qualità in uso, che richiedono necessariamente l'utilizzo del prodotto da parte di un utente.
 
 \subsection{Funzionalità}
-La funzionalità rappresenta la capacità del software di fornire le funzioni, espresse ed implicite, necessarie per operare in determinate condizioni, cioè in un determinato contesto.
+La funzionalità rappresenta la capacità del software di fornire le funzioni, espresse e implicite, necessarie per operare in determinate condizioni, cioè in un determinato contesto.
+%startTable
 \def\productquality{
     {
         Correttezza dello scambio dei dati,
@@ -20,10 +21,12 @@ La funzionalità rappresenta la capacità del software di fornire le funzioni, e
         un valore sufficiente sarà deciso in fasi successive del progetto
     },
 }
+%endTable
 \input{source/tables/metriche_qualita.tex}
 
 \subsection{Affidabilità}
 Rappresenta la capacità di un prodotto software di mantenere il livello di prestazione quando viene utilizzato in condizioni specificate. Possibili limitazioni all'affidabilità del software possono essere causate da errori di requisiti, nella progettazione, nel codice. Le evidenze di tali errori possono essere rilevate a seconda delle condizioni in cui il prodotto è utilizzato oppure alle opzioni scelte, piuttosto che al momento in cui è utilizzato.
+%startTable
 \def\productquality{
     {
         Densità di errori,
@@ -33,10 +36,12 @@ Rappresenta la capacità di un prodotto software di mantenere il livello di pres
         è stato ritenuto prematuro definire valori sufficienti e ottimi per la metrica
     },
 }
+%endTable
 \input{source/tables/metriche_qualita.tex}
 
 \subsection{Usabilità}
 Rappresenta la capacità di un prodotto software di essere comprensibile, di poter essere studiato, di risultare attraente da parte di un utente sotto determinate condizioni d'uso.
+%startTable
 \def\productquality{
     {
         Qualità della messaggistica,
@@ -49,7 +54,7 @@ Rappresenta la capacità di un prodotto software di essere comprensibile, di pot
         $C_{click}(t) = \#\ di\ click$,
         $C_{click} \leq 6$,
         $C_{click} \leq 4$,
-        il task misurato è descritto nelle Norme di Progetto
+        il task misurato è descritto nelle \noexpand\textit{Norme di Progetto 1.0.0}
     },
     {
         Site depth,
@@ -58,25 +63,29 @@ Rappresenta la capacità di un prodotto software di essere comprensibile, di pot
         $S_{depth} \leq 4$
     },
 }
+%endTable
 \input{source/tables/metriche_qualita.tex}
 
 \subsection{Efficienza}
-La capacità di realizzare le funzioni richieste nel minor tempo possibile ed utilizzando nel miglior modo le risorse necessarie, quando opera in determinate condizioni. 
+La capacità di realizzare le funzioni richieste nel minor tempo possibile e utilizzando nel miglior modo le risorse necessarie, quando opera in determinate condizioni. 
+%startTable
 \def\productquality{
     {
         Response time,
         $T_{response} = B_{end}-A_{start}$, 
         -,
         -,
-        il task a cui fa riferimento la metrica è indicato nelle norme di progetto
+        il task a cui fa riferimento la metrica è indicato nelle \noexpand\textit{Norme di Progetto 1.0.0}
     },
 }
+%endTable
 \input{source/tables/metriche_qualita.tex}
 
 
 
 \subsection{Manutenibilità}
-Capacità di un prodotto software di essere modificato. Le modifiche possono in cludere correzioni o adattamenti del software a modifiche negli ambienti, nei requisiti e nelle specifiche funzionali.
+Capacità di un prodotto software di essere modificato. Le modifiche possono includere correzioni o adattamenti del software a modifiche negli ambienti, nei requisiti e nelle specifiche funzionali.
+%startTable
 \def\productquality{
     {
         Complessità ciclomatica,
@@ -111,4 +120,5 @@ Capacità di un prodotto software di essere modificato. Le modifiche possono in 
         $sfout(u) = 0$
     },
 }
+%endTable
 \input{source/tables/metriche_qualita.tex}

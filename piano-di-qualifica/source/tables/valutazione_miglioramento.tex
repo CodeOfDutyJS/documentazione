@@ -1,0 +1,31 @@
+\newcommand*\improvementeval{}
+\foreach \x [count=\nj] in \problems
+{
+    \foreach \y [count=\ni] in \x
+    {
+        \ifnum\ni=1
+            \xappto\improvementeval{\noexpand\textbf{\y}&}
+        \else\ifnum\ni=3
+            \xappto\improvementeval{\y}
+            \gappto\improvementeval{\\}
+            \gappto\improvementeval{\hline}
+        \else
+            \xappto\improvementeval{\y&}
+        \fi\fi
+    }
+}
+
+% Impostazioni della tabella
+\tabulinesep = 2mm % padding
+\taburowcolors [1] 2{pari .. dispari} % colori delle righe
+\begin{longtabu} to \textwidth {| X[0.3,c m] | X[0.3,l m] | X[0.3,l m] |} % larghezza delle colonne
+\hline
+\rowcolor{header} % colore dell'header
+
+\textbf{Problema} & \textbf{Descrizione} & \textbf{Soluzione} \\
+\hline
+\improvementeval
+
+\end{longtabu}
+
+\undef\improvementeval{}
