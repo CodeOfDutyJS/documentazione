@@ -36,6 +36,7 @@ LaTeX
 latex
 Latex
 D3.js
+d3.js
 Repository
 repository
 UML
