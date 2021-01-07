@@ -1,0 +1,111 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Build PDF Verbali
+
+# Controls when the action will run. 
+on:
+  push:
+    branches: [ master ]
+    paths:
+    - 'verbali/**'
+    - '!**.pdf'
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - name: Set up Git repository
+        uses: actions/checkout@v2
+      
+      - name: Setup Python
+        uses: actions/setup-python@v2.1.4
+      
+      - name: Add glossario verbale-interno_2020-12-09
+        run: python _glo_replace.py /verbali/verbale-interno_2020-12-09/ glossario.txt
+        
+      - name: Add glossario verbale-interno_2020-12-16
+        run: python _glo_replace.py /verbali/verbale-interno_2020-12-16/ glossario.txt
+
+      - name: Add glossario verbale-interno_2021-01-05
+        run: python _glo_replace.py /verbali/verbale-interno_2021-01-05/ glossario.txt
+
+      - name: Compile verbale-interno_2020-12-09
+        uses: vinay0410/tectonic-action@master
+        env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tex_path: verbali/verbale-interno_2020-12-09/main.tex
+      
+      - name: Compile verbale-interno_2020-12-16
+        uses: vinay0410/tectonic-action@master
+        env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tex_path: verbali/verbale-interno_2020-12-16/main.tex
+          
+      - name: Compile verbale-interno_2021-01-05
+        uses: vinay0410/tectonic-action@master
+        env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tex_path: verbali/verbale-interno_2021-01-05/main.tex
+      
+      - name: Remove previous tag and release
+        uses: dev-drprasad/delete-tag-and-release@v0.1.2
+        with:
+          delete_release: true # default: false
+          tag_name: wip/verbali # tag name to delete
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          prerelease: true
+          tag_name: wip/verbali
+          release_name: '[WIP] PDF Verbali'
+      
+      - name: Upload verbale-interno_2020-12-09 in release
+        id: upload-release-asset 
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: verbali/verbale-interno_2020-12-09/main.pdf
+          asset_name: verbale-interno_2020-12-09.pdf
+          asset_content_type: application/pdf
+          
+      - name: Upload verbale-interno_2020-12-16 in release
+        id: upload-release-asset-2
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: verbali/verbale-interno_2020-12-16/main.pdf
+          asset_name: verbale-interno_2020-12-16.pdf
+          asset_content_type: application/pdf
+          
+      - name: Upload verbale-interno_2021-01-05 in release
+        id: upload-release-asset-3
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: verbali/verbale-interno_2021-01-05/main.pdf
+          asset_name: verbale-interno_2021-01-05.pdf
+          asset_content_type: application/pdf

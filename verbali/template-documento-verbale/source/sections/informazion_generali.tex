@@ -1,5 +1,6 @@
 \section{Informazioni generali}
     % popolare tabella - mettere sempre la virgola al termine di una riga
+    %startTable
     \def\modifiche { 
         {Data, YYYY-MM-DD},
         {Ora inizio, hh:mm},
@@ -17,15 +18,12 @@
                 \item Damiano Zanardo.
             \end{itemize}}
         },
+        {Ordine del giorno, \unexpanded{
+            \begin{itemize}
+                % elenco punti discussi
+                \item punto1.
+            \end{itemize}}
+        },
     }
+    %endTable
     \input{../_template/tables/informazioni_generali_table.tex}
-
-\subsection{Ordine del giorno}
-\begin{itemize}
-    % elenco punti discussi
-    \item punto1.
-\end{itemize}
-
-\subsection{Risultato incontro}
-    % attività svolte durante la riunione, decisione
-    % più importante dell'incontro
