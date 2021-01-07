@@ -1,9 +1,9 @@
 \section{Resoconti di verifica ed esiti delle revisioni}
 
-In questa sezione vengono mostrati i valori delle matriche calcolate a termine del periodo di revisione dei requisiti. Saranno mostrati i sia i valori che rientrato nel range prestabilito sia quelli che non rientrano e nel secondo caso verranno mostrate come problemi nella parte finale della sezione.
+In questa sezione vengono mostrati i valori delle metriche calcolate a termine del periodo di revisione dei requisiti. Saranno mostrati i sia i valori che rientrato nel range prestabilito sia quelli che non rientrano e nel secondo caso verranno mostrate come problemi nella parte finale della sezione.
 
 \subsection{Riassunto delle attività di verifica}
-Durante il periodo di Analisi tutta la documentazione da presentare in ingresso alla revisione dei requisiti è stata sottoposta ad un'analisi meticolosa della struttura del documento, della chiarezza e degli errori ortografici. La verifica di ogni documento è stata svolta da 2 componenti del gruppo per assicurare il minor numero di errori possibili.
+Durante il periodo di Analisi tutta la documentazione da presentare in ingresso alla revisione dei requisiti è stata sottoposta a un'analisi meticolosa della struttura del documento, della chiarezza e degli errori ortografici. La verifica di ogni documento è stata svolta da 2 componenti del gruppo per assicurare il minor numero di errori possibili.
 
 \subsection{Risultati delle verifiche tramite analisi}
 
@@ -12,23 +12,29 @@ Durante il periodo di Analisi tutta la documentazione da presentare in ingresso 
 Per ogni documento stilato è stato calcolato l'indice di Gulpease\glo{} in due momenti: al 2021/12/03 e al GG/MM/AAA alla versione 1.0.0 che è stata consegnata per la revisione dei requisiti. I valori sono dati dalla seguente tabella ed il rispettivo grafico con valore sufficiente >40 e valore ottimo >80.
 
 \hphantom{}
-\renewcommand*{\arraystretch}{1.4}
-\setlength{\tabcolsep}{10pt} % Default value: 6pt
+\tabulinesep = 2mm % padding
+\taburowcolors [1] 2{pari .. dispari} % colori delle righe
 
-\begin{longtable}[c]{|c|c|c|c|c|c|}
+\begin{longtabu} to \textwidth {| X[0.2,c m] | X[0.1,c m] | X[0.1,c m] | X[0.1,c m]| X[0.1,c m] | X[0.1,c m] |}
 \hline
-\rowcolor[HTML]{FFCC67}
-Data del calcolo  & \begin{tabular}[c|]{@{}c@{}}Studio di \\ fattibilità\end{tabular} & \begin{tabular}[c]{@{}c@{}}Norme di \\ progetto\end{tabular} & \begin{tabular}[c]{@{}c@{}}Analisi dei\\ requisiti\end{tabular} & \begin{tabular}[c]{@{}c@{}}Piano di \\ qualifica\end{tabular} & \begin{tabular}[c]{@{}c@{}}Piano di \\ progetto\end{tabular} \\ \hline
+\rowcolor{header}
+\textbf{Data del calcolo} & 
+\textbf{Studio di Fattibilità} & 
+\textbf{Norme di Progetto} & 
+\textbf{Analisi dei Requisiti} & 
+\textbf{Piano di Qualifica} & 
+\textbf{Piano di Progetto} \\
+\hline
 
-\endfirsthead
-%
-\endhead
-%
-\multirow{2}{}{2020/12/03} & v0.0.8 & v2 & v3 & v4 & v5 \\ \cline{2-6} 
-                            & 95 & 65  & 61   & 80   & 91  \\ \hline
-\multirow{2}{}{data}      & v1.0.0  & v1.0.0  & v1.0.0 & v1.0.0  &v1.0.0   \\ \cline{2-6} 
-                            & x1   & x2 & x3  & x4 & x5 \\ \hline
-\end{longtable}
+\multirow[c]{2}{*}{2020-12-03} & v0.0.8 & v2 & v3 & v4 & v5 \\
+\cline{2-6} 
+& 95 & 65 & 61 & 80 & 91 \\ 
+\hline
+\multirow[c]{2}{*}{data} & v1.0.0 & v1.0.0 & v1.0.0 & v1.0.0 &v1.0.0 \\ 
+\cline{2-6} 
+& x1 & x2 & x3 & x4 & x5 \\ 
+\hline
+\end{longtabu}
 
 
 \newpage
@@ -42,7 +48,7 @@ Data del calcolo  & \begin{tabular}[c|]{@{}c@{}}Studio di \\ fattibilità\end{ta
 
 \subsubsection{Errori ortografici}
 
-Per quanto riguarda gli errori ortografici, oltre alla revisione fatta dai membri del gruppo, si è utilizzato anche lo spellchecker di Overleaf. Non sono presenti quindi errori di ortografia nei documnenti con versione v1.0.0
+Per quanto riguarda gli errori ortografici, oltre alla revisione fatta dai membri del gruppo, si è utilizzato anche lo spellchecker di Overleaf. Non sono presenti quindi errori di ortografia nei documenti con versione v1.0.0
 
 
 \subsection{Conclusioni}
