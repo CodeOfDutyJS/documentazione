@@ -27,11 +27,10 @@ for f in fileList:
         textData = re.sub(r"(\b{}\b)".format(
             word), r"\1\\glo{}", textData, flags=re.IGNORECASE)
 
-    m = re.search("(startTable(.|\n)*?endTable)", textData)
+    m = re.findall("(startTable(.|\n)*?endTable)", textData)
     if m:
-        print(m.group(1))
-        if m.group(1):
-            found = m.group(1)
+        for table in m:
+            found = table[0]
             newtext = found
             for word in glossaryList:
                 newtext = re.sub(r"(\b{}\b)(\\glo{{}})".format(
