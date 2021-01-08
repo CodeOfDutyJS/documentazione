@@ -1,44 +1,43 @@
 import sys
 import os
+import re
 
 textPath = os.getcwd() + sys.argv[1]
-gloPath= sys.argv[2]
-fileList=[]
+gloPath = sys.argv[2]
+fileList = []
 for root, dir, files in os.walk(textPath):
     for file in files:
         if file.endswith(".tex"):
-            fileList.append(os.path.join(root,file))
+            fileList.append(os.path.join(root, file))
 
 for f in fileList:
     try:
-        text = open( f , "r+")
+        text = open(f, "r+")
     except:
         print("failed to open text file")
     try:
         glossary = open(gloPath, "r")
     except:
         print("failed to open glossary file")
-    glossaryList=glossary.read().splitlines()
+    glossaryList = glossary.read().splitlines()
     glossary.close()
-    textData=text.read()
+    textData = text.read()
 
     for word in glossaryList:
-        wordReplacement= word + "\glo{}"
-        textData = textData.replace(word + " ",wordReplacement+ " ")
-        textData = textData.replace(word+ ",",wordReplacement+",")
-        textData = textData.replace(word + ".", wordReplacement+".")
-        textData = textData.replace(word + ":", wordReplacement + ":")
-        textData = textData.replace(word + "(", wordReplacement + "(")
-        textData = textData.replace(word + ")", wordReplacement + ")")
-        #textData = textData.replace("{" + word + "}", "{" + wordReplacement + "}")
-        #textData = textData.replace("{" + word, "{" + wordReplacement)
-        textData = textData.replace(word + "}", wordReplacement + "}")
-        textData = textData.replace(word + "\n", wordReplacement + "\n")
-        textData = textData.replace(word + ";", wordReplacement + ";")
-        textData = textData.replace(word + "\"", wordReplacement + "\"")
+        textData = re.sub(r"(\b{}\b)".format(
+            word), r"\1\\glo{}", textData, flags=re.IGNORECASE)
+
+    m = re.findall("(startTable(.|\n)*?endTable)", textData)
+    if m:
+        for table in m:
+            found = table[0]
+            newtext = found
+            for word in glossaryList:
+                newtext = re.sub(r"(\b{}\b)(\\glo{{}})".format(
+                    word), r"\1\\noexpand\2", newtext, flags=re.IGNORECASE)
+            textData = textData.replace(found, newtext)
 
     text.seek(0)
     text.truncate()
     text.write(textData)
     text.close()
-
