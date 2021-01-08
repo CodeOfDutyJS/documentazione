@@ -1,43 +1,43 @@
 \section{Capitolato 2 - EmporioLambda}
 \subsection{Informazioni generali}
 \begin{itemize}
-    \item \textbf{Nome}: \emph{EmporioLambda}: piattaforma di e-commerce in stile Serverless
-    \item \textbf{Proponente}: \emph{RedBabel}
-    \item \textbf{Committente}: \emph{Prof. Tullio Vardanega e Prof. Riccardo Cardin}
+    \item \textbf{Nome}: \emph{EmporioLambda}: piattaforma di e-commerce in stile Serverless;
+    \item \textbf{Proponente}: \emph{RedBabel};
+    \item \textbf{Committente}: \emph{Prof. Tullio Vardanega e Prof. Riccardo Cardin}.
 \end{itemize}
 \subsection{Descrizione capitolato}
-Lo scopo del capitolato è creare una piattaforma di E-commerce generica, utilizzabile come dimostrazione, vendibile ai commercianti e facilmente configurabile dagli stessi. L'intera piattaforma deve essere costruita nella sua interezza utilizzando tecnologie serverless. EmporioLambda è basato su un'architettura a microservizi, e quindi suddiviso in moduli, gestiti da un BFF (Backend For Frontend). Per la realizzazione del progetto è richiesta l'integrazione di diversi servizi di terze parti, in particolare un payment-provider.
+Lo scopo del capitolato è creare una piattaforma di E-commerce generica, utilizzabile come dimostrazione, vendibile ai commercianti e facilmente configurabile dagli stessi. L'intera piattaforma deve essere costruita nella sua interezza utilizzando tecnologie serverless. EmporioLambda è basato su un'architettura a microservizi, e quindi suddiviso in moduli, gestiti da un BFF (Back-end For Front-end). Per la realizzazione del progetto è richiesta l'integrazione di diversi servizi di terze parti, in particolare un payment-provider.
 \subsection{Finalità del progetto}
 È richiesta l'implementazione di tutti i moduli facenti parte dell'architettura:
 \begin{itemize}
-	\item \textbf{Frontend}: si occupa di costruire la pagina HTML così come è stata richiesta dall'utente;
-	\item \textbf{Backend}: che implementa la business logic;
-	\item \textbf{Integration}: rappresenta tutti i servizi di terze parti utilizzati dal backend;
+	\item \textbf{Front-end}: si occupa di costruire la pagina HTML così come è stata richiesta dall'utente;
+	\item \textbf{Back-end}: che implementa la business logic;
+	\item \textbf{Integration}: rappresenta tutti i servizi di terze parti utilizzati dal back-end;
 	\item \textbf{Monitoring} un set di strumenti utilizzati dall'admin per monitorare lo stato dell'applicazione.
 \end{itemize}
 Sono inoltre richiesti una serie di requisiti funzionali per ognuna delle parti di cui è composto EmporioLambda, e opzionali.
 \subsection{Tecnologie interessate}
 Il proponente richiede l'utilizzo di architetture serverless, in particolare i servizi offerti da Amazon tramite AWS Lambda.
 \begin{itemize}
-	\item \textbf{CloudFormation}: servizio suggerito per la gestione delle risorse AWS e di terze parti utilizzate
-    \item \textbf{Serverless Framework} strumento che nasce per gestire il lifecycle di applicazioni serverless
+	\item \textbf{AWS CloudFormation}: servizio suggerito per la gestione delle risorse AWS e di terze parti utilizzate
+  \item \textbf{Serverless Framework} strumento che nasce per gestire il lifecycle di applicazioni serverless
 	\item \textbf{Typescript}: linguaggio di programmazione
 	\item \textbf{NodeJS}: framework per la realizzazione del BFF, e per renderizzare e servire l'interfaccia al browser
-	\item\textbf{Amazon CloudWatch} o \textbf{Datadog}: strumenti che permettono il monitoraggio di applicazioni
+	\item \textbf{Amazon CloudWatch} o \textbf{Datadog}: strumenti che permettono il monitoraggio di applicazioni
 	\item \textbf{AWS Cognito Identity}: servizio per la gestione dei diversi tipi di utenza (utente, commerciante, amministratore)
 	\item \textbf{Github} o \textbf{Gitlab}: servizi di versionamento
 	\item \textbf{Stripe}: modulo di terze parti che agisce come payment-provider.
 \end{itemize}
 \subsection{Aspetti positivi}
 \begin{itemize}
-    \item Il proponente ha presentato un capitolato d'appalto completo e difficilmente si verificheranno imprevisti durante lo sviluppo del progetto, inoltre si dimostra molto disponibile, mettendo a disposizione diversi canali di comunicazione, come email e Slack.
-    \item Il fornitore incita al confronto e all'esplorazione per quanto riguarda le aree non trattate con precisione nel documento.
-    \item È richiesto l'utilizzo di tecnologie rilevanti nel panorama odierno, in particolare i servizi AWS e la programmazione funzionale.
+    \item Il proponente ha presentato un capitolato d'appalto completo e difficilmente si verificheranno imprevisti durante lo sviluppo del progetto, inoltre si dimostra molto disponibile, mettendo a disposizione diversi canali di comunicazione, come email e Slack;
+    \item il fornitore incita al confronto e all'esplorazione per quanto riguarda le aree non trattate con precisione nel documento;
+    \item è richiesto l'utilizzo di tecnologie rilevanti nel panorama odierno, in particolare i servizi AWS e la programmazione funzionale.
 \end{itemize}
 \subsection{Criticità e fattori di rischio}
 \begin{itemize}
-    \item Il capitolato descrive una grande quantità di tecnologie, il rischio principale è che i costi di formazione non siano sostenibili
-    \item Nessun componente del gruppo di lavoro ha conoscenze specifiche vantaggiose ai fini della realizzazione del progetto.
+    \item Il capitolato descrive una grande quantità di tecnologie, il rischio principale è che i costi di formazione non siano sostenibili;
+    \item nessun componente del gruppo di lavoro ha conoscenze specifiche vantaggiose ai fini della realizzazione del progetto.
 \end{itemize}
 \subsection{Conclusioni}
 Sebbene sia stata ritenuta stimolante, la proposta di RedBabel è stata comunque scartata, per via della mole di formazione necessaria, ritenuta proibitiva.
