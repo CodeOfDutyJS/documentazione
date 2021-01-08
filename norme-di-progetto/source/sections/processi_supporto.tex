@@ -7,10 +7,10 @@
 	    
 	    \subsubsection{Ciclo di vita del Documento}
 	    \begin{itemize}
-	        \item \textbf{Creazione} Il documento viene creato da fonti accettabili e conformamente alle norme, in particolare sono fonti accettabili push sul repository, viene usato un template LaTeX fornito nello stesso;
+	        \item \textbf{Creazione} Il documento viene creato da fonti accettabili e conformamente alle norme. In particolare sono fonti accettabili push sul repository e viene usato un template LaTeX fornito nello stesso;
 	        \item \textbf{Implementazione della struttura} Sempre secondo le norme, viene creata la struttura del documento, che deve sempre contenere un registro delle modifiche e un indice che tiene traccia delle voci.
 	        \item \textbf{Redazione} il documento viene scritto in forma incrementale, con ogni voce creata interamente;
-	        \item \textbf{Revisione} L'implementazione e le modifiche del documento deve seguire gli standard documentativi forniti, e devono essere approvate da un membro del gruppo in base al loro formato, adeguatezza, contenuto tecnico e stile di presentazione;
+	        \item \textbf{Revisione} L'implementazione e le modifiche del documento deve seguire gli standard documentativi forniti e devono essere approvate da un membro del gruppo in base al loro formato, adeguatezza, contenuto tecnico e stile di presentazione;
 	        \item \textbf{Approvazione della versione} Una volta che il documento contiene tutte le voci descritte nella struttura, viene approvato da un membro del gruppo che non deve aver contribuito precedentemente al documento stesso;
 	        \item \textbf{Manuntenzione} Una volta che il documento viene aggiornato come da normativa, viene di nuovo sottoposto a \textbf{Revisione} e \textbf{Approvazione}.
 	    \end{itemize}
@@ -18,9 +18,9 @@
 	    \subsubsection{Template LaTex e automazione}
 	    Allo scopo di uniformare lo stile e velocizzare la produzione dei documenti viene fornito un template LaTeX.
 	    \myparagraph{Struttura}
-	    Un file "main.tex" raccoglie le sezioni del documento, ed in testa raccoglie in input un file "package.tex", contenente tutti i package necessari alla compilazione, ed un file "config.tex", contenente i comandi di configurazione.
+	    Un file "main.tex" raccoglie le sezioni del documento. In testa raccoglie in input un file "package.tex" contenente tutti i package necessari alla compilazione ed un file "config.tex" contenente i comandi di configurazione.
 	    \myparagraph{Automazione}
-	    Vengono usate le Github Actions per automatizzare la compilazione del file LaTeX, in modo da creare un artefatto consultabile da tutto il gruppo ad ogni cambiamento dello stesso, ed in modo  da assicurarsi circa la compilazione stessa del file LaTeX. Inoltre uno script Python automaticamente appone l'apposito pedice alle voci da inserire nel glossario.
+	    Vengono usate le Github Actions per automatizzare la compilazione del file LaTeX in modo da creare un artefatto consultabile da tutto il gruppo ad ogni cambiamento dello stesso ed in modo  da assicurarsi circa la compilazione stessa del file LaTeX. Inoltre uno script Python automaticamente appone l'apposito pedice alle voci da inserire nel glossario.
 	    \subsubsection{Pagine}
 	    Di seguito una descrizione di pagine sempre presenti nei documenti prodotti dal gruppo.
 	    \myparagraph{Frontespizio}
@@ -42,7 +42,7 @@
 	        \item il recapito mail del gruppo.
 	    \end{itemize}
 	    \myparagraph{Diario delle modifiche}
-	    La seconda pagina contiene sempre il diario delle modifiche, una tabella atta ad elencare ed a descrivere sinteticamente le modifiche, in ordine cronologico, apposte al documento.
+	    La seconda pagina contiene sempre il diario delle modifiche: una tabella atta ad elencare ed a descrivere sinteticamente le modifiche in ordine cronologico apposte al documento.
 	    Il diario delle modifiche contiene le seguenti voci:
 	    \begin{enumerate}
 	        \item \textbf{Versione}: la versione del documento;
@@ -54,7 +54,7 @@
 	    \myparagraph{Indice}
 	    Il documento contiene poi sempre un indice ordinato e facilmente consultabile contenente le voci all'interno del documento, in modo da informare sulla struttura dello stesso e di dare modo di trovare velocemente le sezioni ricercate.
 	    \myparagraph{Introduzione}
-	    Tutti i documenti devono iniziare con una breve sezione d'introduzione volta a spiegare lo scopo del documento, e ad inserire eventuali riferimenti.
+	    Tutti i documenti devono iniziare con una breve sezione d'introduzione volta a spiegare lo scopo del documento e ad inserire eventuali riferimenti.
 	    \myparagraph{Intestazione del contenuto}
 	    Tutte le pagine di contenuto hanno separata da una linea orizzontale un'intestazione contenente:
 	    \begin{itemize}
@@ -64,7 +64,7 @@
 	    \myparagraph{Piè di pagina}
 	    il piè di pagina contiene, centrato, i numeri di pagina corrente e pagine totali del documento.
 	    \myparagraph{Note}
-	    In caso di note queste vanno numerate per pagina ed essere riportate con la loro numerazione a piè di pagina e descritte il più brevemente possibile.
+	    In caso di note, queste vanno numerate per pagina ed essere riportate con la loro numerazione a piè di pagina e descritte il più brevemente possibile.
 	    \subsubsection{Norme di stile}
 	    \myparagraph{Immagini}
 	    Le immagini vanno inserite centrate e fornite di apposita didascalia.
@@ -87,7 +87,7 @@
 	    \end{itemize}
 	    \myparagraph{Riferimenti a documenti}
 	    \begin{itemize}
-	        \item nel caso il riferimento al documento sia in un titolo a come voce di un elenco non si usa il corsivo ma il grassetto
+	        \item nel caso il riferimento al documento sia in un titolo come voce di un elenco non si usa il corsivo ma il grassetto.
 	        \item ogni qualvolta si fa riferimento al documento in un testo o ad un suo contenuto il nome viene accompagnato, separato da uno spazio, dalla versione, anch'essa in corsivo
 	        \item il nome del documento viene scritto per intero, e ogni parola di cui è composto deve iniziare con la lettera maiuscola
 	    \end{itemize}
@@ -120,7 +120,7 @@
 	        \item \textbf{Immagini}: tutti gli altri elementi grafici. 
 	    \end{itemize}
 	    \myparagraph{Figure}
-	    Ogni figura deve essere contrassegnata da una didascalia descrittiva posta al di sotto di essa, seguita fa una numerazione progressiva assegnata per sezione. È esente da questa convenzione il diario delle modifiche.
+	    Ogni figura deve essere contrassegnata da una didascalia descrittiva posta al di sotto di essa, seguita da una numerazione progressiva assegnata per sezione. È esente da questa convenzione il diario delle modifiche.
 	    la numerazione delle figure è composta da tre cifre \textbf{X.Y.Z}:
 	    \begin{itemize}
 	        \item \textbf{X.Y}: riferimento alla sezione;
@@ -149,7 +149,7 @@
 		\subsubsection{Versionamento}
 			
 			\paragraph{Codice di versione del documento}
-			Per tenere traccia di ogni documento, il gruppo ha deciso di ricorrere alla seguente notazione: \textbf{X.Y.Z}, dove
+			Per tenere traccia di ogni documento il gruppo ha deciso di ricorrere alla seguente notazione: \textbf{X.Y.Z}, dove
 			\begin{itemize}
 				
 				\item \textbf{X}: indica una versione del documento stabile (approvata dal responsabile di progetto). Numerazione progressiva (da 0) incrementata ogni qualvolta il responsabile di progetto approvi il documento in questione.
@@ -246,7 +246,7 @@
 	\subsubsection{Attività}
 	Il processo di verifica contiene le seguenti attività:
 	\begin{itemize}
-	    \item \textbf{Preparazione alla verificazione}: si pianifica la verificazione, studiando cosa va verificato, scegliendo appropriate metriche, si identificano i limiti nei requisiti, si selezionano tecniche, strumenti e si acquisisce l'elemento da verificare;
+	    \item \textbf{Preparazione alla verificazione}: si pianifica la verificazione studiando cosa va verificato, scegliendo appropriate metriche, si identificano i limiti nei requisiti, si selezionano tecniche, strumenti e si acquisisce l'elemento da verificare;
 	    \item \textbf{Eseguire verificazione}: si definiscono le procedure attraverso le quali verrà compiuta la verificazione e la si esegue;
 	    \item \textbf{Gestione dei risultati}: si controllano i risultati ed eventuali anomalie e si identificano le possibili risposte, si annotano problemi e incidenti accorsi durante la verificazione, si ottiene l'assenso del proponente sulla soddisfazione dei requisiti ed infine si aggiorna la tracciabilità del requisito.
 	\end{itemize}
@@ -272,7 +272,7 @@
 	\myparagraph{Approcci}
 	ci sono due tipi di approcci ai test:
 	\begin{itemize}
-	    \item \textbf{Black box}: il test ha come scopo puramente l'appurare il comportamento del programma. Ad un determinato vettore di input, se il vettore di output è quello desiderato il test viene considerato passato. La struttura del codice non è conosciuta dall'esecutore del test; 
+	    \item \textbf{Black box}: il test ha come scopo l'appurare il comportamento del programma. Ad un determinato vettore di input, se il vettore di output è quello desiderato, il test viene considerato passato. La struttura del codice non è conosciuta dall'esecutore del test; 
 	    \item \textbf{White box}: il test viene pianificato tenendo conto della struttura del codice, con l'obbiettivo, oltre a verificare il corretto funzionamento, di testare e migliorare l'efficienza e la struttura stessa. 
 	\end{itemize}
 	\myparagraph{Tipi di test}
