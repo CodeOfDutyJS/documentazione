@@ -2,7 +2,7 @@
 	\subsection{Documentazione}
 	    
 	    \subsubsection{Scopo}
-	    Lo scopo della documentazione è fornire riferimenti precisi ed universali su ogni attività e processo inerenti al progetto. Questa sezione norma come stilare tutti i documenti prodotti durante il ciclo di vita del software. I documenti sono reperibili al seguente repository\glo{}:
+	    Lo scopo della documentazione è fornire riferimenti precisi ed universali su ogni attività e processo inerenti al progetto. Questa sezione norma come stilare tutti i documenti prodotti durante il ciclo di vita del software. I documenti sono reperibili al seguente repository:
 	    \url{https://github.com/CodeOfDutyJS/documentazione}
 	    
 	    \subsubsection{Ciclo di vita del Documento}
@@ -148,7 +148,7 @@
 		
 		\subsubsection{Versionamento}
 			
-			\paragraph{Codice di versione del documento}
+			\myparagraph{Codice di versione del documento}
 			Per tenere traccia di ogni documento, il gruppo ha deciso di ricorrere alla seguente notazione: \textbf{X.Y.Z}, dove
 			\begin{itemize}
 				
@@ -159,16 +159,16 @@
 				\item \textbf{Z}: indica una versione instabile di tale documento, e che esso è in fase di lavorazione da parte dei redattori. Numerazione progressiva (da 0), incrementata ogni qualvolta un redattore aggiunge contenuto al documento.
 			\end{itemize}
 			
-			\paragraph{Tecnologie}
+			\myparagraph{Tecnologie}
 			Come sistema di versionamento è stato scelto Git, il quale dispone del servizio Github per ospitare la repository remota. Altro strumento interessante messo a disposizione da Github è "Github Actions" il quale permette di realizzare un servizio di Continuos Integration.
 			
-			\paragraph{Repository}
+			\myparagraph{Repository}
 			Per interagire con il sistema di versionamento scelto, ogni componente del gruppo può utilizzare la versione da linea di comando (Git) con opportuni plugin per facilitare l'uso del sistema di versionamento. Alternativamente è possibile utilizzare la versione GUI fornita su Github. La repository è disponibile all'indirizzo:\\
 			\begin{center}
 				$\underline{https://github.com/CodeOfDutyJS/documentazione}$
 			\end{center}
 			
-			\paragraph{Struttura del repository}
+			\myparagraph{Struttura del repository}
 			All'interno del repository è possibile trovare:
 			\begin{itemize}
 				\item \textbf{nome-del-documento}: tutti i documenti sono disponibili al livello più esterno del repository.
@@ -178,7 +178,7 @@
 				\item \textbf{\_glo\_replace.py}: script in python che genera un pedice G ad ogni occorenza di tutte le parole presentiin "glossario.txt"´
 			\end{itemize}
 			
-			\paragraph{Estensione dei file}
+			\myparagraph{Estensione dei file}
 			Per la documentazione saranno utilizzati solamente le seguenti estensioni di file:
 			\begin{itemize}
 				\item file con estensione .pdf (l'elaborato da consegnare);
@@ -186,7 +186,7 @@
 				\item immagini e file ausiliari di supporto
 			\end{itemize}
 		
-			\paragraph{Branching}
+			\myparagraph{Branching}
 			Ogni repository verrà gestito in branch ovvero spazi di lavoro separati che permettono di lavorare sul materiale all'interno del repository mantenendo le modifiche di ogni utente nel suo branch personale. Perciò all'interno di ogni repository saranno presenti:
 			\begin{itemize}
 				\item \textbf{Branch master}: branch all'interno del quale viene raccolto il lavoro verificato, e quindi disponibile al rilascio
@@ -194,7 +194,7 @@
 			\end{itemize}
 			Il lavoro verrà trasferito da un branch personale al branch master solamente quando il lavoro compiuto all'interno del branch personale verrà verificato tramite una Pull Request. Essa permette di tenere il lavoro in uno "spazio separato" per essere verificato, corretto e successivamente fuso con il ramo master in caso di verifica positiva.
 			
-			\paragraph{Gestione delle modifiche}
+			\myparagraph{Gestione delle modifiche}
 			I membri del gruppo possono modificare i file presenti all'interno di ogni branch personale. È consigliato utilizzare la funzione di commit presente in Git per tenere traccia di ogni cambiamento nella struttura del repository e per identificare l'autore di un determinato cambiamento. Per modificare contenuti e strutture dei file è consigliato contattare il responsabile del file che si vuole modificare, proporre la modifica, e in caso di approvazione effettuare tali modifiche. Nel caso di errori grammaticali è possibile correggere autonomamente i documenti. 
 	
 	\subsection{Gestione della Qualità}
