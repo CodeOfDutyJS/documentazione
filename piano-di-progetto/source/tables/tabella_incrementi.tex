@@ -1,5 +1,5 @@
-\newcommand*\metricstable{}
-\foreach \x [count=\nj] in \productquality
+\newcommand*\risktable{}
+\foreach \x [count=\nj] in \tabellaincrementi
 {
     \foreach \y [count=\ni] in \x
     {
@@ -20,6 +20,6 @@
 \rowcolor{header} % colore dell'header
 \textbf{Nome Incremento} & \textbf{Periodo} & \textbf{Descrizione} \\
 \hline
-\metricstable
+\tabellaincrementi
 \end{longtabu}
-\undef\metricstable{}
+\undef\risktable{}
