@@ -3,17 +3,9 @@
 {
     \foreach \y [count=\ni] in \x
     {
-        \ifnum\ni=3
-            \xappto\metricstable{\y}
-            \gappto\metricstable{\\}
-            \gappto\metricstable{\hline}
-        \else\ifnum\ni=4
-            \xappto\metricstable{\noexpand\multicolumn{4}{| l |}{Piano di contingenza: \y}}
-            \gappto\metricstable{\\}
-            \gappto\metricstable{\hline}
-        \else
-            \xappto\metricstable{\y&}
-        \fi\fi
+    	\xappto\metricstable{\y}
+        \gappto\metricstable{\\}
+        \gappto\metricstable{\hline}
     }
 }
 
