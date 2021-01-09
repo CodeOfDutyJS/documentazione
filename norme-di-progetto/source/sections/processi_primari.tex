@@ -41,12 +41,10 @@
 			    \item \textbf{Specifiche dei test}: vengono definiti i test che garantiscono la qualità del prodotto;
 			    \item \textbf{Resoconti di verifica ed esiti delle revisioni}: qui sono riportati gli esiti delle attività di verifica e delle revisioni.
 			\end{itemize}
-			\subsection{Metriche}
-			Di seguito vengono elencate le metriche i quali valori vanno normati nel piano di qualifica. 
-        La modalità di rilevazione non è indicata per tutte le metriche: tale dato sarà 
+		\subsubsection{Metriche}
+        Di seguito vengono elencate le metriche inerenti alla qualità del processo di \textbf{Fornitura}. I valori sono normati nel piano di qualifica. La modalità di rilevazione non è indicata per tutte le metriche: tale dato sarà 
         inserito in fasi successive del progetto.
-        \subsubsection{Metriche di processo}
-        Queste sono le metriche inerenti alla qualità di processo.
+        
         \myparagraph{Percentuale di requisiti soddisfatti}
         La percentuale in centesimi dei requisiti saddisfatti.
         \subparagraph{Formula}
@@ -63,7 +61,6 @@
         Budget totale allocato per il progetto.
         \mysubparagraph{Misurazione} Numero intero.
         
-        
         \myparagraph{Earned value}
         Utilizzato anche nel calcolo di $SV$ e $CV$. Abbreviato $EV$, indica il valore del lavoro compiuto fino al momento del calcolo.
         \subparagraph{Formula}
@@ -75,8 +72,6 @@
             \item[] $EV =$ Earned value
             \item[] $BAC =$ Budget at copletion
         \end{itemize}
-         
-        
         
         \myparagraph{Planned value}
         Abbreviato in $PV$, rappresenta il valore del lavoro pianificato al momento del calcolo. Utilizzato anche nel calcolo di $SV$ e $CV$.
@@ -89,13 +84,11 @@
             \item[] $PV =$ Planned value
             \item[] $BAC =$ Budget at completion
         \end{itemize}
-         
         
         \myparagraph{Actual Cost}
         Per il calcolo in altre metriche l'abbreviazione è $AC$.
         Rappresenta il denaro speso fino al momento del calcolo.
         \mysubparagraph{Misurazione} La misurazione avviene con il rilevamento dell'intero che rappresenta l'$AC$ pertanto non ha formule.
-        
         
         \myparagraph{Schedule variance}
         Rappresenta l'anticipo o il ritardo nello svolgimento del progetto rispetto al valore pianificato. Abbreviato in $SV$.
@@ -110,7 +103,6 @@
             \item[] $PV =$ Planned value
         \end{itemize}
         
-        
         \myparagraph{Cost variance}
         Rappresenta la differenza tra il lavoro completato e quello pianificato, ed è abbreviato in $CV$.
         \subparagraph{Formula}
@@ -124,260 +116,13 @@
             \item[] $AC =$ Actual cost
         \end{itemize}
         
-        
-        \myparagraph{Gunning's fog index}
-        L'indice di Gunning fog equivale all'indice della facilità di lettura di un testo. In particolare Stima gli anni di educazione scolastica per comprendere il testo.
-        \subparagraph{Formula}
-        \begin{displaymath}
-          IGF = 0.4·\left(\frac{ \textrm{Parole}}{\textrm{Frasi}} + 100·  \frac{\textrm{Complesse}}{ \textrm{Frasi}}\right)
-        \end{displaymath}
-        Dove:
-        \begin{itemize}
-        \item[] $IGF =$ Gunning's fog index
-        \item[] $\textrm{Parole} =$ numero complessivo di parole
-        \item[] $\textrm{Frasi} =$ numero complessivo di frasi
-        \item[] $\textrm{Complesse} =$ numero complessivo di parole ritenute complesse
-        \end{itemize}
-        
-        \myparagraph{Gulpease index}
-        Rappresenta la leggibilità di un testo valutando la lunghezza delle parole e delle frasi al numero totale di lettere
-        \subparagraph{Formula}
-        La formula che individua la metrica è:
-        \begin{displaymath}
-        \textit{IG} = 89 + \frac{300 * \textrm{Frasi} - 10* \textrm{Lettere}}{\textrm{Parole}}
-        \end{displaymath}
-        Dove:
-        \begin{itemize}
-        \item[] $IG =$ Gulpease index
-        \item[] $\textrm{Frasi} =$ numero complessivo di frasi
-        \item[] $\textrm{Lettere} =$ numero complessivo di lettere
-        \item[] $\textrm{Parole} =$ numero complessivo di parole
-        \end{itemize}
-        Per calcolare l'indice viene utilizzato uno script Python, attivato manualmente attraverso una GitHub Action. Il valore viene quindi calcolato utilizzando i documenti presenti in un preciso momento all'interno della repository.
-        
-        \myparagraph{Correttezza ortografica}
-        Rappresenta il numero totale di errori ortografici presenti. Essendo un valore intero che non è composto da altri sottoelemento non ha una formula
-        \mysubparagraph{Modalità di rilevazione}
-        Viene calcolato durante la verifica di un documento.
-        
-        \myparagraph{Percentuale di metriche soddisfatte}
-        Indica la percentuale in centesimi del numero di metriche con valore soddisfacente. Una basso valore percentuale è indice quindi di una bassa qualità.
-        \subparagraph{Formula}
-        \begin{displaymath}
-          PMS = \frac{\textrm{Soddisfatte}}{\textrm{Totali}}
-        \end{displaymath}
-        Dove:
-        \begin{itemize}
-        \item[] $PMS =$ Percentuale di metriche soddisfatte
-        \item[] $\textrm{Soddisfatte} =$ numero totale di metriche con valore soddisfacente
-        \item[] $\textrm{Totali} =$ numero totale di metriche calcolate
-        \end{itemize}
-        
-        \myparagraph{Code coverage}
-        Indica il valore percentuale in centesimi del numero di righe di codice testate.
-        \subparagraph{Formula}
-        \begin{displaymath}
-          CC = \frac{\textrm{Testate}}{\textrm{Totali}}
-        \end{displaymath}
-        Dove:
-        \begin{itemize}
-        \item[] $CC =$ Code coverage
-        \item[] $\textrm{Testate} =$ numero di righe testate
-        \item[] $\textrm{Totali} =$ numero di righe totali
-        \end{itemize}
-        
-        
-        \myparagraph{Numero di test superati}
-        Indica il nuemero totale intero di test superati. Questa metrica non ha formula in quanto il valore è dato dal calcolo del programmatore in fase di test del codice.
-        \subsubsection{Metriche di prodotto}
-        Queste sono le Metriche inerenti alla qualità di prodotto.
-        \myparagraph{Correttezza dello scambio dei dati}
-        Il prodotto software ha bisogno di dati provenienti da fonti esterne. Questa 
-        metrica misura che i dati ricevuti da tali fonti non siano modificati o errati 
-        in qualsiasi modo. Per dato si intende l'informazione più atomica possibile
-        \textit{ESEMPIO: in una banca dati anagrafica un dato può essere la data di 
-        nascita, oppure il cognome.}
-        \subparagraph{Formula}
-        La formula che individua la metrica è:
-        \begin{displaymath}
-          D_{err} = \#\ di\ errori
-        \end{displaymath}
-        Dove:
-        \begin{itemize}
-        \item[]$D_{err} =$  numero di errori totali rilevati sui dati importati 
-        nell'applicativo.
-        \end{itemize}
-        \myparagraph{Densità di errori}
-        Indica il numero di errori rilevati sul codice tramite i test di unità, è una 
-        misura del rapporto tra il totale dei test di unità errati e il totale dei test 
-        di unità eseguiti.
-        \subparagraph{Formula}
-        \begin{displaymath}
-          E_{density} = A_{err}/B_{tests}
-        \end{displaymath}
-        Dove:
-        \begin{itemize}
-          \item[] $E_{density} =$ densità di errori;
-          \item[] $A_{err} =$ totale test di unità errati;  
-          \item[] $B_{tests} =$ totale test di unità eseguiti.
-        \end{itemize}
-        
-        \myparagraph{Qualità della messaggistica}
-        È una metrica che indica la chiarezza dei messaggi di errore o di avviso 
-        all'utente. Per essere chiaro un messaggio deve avere le seguenti 
-        caratteristiche:
-        \begin{itemize}
-          \item deve indicare qual è l'errore, o il motivo dell'avviso;
-          \item deve indicare una o più azioni correttive.
-        \end{itemize}
-        Messaggi che non rispettano le suddette caratteristiche non saranno considerati 
-        chiari.
-        \subparagraph{Formula}
-        \begin{displaymath}
-          Q_{mex} = A_{clear}/B_{tot}
-        \end{displaymath}
-        Dove:
-        \begin{itemize}
-          \item[] $Q_{mex} =$ qualità della messaggistica;
-          \item[] $A_{clear} =$ totale messaggi considerati chiari; 
-          \item[] $B_{tot} =$ totale messaggi all'utente.
-        \end{itemize}
-        \mysubparagraph{Modalità di rilevazione}
-        Gli avvisi e gli errori segnalati all'utente sono contati manualmente.
-        
-        \myparagraph{Numero di click}
-        Conta il numero di click necessari per completare uno specifico task. Il task 
-        in analisi è il seguente: 
-        \begin{itemize}
-          \item click necessari per importare un set di dati nell'applicativo.
-        \end{itemize}
-        \textit{Sarà fornita una descrizione più precisa del task in fasi successive 
-        dell'attività di progetto.}
-        \subparagraph{Formula}
-        \begin{displaymath}
-          C_{click}(t) = \#\ di\ click
-        \end{displaymath}
-        Dove:
-        \begin{itemize}
-          \item[] $C_{click} =$ indica il numero totale di click per completare il 
-        task; 
-          \item[] $t =$ è il task da misurare.
-        \end{itemize}
-        \subparagraph{Modalità di rilevazione}
-        Per ottenere valori ai fini della metrica saranno eseguiti dei test 
-        sull'applicativo in funzione.
-        
-        \myparagraph{Site depth}
-        È la profondità dell'albero che rappresenta la struttura dell'applicativo.
-        \subparagraph{Formula}
-        \begin{displaymath}
-          S_{depth} = td(G)
-        \end{displaymath}
-        Dove:
-        \begin{itemize}
-          \item[] $S_{depth} =$ è la profondità della struttura del prodotto;
-          \item[] $td(G) =$ è la funzione che calcola la massima profondità (tree 
-        depth).
-        \end{itemize}
-        
-        \myparagraph{Response time}
-        Metrica di tempo che misura la durata di uno specifico task in secondi. Il 
-        task misurato è:
-        \begin{itemize}
-          \item caricamento di un set di dati all'interno del progetto.
-        \end{itemize}
-        \textit{In fasi successive del progetto saranno fornite ulteriori specifiche 
-        riguardanti al task (ad esempio quale set di dati viene utilizzato per la 
-        misurazione).}
-        \subparagraph{Formula}
-        \begin{displaymath}
-          T_{response} = B_{end}-A_{start}
-        \end{displaymath}
-        Dove:
-        \begin{itemize}
-          \item[] $T_{response} =$ durata totale del task;
-          \item[] $B_{end} =$ termine del task;
-          \item[] $A_{start} =$ inizio del task.
-        \end{itemize}
-        
-        \myparagraph{Complessità ciclomatica}
-        La complessità ciclomatica è la misura della quantità dei possibili percorsi di 
-        branching di una porzione di codice. Il codice è rappresentato tramite un 
-        grafo orientato con un nodo di start e finish dove gli altri nodi rappresentano 
-        istruzioni decisionali, la complessità ciclomatica è quindi il numero di 
-        cammini lineari indipendenti dal nodo start al nodo finish.
-        \subparagraph{Formula}
-        \begin{displaymath}
-          v(G) = e - n + 2p
-        \end{displaymath}
-        Dove:
-        \begin{itemize}
-          \item[] $v(G) =$ complessità ciclomatica del grafo G;
-          \item[] $e =$ numero di archi del grafo;
-          \item[] $n =$ numero di nodi del grafo;
-          \item[] $p =$ numero di componenti connesse.
-        \end{itemize}
-        
-        \myparagraph{Indipendenza dei test}
-        Questa metrica misura l'indipendenza dei test, ossia:
-        \begin{itemize}
-          \item un test non deve fare affidamento su altri test o elementi esterni;
-          \item un test deve essere ripetibile e il suo risultato deve rimanere 
-        invariato.
-        \end{itemize}
-        \subparagraph{Formula}
-        \begin{displaymath}
-          I_{test} = A_{ind}/B_{tests}
-        \end{displaymath}
-        Dove:
-        \begin{itemize}
-          \item[] $I_{test} =$ è l'indice di indipendenza dei test;
-          \item[] $A_{ind} =$ numero di test considerati indipendenti;
-          \item[] $B_{tests}$ numero totale di test.
-        \end{itemize}
-        
-        \myparagraph{Facilità di comprensione}
-        È un indice che misura la facilità di comprensione del codice. Un codice 
-        sorgente facilmente comprensibile avrà bisogno di meno commenti, viceversa 
-        codice complicato avrà più commenti.
-        \subparagraph{Formula}
-        \begin{displaymath}
-          F_{compr} = A_{comm}/SLOC
-        \end{displaymath}
-        Dove:
-        \begin{itemize}
-          \item[] $F_{compr} =$ indice della facilità di comprensione;
-          \item[] $A_{comm} =$ numero totale di righe di commento;
-          \item[] $SLOC =$ numero di righe del codice sorgente.
-        \end{itemize}
-        
-        \myparagraph{Sfin}
-        Structural Fan-In, indica il numero di procedure che chiamano una specifica 
-        procedura. L'oggetto della misura sono le unità architetturali.
-        \subparagraph{Formula}
-        \begin{displaymath}
-          sfin(u) =  \sum u_{caller}
-        \end{displaymath}
-        Dove:
-        \begin{itemize}
-          \item[] $sfin(u) =$ calcolo dello sfin dell'unità $u$;
-          \item[] $\sum u_{caller} =$ somma delle unità che utilizzano $u$.
-        \end{itemize}
-        
-        \myparagraph{Sfout}
-        Structural Fan-Out, indica il numero di procedure di cui necessita una 
-        specifica procedura. L'oggetto della misura sono le unità architetturali. 
-        \subparagraph{Formula}
-        \begin{displaymath}
-          sfout(u) = \sum u_{callee}
-        \end{displaymath}
-        Dove:
-        \begin{itemize}
-          \item[] $sfout(u) =$ calcolo dello sfout dell'unità $u$;
-          \item[] $\sum u_{callee} =$ somma delle unità utilizzate da $u$.
-        \end{itemize}
-			\subsubsection{Strumenti}
-			Qui vengono riportati gli strumenti utilizzati nel processo di fornitura:
+		\subsubsection{Strumenti}
+	    Qui vengono riportati gli strumenti utilizzati nel processo di fornitura:
+		\mysubparagraph{Google Sheets}
+	    Applicazione web per la creazione di fogli elettronici che permette a più persone di modificare lo stesso foglio.
+	    \mysubparagraph{Diagrams.net}
+	    Applicazione web per la produzione di diagrammi, viene utilizzata per la produzione dei diagrammi UML.\\
+	    \centerline{\url{https://app.diagrams.net/}}
 			
 		\subsection{Sviluppo}
 		\subsubsection{Scopo}
@@ -500,11 +245,25 @@
 	    Il codice insieme ad i commenti viene scritto in inglese.
 	    \mysubparagraph{Ricorsione}
 	    Evitare il più possibile la ricorsione.
-	    \paragraph{Strumenti}
+\paragraph{Strumenti}
+        \subsubsection{Metriche}
+        Di seguito vengono elencate le metriche inerenti alla qualità del processo di \textbf{Sviluppo}. I valori sono normati nel piano di qualifica. La modalità di rilevazione non è indicata per tutte le metriche: tale dato sarà 
+        inserito in fasi successive del progetto.
+        \myparagraph{Percentuale di requisiti soddisfatti}
+        La percentuale in centesimi dei requisiti saddisfatti.
+        \subparagraph{Formula}
+        \begin{displaymath}
+         PROS = Rs / Rt *100
+        \end{displaymath}
+        Dove:
+        \begin{itemize}
+            \item[] $Rs =$ requisiti soddisfatti
+            \item[] $Rt =$ requisiti totali
+        \end{itemize}
+        
+        \subsubsection{Strumenti}
 	    \mysubparagraph{UML}
 	    Linguaggio di modellizzazione atto a visualizzare un sistema software. Viene utillizzata la versione 2.0 del linguaggio.
 	    \mysubparagraph{Diagrams.net}
 	    Applicazione web per la produzione di diagrammi, viene utilizzata per la produzione dei diagrammi UML.\\
 	    \centerline{\url{https://app.diagrams.net/}}
-	    \mysubparagraph{Google Sheets}
-	    Applicazione web per la creazione di fogli elettronici che permette a più persone di modificare lo stesso foglio.
