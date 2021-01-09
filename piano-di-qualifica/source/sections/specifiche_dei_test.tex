@@ -1,7 +1,7 @@
 
 \section{Specifica dei test}
 
-Sono stati determinati, come descritto anche nel documento \textit{Norme di Progetto 1.0.0}, 4 tipi di test ovvero: \textit{Test di unità, Test di Integrazione, Test di sistema, Test di accettazione} e \textit{Test di regressione}. Si adotterà quindi il \textbf{Modello a V}\glo{} che permette lo sviluppo dei test in parallelo alle attività di analisi e progettazione. Così facendo i test sviluppati saranno in grado di verificare sia la correttezza del programma software sia l'implementazione. Sara disponibile inoltre una tabella degli esiti dei test per una facile consultazione.
+Sono stati determinati, come descritto anche nel documento \textit{Norme di Progetto 1.0.0}, 5 tipi di test ovvero: \textit{Test di unità, Test di Integrazione, Test di sistema, Test di accettazione} e \textit{Test di regressione}. Si adotterà quindi il \textbf{Modello a V}\glo{} che permette lo sviluppo dei test in parallelo alle attività di analisi e progettazione. Così facendo i test sviluppati saranno in grado di verificare sia la correttezza del programma software sia l'implementazione. Sara disponibile inoltre una tabella degli esiti dei test per una facile consultazione.
 
 Per i test valgono le seguenti sigle:
 
@@ -59,17 +59,17 @@ Mentre per lo stato valgono le seguenti sigle:
         \begin{itemize}
             \item Scatter Plot Matrix
             \item Heatmap
-            \item Correlation Heatmap
             \item Force Field
             \item Linear Projection
         \end{itemize}},
         NI,
-        RFO2 RFO2.1 RFO2.2 RFO2.3 RFO2.4 RFO2.5
+        RFO2 RFO2.1 RFO2.2 RFO2.4 RFO2.5
     },
-    {   TSOF2.2.1,
-        Si verifica che l'utente possa scegliere il colore della sfumatura nella visualizzazione Heatmap,
+    {   
+        TSFF2.3,
+        Si verifica che nella scelta per la visualizzazione deve esserci: Correlation Heatmap,
         NI,
-        RFO2.2.1
+        RFF2.3
     },
     {   
         TSFF2.6,
@@ -271,19 +271,19 @@ Mentre per lo stato valgono le seguenti sigle:
         RVO1
     },
     {   
-        TSDV,
+        TSOV2,
         Si verifica che l'applicazione sia sviluppata in Javascript con l'utilizzo della libreria d3.js,
         NI,
         RVD2 RVD2.1
     },
     {   
-        TSDV2.2,
+        TSDV2.1,
         Si verifica che il backend dell'applicazione sia sviluppato con node.js con l'utilizzo del framework Express,
         NI,
         RVD2.2
     },
     {   
-        TSDV2.3,
+        TSDV2.2,
         Si verifica che il frontend dell'applicazione sia sviluppato con React con l'utilizzo del framework Ant Design,
         NI,
         RVD2.3
@@ -335,14 +335,14 @@ Mentre per lo stato valgono le seguenti sigle:
     %endTable
     
 \subsection{Test di unità}
-    I test di Unità hanno l'obbiettivo di verificare il funzionamento di ogni unità che compone l'applicazione. Questi test verrano definiti in una fase successiva, in particolare nella fase in cui verrà richiesta l'implementazione.
+    I test di Unità hanno l'obiettivo di verificare il funzionamento di ogni unità che compone l'applicazione. Questi test verrano definiti in una fase successiva, in particolare nella fase in cui ne verrà richiesta l'implementazione.
     
 \subsection{Test di Integrazione}
-    I test d'integrazione hanno l'obbiettivo di assicurare il funzionamento tra le varie unità, in modo da integrarsi tra loro. Questi test verrano definiti in una fase successiva, in particolare nella fase in cui verrà richiesta l'implementazione.
+    I test d'integrazione verificano il funzionamento e l'interazione dell'insieme composto dalle singole unità. Questi test verranno definiti in una fase successiva, in particolare nella fase in cui ne verrà richiesta l'implementazione.
     
 \subsection{Test di accettazione}
-    I test di accettazione vengono svolti insieme al proponente per assicurare il gradimento dell'utente. Questi test verrano definiti in una fase successiva, in particolare nella fase in cui verrà richiesta l'implementazione.
+    I test di accettazione vengono svolti insieme al proponente per assicurare il gradimento dell'utente. Questi test verranno definiti in una fase successiva, in particolare nella fase in cui ne verrà richiesta l'implementazione.
     
 \subsection{Test di regressione}
-    I test di regressione vengono apportati ogni volta che viene apportata una modifica a un'unità del software. Questi test verrano definiti in una fase successiva, in particolare nella fase in cui verrà richiesta l'implementazione.
+    I test di regressione vengono eseguiti ogni volta che viene apportata una modifica a un'unità del software. Questi test verranno definiti in una fase successiva, in particolare nella fase in cui ne verrà richiesta l'implementazione.
 
