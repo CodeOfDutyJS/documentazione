@@ -1,0 +1,33 @@
+\newcommand*\metricstable{}
+\foreach \x [count=\nj] in \productquality
+{
+    \foreach \y [count=\ni] in \x
+    {
+        \ifnum\ni=4
+            \xappto\metricstable{\y}
+            \gappto\metricstable{\\}
+            \gappto\metricstable{\hline}
+        \else\ifnum\ni=5
+            \xappto\metricstable{\noexpand\multicolumn{4}{| l |}{Piano di contingenza: \y}}
+            \gappto\metricstable{\\}
+            \gappto\metricstable{\hline}
+        \else
+            \xappto\metricstable{\y&}
+        \fi\fi
+    }
+}
+
+% Impostazioni della tabella
+\tabulinesep = 2mm % padding
+\taburowcolors [1] 2{pari .. dispari} % colori delle righe
+\begin{longtabu} to \textwidth {| X[0.7,c m] | X[0.7,c m] | X[0.4,c m] | X[0.4,c m]|} % larghezza delle colonne
+\hline
+\rowcolor{header} % colore dell'header
+
+\textbf{Nome Incremento} & \textbf{Periodo} & \textbf{Descrizione} & \textbf{Codice Incremento}\\
+\hline
+\metricstable
+
+\end{longtabu}
+
+\undef\metricstable{}
