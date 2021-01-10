@@ -9,7 +9,7 @@
 % Per aggiungere il contenuto andare sulla cartella source/sections e creare un nuovo file.tex per ogni sezione
 
 % Per parole che devono andare nel glossario aggiungere /glo{} dopo la parola
-
+\graphicspath{{source/images/}}
 \begin{document}
     % Frontespizio 
     \input{../_template/title_page.tex}
@@ -27,6 +27,7 @@
     % \listoftables
     
     % Contenuto
+
     \input{source/sections/introduzione.tex}
     \newpage
     \input{source/sections/qualita_di_processo.tex}
@@ -34,7 +35,5 @@
     \input{source/sections/qualita_di_prodotto.tex}
     \input{source/sections/specifiche_dei_test.tex}
     \input{source/sections/resoconti_verifica.tex}
-    \input{source/sections/valutazione_per_miglioramento.tex}
-
     
 \end{document}
