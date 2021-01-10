@@ -2,15 +2,15 @@
 	\subsection{Documentazione}
 	    
 	    \subsubsection{Scopo}
-	    Lo scopo della documentazione è fornire riferimenti precisi ed universali su ogni attività e processo inerenti al progetto. Questa sezione norma come stilare tutti i documenti prodotti durante il ciclo di vita del software. I documenti sono reperibili al seguente repository\glo{}:
+	    Lo scopo della documentazione è fornire riferimenti precisi ed universali su ogni attività e processo inerenti al progetto. Questa sezione norma come stilare tutti i documenti prodotti durante il ciclo di vita del software. I documenti sono reperibili al seguente repository:
 	    \url{https://github.com/CodeOfDutyJS/documentazione}
 	    
 	    \subsubsection{Ciclo di vita del Documento}
 	    \begin{itemize}
-	        \item \textbf{Creazione} Il documento viene creato da fonti accettabili e conformamente alle norme, in particolare sono fonti accettabili push sul repository, viene usato un template LaTeX fornito nello stesso;
+	        \item \textbf{Creazione} Il documento viene creato da fonti accettabili e conformamente alle norme. In particolare sono fonti accettabili push sul repository e viene usato un template LaTeX fornito nello stesso;
 	        \item \textbf{Implementazione della struttura} Sempre secondo le norme, viene creata la struttura del documento, che deve sempre contenere un registro delle modifiche e un indice che tiene traccia delle voci.
 	        \item \textbf{Redazione} il documento viene scritto in forma incrementale, con ogni voce creata interamente;
-	        \item \textbf{Revisione} L'implementazione e le modifiche del documento deve seguire gli standard documentativi forniti, e devono essere approvate da un membro del gruppo in base al loro formato, adeguatezza, contenuto tecnico e stile di presentazione;
+	        \item \textbf{Revisione} L'implementazione e le modifiche del documento deve seguire gli standard documentativi forniti e devono essere approvate da un membro del gruppo in base al loro formato, adeguatezza, contenuto tecnico e stile di presentazione;
 	        \item \textbf{Approvazione della versione} Una volta che il documento contiene tutte le voci descritte nella struttura, viene approvato da un membro del gruppo che non deve aver contribuito precedentemente al documento stesso;
 	        \item \textbf{Manuntenzione} Una volta che il documento viene aggiornato come da normativa, viene di nuovo sottoposto a \textbf{Revisione} e \textbf{Approvazione}.
 	    \end{itemize}
@@ -18,9 +18,9 @@
 	    \subsubsection{Template LaTex e automazione}
 	    Allo scopo di uniformare lo stile e velocizzare la produzione dei documenti viene fornito un template LaTeX.
 	    \myparagraph{Struttura}
-	    Un file "main.tex" raccoglie le sezioni del documento, ed in testa raccoglie in input un file "package.tex", contenente tutti i package necessari alla compilazione, ed un file "config.tex", contenente i comandi di configurazione.
+	    Un file "main.tex" raccoglie le sezioni del documento. In testa raccoglie in input un file "package.tex" contenente tutti i package necessari alla compilazione ed un file "config.tex" contenente i comandi di configurazione.
 	    \myparagraph{Automazione}
-	    Vengono usate le Github Actions per automatizzare la compilazione del file LaTeX, in modo da creare un artefatto consultabile da tutto il gruppo ad ogni cambiamento dello stesso, ed in modo  da assicurarsi circa la compilazione stessa del file LaTeX. Inoltre uno script Python automaticamente appone l'apposito pedice alle voci da inserire nel glossario.
+	    Vengono usate le Github Actions per automatizzare la compilazione del file LaTeX in modo da creare un artefatto consultabile da tutto il gruppo ad ogni cambiamento dello stesso ed in modo  da assicurarsi circa la compilazione stessa del file LaTeX. Inoltre uno script Python automaticamente appone l'apposito pedice alle voci da inserire nel glossario.
 	    \subsubsection{Pagine}
 	    Di seguito una descrizione di pagine sempre presenti nei documenti prodotti dal gruppo.
 	    \myparagraph{Frontespizio}
@@ -42,7 +42,7 @@
 	        \item il recapito mail del gruppo.
 	    \end{itemize}
 	    \myparagraph{Diario delle modifiche}
-	    La seconda pagina contiene sempre il diario delle modifiche, una tabella atta ad elencare ed a descrivere sinteticamente le modifiche, in ordine cronologico, apposte al documento.
+	    La seconda pagina contiene sempre il diario delle modifiche: una tabella atta ad elencare ed a descrivere sinteticamente le modifiche in ordine cronologico apposte al documento.
 	    Il diario delle modifiche contiene le seguenti voci:
 	    \begin{enumerate}
 	        \item \textbf{Versione}: la versione del documento;
@@ -54,7 +54,7 @@
 	    \myparagraph{Indice}
 	    Il documento contiene poi sempre un indice ordinato e facilmente consultabile contenente le voci all'interno del documento, in modo da informare sulla struttura dello stesso e di dare modo di trovare velocemente le sezioni ricercate.
 	    \myparagraph{Introduzione}
-	    Tutti i documenti devono iniziare con una breve sezione d'introduzione volta a spiegare lo scopo del documento, e ad inserire eventuali riferimenti.
+	    Tutti i documenti devono iniziare con una breve sezione d'introduzione volta a spiegare lo scopo del documento e ad inserire eventuali riferimenti.
 	    \myparagraph{Intestazione del contenuto}
 	    Tutte le pagine di contenuto hanno separata da una linea orizzontale un'intestazione contenente:
 	    \begin{itemize}
@@ -64,7 +64,7 @@
 	    \myparagraph{Piè di pagina}
 	    il piè di pagina contiene, centrato, i numeri di pagina corrente e pagine totali del documento.
 	    \myparagraph{Note}
-	    In caso di note queste vanno numerate per pagina ed essere riportate con la loro numerazione a piè di pagina e descritte il più brevemente possibile.
+	    In caso di note, queste vanno numerate per pagina ed essere riportate con la loro numerazione a piè di pagina e descritte il più brevemente possibile.
 	    \subsubsection{Norme di stile}
 	    \myparagraph{Immagini}
 	    Le immagini vanno inserite centrate e fornite di apposita didascalia.
@@ -87,7 +87,7 @@
 	    \end{itemize}
 	    \myparagraph{Riferimenti a documenti}
 	    \begin{itemize}
-	        \item nel caso il riferimento al documento sia in un titolo a come voce di un elenco non si usa il corsivo ma il grassetto
+	        \item nel caso il riferimento al documento sia in un titolo come voce di un elenco non si usa il corsivo ma il grassetto.
 	        \item ogni qualvolta si fa riferimento al documento in un testo o ad un suo contenuto il nome viene accompagnato, separato da uno spazio, dalla versione, anch'essa in corsivo
 	        \item il nome del documento viene scritto per intero, e ogni parola di cui è composto deve iniziare con la lettera maiuscola
 	    \end{itemize}
@@ -120,7 +120,7 @@
 	        \item \textbf{Immagini}: tutti gli altri elementi grafici. 
 	    \end{itemize}
 	    \myparagraph{Figure}
-	    Ogni figura deve essere contrassegnata da una didascalia descrittiva posta al di sotto di essa, seguita fa una numerazione progressiva assegnata per sezione. È esente da questa convenzione il diario delle modifiche.
+	    Ogni figura deve essere contrassegnata da una didascalia descrittiva posta al di sotto di essa, seguita da una numerazione progressiva assegnata per sezione. È esente da questa convenzione il diario delle modifiche.
 	    la numerazione delle figure è composta da tre cifre \textbf{X.Y.Z}:
 	    \begin{itemize}
 	        \item \textbf{X.Y}: riferimento alla sezione;
@@ -128,14 +128,40 @@
 	    \end{itemize}
 	    \myparagraph{Immagini}
 	    Le immagini vanno inserite centrate e corredate di didascalia descrittiva sottostante all'immagine stessa.
-	    \subsubsection{Strumenti per la stesura}
+	    
+	    \subsubsection{Metriche}
+		Di seguito vengono elencate le metriche inerenti alla qualità del processo di \textbf{Documentazione}. I valori sono normati nel piano di qualifica. La modalità di rilevazione non è indicata per tutte le metriche: tale dato sarà inserito in fasi successive del progetto.
+	    
+	    \myparagraph{Gulpease index}
+        Rappresenta la leggibilità di un testo valutando la lunghezza delle parole e delle frasi al numero totale di lettere
+        \subparagraph{Formula}
+        La formula che individua la metrica è:
+        \begin{displaymath}
+        \textit{IG} = 89 + \frac{300 * \textrm{Frasi} - 10* \textrm{Lettere}}{\textrm{Parole}}
+        \end{displaymath}
+        Dove:
+        \begin{itemize}
+        \item[] $IG =$ Gulpease index
+        \item[] $\textrm{Frasi} =$ numero complessivo di frasi
+        \item[] $\textrm{Lettere} =$ numero complessivo di lettere
+        \item[] $\textrm{Parole} =$ numero complessivo di parole
+        \end{itemize}
+        Per calcolare l'indice viene utilizzato uno script Python, attivato manualmente attraverso una GitHub Action. Il valore viene quindi calcolato utilizzando i documenti presenti in un preciso momento all'interno della repository.
+        
+        \myparagraph{Correttezza ortografica}
+        Rappresenta il numero totale di errori ortografici presenti. Essendo un valore intero che non è composto da altri sottoelemento non ha una formula
+        \mysubparagraph{Modalità di rilevazione}
+        Viene calcolato durante la verifica di un documento.
+	    
+	    
+	    \subsubsection{Strumenti}
 	    \myparagraph{LaTeX}
 	    Viene usato LaTeX come linguaggio markdown per rendere più semplice ed uniformare la scrittura collaborativa dei documenti.
 	    \myparagraph{TexLive}
 	    Per la stesura dei documenti e la loro compilazione.
 	    \myparagraph{Overleaf}
 	    Per la stesura dei documenti.
-	
+
 	\subsection{Gestione della configurazione}
 		
 		\subsubsection{Scopo}
@@ -148,7 +174,7 @@
 		
 		\subsubsection{Versionamento}
 			
-			\paragraph{Codice di versione del documento}
+			\myparagraph{Codice di versione del documento}
 			Per tenere traccia di ogni documento, il gruppo ha deciso di ricorrere alla seguente notazione: \textbf{X.Y.Z}, dove
 			\begin{itemize}
 				
@@ -159,16 +185,16 @@
 				\item \textbf{Z}: indica una versione instabile di tale documento, e che esso è in fase di lavorazione da parte dei redattori. Numerazione progressiva (da 0), incrementata ogni qualvolta un redattore aggiunge contenuto al documento.
 			\end{itemize}
 			
-			\paragraph{Tecnologie}
+			\myparagraph{Tecnologie}
 			Come sistema di versionamento è stato scelto Git, il quale dispone del servizio Github per ospitare la repository remota. Altro strumento interessante messo a disposizione da Github è "Github Actions" il quale permette di realizzare un servizio di Continuos Integration.
 			
-			\paragraph{Repository}
+			\myparagraph{Repository}
 			Per interagire con il sistema di versionamento scelto, ogni componente del gruppo può utilizzare la versione da linea di comando (Git) con opportuni plugin per facilitare l'uso del sistema di versionamento. Alternativamente è possibile utilizzare la versione GUI fornita su Github. La repository è disponibile all'indirizzo:\\
 			\begin{center}
 				$\underline{https://github.com/CodeOfDutyJS/documentazione}$
 			\end{center}
 			
-			\paragraph{Struttura del repository}
+			\myparagraph{Struttura del repository}
 			All'interno del repository è possibile trovare:
 			\begin{itemize}
 				\item \textbf{nome-del-documento}: tutti i documenti sono disponibili al livello più esterno del repository.
@@ -178,7 +204,7 @@
 				\item \textbf{\_glo\_replace.py}: script in python che genera un pedice G ad ogni occorenza di tutte le parole presentiin "glossario.txt"´
 			\end{itemize}
 			
-			\paragraph{Estensione dei file}
+			\myparagraph{Estensione dei file}
 			Per la documentazione saranno utilizzati solamente le seguenti estensioni di file:
 			\begin{itemize}
 				\item file con estensione .pdf (l'elaborato da consegnare);
@@ -186,7 +212,7 @@
 				\item immagini e file ausiliari di supporto
 			\end{itemize}
 		
-			\paragraph{Branching}
+			\myparagraph{Branching}
 			Ogni repository verrà gestito in branch ovvero spazi di lavoro separati che permettono di lavorare sul materiale all'interno del repository mantenendo le modifiche di ogni utente nel suo branch personale. Perciò all'interno di ogni repository saranno presenti:
 			\begin{itemize}
 				\item \textbf{Branch master}: branch all'interno del quale viene raccolto il lavoro verificato, e quindi disponibile al rilascio
@@ -194,7 +220,7 @@
 			\end{itemize}
 			Il lavoro verrà trasferito da un branch personale al branch master solamente quando il lavoro compiuto all'interno del branch personale verrà verificato tramite una Pull Request. Essa permette di tenere il lavoro in uno "spazio separato" per essere verificato, corretto e successivamente fuso con il ramo master in caso di verifica positiva.
 			
-			\paragraph{Gestione delle modifiche}
+			\myparagraph{Gestione delle modifiche}
 			I membri del gruppo possono modificare i file presenti all'interno di ogni branch personale. È consigliato utilizzare la funzione di commit presente in Git per tenere traccia di ogni cambiamento nella struttura del repository e per identificare l'autore di un determinato cambiamento. Per modificare contenuti e strutture dei file è consigliato contattare il responsabile del file che si vuole modificare, proporre la modifica, e in caso di approvazione effettuare tali modifiche. Nel caso di errori grammaticali è possibile correggere autonomamente i documenti. 
 	
 	\subsection{Gestione della Qualità}
@@ -231,7 +257,210 @@
 			\item \textbf{Reazione}: in base ai risultati ottenuti, adattare le metodologie
 		\end{itemize}
 		
-		\subsubsection{Strumenti}
+		\subsubsection{Qualità del prodotto}
+		\myparagraph{Correttezza dello scambio dei dati}
+        Il prodotto software ha bisogno di dati provenienti da fonti esterne. Questa 
+        metrica misura che i dati ricevuti da tali fonti non siano modificati o errati 
+        in qualsiasi modo. Per dato si intende l'informazione più atomica possibile
+        \textit{ESEMPIO: in una banca dati anagrafica un dato può essere la data di 
+        nascita, oppure il cognome.}
+        \subparagraph{Formula}
+        La formula che individua la metrica è:
+        \begin{displaymath}
+          D_{err} = \#\ di\ errori
+        \end{displaymath}
+        Dove:
+        \begin{itemize}
+        \item[]$D_{err} =$  numero di errori totali rilevati sui dati importati 
+        nell'applicativo.
+        \end{itemize}
+        \myparagraph{Densità di errori}
+        Indica il numero di errori rilevati sul codice tramite i test di unità, è una 
+        misura del rapporto tra il totale dei test di unità errati e il totale dei test 
+        di unità eseguiti.
+        \subparagraph{Formula}
+        \begin{displaymath}
+          E_{density} = A_{err}/B_{tests}
+        \end{displaymath}
+        Dove:
+        \begin{itemize}
+          \item[] $E_{density} =$ densità di errori;
+          \item[] $A_{err} =$ totale test di unità errati;  
+          \item[] $B_{tests} =$ totale test di unità eseguiti.
+        \end{itemize}
+        
+        \myparagraph{Qualità della messaggistica}
+        È una metrica che indica la chiarezza dei messaggi di errore o di avviso 
+        all'utente. Per essere chiaro un messaggio deve avere le seguenti 
+        caratteristiche:
+        \begin{itemize}
+          \item deve indicare qual è l'errore, o il motivo dell'avviso;
+          \item deve indicare una o più azioni correttive.
+        \end{itemize}
+        Messaggi che non rispettano le suddette caratteristiche non saranno considerati 
+        chiari.
+        \subparagraph{Formula}
+        \begin{displaymath}
+          Q_{mex} = A_{clear}/B_{tot}
+        \end{displaymath}
+        Dove:
+        \begin{itemize}
+          \item[] $Q_{mex} =$ qualità della messaggistica;
+          \item[] $A_{clear} =$ totale messaggi considerati chiari; 
+          \item[] $B_{tot} =$ totale messaggi all'utente.
+        \end{itemize}
+        \mysubparagraph{Modalità di rilevazione}
+        Gli avvisi e gli errori segnalati all'utente sono contati manualmente.
+        
+        \myparagraph{Numero di click}
+        Conta il numero di click necessari per completare uno specifico task. Il task 
+        in analisi è il seguente: 
+        \begin{itemize}
+          \item click necessari per importare un set di dati nell'applicativo.
+        \end{itemize}
+        \textit{Sarà fornita una descrizione più precisa del task in fasi successive 
+        dell'attività di progetto.}
+        \subparagraph{Formula}
+        \begin{displaymath}
+          C_{click}(t) = \#\ di\ click
+        \end{displaymath}
+        Dove:
+        \begin{itemize}
+          \item[] $C_{click} =$ indica il numero totale di click per completare il 
+        task; 
+          \item[] $t =$ è il task da misurare.
+        \end{itemize}
+        \subparagraph{Modalità di rilevazione}
+        Per ottenere valori ai fini della metrica saranno eseguiti dei test 
+        sull'applicativo in funzione.
+        
+        \myparagraph{Site depth}
+        È la profondità dell'albero che rappresenta la struttura dell'applicativo.
+        \subparagraph{Formula}
+        \begin{displaymath}
+          S_{depth} = td(G)
+        \end{displaymath}
+        Dove:
+        \begin{itemize}
+          \item[] $S_{depth} =$ è la profondità della struttura del prodotto;
+          \item[] $td(G) =$ è la funzione che calcola la massima profondità (tree 
+        depth).
+        \end{itemize}
+        
+        \myparagraph{Response time}
+        Metrica di tempo che misura la durata di uno specifico task in secondi. Il 
+        task misurato è:
+        \begin{itemize}
+          \item caricamento di un set di dati all'interno del progetto.
+        \end{itemize}
+        \textit{In fasi successive del progetto saranno fornite ulteriori specifiche 
+        riguardanti al task (ad esempio quale set di dati viene utilizzato per la 
+        misurazione).}
+        \subparagraph{Formula}
+        \begin{displaymath}
+          T_{response} = B_{end}-A_{start}
+        \end{displaymath}
+        Dove:
+        \begin{itemize}
+          \item[] $T_{response} =$ durata totale del task;
+          \item[] $B_{end} =$ termine del task;
+          \item[] $A_{start} =$ inizio del task.
+        \end{itemize}
+        
+        \myparagraph{Complessità ciclomatica}
+        La complessità ciclomatica è la misura della quantità dei possibili percorsi di 
+        branching di una porzione di codice. Il codice è rappresentato tramite un 
+        grafo orientato con un nodo di start e finish dove gli altri nodi rappresentano 
+        istruzioni decisionali, la complessità ciclomatica è quindi il numero di 
+        cammini lineari indipendenti dal nodo start al nodo finish.
+        \subparagraph{Formula}
+        \begin{displaymath}
+          v(G) = e - n + 2p
+        \end{displaymath}
+        Dove:
+        \begin{itemize}
+          \item[] $v(G) =$ complessità ciclomatica del grafo G;
+          \item[] $e =$ numero di archi del grafo;
+          \item[] $n =$ numero di nodi del grafo;
+          \item[] $p =$ numero di componenti connesse.
+        \end{itemize}
+        
+        \myparagraph{Indipendenza dei test}
+        Questa metrica misura l'indipendenza dei test, ossia:
+        \begin{itemize}
+          \item un test non deve fare affidamento su altri test o elementi esterni;
+          \item un test deve essere ripetibile e il suo risultato deve rimanere 
+        invariato.
+        \end{itemize}
+        \subparagraph{Formula}
+        \begin{displaymath}
+          I_{test} = A_{ind}/B_{tests}
+        \end{displaymath}
+        Dove:
+        \begin{itemize}
+          \item[] $I_{test} =$ è l'indice di indipendenza dei test;
+          \item[] $A_{ind} =$ numero di test considerati indipendenti;
+          \item[] $B_{tests}$ numero totale di test.
+        \end{itemize}
+        
+        \myparagraph{Facilità di comprensione}
+        È un indice che misura la facilità di comprensione del codice. Un codice 
+        sorgente facilmente comprensibile avrà bisogno di meno commenti, viceversa 
+        codice complicato avrà più commenti.
+        \subparagraph{Formula}
+        \begin{displaymath}
+          F_{compr} = A_{comm}/SLOC
+        \end{displaymath}
+        Dove:
+        \begin{itemize}
+          \item[] $F_{compr} =$ indice della facilità di comprensione;
+          \item[] $A_{comm} =$ numero totale di righe di commento;
+          \item[] $SLOC =$ numero di righe del codice sorgente.
+        \end{itemize}
+        
+        \myparagraph{Sfin}
+        Structural Fan-In, indica il numero di procedure che chiamano una specifica 
+        procedura. L'oggetto della misura sono le unità architetturali.
+        \subparagraph{Formula}
+        \begin{displaymath}
+          sfin(u) =  \sum u_{caller}
+        \end{displaymath}
+        Dove:
+        \begin{itemize}
+          \item[] $sfin(u) =$ calcolo dello sfin dell'unità $u$;
+          \item[] $\sum u_{caller} =$ somma delle unità che utilizzano $u$.
+        \end{itemize}
+        
+        \myparagraph{Sfout}
+        Structural Fan-Out, indica il numero di procedure di cui necessita una 
+        specifica procedura. L'oggetto della misura sono le unità architetturali. 
+        \subparagraph{Formula}
+        \begin{displaymath}
+          sfout(u) = \sum u_{callee}
+        \end{displaymath}
+        Dove:
+        \begin{itemize}
+          \item[] $sfout(u) =$ calcolo dello sfout dell'unità $u$;
+          \item[] $\sum u_{callee} =$ somma delle unità utilizzate da $u$.
+        \end{itemize}
+		
+		\subsubsection{Metriche}
+		Di seguito vengono elencate le metriche inerenti alla qualità del processo di \textbf{Gestione della qualità}. I valori sono normati nel piano di qualifica. La modalità di rilevazione non è indicata per tutte le metriche: tale dato sarà 
+        inserito in fasi successive del progetto.
+		\myparagraph{Percentuale di metriche soddisfatte}
+        Indica la percentuale in centesimi del numero di metriche con valore soddisfacente. Una basso valore percentuale è indice quindi di una bassa qualità.
+        \subparagraph{Formula}
+        \begin{displaymath}
+          PMS = \frac{\textrm{Soddisfatte}}{\textrm{Totali}}
+        \end{displaymath}
+        Dove:
+        \begin{itemize}
+        \item[] $PMS =$ Percentuale di metriche soddisfatte
+        \item[] $\textrm{Soddisfatte} =$ numero totale di metriche con valore soddisfacente
+        \item[] $\textrm{Totali} =$ numero totale di metriche calcolate
+        \end{itemize}
+        
+    \subsubsection{Strumenti}
 		Gli strumenti utilizzati per la qualità sono:
 		\begin{itemize}
 			\item \textbf{Standard ISO-12207};
@@ -246,7 +475,7 @@
 	\subsubsection{Attività}
 	Il processo di verifica contiene le seguenti attività:
 	\begin{itemize}
-	    \item \textbf{Preparazione alla verificazione}: si pianifica la verificazione, studiando cosa va verificato, scegliendo appropriate metriche, si identificano i limiti nei requisiti, si selezionano tecniche, strumenti e si acquisisce l'elemento da verificare;
+	    \item \textbf{Preparazione alla verificazione}: si pianifica la verificazione studiando cosa va verificato, scegliendo appropriate metriche, si identificano i limiti nei requisiti, si selezionano tecniche, strumenti e si acquisisce l'elemento da verificare;
 	    \item \textbf{Eseguire verificazione}: si definiscono le procedure attraverso le quali verrà compiuta la verificazione e la si esegue;
 	    \item \textbf{Gestione dei risultati}: si controllano i risultati ed eventuali anomalie e si identificano le possibili risposte, si annotano problemi e incidenti accorsi durante la verificazione, si ottiene l'assenso del proponente sulla soddisfazione dei requisiti ed infine si aggiorna la tracciabilità del requisito.
 	\end{itemize}
@@ -272,7 +501,7 @@
 	\myparagraph{Approcci}
 	ci sono due tipi di approcci ai test:
 	\begin{itemize}
-	    \item \textbf{Black box}: il test ha come scopo puramente l'appurare il comportamento del programma. Ad un determinato vettore di input, se il vettore di output è quello desiderato il test viene considerato passato. La struttura del codice non è conosciuta dall'esecutore del test; 
+	    \item \textbf{Black box}: il test ha come scopo l'appurare il comportamento del programma. Ad un determinato vettore di input, se il vettore di output è quello desiderato, il test viene considerato passato. La struttura del codice non è conosciuta dall'esecutore del test; 
 	    \item \textbf{White box}: il test viene pianificato tenendo conto della struttura del codice, con l'obbiettivo, oltre a verificare il corretto funzionamento, di testare e migliorare l'efficienza e la struttura stessa. 
 	\end{itemize}
 	\myparagraph{Tipi di test}
@@ -314,6 +543,26 @@
 	  \item \textbf{identificativo}: identificativo progressivo;
 	  \item \textbf{identificativo}: identificativo progressivo della specializzazione.
 	\end{itemize}
+	
+	\subsubsection{Metriche}
+	Di seguito vengono elencate le metriche inerenti alla qualità del processo di \textbf{Verifica}. I valori sono normati nel piano di qualifica. La modalità di rilevazione non è indicata per tutte le metriche: tale dato sarà inserito in fasi successive del progetto.
+	    \myparagraph{Code coverage}
+        Indica il valore percentuale in centesimi del numero di righe di codice testate.
+        \subparagraph{Formula}
+        \begin{displaymath}
+          CC = \frac{\textrm{Testate}}{\textrm{Totali}}
+        \end{displaymath}
+        Dove:
+        \begin{itemize}
+        \item[] $CC =$ Code coverage
+        \item[] $\textrm{Testate} =$ numero di righe testate
+        \item[] $\textrm{Totali} =$ numero di righe totali
+        \end{itemize}
+        
+        
+        \myparagraph{Numero di test superati}
+        Indica il nuemero totale intero di test superati. Questa metrica non ha formula in quanto il valore è dato dal calcolo del programmatore in fase di test del codice.
+	
 	\subsection{Validazione}
 
 	\subsubsection{Scopo}
