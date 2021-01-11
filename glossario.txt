@@ -14,7 +14,6 @@ Bootstrap
 Business Logic
 Cluster (dati)
 Committente
-Correlation Heatmap
 CSV
 d3.js
 Datadog
@@ -48,7 +47,7 @@ Parallel Coordinates
 Payment provider
 PCA
 PCs
-Proiezione Lineare Multi Asse
+Proiezione Lineare
 Proof Of Concept
 Proponente
 PWA

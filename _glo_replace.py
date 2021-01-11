@@ -37,6 +37,24 @@ for f in fileList:
                     word), r"\1\\noexpand\2", newtext, flags=re.IGNORECASE)
             textData = textData.replace(found, newtext)
 
+    m = re.findall("(url{(.|\n)*?})", textData)
+    if m:
+        for link in m:
+            found = link[0]
+            newtext = found
+            newtext = re.sub(r"(\\glo{})", "", newtext)
+            textData = textData.replace(found, newtext)
+
+    m = re.findall("(href{(.|\n)*?}{)", textData)
+    if m:
+        for link in m:
+            found = link[0]
+            newtext = found
+            newtext = newtext.replace("\\noexpand\\glo{}", "")
+            textData = textData.replace(found, newtext)
+
+    textData = textData.replace("\\label\\glo{}", "\\label")
+
     text.seek(0)
     text.truncate()
     text.write(textData)
