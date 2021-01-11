@@ -1,0 +1,30 @@
+\section{A}
+
+%startTable
+\def\definizioniA{
+{Amazon CloudWatch,Servizio di monitoraggio che raccoglie log in una visualizzazione unificata per tutti i servizi AWS.\\ \href{https://aws.amazon.com/it/cloudwatch/}{https://aws.amazon.com/it/cloudwatch/}},
+{Analisi dei dati,Processo di ispezione, pulizia, trasformazione e modellazione di dati con il fine di evidenziare informazioni.},
+{Apache Kafka,Piattaforma a bassa latenza ed altà velocità per il processing di dati in tempo reale.\\ \href{https://kafka.apache.org/}{https://kafka.apache.org/}},
+{API Rest,Acronico per Application Programming Interface. Sono un insieme di definizioni e protocolli per l'integrazione di software. REST è un insieme di principi architetturali per sviluppare API.},
+{AWS,Azienda che fornisce vari servizi cloud.\\ \href{https://aws.amazon.com/it/}{https://aws.amazon.com/it/}},
+{AWS AppSync,Servizio per lo sviluppo di API GraphQL.\\ \href{https://aws.amazon.com/it/appsync/}{https://aws.amazon.com/it/appsync/}},
+{AWS CloudFormation,Servizio per la gestione di risorse AWS e di terze parti.\\ \href{https://aws.amazon.com/it/cloudformation/}{https://aws.amazon.com/it/cloudformation/}},
+{AWS Cognito Identity,Servizio per la gestione di registrazioni e accessi da parte di utenti per le app Web.\\ \href{https://aws.amazon.com/it/cognito/}{https://aws.amazon.com/it/cognito/}},
+{AWS GameLift,Servizio per la gestione di server per giochi multiplayer.\\ \href{https://aws.amazon.com/it/gamelift/}{https://aws.amazon.com/it/gamelift/}},
+{AWS Lambda,Servizio per l'esecuzione di codice serverless.\\ \href{https://aws.amazon.com/it/lambda/}{https://aws.amazon.com/it/lambda/}},
+}
+%endTable
+
+\begin{description}
+\foreach \x [count=\nj] in \definizioniA
+{
+    \foreach \y [count=\ni] in \x
+    {
+        \ifnum\ni=1
+            \item[\y] \hfill\\
+        \else
+            \y
+        \fi
+    }
+}
+\end{description}
