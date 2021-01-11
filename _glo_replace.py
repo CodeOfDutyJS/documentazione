@@ -24,46 +24,17 @@ for f in fileList:
     textData = text.read()
 
     for word in glossaryList:
-        wordReplacement = word + "\glo{}"
-        textData = textData.replace(word + " ", wordReplacement + " ")
-        textData = textData.replace(word + ",", wordReplacement+",")
-        textData = textData.replace(word + ".", wordReplacement+".")
-        textData = textData.replace(word + ":", wordReplacement + ":")
-        textData = textData.replace(word + "(", wordReplacement + "(")
-        textData = textData.replace(word + ")", wordReplacement + ")")
-        textData = textData.replace(word + "}", wordReplacement + "}")
-        textData = textData.replace(word + "\n", wordReplacement + "\n")
-        textData = textData.replace(word + ";", wordReplacement + ";")
-        textData = textData.replace(word + "\"", wordReplacement + "\"")
+        textData = re.sub(r"(\b{}\b)".format(
+            word), r"\1\\glo{}", textData, flags=re.IGNORECASE)
 
-    m = re.search("(startTable(.|\n)*?endTable)", textData)
+    m = re.findall("(startTable(.|\n)*?endTable)", textData)
     if m:
-        print(m.group(1))
-        if m.group(1):
-            found = m.group(1)
+        for table in m:
+            found = table[0]
             newtext = found
             for word in glossaryList:
-                wordReplacement = word + "\\noexpand\glo{}"
-                newtext = newtext.replace(
-                    word + "\glo{} ", wordReplacement + " ")
-                newtext = newtext.replace(
-                    word + "\glo{},", wordReplacement+",")
-                newtext = newtext.replace(
-                    word + "\glo{}.", wordReplacement+".")
-                newtext = newtext.replace(
-                    word + "\glo{}:", wordReplacement + ":")
-                newtext = newtext.replace(
-                    word + "\glo{}(", wordReplacement + "(")
-                newtext = newtext.replace(
-                    word + "\glo{})", wordReplacement + ")")
-                newtext = newtext.replace(
-                    word + "\glo{}}", wordReplacement + "}")
-                newtext = newtext.replace(
-                    word + "\glo{}\n", wordReplacement + "\n")
-                newtext = newtext.replace(
-                    word + "\glo{};", wordReplacement + ";")
-                newtext = newtext.replace(
-                    word + "\glo{}\"", wordReplacement + "\"")
+                newtext = re.sub(r"(\b{}\b)(\\glo{{}})".format(
+                    word), r"\1\\noexpand\2", newtext, flags=re.IGNORECASE)
             textData = textData.replace(found, newtext)
 
     text.seek(0)

@@ -1,0 +1,25 @@
+\usepackage[utf8]{inputenc}
+\usepackage[italian]{babel}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{lipsum}
+\usepackage{eurosym}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks = true,
+    urlcolor = blue,
+}
+\usepackage{geometry}
+\geometry{
+total={170mm,257mm},
+left=15mm,
+top=30mm,
+}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\fancypagestyle{firstpage}{\fancyhf{}\fancyhead[L]{\includegraphics[scale=0.22, keepaspectratio=true]{../_template/images/logo_crop.png}}}
+\fancypagestyle{empty}{\fancyhf{}\fancyhead[L]{\includegraphics[scale=0.22, keepaspectratio=true]{../_template/images/logo_crop.png}}}
+\fancypagestyle{plain}{\fancyhf{}\fancyhead[R]{\includegraphics[scale = 0.06, keepaspectratio=true]{../_template/images/logo_crop.png}}}
+
+
+\longindentation=0pt

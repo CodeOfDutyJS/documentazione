@@ -1,0 +1,26 @@
+\newcommand*\organigramma{}
+\foreach \x [count=\nj] in \staff
+{
+    \foreach \y [count=\ni] in \x
+    {
+        \ifnum\ni=3
+            \xappto\organigramma{\y}
+            \gappto\organigramma{\\}
+            \gappto\organigramma{\hline}
+        \else
+            \xappto\organigramma{\y&}
+        \fi
+    }
+}
+
+% Impostazioni della tabella
+\tabulinesep = 2mm % padding
+\taburowcolors [1] 2{pari .. dispari} % colori delle righe
+\begin{longtabu} to \textwidth {| X[0.2,c m] | X[0.1,c m] | X[0.3,c m] |} % larghezza delle colonne
+\hline
+\rowcolor{header} % colore dell'header
+\organigramma
+
+\end{longtabu}
+
+\undef\organigramma{}
