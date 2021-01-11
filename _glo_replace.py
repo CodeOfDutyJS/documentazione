@@ -37,7 +37,7 @@ for f in fileList:
                     word), r"\1\\noexpand\2", newtext, flags=re.IGNORECASE)
             textData = textData.replace(found, newtext)
 
-    m = re.findall("(\\url{(.|\n)*?})", textData)
+    m = re.findall("(url{(.|\n)*?})", textData)
     if m:
         for link in m:
             found = link[0]
