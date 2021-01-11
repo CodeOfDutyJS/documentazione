@@ -53,6 +53,8 @@ for f in fileList:
             newtext = newtext.replace("\\noexpand\\glo{}", "")
             textData = textData.replace(found, newtext)
 
+    textData = textData.replace("\\label\\glo{}", "\\label")
+
     text.seek(0)
     text.truncate()
     text.write(textData)
