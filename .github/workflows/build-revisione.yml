@@ -95,7 +95,7 @@ jobs:
       - name: Glossario
         run: echo "Start build Glossario"
         
-      - name: Compile studio di fattibilità LaTeX document
+      - name: Compile glossario LaTeX document
         uses: damix48/latex-action@0.1
         with:
           working_directory: glossario/
