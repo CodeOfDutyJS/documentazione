@@ -1,0 +1,22 @@
+\section{O}
+
+%startTable
+\def\definizioniO{
+{Open source,Termine per indica un tipo di software che tramite una licenza, i detentori dei diritti favoriscono la modifica, lo studio, l'utilizzo e la redistribuzione del codice sorgente.},
+{OpenShift,PAAS di RedHat.\\ \href{https://www.openshift.com/}{https://www.openshift.com/}},
+}
+%endTable
+
+\begin{description}
+\foreach \x [count=\nj] in \definizioniO
+{
+    \foreach \y [count=\ni] in \x
+    {
+        \ifnum\ni=1
+            \item[\y] \hfill\\
+        \else
+            \y
+        \fi
+    }
+}
+\end{description}
