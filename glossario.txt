@@ -1,4 +1,3 @@
-Termine
 Amazon CloudWatch
 Analisi dei dati
 Apache Kafka

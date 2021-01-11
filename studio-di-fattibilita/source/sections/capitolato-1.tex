@@ -1,52 +1,52 @@
 \section{Capitolato 1 - BlockCOVID}
 \subsection{Informazioni generali}
 \begin{itemize}
-    \item \textbf{Nome}: \emph{BlockCOVID}: supporto digitale al contrasto della pandemia
-    \item \textbf{Proponente}: \emph{Imola informatica}
-    \item \textbf{Committente}: \emph{Prof. Tullio Vardanega e Prof. Riccardo Cardin}
+    \item \textbf{Nome}: \emph{BlockCOVID}: supporto digitale al contrasto della pandemia;
+    \item \textbf{Proponente}: \emph{Imola informatica};
+    \item \textbf{Committente}: \emph{Prof. Tullio Vardanega e Prof. Riccardo Cardin}.
 \end{itemize}
 \subsection{Descrizione capitolato}
-L'obiettivo del capitolato è quello di creare una piattaforma web e un'app che segnalano ad un server il tracciamento delle presenze in tempo reale nel luogo di lavoro e della pulizia delle postazioni di lavoro. Il tracciamento deve immutabile e certificato e quindi è necessario utilizzare un sistema di \emph{blockchain}, in questo caso basato su \emph{ethereum}. La piattaforma web è dedicata all'amministratore mentre l'app è dedicata agli utenti (dipendenti e addetto alle pulizie).
-\subsection{Finalità  del progetto}
+L'obiettivo del capitolato è quello di creare una piattaforma web e un'app che segnalano a un server il tracciamento delle presenze in tempo reale nel luogo di lavoro e della pulizia delle postazioni di lavoro. Il tracciamento deve essere immutabile e certificato e quindi è necessario utilizzare un sistema di \textbf{blockchain}, in questo caso basato su \emph{Ethereum}. La piattaforma web è dedicata all'amministratore mentre l'app è dedicata agli utenti (dipendenti e addetto alle pulizie).
+\subsection{Finalità del progetto}
 Il proponente descrive i seguenti casi d'uso possibili della piattaforma e app:
 \begin{itemize}
-    \item Amministratore
+    \item \textbf{Amministratore}:
     \begin{itemize}
-        \item Creare, modificare o eliminare postazioni e stanze
-        \item Creare, modificare o eliminare credenziali per utenti e personale specializzato
-        \item Monitorare numero di dipendenti in stanze e postazioni
-        \item Ricercare e effettuare report sui dati di tracciamento
+        \item creare, modificare o eliminare postazioni e stanze;
+        \item creare, modificare o eliminare credenziali per utenti e personale specializzato;
+        \item monitorare numero di dipendenti in stanze e postazioni;
+        \item ricercare ed effettuare report sui dati di tracciamento.
     \end{itemize}
-    \item Utente - dipendente
+    \item \textbf{Utente - dipendente}:
     \begin{itemize}
-        \item Effettuare prenotazioni di postazioni
-        \item Posizionare il telefono sul tag RFID in postazioni per ricevere informazioni sullo stato della postazione e/o per segnalare la propria presenza
-        \item Segnalare l'igienizzazione autonoma della postazione
-        \item Ricevere il nome di una postazione all'interno di una stanza
+        \item effettuare prenotazioni di postazioni;
+        \item posizionare il telefono sul tag RFID in postazioni per ricevere informazioni sullo stato della postazione e/o per segnalare la propria presenza;
+        \item segnalare l'igienizzazione autonoma della postazione;
+        \item ricevere il nome di una postazione all'interno di una stanza.
     \end{itemize}
-    \item Utente - addetto alle pulizie
+    \item \textbf{Utente - addetto alle pulizie}:
     \begin{itemize}
-        \item Ricevere elenco delle stanze (e postazioni) da igienizzare
-        \item Segnalare una stanza come igienizzata
+        \item ricevere elenco delle stanze (e postazioni) da igienizzare;
+        \item segnalare una stanza come igienizzata.
     \end{itemize}
 \end{itemize}
 \subsection{Tecnologie interessate}
-Il proponente lascia la possibilità di scegliere le tecnologie da utilizzare ma consiglia:
+Il proponente lascia la possibilità di scegliere le tecnologie da utilizzare, ma consiglia:
 \begin{itemize}
-    \item \textbf{Java}, \textbf{Python} o \textbf{NodeJS}: linguaggi per parte di server back-end per la creazioni di API Rest
-    \item Sistema di \textbf{blockchain Ethereum}: piattaforma decentralizzata per la creazione di applicazioni basate su smart-contract
-    \item \textbf{IAAS Kubernetes} o di un \textbf{PAAS}, \textbf{Openshift} o \textbf{Rancher}: strumenti per il rilascio delle componenti server del progetto, utilizzabili anche per gestire la scalabilità  delle operazioni
-    \item \textbf{Tag RFID}: etichette elettroniche in grado di memorizzare informazioni, in questo caso il codice della postazione; sono leggibili da lettori particolari oppure da molti modelli di smartphone tramite o standard NFC
-    \item \textbf{Java} o \textbf{Kotlin}: linguaggi per sviluppare l'applicazione per dispositivi Android
+    \item \textbf{Java, Python o Node.js}: linguaggi per la parte di server backend per la creazione di API Rest;
+    \item \textbf{Sistema di blockchain Ethereum}: piattaforma decentralizzata per la creazione di applicazioni basate su smart-contract;
+    \item \textbf{IAAS Kubernetes o di un PAAS, OpenShift o Rancher}: strumenti per il rilascio delle componenti server del progetto, utilizzabili anche per gestire la scalabilità delle operazioni;
+    \item \textbf{Tag RFID}: etichette elettroniche in grado di memorizzare informazioni, in questo caso il codice della postazione; sono leggibili da appositi dispositivi oppure da molti modelli di smartphone tramite lo standard NFC;
+    \item \textbf{Java o Kotlin}: linguaggi per sviluppare l'applicazione per dispositivi Android.
 \end{itemize}
 \subsection{Aspetti positivi}
 \begin{itemize}
-    \item Il proponente ha specificato in modo dettagliato il capitolato spiegando cosa si aspetta di ottenere.
-    \item La parte di codifica non sembra troppo complessa (però piuttosto lunga) fatta eccezione per l'utilizzo di blockchain.
+    \item Il proponente ha specificato in modo dettagliato il capitolato spiegando cosa si aspetta di ottenere;
+    \item la parte di codifica non sembra troppo complessa (però piuttosto lunga) fatta eccezione per l'utilizzo di blockchain.
 \end{itemize}
-\subsection{Criticità  e fattori di rischio}
+\subsection{Criticità e fattori di rischio}
 \begin{itemize}
-    \item Le tecnologie da utilizzare sono nuove per quasi tutti i membri del gruppo, in particolare i sistemi di blockchain sono nuovi per tutto il gruppo e sembrano abbastanza complessi da implementare.
+    \item Le tecnologie da utilizzare sono nuove per quasi tutti i membri del gruppo, in particolare i sistemi di blockchain, e sembrano abbastanza complessi da implementare.
 \end{itemize}
 \subsection{Conclusioni}
 Il capitolato ha catturato l'interesse della maggior parte dei membri del gruppo, le tecnologie coinvolte e il problema da affrontare sono state valutate stimolanti e formative.

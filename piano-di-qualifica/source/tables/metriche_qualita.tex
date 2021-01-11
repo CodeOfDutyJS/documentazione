@@ -3,7 +3,9 @@
 {
     \foreach \y [count=\ni] in \x
     {
-        \ifnum\ni=4
+        \ifnum\ni=1
+            \xappto\metricstable{\noexpand\textbf{\y}&}
+        \else\ifnum\ni=4
             \xappto\metricstable{\y}
             \gappto\metricstable{\\}
             \gappto\metricstable{\hline}
@@ -13,7 +15,7 @@
             \gappto\metricstable{\hline}
         \else
             \xappto\metricstable{\y&}
-        \fi\fi
+        \fi\fi\fi
     }
 }
 
