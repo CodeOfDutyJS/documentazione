@@ -91,6 +91,16 @@ jobs:
           working_directory: studio-di-fattibilita/
           root_file: main.tex
 
+      ## GLOSSARIO
+      - name: Glossario
+        run: echo "Start build Glossario"
+        
+      - name: Compile studio di fattibilità LaTeX document
+        uses: damix48/latex-action@0.1
+        with:
+          working_directory: glossario/
+          root_file: main.tex
+
       ## VERBALE verbale-interno_2020-12-09
       - name: verbale-interno_2020-12-09
         run: echo "Start build verbale-interno_2020-12-09"
@@ -187,6 +197,17 @@ jobs:
           asset_name: piano-di-qualifica.pdf
           asset_content_type: application/pdf
 
+      - name: Upload Glossario
+        id: upload-glossario
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: glossario/main.pdf
+          asset_name: glossario.pdf
+          asset_content_type: application/pdf
+
       - name: Upload Studio di fattibilità
         id: upload-studio
         
@@ -199,7 +220,7 @@ jobs:
           asset_name: studio-di-fattibilita.pdf
           asset_content_type: application/pdf
 
-      - name: Upload Studio di fattibilità
+      - name: Upload verbale-interno_2020-12-09
         id: upload-verbale-interno_2020-12-09
         
         uses: actions/upload-release-asset@v1
@@ -211,7 +232,7 @@ jobs:
           asset_name: verbale-interno_2020-12-09.pdf
           asset_content_type: application/pdf
           
-      - name: Upload Studio di fattibilità
+      - name: Upload verbale-interno_2020-12-16
         id: upload-verbale-interno_2020-12-16
         
         uses: actions/upload-release-asset@v1
@@ -223,7 +244,7 @@ jobs:
           asset_name: verbale-interno_2020-12-16.pdf
           asset_content_type: application/pdf
 
-      - name: Upload Studio di fattibilità
+      - name: Upload verbale-interno_2021-01-05
         id: upload-verbale-interno_2021-01-05
         
         uses: actions/upload-release-asset@v1
