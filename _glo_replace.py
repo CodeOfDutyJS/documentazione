@@ -44,13 +44,13 @@ for f in fileList:
             newtext = found
             newtext = re.sub(r"(\\glo{})", "", newtext)
             textData = textData.replace(found, newtext)
-    m = re.findall("(href{(.|\n)*?})", textData)
 
+    m = re.findall("(href{(.|\n)*?}{)", textData)
     if m:
         for link in m:
             found = link[0]
             newtext = found
-            newtext = re.sub(r"(\\glo{})", "", newtext)
+            newtext = newtext.replace("\\noexpand\\glo{}", "")
             textData = textData.replace(found, newtext)
 
     text.seek(0)
