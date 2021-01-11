@@ -85,10 +85,49 @@ jobs:
       - name: Add glossario to studio di fattibilità
         run: python _glo_replace.py /studio-di-fattibilita/ glossario.txt
         
-      - name: Compile piano di qualifica LaTeX document
+      - name: Compile studio di fattibilità LaTeX document
         uses: damix48/latex-action@0.1
         with:
           working_directory: studio-di-fattibilita/
+          root_file: main.tex
+
+      ## VERBALE verbale-interno_2020-12-09
+      - name: verbale-interno_2020-12-09
+        run: echo "Start build verbale-interno_2020-12-09"
+      
+      - name: Add glossario to verbale-interno_2020-12-09
+        run: python _glo_replace.py /verbale-interno_2020-12-09/ glossario.txt
+        
+      - name: Compile verbale-interno_2020-12-09 LaTeX document
+        uses: damix48/latex-action@0.1
+        with:
+          working_directory: verbale-interno_2020-12-09/
+          root_file: main.tex
+
+      ## VERBALE verbale-interno_2020-12-16
+      - name: verbale-interno_2020-12-16
+        run: echo "Start build verbale-interno_2020-12-16"
+      
+      - name: Add glossario to verbale-interno_2020-12-16
+        run: python _glo_replace.py /verbale-interno_2020-12-16/ glossario.txt
+        
+      - name: Compile verbale-interno_2020-12-16 LaTeX document
+        uses: damix48/latex-action@0.1
+        with:
+          working_directory: verbale-interno_2020-12-16/
+          root_file: main.tex
+
+      ## VERBALE verbale-interno_2021-01-05
+      - name: verbale-interno_2021-01-05
+        run: echo "Start build verbale-interno_2021-01-05"
+      
+      - name: Add glossario to verbale-interno_2021-01-05
+        run: python _glo_replace.py /verbale-interno_2021-01-05/ glossario.txt
+        
+      - name: Compile verbale-interno_2021-01-05 LaTeX document
+        uses: damix48/latex-action@0.1
+        with:
+          working_directory: verbale-interno_2021-01-05/
           root_file: main.tex
 
       ## RELEASE
@@ -101,7 +140,7 @@ jobs:
           tag_name: ${{ github.ref }}
           release_name: Release ${{ github.ref }}
           draft: false
-          prerelease: false
+          prerelease: false      
       
       ## UPLOAD
       - name: Upload Analisi dei requisiti
@@ -158,4 +197,40 @@ jobs:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: studio-di-fattibilita/main.pdf
           asset_name: studio-di-fattibilita.pdf
+          asset_content_type: application/pdf
+
+      - name: Upload Studio di fattibilità
+        id: upload-verbale-interno_2020-12-09
+        
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: verbale-interno_2020-12-09/main.pdf
+          asset_name: verbale-interno_2020-12-09.pdf
+          asset_content_type: application/pdf
+          
+      - name: Upload Studio di fattibilità
+        id: upload-verbale-interno_2020-12-16
+        
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: verbale-interno_2020-12-16/main.pdf
+          asset_name: verbale-interno_2020-12-16.pdf
+          asset_content_type: application/pdf
+
+      - name: Upload Studio di fattibilità
+        id: upload-verbale-interno_2021-01-05
+        
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: verbale-interno_2021-01-05/main.pdf
+          asset_name: verbale-interno_2021-01-05.pdf
           asset_content_type: application/pdf
