@@ -1,0 +1,23 @@
+\section{D}
+
+%startTable
+\def\definizioniD{
+{d3.js,Libreria JavaScript per creare visualizzazioni sul web.\\ \href{https://d3js.org/}{https://d3js.org/}},
+{Datadog,Servizio per il monitoraggio di server, database e servizi.\\ \href{https://www.datadoghq.com/}{https://www.datadoghq.com/}},
+{Discord,Applicazione VoIP che permette la comunicazione fra un gruppo di individui.\\ \href{https://discord.com/}{https://discord.com/}},
+}
+%endTable
+
+\begin{description}
+\foreach \x [count=\nj] in \definizioniD
+{
+    \foreach \y [count=\ni] in \x
+    {
+        \ifnum\ni=1
+            \item[\y] \hfill\\
+        \else
+            \y
+        \fi
+    }
+}
+\end{description}

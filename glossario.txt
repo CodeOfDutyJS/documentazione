@@ -1,32 +1,84 @@
-proponente
-committente
-blockchain
-ethereum
-smart-contract
-API
-IAAS
-PAAS
-NFC
-e-commerce
-serverless
-microservizi
-BFF
-payment-provider
-business logic
-machine learning
-back-end
-front-end
-Angular
-Leaflet
+Amazon CloudWatch
+Analisi dei dati
 Apache Kafka
-Pathfinding
-framework
+API Rest
 AWS
-latex
+AWS AppSync
+AWS CloudFormation
+AWS Cognito Identity
+AWS GameLift
+AWS Lambda
+Backend
+Blockchain
+Bootstrap
+Business Logic
+Cluster (dati)
+Committente
+CSV
 d3.js
-repository
-UML
-diagramma di Gantt
-IEEE 830-1998
-ISO 9126
-Github Actions
+Datadog
+Discord
+Ethereum
+Feature
+Force Field
+Frontend
+GitHub
+GitHub Actions
+Gitlab
+Heatmap
+IAAS
+Java
+Javascript
+JSON
+Kotlin
+Kubernetes
+Label
+Leaflet
+Lifecycle (Serverless Framework)
+MAPI
+Microservizio
+Modello a V
+NFC
+Node.js
+Open source
+OpenShift
+PAAS
+Parallel Coordinates
+Payment provider
+PCA
+PCs
+Proiezione Lineare
+Proof Of Concept
+Proponente
+PWA
+Python
+Qt
+Rancher
+React
+Repository
+Scatter Plot Matrix
+Serverless
+Serverless Framework
+Smart contract
+Stripe
+Swift
+SwiftUI
+t-SNE
+Tag RFID
+Technology Baseline
+Telegram
+Tomcat
+TypeScript
+UMAP
+Unity
+Unreal Engine
+back-end
+back end
+front-end
+front end
+github action
+labels
+microservizi
+open-source
+Principal Components Analysis
+Principal Components

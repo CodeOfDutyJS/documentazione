@@ -1,0 +1,32 @@
+\section{U}
+
+%startTable
+\def\definizioniU{
+    {
+        UMAP,
+        Uniform manifold approximation and projection. Tecnica di riduzione dimensionale non lineare.\\ \href{https://w.wiki/txG}{https://w.wiki/txG}
+    },
+    {
+        Unity,
+        Motore grafico multipiattaforma.\\ \href{https://unity.com/}{https://unity.com/}
+    },
+    {
+        Unreal Engine,
+        Motore grafico multipiattaforma.\\ \href{https://www.unrealengine.com/}{https://www.unrealengine.com/}
+    },
+}
+%endTable
+
+\begin{description}
+    \foreach \x [count=\nj] in \definizioniU
+    {
+        \foreach \y [count=\ni] in \x
+        {
+            \ifnum\ni=1
+                \item[\y] \hfill\\
+            \else
+                \y
+            \fi
+        }
+    }
+\end{description}

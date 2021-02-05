@@ -1,0 +1,23 @@
+\section{J}
+
+%startTable
+\def\definizioniJ{
+{Java,Linguaggio di programmazione orientato agli oggetti e alla tipizzazione statica.},
+{Javascript,Linguaggio di programmazione orientato agli oggetti e agli eventi.},
+{JSON,Formato di file per conservare dati. Acronimo di JavaScript Object Notation.},
+}
+%endTable
+
+\begin{description}
+\foreach \x [count=\nj] in \definizioniJ
+{
+    \foreach \y [count=\ni] in \x
+    {
+        \ifnum\ni=1
+            \item[\y] \hfill\\
+        \else
+            \y
+        \fi
+    }
+}
+\end{description}

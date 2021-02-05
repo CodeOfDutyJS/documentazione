@@ -1,0 +1,72 @@
+\documentclass[a4paper]{article}
+
+\input{../_config/package.tex}
+\input{../_config/config.tex}
+\input{source/title_page.tex}
+\input{source/changelog.tex}
+
+% Per modificare il frontespizio e diario delle modifiche andare sulla cartella source
+% Per aggiungere il contenuto andare sulla cartella source/sections e creare un nuovo file.tex per ogni sezione
+
+% Per parole che devono andare nel glossario aggiungere /glo{} dopo la parola
+
+\begin{document}
+    % Frontespizio 
+    \input{../_template/title_page.tex}
+    
+    % Diario delle modifiche
+    \input{../_template/changelog.tex}
+    \pagebreak
+    
+    % Indice
+    \tableofcontents
+    \pagebreak
+    
+    % Se necessari
+    % \listoffigures
+    % \listoftables
+    
+    % Contenuto
+    \input{source/sections/A.tex}
+    \pagebreak
+    \input{source/sections/B.tex}
+    \pagebreak
+    \input{source/sections/C.tex}
+    \pagebreak
+    \input{source/sections/D.tex}
+    \pagebreak
+    \input{source/sections/E.tex}
+    \pagebreak
+    \input{source/sections/F.tex}
+    \pagebreak
+    \input{source/sections/G.tex}
+    \pagebreak
+    \input{source/sections/H.tex}
+    \pagebreak
+    \input{source/sections/I.tex}
+    \pagebreak
+    \input{source/sections/J.tex}
+    \pagebreak
+    \input{source/sections/K.tex}
+    \pagebreak
+    \input{source/sections/L.tex}
+    \pagebreak
+    \input{source/sections/M.tex}
+    \pagebreak
+    \input{source/sections/N.tex}
+    \pagebreak
+    \input{source/sections/O.tex}
+    \pagebreak
+    \input{source/sections/P.tex}
+    \pagebreak
+    \input{source/sections/Q.tex}
+    \pagebreak
+    \input{source/sections/R.tex}
+    \pagebreak
+    \input{source/sections/S.tex}
+    \pagebreak
+    \input{source/sections/T.tex}
+    \pagebreak
+    \input{source/sections/U.tex}
+    
+\end{document}

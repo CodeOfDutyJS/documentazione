@@ -1,0 +1,21 @@
+\section{Q}
+
+%startTable
+\def\definizioniQ{
+{Qt,Libreria multipiattaforma per lo sviluppo di applicazione con GUI.\\ \href{https://www.qt.io/}{https://www.qt.io/}},
+}
+%endTable
+
+\begin{description}
+\foreach \x [count=\nj] in \definizioniQ
+{
+    \foreach \y [count=\ni] in \x
+    {
+        \ifnum\ni=1
+            \item[\y] \hfill\\
+        \else
+            \y
+        \fi
+    }
+}
+\end{description}
