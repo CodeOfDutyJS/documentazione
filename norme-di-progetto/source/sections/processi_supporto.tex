@@ -5,6 +5,16 @@
 	    Lo scopo della documentazione è fornire riferimenti precisi ed universali su ogni attività e processo inerenti al progetto. Questa sezione norma come stilare tutti i documenti prodotti durante il ciclo di vita del software. I documenti sono reperibili al seguente repository:
 	    \url{https://github.com/CodeOfDutyJS/documentazione}
 	    
+	    \subsubsection{Aspettative}
+	    Le aspettative previste dal processo di Documentazione sono:
+	    \begin{itemize}
+	    	\item Individuare le norme che permettano al gruppo di scrivere documenti in maniera uniforme;
+	    	\item Produzione di documenti chiari, leggibili e facilmente consultabili.
+	    \end{itemize}
+	    
+	    \subsubsection{Descrizione}
+	    Questa sezione permette di collezionare tutte le norme che garantiscano una stesura uniforme dei documenti ufficiali.
+	    
 	    \subsubsection{Ciclo di vita del Documento}
 	    \begin{itemize}
 	        \item \textbf{Creazione} Il documento viene creato da fonti accettabili e conformamente alle norme. In particolare sono fonti accettabili push sul repository e viene usato un template LaTeX fornito nello stesso;
@@ -14,6 +24,9 @@
 	        \item \textbf{Approvazione della versione} Una volta che il documento contiene tutte le voci descritte nella struttura, viene approvato da un membro del gruppo che non deve aver contribuito precedentemente al documento stesso;
 	        \item \textbf{Manuntenzione} Una volta che il documento viene aggiornato come da normativa, viene di nuovo sottoposto a \textbf{Revisione} e \textbf{Approvazione}.
 	    \end{itemize}
+    
+    
+    	
 	    
 	    \subsubsection{Template LaTex e automazione}
 	    Allo scopo di uniformare lo stile e velocizzare la produzione dei documenti viene fornito un template LaTeX.
@@ -21,6 +34,7 @@
 	    Un file "main.tex" raccoglie le sezioni del documento. In testa raccoglie in input un file "package.tex" contenente tutti i package necessari alla compilazione ed un file "config.tex" contenente i comandi di configurazione.
 	    \myparagraph{Automazione}
 	    Vengono usate le Github Actions per automatizzare la compilazione del file LaTeX in modo da creare un artefatto consultabile da tutto il gruppo ad ogni cambiamento dello stesso ed in modo  da assicurarsi circa la compilazione stessa del file LaTeX. Inoltre uno script Python automaticamente appone l'apposito pedice alle voci da inserire nel glossario.
+	    
 	    \subsubsection{Pagine}
 	    Di seguito una descrizione di pagine sempre presenti nei documenti prodotti dal gruppo.
 	    \myparagraph{Frontespizio}
@@ -41,6 +55,7 @@
 	        \end{enumerate}
 	        \item il recapito mail del gruppo.
 	    \end{itemize}
+	    
 	    \myparagraph{Diario delle modifiche}
 	    La seconda pagina contiene sempre il diario delle modifiche: una tabella atta ad elencare ed a descrivere sinteticamente le modifiche in ordine cronologico apposte al documento.
 	    Il diario delle modifiche contiene le seguenti voci:
@@ -51,25 +66,41 @@
 	        \item \textbf{Ruolo}: chi ha apportato la modifica, revisione o approvazione;
 	        \item \textbf{Descrizione}: descrizione suntuaria delle attività effettuate.
 	    \end{enumerate}
+	    
 	    \myparagraph{Indice}
 	    Il documento contiene poi sempre un indice ordinato e facilmente consultabile contenente le voci all'interno del documento, in modo da informare sulla struttura dello stesso e di dare modo di trovare velocemente le sezioni ricercate.
+	    
+	    
 	    \myparagraph{Introduzione}
 	    Tutti i documenti devono iniziare con una breve sezione d'introduzione volta a spiegare lo scopo del documento e ad inserire eventuali riferimenti.
+	    
+	    
 	    \myparagraph{Intestazione del contenuto}
 	    Tutte le pagine di contenuto hanno separata da una linea orizzontale un'intestazione contenente:
 	    \begin{itemize}
 	        \item a sinistra il logo del gruppo, in versione apposita per intestazione;
 	        \item a destra il nome del documento.
 	    \end{itemize}
+	    
+	    
 	    \myparagraph{Piè di pagina}
 	    il piè di pagina contiene, centrato, i numeri di pagina corrente e pagine totali del documento.
+	    
+	    
 	    \myparagraph{Note}
 	    In caso di note, queste vanno numerate per pagina ed essere riportate con la loro numerazione a piè di pagina e descritte il più brevemente possibile.
+	    
+	    
+	    
 	    \subsubsection{Norme di stile}
+	    
 	    \myparagraph{Immagini}
 	    Le immagini vanno inserite centrate e fornite di apposita didascalia.
+	     
+	     
 	    \myparagraph{Date}
 	    Le date vanno inserite usando il formato YYYY-MM-DD (anno per esteso, mese a due cifre e giorno a due cifre) in conformità all' ISO-8601
+	    
 	    \myparagraph{Nomi di file}
 	    Quando ci si riferisce ad un particolare file, e più in generale tutti i file e le cartelle devono avere nomi chiari, descrittivi del contenuto, ma per quanto possibile sintetici.
 	    Per quanto riguarda la convenzione da usare per i nomi, si usa lo Snake Case e si devono seguire le seguenti norme:
@@ -77,27 +108,33 @@
 	        \item tutte le parole da cui è composto il nome devono iniziare con la lettera minuscola;
 	        \item nel caso siano presenti date queste sono scritte alla fine del nome seguendo le convenzioni date
 	    \end{itemize}
+	    
 	    \myparagraph{Glossario}
 	    Ogni termine riportato nel glossario ha una lettera \textbf{G} maiuscola ed in grassetto apposta sotto il nome. Questa viene apposta automaticamente nel LaTeX del documento da uno script Python in base alle voci presenti nel file glossary.txt presente nella repository, che deve essere aggiornato con tutte le voci presenti nel Glossario.
+	    
 	    \myparagraph{Stile del testo}
 	    \begin{itemize}
 	        \item \textbf{Maiuscolo}: vengono scritti per intero in maiuscolo solo gli acronimi;
 	        \item \textbf{Corsivo}: vengono scritti in corsivo il nome del gruppo, del proponente, del progetto e dei documenti;
 	        \item \textbf{Grassetto}: vengono scritti in grassetto i termini su cui si vuole far ricadere l'attenzione del lettore.
 	    \end{itemize}
+	    
 	    \myparagraph{Riferimenti a documenti}
 	    \begin{itemize}
 	        \item nel caso il riferimento al documento sia in un titolo come voce di un elenco non si usa il corsivo ma il grassetto.
 	        \item ogni qualvolta si fa riferimento al documento in un testo o ad un suo contenuto il nome viene accompagnato, separato da uno spazio, dalla versione, anch'essa in corsivo
 	        \item il nome del documento viene scritto per intero, e ogni parola di cui è composto deve iniziare con la lettera maiuscola
 	    \end{itemize}
+	    
 	    \myparagraph{Elenchi}
 	    Ogni voce di un elenco può seguire due convenzioni stilistiche:
 	    \begin{itemize}
 	        \item nel caso la voce non abbia un titolo comincia con la lettera minuscola;
 	        \item \textbf{Titolo}: nel caso la voce abbia un titolo questo viene scritto in grassetto, comincia con la lettera maiuscola ed è seguito dai due punti ed da una descrizione.
 	    \end{itemize}
-	    a discapito della convenzione seguita ogni voce termina con il punto e virgola \textbf{";"} tranne l'ultima che termina con un punto \textbf{"."}, ogni sottoelenco segue le medesime regole.
+	    a discapito della convenzione seguita ogni voce termina con il punto e virgola \textbf{";"} tranne l'ultima che termina con un punto \textbf{"."}, ogni sottoelenco 
+	    segue le medesime regole.
+	    
 	    \myparagraph{Sigle}
 	    Nella stesura dei documenti vengono adottate le seguenti sigle:
 	    \begin{itemize}
@@ -113,12 +150,14 @@
 	        \item \textbf{Programmatore}: \textbf{Pg}
 	        \item \textbf{Verificatore}: \textbf{Ve}
 	    \end{itemize}
+	    
 	    \subsubsection{Elementi grafici}
 	    Di seguito si trovano le norme per gli elementi grafici. Si distinguono due tipi di elementi grafici:
 	    \begin{itemize}
 	        \item \textbf{Figure}: sono figure le tabelle, i grafici ed i diagrammi UML;
 	        \item \textbf{Immagini}: tutti gli altri elementi grafici. 
 	    \end{itemize}
+	    
 	    \myparagraph{Figure}
 	    Ogni figura deve essere contrassegnata da una didascalia descrittiva posta al di sotto di essa, seguita da una numerazione progressiva assegnata per sezione. È esente da questa convenzione il diario delle modifiche.
 	    la numerazione delle figure è composta da tre cifre \textbf{X.Y.Z}:
@@ -126,8 +165,17 @@
 	        \item \textbf{X.Y}: riferimento alla sezione;
 	        \item \textbf{Z}: riferimento progressivo all'interno della sezione.
 	    \end{itemize}
+	    
 	    \myparagraph{Immagini}
 	    Le immagini vanno inserite centrate e corredate di didascalia descrittiva sottostante all'immagine stessa.
+	    
+	    \subsubsection{Procedimento di stesura delle voci}
+	    Il seguente diagramma di attività indica il procedimento di stesura delle voci.\\
+	    
+	    \begin{figure}[hbt!]
+	       \centering \includegraphics[width=1.0\textwidth]{../_template/images/vociDocumenti.png}
+	        \caption{diagramma di attività della stesura delle voci}
+	    \end{figure}
 	    
 	    \subsubsection{Metriche}
 		Di seguito vengono elencate le metriche inerenti alla qualità del processo di \textbf{Documentazione}. I valori sono normati nel piano di qualifica. La modalità di rilevazione non è indicata per tutte le metriche: tale dato sarà inserito in fasi successive del progetto.
@@ -171,6 +219,16 @@
 				\item una locazione precisa nel quale può essere reperito
 			\end{itemize}
 		Inoltre, ogni elemento viene modificato secondo procedure note e sottoposto a versionamento.
+		
+		\subsubsection{Aspettative}
+		\begin{itemize}
+			\item permettere una stesura sistematica di codice e documentazione;
+			\item classificare i prodotti in maniera uniforme in base allo stato nel quale essi si trovano;
+			\item permettere di tracciare i cambiamenti apportati ai prodotti.
+		\end{itemize}
+		
+		\subsubsection{Descrizione}
+		Il processo di Gestione della configurazione permette di raggruppare ed organizzare gli strumenti utilizzati per la stesura di documenti e codice. Inoltre definisce gli aspetti riguardanti il versionamento e la coordinazione del gruppo.
 		
 		\subsubsection{Versionamento}
 			
@@ -472,6 +530,22 @@
 	\subsection{Verifica}
 	\subsubsection{Scopo}
 	Lo scopo del processo di verifica è dare prova materiale che un sistema o un elemento del sistema soddisfa i requisiti e specifiche richiesti.
+	
+	\subsubsection{Aspettative}
+	\begin{itemize}
+		\item garantire che i prodotti rispettino i requisiti prefissati e le specifiche richieste;
+		\item garantire la qualità dei prodotti ottenuti dai vari processi;
+		\item permettere di procedere alla fase di validazione.
+	\end{itemize}
+
+	\subsubsection{Descrizione}
+	Questa sezione raccoglie l'insieme delle norme dedicate alla verifica dei prodotti ottenuti e dei processi impiegati per ottenerli. Il processo di verifica viene applicato ad ogni prodotto/processo quando:
+	\begin{itemize}
+		\item il prodotto/processo ha raggiunto una quantità sufficiente di materiale;
+		\item ad ogni cambiamento di stato di un prodotto.
+	\end{itemize}
+	
+	 
 	\subsubsection{Attività}
 	Il processo di verifica contiene le seguenti attività:
 	\begin{itemize}
@@ -487,6 +561,14 @@
 	    \item errori di formattazione;
 	    \item difformità da norme inserite nella presente.
 	\end{itemize}
+		
+		\subsubsection{Procedimento di verifica della documentazione}
+		Di seguito viene allegato il diagramma di attività riguardante l'attività di verifica della documentazione:
+		\begin{figure}[hbt!]
+	       \centering \includegraphics[width=1.0\textwidth]{../_template/images/verifica.png}
+	        \caption{diagramma di attività della verifica della documentazione}
+	    \end{figure}
+	
 	\myparagraph{Analisi dinamica}
 	L'analisi dinamica viene svolta tramite l'ausilio di test, con lo scopo di verificare che il prodotto rispetti le specifiche di progettazione.
 	Per tutti i test si definicono:
@@ -561,12 +643,18 @@
         
         
         \myparagraph{Numero di test superati}
-        Indica il nuemero totale intero di test superati. Questa metrica non ha formula in quanto il valore è dato dal calcolo del programmatore in fase di test del codice.
+        Indica il numero totale intero di test superati. Questa metrica non ha formula in quanto il valore è dato dal calcolo del programmatore in fase di test del codice.
 	
 	\subsection{Validazione}
 
 	\subsubsection{Scopo}
-	La validazione è il processo che si occupa di stabilire se il prodotto soddisfi o meno i requisiti. Se il software li soddisfa, allora viene validato.
+	La validazione è il processo che si occupa di stabilire se il prodotto soddisfi o meno i requisiti funzionali richiesti. 
+	
+	\subsubsection{Aspettative}
+		Un prodotto validato garantisce che esso soddisfi i requisiti proposti e che soddisfi i bisogni del committente.
+	
+	\subsubsection{Descrizione}
+	L'input per la fase di Validazione è l'output della fase di Verifica. Il compito viene poi demandato al \textit{Responsabile di progetto} il quale potrà accettare ed approvare il prodotto, oppure, rimandarlo alla fase di Verifica.
 	\subsubsection{Attività}
 	Per il processo di validazione vengono definite le seguenti attività:
 	\begin{itemize}
@@ -575,4 +663,10 @@
 	    \item \textbf{Implementazione della validazione}: il piano viene implementato ed eseguito;
 	    \item \textbf{Risultati}: i risultati vengono analizzati, assicurandosi che riflettano le aspettative.
 	\end{itemize}
-
+	
+	\subsubsection{Procedimento di validazione della documentazione}
+		Di seguito viene allegato il diagramma di attività riguardante l'attività di validazione della documentazione:
+		\begin{figure}[hbt!]
+	       \centering \includegraphics[width=1.0\textwidth]{../_template/images/Validazione.png}
+	        \caption{diagramma di attività della validazione della documentazione}
+	    \end{figure}
