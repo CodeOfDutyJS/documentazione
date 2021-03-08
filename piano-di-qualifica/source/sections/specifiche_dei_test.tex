@@ -30,7 +30,7 @@ Mentre per lo stato valgono le seguenti sigle:
     \def\testspecification{
     {   
         TSOF1,
-        Si verifica che l'utente possa di caricare i dati per la visualizzazione tramite file CSV,
+        Si verifica che l'utente possa caricare i dati per la visualizzazione tramite file CSV,
         NI,
         RF01 RFO1.1
     },
@@ -79,46 +79,76 @@ Mentre per lo stato valgono le seguenti sigle:
     },
     {   
         TSOF3,
-        Si verifica che l'utente possa scegliere quali labels far vedere nella visualizzazione,
+        Si verifica che l'utente possa manipolare i dati nel dataset,
         NI,
         RFO3
     },
     {   
         TSOF3.1,
-        Si verifica che l'utente possa scegliere come visualizzare le labels presenti nel dataset,
+        SI verifica che l'utente possa selezionare le variabili target tra le feauteres del dataset,
         NI,
         RFO3.1
     },
     {   
+        TSOF3.2,
+        SI verifica che l'utente possa selezionare le feauteres a cui è interessato,
+        NI,
+        RFO3.2
+    },
+    {   
+        TSOF3.3,
+        SI verifica che l'utente possa normalizzare i dati presenti nel dataset nei seguenti modi:
+        \unexpanded{
+        \begin{itemize}
+            \item Globalmente
+            \item Per riga
+            \item Per colonna
+        \end{itemize}},
+        NI,
+        RFO3.3 RFO3.3.1 RFO 3.3.2 RFO 3.3.3
+    },
+    {   
+        TSOF3.4,
+        SI verifica che l'utente possa selezionare le righe del dataset a cui è interessato,
+        NI,
+        RFO3.4
+    },
+    {   
         TSOF4,
-        Si verifica la possibilità di scartare features e di inserire features scartate,
+        Si verifica che l'utente possa modificare le impostazini che influenzano la visualizzazione,
         NI,
         RFO4
     },
     {   
+        TSOF4.1,
+        Si verifica che l'utente possa assegnare una classe di visualizzazione ad ogni variabile target selezionata,
+        NI,
+        RFO4.1
+    },
+    {   
+        TSOF4.2,
+        Si verifica che l'utente possa modificare il range dei dati da considerare nella Heatmap,
+        NI,
+        RFO4.2
+    },
+    {   
+        TSOF4.3,
+        Si verifica che l'utente possa assegnare un colore al range di un Heatmap,
+        NI,
+        RFO4.3
+    },
+    {   
+        TSOF4.4,
+        Si verifica che l'utente che ha selezionato la visualizzazione Heatmap possa ordinare in ordine alfabetico e in cluster il dataset,
+        NI,
+        RFO4.4 RFO4.4.1 RFO4.4.2
+    },
+    {   
         TSOF5,
-        Si verifica che l'utente possa modificare il range dei dati all'interno della visualizzazione Heatmap,
+        Si verifica che l'utente possa calcolare la matrice di distanza se ha scelto la visualizzazione Heatmap o Forcefield,
         NI,
-        RFO5 RFO5.1
-    },
-    {   
-        TSOF5.1,
-        Si verifica la possibilità di normalizzazione del database in modo globale{,} per riga o per colonna,
-        NI,
-        RFO5.2 RFO5.2.1 RFO5.2.2
-    },
-    {   
-        TSOF5.2,
-        Dopo la selezione dell'Heatmap si verifica la possibilità di ordinare il dataset in ordine alfabetico e in cluster,
-        NI,
-        RFO5.3 RFO5.3.1 RFO5.3.2
-    },
-    {   
-        TSOF5.3,
-        Si verifica la possibilità di assegnazione del colore al range nella visualizzazione Heatmap,
-        NI,
-        RFO5.4
-    },
+        RFO4.3
+    },    
     {   
         TSOF6,
         Si verifica la possibilità di scelta nell'Heatmap di una matrice a distanza per il calcolo della distanza,
@@ -156,27 +186,22 @@ Mentre per lo stato valgono le seguenti sigle:
         RFF7.1 RFF7.2 RFF7.3
     },
     {   
-        TSOF8.1,
-        Si verifica che il sistema elabori i dati con impostazioni di default,
+        TSOF8.,
+        Si verifica che l'utente che ha selezionato l'algoritmo PCA possa specificare i parametri,
         NI,
-        RFO8.1
+        RFO8
     },
     {   
-        TSOF8.2,
-        Si verifica che il sistema elabori i dati con impostazioni di personalizzate dell'utente,
+        TSOF8.1,
+        Si verifica che l'utente che ha selezionato l'algoritmo PCA possa specificare il numero di PCs da calcolare,
         NI,
         RFO8.1
     },
     {   
         TSOF9,
-        Si verifica che la visualizzazione creata dal sistema sia visibile a schermo,
-        NI,
-        RFO9},
-    {   
-        TSOF9.1,
         Si verifica che la visualizzazione creata dal sistema sia salvabile in formato PNG,
         NI,
-        RFO9.2
+        RFO9
     },
     {   
         TSOF10,
@@ -193,69 +218,33 @@ Mentre per lo stato valgono le seguenti sigle:
     \def\testspecification{
     {   
         TSOQ1,
-        Si verifica che i dati ricevuti da fonti esterne non siano modificati o errati,
+        Si verifica che sia stato prodotto un manuale d'uso per l'utente,
         NI,
         RQO1
     },
     {   
         TSOQ2,
-        Si verifica che il numero di errori rilevati nel codice rispetti il valore specificato nella metrica: Densità di errori,
+        Si verifica che sia stato prodotto un manuale manutentore,
         NI,
         RQO2
     },
     {   
         TSOQ3,
-        Si verifica che i messaggi di errore e avviso siano chiari da comprendere per l'utente con l'uso della metrica: Qualità della messaggistica,
+        Si verifica che il codice sia stato pubblicato su un repository pubblico,
         NI,
         RQO3
     },
     {   
         TSOQ4,
-        Si verifica che il numero di click per svolgere ogni task sia minore del valore sufficiente data dalla metrica: Numero di click,
+        Si verifica che il codice segua le norme di stile specificate nel documento Norme di Progetto,
         NI,
         RQO4
     },
     {   
         TSOQ5,
-        Si verifica che la profondità della struttura dell'applicativo sia minore del valore sufficiente dato dalla metrica: Site depth,
+        Si verifica che nella codifica si eviti l'utilizzo di chiamate ricorsive dove è possibile,
         NI,
         RQO5
-    },
-    {   
-        TSOQ6,
-        Si verifica che la durata di ogni task sia minore del valore sufficiente specificato dalla metrica: Response time,
-        NI,
-        RQO6
-    },
-    {   
-        TSOQ7,
-        Si verifica che la quantità dei possibili percorsi di branching rispetti la metrica: Complessità ciclomatica,
-        NI,
-        RQO7
-    },
-    {   
-        TSOQ8,
-        Si verifica che la percentuale di test indipendenti rispetti la metrica: Indipendenza dei test,
-        NI,
-        RQO8
-    },
-    {   
-        TSOQ9,
-        Si verifica che l'indice di comprensione del codice ovvero{,} il rapporto tra codice e commento{,} rispetti il valore sufficiente dato dalla metrica: Facilità di comprensione,
-        NI,
-        RQO9
-    },
-    {   
-        TSOQ10,
-        Si verifica che il numero di procedure che chiamano un'altra procedura sia minore del valore sufficiente dato dalla metrica: Structural Fan-In,
-        NI,
-        RQO10
-    },
-    {   
-        TSOQ11,
-        Si verifica che il numero di procedure che necessita ogni altra procedura sia inferiore al valore sufficiente dato dalla metrica: Structural Fan-Out,
-        NI,
-        RQO11
     },
       }
     \input{source/tables/descrizione_test.tex}
