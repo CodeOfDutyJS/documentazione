@@ -233,18 +233,28 @@
 		\subsubsection{Versionamento}
 			
 			\myparagraph{Codice di versione del documento}
-			Per tenere traccia di ogni documento, il gruppo ha deciso di ricorrere alla seguente notazione: \textbf{X.Y.Z}, dove
+			Per tenere traccia di ogni documento, il gruppo ha deciso di ricorrere al seguente formato di versione \textbf{X.Y.Z}, dove:
 			\begin{itemize}
 				
-				\item \textbf{X}: indica una versione del documento stabile (approvata dal responsabile di progetto). Numerazione progressiva (da 0) incrementata ogni qualvolta il responsabile di progetto approvi il documento in questione.
+				\item \textbf{X}: indica una versione del documento stabile, dove è stata chiaramente definita e implementata la struttura. Incrementi a questo numero devono essere fatti quando la struttura stessa cambia, sia per aggiunta o rimozione di voci. Indica inoltre una versione validata dal responsabile di progetto ed esposta al pubblico.
 				
-				\item \textbf{Y}: indica una versione del documento in fase di verifica o che è stata soggetta a verifica(da parte di un Verificatore). Numerazione progressiva (da 0), viene azzerata ogni qualvolta il valore 'X' venga incrementato.
+				\item \textbf{Y}: indica la completa implementazione di una sezione del documento e corrispettiva verifica, o il completamento di una lista pianificata di correzioni.
 				
-				\item \textbf{Z}: indica una versione instabile di tale documento, e che esso è in fase di lavorazione da parte dei redattori. Numerazione progressiva (da 0), incrementata ogni qualvolta un redattore aggiunge contenuto al documento.
+				\item \textbf{Z}: indica un cambiamento minore verificato del documento o una correzione allo stesso.
 			\end{itemize}
 			
+			\myparagraph{Codice di versione del codice}
+			Per tenere traccia del codice, il gruppo ha deciso di adottare il versionamento semantico, con il seguente formato di versione \textbf{X.Y.Z}, dove:
+			\begin{itemize}
+			    \item \textbf{X}: indica una versione dove l'API pubblica è considerata stabile; la versione 0 indica una API instabile. La definizione dei contratti d'interfaccia dovrebbe essere conosciuta a priori e definita tramite documentazione o definita dal codice stesso.
+			    \item \textbf{Y}: la versione Y deve essere incrementata se viene implementata completamente una funzionalità retrocompatibile, o se una funzionalità dell'API è marcata come deprecata. la versione Z deve essere riportata a 0 quando questa viene incrementata. essa può comprendere miglioramenti a funzionalità già esistenti.
+			    \item \textbf{Z}: la versione Z indica modifiche atte a correggere comportamenti errati (bug) del'API.  
+			\end{itemize}
+			
+			ogni incremento al codice di versionamento avviene a posteriori del completamento di un processo di verifica. L'incremento della versione Y comporta, oltre al completamento del processo di verifica il completamento di un processo di validazione.  
+			
 			\myparagraph{Tecnologie}
-			Come sistema di versionamento è stato scelto Git, il quale dispone del servizio Github per ospitare la repository remota. Altro strumento interessante messo a disposizione da Github è "Github Actions" il quale permette di realizzare un servizio di Continuos Integration.
+			Come sistema di versionamento è stato scelto Git, il quale dispone del servizio Github per ospitare la repository remota. Altro strumento interessante messo a disposizione da Github è "Github Actions" il quale permette di realizzare un servizio di Continuous Integration.
 			
 			\myparagraph{Repository}
 			Per interagire con il sistema di versionamento scelto, ogni componente del gruppo può utilizzare la versione da linea di comando (Git) con opportuni plugin per facilitare l'uso del sistema di versionamento. Alternativamente è possibile utilizzare la versione GUI fornita su Github. La repository è disponibile all'indirizzo:\\
@@ -315,7 +325,7 @@
 			\item \textbf{Reazione}: in base ai risultati ottenuti, adattare le metodologie
 		\end{itemize}
 		
-		\subsubsection{Qualità del prodotto}
+		\subsubsection{metriche di qualità del prodotto}
 		\myparagraph{Correttezza dello scambio dei dati}
         Il prodotto software ha bisogno di dati provenienti da fonti esterne. Questa 
         metrica misura che i dati ricevuti da tali fonti non siano modificati o errati 
@@ -517,6 +527,9 @@
         \item[] $\textrm{Soddisfatte} =$ numero totale di metriche con valore soddisfacente
         \item[] $\textrm{Totali} =$ numero totale di metriche calcolate
         \end{itemize}
+    
+    \subsubsection{Project manager}
+        Al fine di gestire le dipendenze ed uniformare ed automatizzare le attività di analisi statica del codice e di esecuzione dei test il gruppo ha deciso di adottare yarn.
         
     \subsubsection{Strumenti}
 		Gli strumenti utilizzati per la qualità sono:
@@ -525,7 +538,6 @@
 			\item \textbf{Standard ISO-9126};
 			\item \textbf{Metriche}
 		\end{itemize}
-	
 	
 	\subsection{Verifica}
 	\subsubsection{Scopo}
@@ -553,7 +565,7 @@
 	    \item \textbf{Eseguire verificazione}: si definiscono le procedure attraverso le quali verrà compiuta la verificazione e la si esegue;
 	    \item \textbf{Gestione dei risultati}: si controllano i risultati ed eventuali anomalie e si identificano le possibili risposte, si annotano problemi e incidenti accorsi durante la verificazione, si ottiene l'assenso del proponente sulla soddisfazione dei requisiti ed infine si aggiorna la tracciabilità del requisito.
 	\end{itemize}
-	\subsubsection{Analisi}
+	\subsubsection{Verifica della documentazione}
 	\myparagraph{Analisi statica}
 	L'analisi statica può essere eseguita sia manualmente che con supporto di applicazioni terze, il cui eventuale uso viene normato nel presente documento. Nel caso di verifica manuale andranno ricercati:
 	\begin{itemize}
@@ -569,6 +581,9 @@
 	        \caption{diagramma di attività della verifica della documentazione}
 	    \end{figure}
 	
+	\subsubsection{Verifica della documentazione}
+	\myparagraph{Analisi statica}
+	L'analisi statica viene facilitata dall'utilizzo di ESlint, impostato secondo le norme di stile Airbnb.
 	\myparagraph{Analisi dinamica}
 	L'analisi dinamica viene svolta tramite l'ausilio di test, con lo scopo di verificare che il prodotto rispetti le specifiche di progettazione.
 	Per tutti i test si definicono:
@@ -579,7 +594,7 @@
 	    \item \textbf{Output}: output aspettato corrispondente ad un determinato input;
 	    \item \textbf{Istruzioni aggiuntive}: altre istruzioni riguardanti l'interpretazione dei risultati del test e la sua esecuzione.
 	\end{itemize}
-	tutti i test devono fornire un registro dei risultati in un file di log.
+	I test vengono eseguiti tramite il framework jest.js
 	\myparagraph{Approcci}
 	ci sono due tipi di approcci ai test:
 	\begin{itemize}
@@ -595,7 +610,7 @@
 	    \item \textbf{Test di accettazione}: il prodotto viene testato assieme ad i proponenti per verificare il gradimento dell'utente. Se viene superato il prodotto viene rilasciato.
 	    \item \textbf{Test di regressione}: Ogni volta che viene apportata una modifica ad un'unità del software vengono rieseguiti tutti i test già definiti per verificarne il corretto funzionamento.
 	\end{itemize}
-	Ad ogni test corrisponde il seguente codice identificativo:\\
+	Ad ogni test di accettazione e di sistema corrisponde il seguente codice identificativo:\\
 	
 	\centerline{\textbf{T[tipoTest][classeRequisito][tipoRequisito][identificativo].[specializzazione]}}
 	
@@ -603,11 +618,8 @@
 	\begin{itemize}
 	    \item \textbf{tipoTest}: può essere:
 	    \begin{itemize}
-	        \item \textbf{U}: test di unità;
-	        \item \textbf{I}: test di integrazione;
 	        \item \textbf{S}: test di sistema;
 	        \item \textbf{A}: test di accettazione;
-	        \item \textbf{R}: test di regressione;
 	    \end{itemize}
 	    \item \textbf{classeRequisito}: indica la classe del requisito corrispondente, può essere:
 	        \begin{itemize}
@@ -622,10 +634,23 @@
 	            \item \textbf{Q}: requisito di qualità;
 	            \item \textbf{P}: requisito prestazionale. 
 	        \end{itemize}
-	  \item \textbf{identificativo}: identificativo progressivo;
-	  \item \textbf{identificativo}: identificativo progressivo della specializzazione.
+	  \item \textbf{identificativo}: identificativo progressivo del requisito;
+	  \item \textbf{specializzazione}: identificativo progressivo della specializzazione.
 	\end{itemize}
+	Ad ogni test di unità , integrazione e regressione corrisponde il seguente codice identificativo:\\
 	
+	\centerline{\textbf{T[tipoTest][identificativo]}}
+	
+	che è composto da:
+	\begin{itemize}
+	    \item \textbf{tipoTest}: può essere:
+	    \begin{itemize}
+	        \item \textbf{U}: test di unità;
+	        \item \textbf{I}: test di integrazione;
+	        \item \textbf{R}: test di regressione.
+	    \end{itemize}
+	  \item \textbf{identificativo}: identificativo univoco progressivo.
+	\end{itemize}
 	\subsubsection{Metriche}
 	Di seguito vengono elencate le metriche inerenti alla qualità del processo di \textbf{Verifica}. I valori sono normati nel piano di qualifica. La modalità di rilevazione non è indicata per tutte le metriche: tale dato sarà inserito in fasi successive del progetto.
 	    \myparagraph{Code coverage}

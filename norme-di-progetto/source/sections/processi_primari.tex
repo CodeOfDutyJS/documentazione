@@ -275,10 +275,10 @@
 	    	\item più in generale, migliorare la qualità del prodotto.
 	    \end{itemize}
 	    \mysubparagraph{Descrizione}
-	    La stesura del codice deve rispettare quanto riportato nella documentazione di prodotto. Dovranno dunque essere perseguiti gli obiettivi posti all'interno del \textit{Piano di Progetto 2.0.0}, i quali garantiranno la stesura di codice di qualità.
+	    La stesura del codice deve rispettare quanto riportato nella documentazione di prodotto. Dovranno dunque essere perseguiti gli obiettivi posti all'interno del \textit{Piano di Progetto 2.0.0}, i quali garantiranno la stesura di codice di qualità. Il codice viene steso adottando le norme dello stile di codifica Airbnb, alcune norme notabili vengono riportate di seguito.
 	    
 	    \mysubparagraph{Indentazione}
-	    L'indentazione viene effettuata con quattro (4) spazi, e non con il carattere tab. Quando si parla di "tabulare" o di "tabulazione" si deve intendere, appunto, l'inserire quattro (4) spazi.
+	    L'indentazione viene effettuata con due (2) spazi, e non con il carattere "tab". Quando si parla di "tabulare" o di "tabulazione" si deve intendere, appunto, l'inserire due (2) spazi.
 	    
 	    \mysubparagraph{Blocchi innestati}
 	    Ciascun blocco innestato viene tabulato una volta.
@@ -289,7 +289,10 @@
 	        \item la prima và inserita alla fine della prima riga, preceduta da uno spazio;
 	        \item la seconda su una nuova riga, senza caratteri di spazio antecedenti;
 	    \end{itemize}
-	    
+
+        \mysubparagraph{Linter}
+        Al fine di ottenere uno stile di codifica unimorme tra tutti i membri del gruppo si è scelto di inserire nel build lifecycle Eslint, le cui impostazioni sono specificate nel file eslint.rc.
+
 	    \subparagraph{Casing}
 	    \begin{itemize}
 	        \item \textbf{Classi}: i nomi delle classi iniziano con la lettera maiuscola;
@@ -308,7 +311,7 @@
         Di seguito vengono elencate le metriche inerenti alla qualità del processo di \textbf{Sviluppo}. I valori sono normati nel piano di qualifica. La modalità di rilevazione non è indicata per tutte le metriche: tale dato sarà 
         inserito in fasi successive del progetto.
         \myparagraph{Percentuale di requisiti soddisfatti}
-        La percentuale in centesimi dei requisiti saddisfatti.
+        La percentuale in centesimi dei requisiti soddisfatti.
         \subparagraph{Formula}
         \begin{displaymath}
          PROS = Rs / Rt *100
