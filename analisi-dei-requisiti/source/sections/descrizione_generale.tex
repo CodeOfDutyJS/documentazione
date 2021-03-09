@@ -10,7 +10,14 @@
     \begin{itemize}
         \item L'utente può:
         \begin{itemize}
-            \item caricare i propri dati da file csv o importarli da un database
+            \item importare i propri dati da file csv;
+            \item importare i propri dati da un database:
+            \begin{itemize}
+                \item MySQL;
+                \item PostgreSQL;
+                \item MongoDB;
+                \item SQLite;
+            \end{itemize}
             \item creare una delle diverse visualizzazioni:
             \begin{itemize}
                 \item Scatter Plot Matrix;
@@ -29,9 +36,11 @@ L'applicazione \emph{HD Viz} è rivolta agli utenti che vogliono supportare la f
 
 
 \subsection{Architettura del progetto}
-\emph{HD Viz} sarà una PWA che comunicherà con la parte server soltanto per il recupero dei dati attraverso query a database.
+\emph{HD Viz} sarà una PWA che comunicherà con la parte server soltanto per il recupero dei dati da un database.
 \\
-L'applicazione in questo modo potrà essere eseguita anche in assenza di connessione, conservando tutte le funzioni ad eccezione del recupero dati da un database.
+L'applicazione in questo modo potrà essere eseguita senza la connessione con il server continuando a fornire tutte le funzionalità di visualizzazione se si importano i dati da file csv.
+
+Per il recupero dei dati ci si affiderà ad un back-end sviluppato in node.js che permetterà il recupero dei dati attraverso query a un database. La configurazione delle connessioni ai database avviene tramite un file di config all'interno del server. Il client si occuperà della visualizzazione e selezione della connessione al database per poi selezionare la tabella che si vuole utilizzare per il recupero dei dati.
 
 \subsection{Vincoli generali}
 L'utente per utilizzare l'applicazione deve disporre dei dati per le visualizzazioni, o un file csv o un database a cui può accedere.
