@@ -201,7 +201,7 @@ jobs:
       - name: Compile verbale-interno_2021-02-25 LaTeX document
         uses: damix48/latex-action@0.1
         with:
-          working_directory: verbali/verbale-interno_2021-02-15/
+          working_directory: verbali/verbale-interno_2021-02-25/
           root_file: main.tex
 
       ## VERBALE verbale-esterno_2021-02-02
