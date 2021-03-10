@@ -17,16 +17,14 @@
 }
 %endTable
 
-\begin{description}
-    \foreach \x [count=\nj] in \definizioniU
+\foreach \x [count=\nj] in \definizioniU
+{
+    \foreach \y [count=\ni] in \x
     {
-        \foreach \y [count=\ni] in \x
-        {
-            \ifnum\ni=1
-                \item[\y] \hfill\\
-            \else
-                \y
-            \fi
-        }
+        \ifnum\ni=1
+            \subsection\y \hfill\\
+        \else
+            \y
+        \fi
     }
-\end{description}
+}
