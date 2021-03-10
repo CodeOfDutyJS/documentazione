@@ -1,8 +1,7 @@
 \section{Analisi degli scostamenti} % ho studiato economia o.o
 
-\subsection{Consuntivo di periodo}
+\subsection{Consuntivo del periodo di analisi}
 
-\subsubsection{Analisi}
 Durante il periodo di analisi sono state rilevate più ore rispetto a quanto preventivato per i ruoli di:
 
 \begin{itemize}
@@ -37,10 +36,56 @@ Per completezza viene mostrato il preventivo a finire tenendo conto del periodo 
 %endTable
 \input{source/tables/prospetto_economico.tex}
 \noindent Con una differenza rispetto a quanto preventivato di \euro\ 450.
-\subsection{Preventivo a finire}
-\subsubsection{Analisi}
+\subsubsection{Preventivo a finire}
 Il preventivo e quindi l'offerta rimangono invariati rispetto a quanto è stato presentato nella sezione dedicata. Le ore aggiuntive rilevate per quanto riguarda i ruoli di Amministratore e Verificatore sono considerate (esattamente come l'intero periodo di Analisi) un investimento e non sono causa di aggiustamenti in aumento: 
 \begin{itemize}
     \item \textbf{Amministratore:} l'aver speso più ore del previsto per impostare l'ambiente di lavoro sarà sicuramente un vantaggio nelle fasi successive del progetto;
     \item \textbf{Verificatore:} ora che i documenti sono stati avviati, si stima che l'attività di verifica rientrerà nei limiti previsti.
 \end{itemize}
+
+\subsection{Consuntivo del periodo di consolidamento dei requisiti}
+Durante questa fase non si sono verificati scostamenti per quanto riguarda le ore preventivate. 
+
+\subsection{Consuntivo del periodo di progettazione architetturale}
+Durante il periodo di progettazione architetturale il team ha realizzato un Proof of Concept che dimostrasse la fattibilità di \hd\ con le tecnologie individuate (VI021), questo ha richiesto un grande impegno per quanto riguarda l'autoformazione, impegno purtroppo non contabilizzabile. 
+Si riporta quanto segue:
+\begin{itemize}
+    \item \textbf{Analista}: le segnalazioni riportate in fase della correzione della RR hanno richiesto maggior impegno da parte degli analisti;
+    \item \textbf{Programmatore e Progettista}: una volta scelte le tecnologie l'integrazione di queste ha richiesto più lavoro rispetto a quanto preventivato, è stato quindi scelto di dedicare più ore alla programmazione a discapito della progettazione.
+\end{itemize}
+%startTable
+\def\salarycontent{
+    {Amministratore,13,20,260},
+    {Analista,$26+\noexpand\textbf{6}$,25,800},
+    {Progettista,$62-\noexpand\textbf{10}$,22,1144},
+    {Programmatore,$31+\noexpand\textbf{10}$,15,615},
+    {Responsabile,9,30,270},
+    {Verificatore,41,15,615},
+    {Totale,188,127,3704},
+}
+%endTable
+\input{source/tables/prospetto_economico.tex}
+\noindent Gli scostamenti rilevati hanno quindi causato un aumento del costo del periodo di $3704 - 3624 =$ \euro\ 80.
+
+\subsubsection{Preventivo a finire}
+L'aver dedicato più tempo alla programmazione a discapito della progettazione ha le seguenti conseguenze:
+\begin{itemize}
+    \item potrebbe essere causa di refactoring che aumenterebbe il carico di lavoro dei programmatori;
+    \item i programmatori hanno confidenza con le tecnologie adottate.
+\end{itemize}
+È stato deciso di modificare il prospetto orario della fase successiva (Progettazione di dettaglio e codifica) ridistribuendo le ore tra programmatori e progettisti allo scopo di evitare i problemi sopra citati e ridurre l'aumento dell'offerta causato dallo scostamento riportato.
+
+\def\salarycontent{
+    {Amministratore,22,20,440},
+    {Analista,0,25,0},
+    {Progettista,$80+\noexpand\textbf{10}$,22,1980},
+    {Programmatore,$137-\noexpand\textbf{17}$,15,1800},
+    {Responsabile,15,30,450},
+    {Verificatore,82,15,1230},
+    {Totale,329,127,$5935-\noexpand\textbf{35} = 5900 $ },
+}
+%endTable
+\input{source/tables/prospetto_economico.tex}
+
+\noindent L'offerta finale diventa quindi: \euro\ 13704.
+
