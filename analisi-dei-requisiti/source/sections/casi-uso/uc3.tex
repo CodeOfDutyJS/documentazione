@@ -3,7 +3,7 @@
 
 \begin{figure}[htbp]
         \centering
-        \includegraphics[width=0.5\textwidth]{source/sections/casi-uso/diagrams/uc3-correzione.pdf}
+        \includegraphics[width=0.7\textwidth]{source/sections/casi-uso/diagrams/uc3.pdf}
         \caption{UC3 - Manipolazione del dataset}
         \label{fig:uc3}
     \end{figure}
@@ -24,10 +24,8 @@
     \end{itemize}
 
 
-\subsubsection{UC3.1 - Selezione delle variabili target}
-\label{uc3.1}
-
-
+    \subsubsection{UC3.1 - Selezione delle variabili target}
+    \label{uc3.1}
     \begin{itemize}
     \item \textbf{Attore}: utente;
     \item \textbf{Descrizione}: L'utente sceglie quali, tra le variabili del dataset, considerare come varibili target;
@@ -47,7 +45,7 @@
     
     
     \subsubsection{UC3.2 - Selezione delle features}
-\label{uc4}
+    \label{uc3.2}
 
     \begin{itemize}
     \item \textbf{Attore}: utente;
@@ -66,6 +64,12 @@
     
     \subsubsection{UC3.3 - Normalizzazione del dataset}
     \label{uc3.3}
+    \begin{figure}[htbp]
+        \centering
+        \includegraphics[width=0.45\textwidth]{source/sections/casi-uso/diagrams/uc3_3.pdf}
+        \caption{UC3.3 - Normalizzazione del dataset}
+        \label{fig:uc3.3}
+    \end{figure}
     \begin{itemize}
     \item \textbf{Attore}: utente;
     \item \textbf{Descrizione}: un dataset può contenere dati non normalizzati, normalizzare il dataset può risultare utile per una migliore visualizzazione dei dati;
@@ -82,15 +86,15 @@
      \begin{enumerate}
             \item l'utente sceglie su quale subset di dati effettuare la normalizzazione:
                 \begin{enumerate}
-                    \item normalizzazione Globale (\hyperref[uc5.2.1]{UC5.2.1});
-                    \item normalizzazione per Colonna (\hyperref[uc5.2.2]{UC5.2.2});
-                    \item normalizzazione per Riga (\hyperref[uc5.2.3]{UC5.2.3}).
+                    \item normalizzazione Globale (\hyperref[uc3.3.1]{UC3.3.1});
+                    \item normalizzazione per Colonna (\hyperref[uc3.3.2]{UC3.3.2});
+                    \item normalizzazione per Riga (\hyperref[uc3.3.3]{UC3.3.3}).
                 \end{enumerate}
         \end{enumerate}  
     \end{itemize}
     
     \paragraph{UC3.3.1 - Normalizzazione globale del dataset}
-    \label{uc5.2.1}
+    \label{uc3.3.1}
     \begin{itemize}
     \item \textbf{Attore}: utente;
     \item \textbf{Descrizione}: un dataset può contenere dati non normalizzati; normalizzare il dataset può risultare utile per una migliore visualizzazione dei dati, in questo caso la normalizzazione viene fatta su tutto il dataset;
@@ -106,7 +110,7 @@
     \end{itemize}
     
     \paragraph{UC3.3.2 - Normalizzazione per colonna del dataset}
-    \label{uc5.2.2}
+    \label{uc3.3.2}
     \begin{itemize}
     \item \textbf{Attore}: utente;
     \item \textbf{Descrizione}: un dataset può contenere dati non normalizzati; normalizzare il dataset può risultare utile per una migliore visualizzazione dei dati, in questo caso la normalizzazione viene fatta colonna per colonna;
@@ -122,7 +126,7 @@
     \end{itemize}
     
     \paragraph{UC3.3.3 - Normalizzazione per riga del dataset}
-    \label{uc5.2.3}
+    \label{uc3.3.3}
     \begin{itemize}
     \item \textbf{Attore}: utente;
     \item \textbf{Descrizione}: un dataset può contenere dati non normalizzati; normalizzare il dataset può risultare utile per una migliore visualizzazione dei dati, in questo caso la normalizzazione viene fatta riga per riga;
@@ -138,9 +142,7 @@
     \end{itemize}
     
     \subsubsection{UC3.4 - Selezione delle righe}
-\label{uc3.4}
-
-
+    \label{uc3.4}
     \begin{itemize}
     \item \textbf{Attore}: utente;
     \item \textbf{Descrizione}: L'utente sceglie le righe del dataset da considerare per la visualizzazione.

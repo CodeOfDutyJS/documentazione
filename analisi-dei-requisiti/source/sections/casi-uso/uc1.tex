@@ -20,7 +20,7 @@
     \item \textbf{Scenario Principale}: 
         \begin{enumerate}
             \item l'utente accede alla pagina dell'applicazione;
-            \item l'utente sceglie come caricare i dati (\hyperref[uc1.1]{UC1.1}):
+            \item l'utente sceglie come caricare i dati:
                 \begin{enumerate}
                     \item l'utente ha scelto di ricavare i dati caricando un file csv;
                     \item l'utente ha scelto di ricavare i dati tramite una query a un database.
@@ -38,34 +38,15 @@
         \begin{enumerate}
             \item l'utente sceglie come caricare i dati:
                 \begin{enumerate}
-                    \item caricando un file csv (\hyperref[uc1.2]{UC1.2});
-                    \item tramite una query a un database (\hyperref[uc1.3]{UC1.3}).
+                    \item caricando un file csv (\hyperref[uc1.1]{UC1.1});
+                    \item caricamento di una tabella di un database (\hyperref[uc1.2]{UC1.2}).
                 \end{enumerate}
         \end{enumerate}  
     \end{itemize}
     
     %%%
-    \subsubsection{UC1.1 - Scelta del caricamento dei dati}
+    \subsubsection{UC1.1 - Caricamento tramite file csv}
     \label{uc1.1}
-    
-    \begin{itemize}
-    \item \textbf{Attore}: utente;
-    \item \textbf{Descrizione}: l'utente sceglie come caricare i dati;
-    \item \textbf{Precondizione}:
-    \begin{itemize}
-        \item il sistema è funzionante e raggiungibile;
-        \item l'utente accede alla pagina dell'applicazione.
-    \end{itemize}
-    \item \textbf{Postcondizione}: l'utente ha fatto la scelta;
-    \item \textbf{Scenario Principale}: 
-        \begin{enumerate}
-            \item l'utente sceglie come caricare i dati in base alle proprie esigenze.
-        \end{enumerate}
-    \end{itemize}
-    
-    %%%
-    \subsubsection{UC1.2 - Caricamento tramite file csv}
-    \label{uc1.2}
     
     \begin{itemize}
     \item \textbf{Attore}: utente;
@@ -95,25 +76,23 @@
 
     
     %%%
-    \subsubsection{UC1.3 - Caricamento tramite query ad un database}
-    \label{uc1.3}
-    
-    Il caricamento tramite database è descritto in modo generale. L'analisi più approfondita di questo requisito sarà stesa durante la prossima revisione, dopo aver fissato una \emph{Technology Baseline}. In ogni caso sarà possibile ricavare i dati da almeno un tipo di database SQL e da almeno un tipo di database NoSQL.
+    \subsubsection{UC1.2 - Caricamento di una tabella di un database}
+    \label{uc1.2}
     
     \begin{itemize}
     \item \textbf{Attore}: utente;
-    \item \textbf{Descrizione}: l'utente sceglie di caricare i dati tramite tramite query ad un database;
+    \item \textbf{Descrizione}: l'utente sceglie di caricare i dati tramite una tabella di un database;
     \item \textbf{Precondizione}:
     \begin{itemize}
         \item il sistema è funzionante e raggiungibile;
         \item l'utente accede alla pagina dell'applicazione;
-        \item l'utente può collegarsi ad un database (possiede le credenziali).
+        \item l'utente ha correttamente creato un file di configurazione dei database all'interno del server
     \end{itemize}
-    \item \textbf{Postcondizione}: l'utente si è collegato al database e ha recuperato i dati tramite query come matrice $N\times M$;
+    \item \textbf{Postcondizione}: l'utente si è collegato al database e ha recuperato i dati dalla tabella del database come matrice $N\times M$;
     \item \textbf{Scenario Principale}: 
         \begin{enumerate}
-            \item l'utente ha scelto di caricare i dati tramite tramite query ad un database in cui può collegarsi;
-            \item inserisce le credenziali, e scrive la sua query per ricavare i dati.
+            \item l'utente sceglie di caricare i dati tramite una tabella di un database;
+            \item l'utente seleziona la tabella di uno dei database correttamente configurati.
         \end{enumerate}
         \item \textbf{Estensioni}:
         \begin{enumerate}

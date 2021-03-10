@@ -1,30 +1,30 @@
-\subsection{UC2 - Selezione della visualizzazione}
+\subsection{UC2 - Visualizzazione dei dati}
 \label{uc2}
 
     \begin{figure}[htbp]
         \centering
-        \includegraphics[width=0.45\textwidth]{source/sections/casi-uso/diagrams/uc2-correzione.pdf}
-        \caption{UC2 - Selezione della visualizzazione}
+        \includegraphics[width=0.45\textwidth]{source/sections/casi-uso/diagrams/uc2.pdf}
+        \caption{UC2 - Visualizzazione dei dati}
         \label{fig:uc2}
     \end{figure}
 
     % \includegraphics{}
     \begin{itemize}
     \item \textbf{Attore}: utente;
-    \item \textbf{Descrizione}: l'utente all'interno dell'applicazione sceglie la visualizzazione che vuole ottenere;
+    \item \textbf{Descrizione}: l'utente all'interno dell'applicazione visualizza i dati
     \item \textbf{Precondizione}:
     \begin{itemize}
         \item il sistema è funzionante e raggiungibile;
-        \item l'utente accede alla pagina dell'applicazione.
+        \item eseguito l'upload del dataset come matrice $N\times M$ (\hyperref[uc1]{UC1});
     \end{itemize}
-    \item \textbf{Postcondizione}: l'utente ha scelto quale visualizzazione vuole ottenere;
+    \item \textbf{Postcondizione}: l'utente visualizza i dati tramite uno dei grafici disponibili
     \item \textbf{Scenario Principale}: 
         \begin{enumerate}
-            \item l'utente seleziona la visualizzazione tra quelle disponibili.
+            \item l'utente visualizza il grafico costruito a partire dai dati caricati.
         \end{enumerate}  
     \item \textbf{Generalizzazioni}:
         \begin{enumerate}
-            \item l'utente seleziona una delle seguenti visualizzazioni:
+            \item l'utente visualizza i dati tramite una delle seguenti visualizzazioni:
                 \begin{enumerate}
                     \item Scatter Plot Matrix (\hyperref[uc2.1]{UC2.1});
                     \item Heatmap (\hyperref[uc2.2]{UC2.2});
@@ -42,16 +42,17 @@
     
     \begin{itemize}
     \item \textbf{Attore}: utente;
-    \item \textbf{Descrizione}: l'utente sceglie la visualizzazione \emph{Scatter Plot Matrix};
+    \item \textbf{Descrizione}: l'utente visualizza i dati tramite \emph{Scatter Plot Matrix};
     \item \textbf{Precondizione}:
     \begin{itemize}
         \item il sistema è funzionante e raggiungibile;
-        \item l'utente accede alla pagina dell'applicazione.
+        \item eseguito l'upload del dataset come matrice $N\times M$ (\hyperref[uc1]{UC1});
+        \item le features del dataset da visualizzare sono al massimo 5
     \end{itemize}
-    \item \textbf{Postcondizione}: l'utente sceglie Scatter Plot Matrix come visualizzazione;
+    \item \textbf{Postcondizione}: l'utente visualizza i dati caricati tramite \emph{Scatter Plot Matrix};
     \item \textbf{Scenario Principale}: 
         \begin{enumerate}
-            \item l'utente sceglie Scatter Plot Matrix come visualizzazione.
+            \item l'utente visualizza la Scatter Plot Matrix costruita a partire dai dati caricati.
         \end{enumerate}
     \end{itemize}
     
@@ -61,16 +62,16 @@
     
     \begin{itemize}
     \item \textbf{Attore}: utente;
-    \item \textbf{Descrizione}: l'utente sceglie la visualizzazione \emph{Heatmap};
+    \item \textbf{Descrizione}: l'utente visualizza i dati tramite \emph{Heatmap};
     \item \textbf{Precondizione}:
     \begin{itemize}
         \item il sistema è funzionante e raggiungibile;
-        \item l'utente accede alla pagina dell'applicazione.
+        \item eseguito l'upload del dataset come matrice $N\times M$ (\hyperref[uc1]{UC1});
     \end{itemize}
-    \item \textbf{Postcondizione}: l'utente sceglie Heatmap come visualizzazione;
+    \item \textbf{Postcondizione}: l'utente visualizza i dati caricati tramite \emph{Heatmap};
     \item \textbf{Scenario Principale}: 
         \begin{enumerate}
-            \item l'utente sceglie Heatmap come visualizzazione.
+            \item \item l'utente visualizza la Heatmap costruita a partire dai dati caricati.
         \end{enumerate}
     \end{itemize}
     
@@ -80,16 +81,16 @@
     
     \begin{itemize}
     \item \textbf{Attore}: utente;
-    \item \textbf{Descrizione}: l'utente sceglie la visualizzazione \emph{Correlation Heatmap};
+    \item \textbf{Descrizione}: l'utente visualizza i dati tramite \emph{Correlation Heatmap};
     \item \textbf{Precondizione}:
     \begin{itemize}
         \item il sistema è funzionante e raggiungibile;
-        \item l'utente accede alla pagina dell'applicazione.
+        \item eseguito l'upload del dataset come matrice $N\times M$ (\hyperref[uc1]{UC1});
     \end{itemize}
-    \item \textbf{Postcondizione}: l'utente sceglie Correlation Heatmap come visualizzazione;
+    \item \textbf{Postcondizione}: l'utente visualizza i dati caricati tramite \emph{Correlation Heatmap};
     \item \textbf{Scenario Principale}: 
         \begin{enumerate}
-            \item l'utente sceglie Correlation Heatmap come visualizzazione.
+            \item l'utente visualizza la Correlation Heatmap costruita a partire dai dati caricati.
         \end{enumerate}
     \end{itemize}
     
@@ -99,16 +100,16 @@
     
     \begin{itemize}
     \item \textbf{Attore}: utente
-    \item \textbf{Descrizione}: l'utente sceglie la visualizzazione \emph{Force Field};
+    \item \textbf{Descrizione}: l'utente visualizza i dati tramite \emph{Force Field};
     \item \textbf{Precondizione}:
     \begin{itemize}
         \item il sistema è funzionante e raggiungibile;
-        \item l'utente accede alla pagina dell'applicazione.
+       \item eseguito l'upload del dataset come matrice $N\times M$ (\hyperref[uc1]{UC1});
     \end{itemize}
-    \item \textbf{Postcondizione}: l'utente sceglie Force Field come visualizzazione;
+    \item \textbf{Postcondizione}: l'utente visualizza i dati caricati tramite \emph{Force Field};
     \item \textbf{Scenario Principale}: 
         \begin{enumerate}
-            \item l'utente sceglie Force Field come visualizzazione.
+            \item l'utente visualizza il Force Field costruito a partire dai dati caricati.
         \end{enumerate}
     \end{itemize}
     
@@ -118,16 +119,16 @@
     
     \begin{itemize}
     \item \textbf{Attore}: utente;
-    \item \textbf{Descrizione}: l'utente sceglie la visualizzazione \emph{Linear Projection};
+    \item \textbf{Descrizione}: l'utente visualizza i dati tramite \emph{Linear Projection};
     \item \textbf{Precondizione}:
     \begin{itemize}
         \item il sistema è funzionante e raggiungibile;
-        \item l'utente accede alla pagina dell'applicazione.
+        \item eseguito l'upload del dataset come matrice $N\times M$ (\hyperref[uc1]{UC1});
     \end{itemize}
-    \item \textbf{Postcondizione}: l'utente sceglie Linear Projection come visualizzazione;
+    \item \textbf{Postcondizione}: l'utente visualizza i dati caricati tramite \emph{Linear Projection};
     \item \textbf{Scenario Principale}: 
         \begin{enumerate}
-            \item l'utente sceglie Linear Projection come visualizzazione.
+            \item l'utente visualizza la \emph{Linear Projection} costruita a partire dai dati caricati.
         \end{enumerate}
     \end{itemize}
     
@@ -137,16 +138,16 @@
     
     \begin{itemize}
     \item \textbf{Attore}: utente;
-    \item \textbf{Descrizione}: l'utente sceglie la visualizzazione \emph{Parallel Coordinates};
+    \item \textbf{Descrizione}:  l'utente visualizza i dati caricati tramite \emph{Parallel Coordinates};
     \item \textbf{Precondizione}:
     \begin{itemize}
         \item il sistema è funzionante e raggiungibile;
-        \item l'utente accede alla pagina dell'applicazione.
+        \item eseguito l'upload del dataset come matrice $N\times M$ (\hyperref[uc1]{UC1});
     \end{itemize}
-    \item \textbf{Postcondizione}: l'utente sceglie Parallel Coordinates come visualizzazione;
+    \item \textbf{Postcondizione}: l'utente visualizza i dati caricati tramite \emph{Parallel Coordinates};
     \item \textbf{Scenario Principale}: 
         \begin{enumerate}
-            \item l'utente sceglie Parallel Coordinates come visualizzazione.
+            \item l'utente visualizza la \emph{Parallel Coordinates} costruita a partire dai dati caricati.
         \end{enumerate}
     \end{itemize}
     

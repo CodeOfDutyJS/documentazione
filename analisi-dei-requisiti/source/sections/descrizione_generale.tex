@@ -32,15 +32,15 @@
     \end{itemize}
     
 \subsection{Caratteristiche degli utenti}
-L'applicazione \emph{HD Viz} è rivolta agli utenti che vogliono supportare la fase esplorativa dell'analisi dei dati attraverso delle diverse visualizzazioni. Agli utenti si richiede che abbiano già dei dati in formato csv oppure che abbiano la possibilità di effettuare delle query in un database.
+L'applicazione \emph{HD Viz} è rivolta agli utenti che vogliono supportare la fase esplorativa dell'analisi dei dati attraverso delle diverse visualizzazioni. Agli utenti si richiede che abbiano già dei dati in formato csv oppure che abbiano configurato correttamente le connessioni al/ai database in un file di configurazione all'interno del server dell'applicazione.
 
 
 \subsection{Architettura del progetto}
-\emph{HD Viz} sarà una PWA che comunicherà con la parte server soltanto per il recupero dei dati da un database.
+\emph{HD Viz} sarà una web app che comunicherà con la parte server soltanto per il recupero dei dati da un database.
 \\
-L'applicazione in questo modo potrà essere eseguita senza la connessione con il server continuando a fornire tutte le funzionalità di visualizzazione se si importano i dati da file csv.
+L'elaborazione dati avviene sul browser (lato client), in questo modo la visualizzazione di dati a partire da file csv può essere eseguita anche in assenza di connessione con il server.
 
-Per il recupero dei dati ci si affiderà ad un back-end sviluppato in node.js che permetterà il recupero dei dati attraverso query a un database. La configurazione delle connessioni ai database avviene tramite un file di config all'interno del server. Il client si occuperà della visualizzazione e selezione della connessione al database per poi selezionare la tabella che si vuole utilizzare per il recupero dei dati.
+Per il recupero dei dati ci si affiderà ad un back-end sviluppato in node.js che permetterà il recupero dei dati da tabelle di un database. La configurazione delle connessioni ai database avviene tramite un file di config all'interno del server. Il client si occuperà della visualizzazione e selezione della connessione al database per poi selezionare la tabella che si vuole utilizzare per il recupero dei dati.
 
 \subsection{Vincoli generali}
-L'utente per utilizzare l'applicazione deve disporre dei dati per le visualizzazioni, o un file csv o un database a cui può accedere.
+L'utente per utilizzare l'applicazione deve disporre dei dati per le visualizzazioni: un file csv o una connessione correttamente configurata ad un database.
