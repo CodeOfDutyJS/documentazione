@@ -30,27 +30,15 @@ Mentre per lo stato valgono le seguenti sigle:
     \def\testspecification{
     {   
         TSOF1,
-        Si verifica che l'utente possa caricare i dati per la visualizzazione tramite file CSV,
+        Si verifica che l'utente possa caricare i propri dati per la visualizzazione: tramite una tabella di un database e tramite file CSV,
         NI,
-        RF01 RFO1.1
-    },
-    {   
-        TSOF1.1,
-        Si verifica che l'utente possa inserire i dati tramite query al database,
-        NI,
-        RFO1.2
-    },
-    {   
-        TSOF1.2,
-        Si verifica che appaia un messaggio d'errore in caso di errore nell'inserimento dei dati,
-        NI,
-        RFO1.3
+        RF01 RFO1.1 RFO1.2
     },
     {   
         TSOF1.3,
-        Si verifica che la conversione in JSON dei dati avvenga in modo corretto,
+        Si verifica che sia visualizzato un messaggio di errore se il caricamento dei dati fallisce,
         NI,
-        RFO1.4
+        RFO1.3
     },
      {   
         TSOF2,
