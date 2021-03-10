@@ -1,0 +1,15 @@
+\section{Verbale Incontro}
+    Questo incontro è avvenuto dopo la ricezione dei risultati e della correzione dei documenti inviati per la RR. Il team ne aveva già discusso nel canale di comunicazione asincrono Telegram, tuttavia è stato ritenuto necessario incontrarsi per discutere di alcuni punti ritenuti importanti:
+    \begin{itemize}
+        \item il docente ha criticato la scelta di non aver individuato un database interno già durante la prima fase di analisi;
+        \item la modalità di versionamento.
+    \end{itemize}
+    Riguardo al primo punto: è stato deciso di organizzare un colloquio con la proponente Zucchetti per capire se la segnalazione del docente riguarda un'incomprensione dei requisiti indicati nel capitolato.
+    \noindent Riguardo al secondo punto: il docente aveva pubblicato in anni accademici un approfondimento per quanto riguarda il versionamento, in particolare questo è quanto è stato individuato:
+    \begin{itemize}
+        \item in un sistema di versionamento X.Y.Z, gli scatti di versione si chiamano rispettivamente major, minor, patch;
+        \item uno scatto di versione minor richiede una verifica dell'intero documento;
+        \item uno scatto di versione patch richiede in ogni caso verifica dei cambiamenti introdotti;
+        \item un cambiamento di versione major avviene solo prima del rilascio del prodotto, nel caso della documentazione quando questa è pronta a essere mostrata a terzi.
+    \end{itemize}
+    Allo scopo di "tenere solo le cose buone" nella repository saranno creati branch dedicati a ogni documento, al cui interno avverranno le modifiche di tipo patch. Modifiche di tipo minor e major sono ricondotte al branch principale.
