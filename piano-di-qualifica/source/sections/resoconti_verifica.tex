@@ -1,7 +1,7 @@
-
+\newpage
 \section{Resoconti di verifica ed esiti delle revisioni}
 
-In questa sezione vengono mostrati i valori delle metriche calcolate a termine del periodo di revisione dei requisiti. Saranno mostrati sia i valori che rientrano nel range prestabilito sia quelli che non rientrano, nel secondo caso verranno segnalati come problemi nella parte finale della sezione.
+In questa sezione vengono mostrati i valori delle metriche calcolate a termine del periodo di progettazione architetturale. Saranno mostrati sia i valori che rientrano nel range prestabilito sia quelli che non rientrano, nel secondo caso verranno segnalati come problemi nelle conclusioni che sranno divise per fasi.
 
 \subsection{Riassunto delle attività di verifica}
 Durante il periodo di analisi tutta la documentazione da presentare in ingresso alla revisione dei requisiti è stata sottoposta ad un'analisi meticolosa della struttura del documento, della chiarezza e degli errori ortografici. La verifica di ogni documento è stata svolta da 2 componenti del gruppo per assicurare il minor numero di errori possibili.
@@ -53,21 +53,31 @@ Per ogni documento stilato è stato calcolato l'indice di Gulpease\glo{} in due 
 
 Per quanto riguarda gli errori ortografici, oltre alla revisione fatta dai membri del gruppo, si è utilizzato anche lo spellchecker di Overleaf.
 \newpage
-\subsection{Earned value - EV}
 
-\begin{longtabu} to \textwidth {| X[0.1,c m] | X[0.1,c m] | X[0.1,c m] | X[0.1,c m]|}
+\subsection{Metriche di pianificazione}
+Le metriche di pianificazione che mostrano il rispettaer dei costi e dei tempi sono stati calcolati in questa versione del documento in 4 gruppi denotati dalle seguenti sigle:
+\begin{itemize}
+    \item \textbf{An}: Periodo di analisi, ovvero dal 26-11-2020 al 10-01-2021
+    \item \textbf{CC}: periodo di consolidamento dei requisiti, ovvero dal 12-01-2021 al 18-01-2021
+    \item \textbf{PA}: Progettazione architetturale, ovvero dal 19-01-2021 al 01-03-2021, che rappresenta la data progettata per la consegna
+    \item \textbf{PAS}: Progettazione architetturale con consegna a sportell0, ovvero dal 02-03-2021 al 09-03-2021, che rappresenta la data spostata con consegna il 10 marzo
+\end{itemize}
+
+\subsubsection{Earned value - EV}
+
+\begin{longtabu} to \textwidth {| X[0.1,c m] | X[0.1,c m] |}
     \hline
     \rowcolor{header}
     \textbf{Fase} &
-    \textbf{Valore effettivo} & 
-    \textbf{Valore sufficiente} & 
-    \textbf{Valore ottimo} \\
+    \textbf{Valore effettivo} \\
     \hline
-    RR & - & - & - \\ 
+    An & -  \\ 
     \hline
-    CR & 734 & X & X \\
+    CR & 734 \\
     \hline
-    PA & 2588 & x & x \\
+    PA & 2588 \\
+    \hline
+    PAS & 1035 \\
     \hline 
     \end{longtabu}
 
@@ -77,21 +87,21 @@ Per quanto riguarda gli errori ortografici, oltre alla revisione fatta dai membr
         \caption{Grafico dei valori dell'Earned value}
     \end{figure}
 
-\subsection{Planned value - PV}
+\subsubsection{Planned value - PV}
 
-\begin{longtabu} to \textwidth {| X[0.1,c m] | X[0.1,c m] | X[0.1,c m] | X[0.1,c m]|}
+\begin{longtabu} to \textwidth {| X[0.1,c m] | X[0.1,c m] | }
     \hline
     \rowcolor{header}
     \textbf{Fase} &
-    \textbf{Valore effettivo} & 
-    \textbf{Valore sufficiente} & 
-    \textbf{Valore ottimo} \\
+    \textbf{Valore effettivo} \\
     \hline
-    RR & - & - & - \\ 
+    RR & - \\
     \hline
-    CR & 734 & x & x \\
+    CR & 734 \\
     \hline
-    PA & 3624 & x & x \\
+    PA & 3624 \\
+    \hline
+    PAS & 1035 \\
     \hline 
     \end{longtabu}
 
@@ -101,9 +111,9 @@ Per quanto riguarda gli errori ortografici, oltre alla revisione fatta dai membr
         \caption{Grafico dei valori del Planned value}
     \end{figure}
 
-\subsection{Actual cost - AC}
+\subsubsection{Actual cost - AC}
 
-\begin{longtabu} to \textwidth {| X[0.1,c m] | X[0.1,c m] | X[0.1,c m] | X[0.1,c m]|}
+\begin{longtabu} to \textwidth {| X[0.1,c m] | X[0.1,c m] | X[0.1,c m] | X[0.1,c m] |}
     \hline
     \rowcolor{header}
     \textbf{Fase} &
@@ -113,10 +123,12 @@ Per quanto riguarda gli errori ortografici, oltre alla revisione fatta dai membr
     \hline
     An & - & - & - \\
     \hline
-    CR & 650.66 & x & x \\ 
+    CR & 650.66 & Si & Si \\ 
     \hline    
-    PA & 3439,23 & x & x \\
+    PA & 3439,23 & No & No \\
     \hline 
+    PAS & 966 & Si & Si \\
+    \hline
     \end{longtabu}
 
     \begin{figure}[H]
@@ -125,7 +137,7 @@ Per quanto riguarda gli errori ortografici, oltre alla revisione fatta dai membr
         \caption{Grafico dei valori dell'Actual cost}
     \end{figure}
 
-\subsection{Schedule variance - SV}
+\subsubsection{Schedule variance - SV}
 
 \begin{longtabu} to \textwidth {| X[0.1,c m] | X[0.1,c m] | X[0.1,c m] | X[0.1,c m]|}
     \hline
@@ -137,10 +149,12 @@ Per quanto riguarda gli errori ortografici, oltre alla revisione fatta dai membr
     \hline
     An & - & - & - \\
     \hline
-    CR & 0 & x & x \\ 
+    CR & 0 & Si & Si \\ 
     \hline
-    TB & -1035 & x & x \\
+    PA & -1035 & No & No \\
     \hline 
+    PAS & 0 & Si & Si \\
+    \hline
     \end{longtabu}
 
     \begin{figure}[H]
@@ -150,7 +164,7 @@ Per quanto riguarda gli errori ortografici, oltre alla revisione fatta dai membr
     \end{figure}
 
 
-\subsection{Cost variance - CV}
+\subsubsection{Cost variance - CV}
 \begin{longtabu} to \textwidth {| X[0.1,c m] | X[0.1,c m] | X[0.1,c m] | X[0.1,c m]|}
     \hline
     \rowcolor{header}
@@ -161,10 +175,12 @@ Per quanto riguarda gli errori ortografici, oltre alla revisione fatta dai membr
     \hline
     Av & - & - & - \\ 
     \hline
-    CR & 84 & x & x \\
+    CR & 84 & Si & No \\
     \hline
-    TB & -851 & x & x \\
+    PA & -851 & No & No \\
     \hline 
+    PAS & 69 & Si & No \\
+    \hline
     \end{longtabu}
 
     \begin{figure}[H]
