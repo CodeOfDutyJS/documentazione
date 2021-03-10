@@ -330,6 +330,7 @@ jobs:
           asset_path: verbali/verbale-interno_2021-01-05/main.pdf
           asset_name: verbale-interno_2021-01-05.pdf
           upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_content_type: application/pdf
 
       - name: Upload verbale-interno_2021-01-13
         id: upload-verbale-interno_2021-01-13
@@ -341,6 +342,7 @@ jobs:
           asset_path: verbali/verbale-interno_2021-01-13/main.pdf
           asset_name: verbale-interno_2021-01-13.pdf
           upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_content_type: application/pdf
           
       - name: Upload verbale-interno_2021-01-30
         id: upload-verbale-interno_2021-01-30
@@ -352,6 +354,7 @@ jobs:
           asset_path: verbali/verbale-interno_2021-01-30/main.pdf
           asset_name: verbale-interno_2021-01-30.pdf
           upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_content_type: application/pdf
           
       - name: Upload verbale-interno_2021-02-05
         id: upload-verbale-interno_2021-02-05
@@ -363,6 +366,7 @@ jobs:
           asset_path: verbali/verbale-interno_2021-02-05/main.pdf
           asset_name: verbale-interno_2021-02-05.pdf
           upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_content_type: application/pdf
 
       - name: Upload verbale-interno_2021-02-10
         id: upload-verbale-interno_2021-02-10
@@ -373,6 +377,8 @@ jobs:
         with:
           asset_path: verbali/verbale-interno_2021-02-10/main.pdf
           asset_name: verbale-interno_2021-02-10.pdf
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_content_type: application/pdf
           
       - name: Upload verbale-interno_2021-02-25
         id: upload-verbale-interno_2021-02-25
@@ -384,6 +390,7 @@ jobs:
           asset_path: verbali/verbale-interno_2021-02-25/main.pdf
           asset_name: verbale-interno_2021-02-25.pdf
           upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_content_type: application/pdf
       
       - name: Upload verbale-esterno_2021-02-02
         id: upload-verbale-esterno_2021-02-02
@@ -394,7 +401,5 @@ jobs:
         with:
           asset_path: verbali/verbale-esterno_2021-02-02/main.pdf
           asset_name: verbale-esterno_2021-02-02.pdf
-          upload_url: ${{ steps.create_release.outputs.upload_url }}       
-          upload_url: ${{ steps.create_release.outputs.upload_url }}         asset_path: verbali/verbale-interno_2021-01-05/main.pdf
-          asset_name: verbale-interno_2021-01-05.pdf
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_content_type: application/pdf
