@@ -1,1 +1,6 @@
-.*pdf
+*.pdf
+*.log
+*.out
+*.toc
+*.gz
+*.aux
