@@ -7,7 +7,7 @@ on:
   push:
     branches: [ master ]
     paths:
-    - 'lettera-presentazione-RR/**'
+    - 'letteraRP/**'
     - '!**.pdf'
 
   # Allows you to run this workflow manually from the Actions tab
@@ -26,18 +26,18 @@ jobs:
       - name: Set up Git repository
         uses: actions/checkout@v2
 
-      - name: Compile Analisi dei requisiti
+      - name: Compile Lettera di presentazione
         uses: vinay0410/tectonic-action@master
         env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tex_path: lettera-presentazione-RR/main.tex
+          tex_path: letteraRP/main.tex
       
       - name: Remove previous tag and release
         uses: dev-drprasad/delete-tag-and-release@v0.1.2
         with:
           delete_release: true # default: false
-          tag_name: lettera-RR # tag name to delete
+          tag_name: lettera-RP # tag name to delete
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       
@@ -47,8 +47,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: lettera-RR
-          release_name: 'Lettera di presentazione RR'
+          tag_name: lettera-RP
+          release_name: 'Lettera di presentazione RP'
       
       - name: Upload in release
         id: upload-release-asset 
@@ -57,6 +57,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: lettera-presentazione-RR/main.pdf
-          asset_name: lettera-presentazione-RR.pdf
+          asset_path: letteraRP/main.pdf
+          asset_name: lettera-presentazione-RP.pdf
           asset_content_type: application/pdf
