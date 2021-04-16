@@ -1,0 +1,22 @@
+\section{C}
+
+%startTable
+\def\definizioniC{
+{Cluster (dati),Gruppo di elementi omogenei in un insieme di dati.},
+{Committente,Colui con il compito di individuare il prodotto da commissionare al fornitore.},
+{Correlation Heatmap,Visualizzazione di tipo heatmap per visualizzare la correlazione tra features.},
+{CSV,Formato di file per conservare dati. Acronimo di Comma-separated values. Ogni riga è rappresentata da una linea di testo che viene divisa in campi solitamente con l'uso di virgole.},
+}
+%endTable
+
+\foreach \x [count=\nj] in \definizioniC
+{
+    \foreach \y [count=\ni] in \x
+    {
+        \ifnum\ni=1
+            \subsection\y \hfill\\
+        \else
+            \y
+        \fi
+    }
+}

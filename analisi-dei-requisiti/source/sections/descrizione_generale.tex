@@ -1,0 +1,46 @@
+\section{Descrizione generale}
+
+\subsection{Obiettivi del prodotto}
+    Lo scopo del progetto è quello di creare un'applicazione web che sia in grado di supportare la fase esplorativa dell'analisi dei dati attraverso diverse visualizzazioni che possono mettere in evidenza pattern nei dati.
+
+\subsection{Funzioni del prodotto}
+    L'applicazione deve permettere agli utenti di caricare dei dati da diverse origini e creare una visualizzazione adatta per l'analisi dei dati.
+    \\
+    In particolare:
+    \begin{itemize}
+        \item L'utente può:
+        \begin{itemize}
+            \item importare i propri dati da file csv;
+            \item importare i propri dati da un database:
+            \begin{itemize}
+                \item MySQL;
+                \item PostgreSQL;
+                \item MongoDB;
+                \item SQLite;
+            \end{itemize}
+            \item creare una delle diverse visualizzazioni:
+            \begin{itemize}
+                \item Scatter Plot Matrix;
+                \item Heatmap;
+                \item Force Field;
+                \item Proiezione lineare;
+                \item Correlation Heatmap;
+                \item Parallel Coordinates;
+            \end{itemize}
+            \item salvare la visualizzazione creata dall'applicazione.
+        \end{itemize}
+    \end{itemize}
+    
+\subsection{Caratteristiche degli utenti}
+L'applicazione \emph{HD Viz} è rivolta agli utenti che vogliono supportare la fase esplorativa dell'analisi dei dati attraverso delle diverse visualizzazioni. Agli utenti si richiede che abbiano già dei dati in formato csv oppure che abbiano configurato correttamente le connessioni al/ai database in un file di configurazione all'interno del server dell'applicazione.
+
+
+\subsection{Architettura del progetto}
+\emph{HD Viz} sarà una web app che comunicherà con la parte server soltanto per il recupero dei dati da un database.
+\\
+L'elaborazione dati avviene sul browser (lato client), in questo modo la visualizzazione dei dati a partire da file csv può essere eseguita anche in assenza di connessione con il server.
+
+Per il recupero dei dati ci si affiderà ad un back-end sviluppato in node.js che permetterà il recupero dei dati da tabelle di un database. La configurazione delle connessioni ai database avviene tramite un file di config all'interno del server. Il client si occuperà della visualizzazione e selezione della connessione al database per poi selezionare la tabella che si vuole utilizzare per il recupero dei dati.
+
+\subsection{Vincoli generali}
+L'utente per utilizzare l'applicazione deve disporre dei dati per le visualizzazioni: un file csv o una connessione correttamente configurata ad un database.

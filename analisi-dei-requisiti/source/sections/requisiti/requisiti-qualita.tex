@@ -1,0 +1,52 @@
+\subsection{Requisiti di qualità}
+
+\def\obb{Obbligatorio}
+\def\pdq{Piano di Qualifica}
+
+%startTable
+\def\requisitiq{
+    {RQO1, Deve essere prodotto un manuale d'uso per l'utente, \obb, Capitolato},
+    {RQO2, Deve essere prodotto un manuale manutentore, \obb, Capitolato},
+    {RQD3, Il codice deve essere pubblicato su un repository pubblico, Desiderabile, Capitolato},
+    {RQO4, Il codice deve seguire le norme di stile specificate nel documento Norme di Progetto, \obb, Interno{,} Norme di Progetto 2.0.0},
+    {RQO5, Nella codifica{,} deve essere evitato l'utilizzo di chiamate ricorsive se non in casi strettamente necessari, \obb, Interno{,} Norme di Progetto 2.0.0},
+}
+%endTable
+
+
+
+
+
+%%%
+%%%
+%%%
+\newcommand*\requisitiqtable{}
+\foreach \x [count=\nj] in \requisitiq
+{
+    \foreach \y [count=\ni] in \x
+    {
+        \ifnum\ni=4
+            \xappto\requisitiqtable{\y}
+            \gappto\requisitiqtable{\\}
+            \gappto\requisitiqtable{\hline}
+        \else
+            \xappto\requisitiqtable{\y & }
+        \fi
+    }
+}
+
+%\subsection{Requisiti funzionali}
+
+% Impostazioni della tabella
+\tabulinesep = 2mm % padding
+\taburowcolors [1] 2{pari .. dispari} % colori delle righe
+\addcontentsline{lot}{table}{Requisiti di qualità}
+\begin{longtabu} to \textwidth {| X[0.2 l m] | X[0.4 l m] |  X[0.2 l m] | X[0.2 l m] |} % larghezza delle colonne
+\hline
+\rowcolor{header} % colore dell'header
+    
+\textbf{Requisito} & \textbf{Descrizione} & \textbf{Classificazione} & \textbf{Fonte} \\
+\hline
+\requisitiqtable
+
+\end{longtabu}

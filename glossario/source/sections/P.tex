@@ -1,0 +1,29 @@
+\section{P}
+
+%startTable
+\def\definizioniP{
+{PAAS,Platform as a service. Piattaforme cloud che mettono a disposizione insieme di software pronti per l'utilizzo.},
+{Parallel Coordinates,Visualizzazione che rappresenta degli assi paralleli. Ogni linea passa da un asse all'altro in corrispondenza del valore della feature.},
+{Payment provider,Servizio per accettare pagamenti elettronici.},
+{PCA,Principal Components Analysis. Tecnica di riduzione dimensionale.\\ \href{https://en.wikipedia.org/wiki/Principal_component_analysis}{https://en.wikipedia.org/wiki/Principal-component-analysis}},
+{PCs,Principal Components. Sono i vettori direzionali calcolati dall'algoritmo che esegue la PCA.\\ \href{https://en.wikipedia.org/wiki/Principal_component_analysis}{https://en.wikipedia.org/wiki/Principal-component-analysis}},
+{Product Baseline,Descrizione concordata degli attributi di un prodotto, in un certo istante. Utile come base per la definizione di cambiamenti.},
+{Proiezione Lineare Multi Asse,Visualizzazione in cui dati con molte dimensioni vengono rappresentati su un piano.},
+{Proof Of Concept,Realizzazione incompleta o abbozzata di un progetto.},
+{Proponente,Ente o azienda che compie l’atto di proporre il capitolato d’appalto per un progetto.},
+{PWA,Applicazioni web che si comportano come app native. Solitamente dopo che si è visitato la pagina la prima volta è possibile utilizzarle anche offline.},
+{Python,Linguaggio di programmazione orientato agli oggetti.},
+}
+%endTable
+
+\foreach \x [count=\nj] in \definizioniP
+{
+    \foreach \y [count=\ni] in \x
+    {
+        \ifnum\ni=1
+            \subsection\y \hfill\\
+        \else
+            \y
+        \fi
+    }
+}

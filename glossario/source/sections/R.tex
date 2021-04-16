@@ -1,0 +1,21 @@
+\section{R}
+
+%startTable
+\def\definizioniR{
+{Rancher,Piattaforma per la gestione di cluster Kubernetes.\\ \href{https://rancher.com/}{https://rancher.com/}},
+{React,Libreria JavaScript per la creazione di interfacce utente.\\ \href{https://it.reactjs.org/}{https://it.reactjs.org/}},
+{Repository,Ambiente in cui vengono conservati e gestiti i file di un progetto.},
+}
+%endTable
+
+\foreach \x [count=\nj] in \definizioniR
+{
+    \foreach \y [count=\ni] in \x
+    {
+        \ifnum\ni=1
+            \subsection\y \hfill\\
+        \else
+            \y
+        \fi
+    }
+}

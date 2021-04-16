@@ -1,0 +1,21 @@
+\section{L}
+
+%startTable
+\def\definizioniL{
+{Label,Campo dati che identifica il dato. (es: Nome, Categoria)},
+{Leaflet,Libreria JavaScript per sviluppare mappe geografiche interattive.},
+{Lifecycle (Serverless Framework),Ciclo di vita di applicazioni serverless. Develop, Deploy, Test, Monitor, Secure.\\ \href{https://www.serverless.com/blog/serverless-now-full-lifecycle}{https://www.serverless.com/blog/serverless-now-full-lifecycle}},
+}
+%endTable
+
+\foreach \x [count=\nj] in \definizioniL
+{
+    \foreach \y [count=\ni] in \x
+    {
+        \ifnum\ni=1
+            \subsection\y \hfill\\
+        \else
+            \y
+        \fi
+    }
+}

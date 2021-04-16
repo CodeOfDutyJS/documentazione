@@ -1,0 +1,45 @@
+\documentclass[a4paper]{article}
+
+\input{../_config/package.tex}
+\input{../_config/config.tex}
+\input{source/title_page.tex}
+\input{source/changelog.tex}
+
+% Per modificare il frontespizio e diario delle modifiche andare sulla cartella source
+% Per aggiungere il contenuto andare sulla cartella source/sections e creare un nuovo file.tex per ogni sezione
+
+% Per parole che devono andare nel glossario aggiungere /glo{} dopo la parola
+
+\begin{document}
+    % Frontespizio 
+    \input{../_template/title_page.tex}
+    
+    % Diario delle modifiche
+    \input{../_template/changelog.tex}
+    \pagebreak
+    
+    % Indice
+    \tableofcontents
+    \pagebreak
+    
+    % Se necessari
+    % \listoffigures
+    % \listoftables
+    
+    % Contenuto
+    \input{source/sections/introduzione.tex}
+    \pagebreak
+    \input{source/sections/analisi_dei_rischi.tex}
+    \pagebreak
+    \input{source/sections/pianificazione}
+    \pagebreak
+    \input{source/sections/preventivo.tex}
+    \pagebreak
+    \input{source/sections/scostamento.tex}
+    \pagebreak
+    \appendix
+    \input{source/sections/rischi_rilevati.tex} 
+    \pagebreak
+    \input{source/sections/organigramma.tex}
+    
+\end{document}

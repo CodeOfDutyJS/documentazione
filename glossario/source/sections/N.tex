@@ -1,0 +1,20 @@
+\section{N}
+
+%startTable
+\def\definizioniN{
+{NFC,Acronimo per Near Field Communication. Tecnologia di ricetrasmissione che fornisce connettività senza fili a piccola distanza (massimo 10cm).},
+{Node.js,Runtime orientato agli eventi asincroni per l'esecuzione di codice JavaScript.\\ \href{https://nodejs.org/it/about/}{https://nodejs.org/it/about/}},
+}
+%endTable
+
+\foreach \x [count=\nj] in \definizioniN
+{
+    \foreach \y [count=\ni] in \x
+    {
+        \ifnum\ni=1
+            \subsection\y \hfill\\
+        \else
+            \y
+        \fi
+    }
+}

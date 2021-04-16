@@ -1,0 +1,19 @@
+\section{E}
+
+%startTable
+\def\definizioniE{
+{Ethereum,Piattaforma decentralizzata per la creazione e pubblicazione di smart-contracts.\\ \href{https://ethereum.org/it/}{https://ethereum.org/it/}},
+}
+%endTable
+
+\foreach \x [count=\nj] in \definizioniE
+{
+    \foreach \y [count=\ni] in \x
+    {
+        \ifnum\ni=1
+            \subsection\y \hfill\\
+        \else
+            \y
+        \fi
+    }
+}

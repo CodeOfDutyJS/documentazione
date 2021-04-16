@@ -1,0 +1,22 @@
+\section{B}
+
+%startTable
+\def\definizioniB{
+{Backend,Parte di una soluzione software che gestisce, elabora e utilizza i dati forniti dal front end.},
+{Blockchain,Struttura dati condivisa e immutabile. Le voci sono raggruppate a blocchi che vengono concatenati in ordine cronologico. L'immutabilità viene garantita dall'uso della crittografia.},
+{Bootstrap,Toolkit per lo sviluppo di front end per siti e applicazioni web.\\ \href{https://getbootstrap.com/}{https://getbootstrap.com/}},
+{Business Logic,Parte logica e di elaborazione di una soluzione software.},
+}
+%endTable
+
+\foreach \x [count=\nj] in \definizioniB
+{
+    \foreach \y [count=\ni] in \x
+    {
+        \ifnum\ni=1
+            \subsection\y \hfill\\
+        \else
+            \y
+        \fi
+    }
+}

@@ -1,0 +1,337 @@
+
+\section{Specifica dei test}
+
+Sono stati determinati, come descritto anche nel documento \textit{Norme di Progetto 1.0.0}, 5 tipi di test ovvero: \textit{Test di unità, Test di Integrazione, Test di sistema, Test di accettazione} e \textit{Test di regressione}. Si adotterà quindi il \textbf{Modello a V}\glo{} che permette lo sviluppo dei test in parallelo alle attività di analisi e progettazione. Così facendo i test sviluppati saranno in grado di verificare sia la correttezza del programma software sia l'implementazione. Sara disponibile inoltre una tabella degli esiti dei test per una facile consultazione.
+
+Per i test valgono le seguenti sigle:
+
+    \begin{itemize}
+        \item \textbf{I}: per indicare che il è effettivamente implementato.
+        \item \textbf{NI}: per indicare che il test è ancora non implementato.
+    \end{itemize}
+    
+Mentre per lo stato valgono le seguenti sigle:
+
+    \begin{itemize}
+        \item \textbf{S}: il test ha esito soddisfacente.
+        \item \textbf{NS}: il test ha esito non soddisfacente.
+    \end{itemize}
+    
+
+ 
+\subsection{Test di Sistema}
+
+    Per rispettare i requisiti identificati nel documento \textit{Analisi dei Requisiti 2.0.0} e per garantire il funzionamento del prodotto si eseguono i seguenti Test di sistema:\\
+    
+\subsubsection{Test di sistema per i requisiti funzionali}
+    \hphantom{}
+
+    %startTable
+    \def\testspecification{
+    {   
+        TSOF1,
+        Si verifica che l'utente possa caricare i dati per la visualizzazione tramite file CSV,
+        NI,
+        RF01 RFO1.1
+    },
+    {   
+        TSOF1.1,
+        Si verifica che l'utente possa inserire i dati tramite query al database,
+        NI,
+        RFO1.2
+    },
+    {   
+        TSOF1.2,
+        Si verifica che appaia un messaggio d'errore in caso di errore nell'inserimento dei dati,
+        NI,
+        RFO1.3
+    },
+    {   
+        TSOF1.3,
+        Si verifica che la conversione in JSON dei dati avvenga in modo corretto,
+        NI,
+        RFO1.4
+    },
+     {   
+        TSOF2,
+        Si verifica la possibilità di scelta nella visualizzazione dei dati. In particolare devono essere presenti le seguenti visualizzazioni:
+        \unexpanded{
+        \begin{itemize}
+            \item Scatter Plot Matrix
+            \item Heatmap
+            \item Force Field
+            \item Linear Projection
+        \end{itemize}},
+        NI,
+        RFO2 RFO2.1 RFO2.2 RFO2.4 RFO2.5
+    },
+    {   
+        TSFF2.1,
+        Si verifica che nella scelta per la visualizzazione deve esserci: Correlation Heatmap,
+        NI,
+        RFF2.3
+    },
+    {   
+        TSFF2.2,
+        Si verifica che nella scelta per la visualizzazione deve esserci: Parallel Coordinates,
+        NI,
+        RFF2.6
+    },
+    {   
+        TSOF3,
+        Si verifica che l'utente possa manipolare i dati nel dataset,
+        NI,
+        RFO3
+    },
+    {   
+        TSOF3.1,
+        SI verifica che l'utente possa selezionare le variabili target tra le feauteres del dataset,
+        NI,
+        RFO3.1
+    },
+    {   
+        TSOF3.2,
+        SI verifica che l'utente possa selezionare le feauteres a cui è interessato,
+        NI,
+        RFO3.2
+    },
+    {   
+        TSOF3.3,
+        SI verifica che l'utente possa normalizzare i dati presenti nel dataset nei seguenti modi:
+        \unexpanded{
+        \begin{itemize}
+            \item Globalmente
+            \item Per riga
+            \item Per colonna
+        \end{itemize}},
+        NI,
+        RFO3.3 RFO3.3.1 RFO 3.3.2 RFO 3.3.3
+    },
+    {   
+        TSOF3.4,
+        SI verifica che l'utente possa selezionare le righe del dataset a cui è interessato,
+        NI,
+        RFO3.4
+    },
+    {   
+        TSOF4,
+        Si verifica che l'utente possa modificare le impostazini che influenzano la visualizzazione,
+        NI,
+        RFO4
+    },
+    {   
+        TSOF4.1,
+        Si verifica che l'utente possa assegnare una classe di visualizzazione ad ogni variabile target selezionata,
+        NI,
+        RFO4.1
+    },
+    {   
+        TSOF4.2,
+        Si verifica che l'utente possa modificare il range dei dati da considerare nella Heatmap,
+        NI,
+        RFO4.2
+    },
+    {   
+        TSOF4.3,
+        Si verifica che l'utente possa assegnare un colore al range di un Heatmap,
+        NI,
+        RFO4.3
+    },
+    {   
+        TSOF4.4,
+        Si verifica che l'utente che ha selezionato la visualizzazione Heatmap possa ordinare in ordine alfabetico e in cluster il dataset,
+        NI,
+        RFO4.4 RFO4.4.1 RFO4.4.2
+    },
+    {   
+        TSOF5,
+        Si verifica che l'utente possa calcolare la matrice di distanza se ha scelto la visualizzazione Heatmap o Forcefield,
+        NI,
+        RFO4.3
+    },    
+    {   
+        TSOF6,
+        Si verifica la possibilità di scelta nell'Heatmap di una matrice a distanza per il calcolo della distanza,
+        NI,
+        RFO6
+    },
+    {   
+        TSFF6.1,
+        Si verifica la possibilità di scelta di una funzione di distanza nelle visualizzazioni Heatmap e nel Force Field. In particolare la distanza Euclidea,
+        NI,
+        RFF6.1 RFF6.1.1
+    },
+    {   
+        TSFF6.2,
+        Si verifica la possibilità di scelta di una funzione di distanza nelle visualizzazioni Heatmap e nel Force Field. In particolare la distanza di Manhattan,
+        NI,
+        RFF6.1.2
+    },
+    {   
+        TSOF7,
+        Si verifica la possibilità di scelta di un algoritmo per la riduzione dei componenti nella visualizzazione Linear Projection,
+        NI,
+        RFO7
+    },
+    {   
+        TSFF7.1,
+        Si verifica che l'utente possa scegliere tra i seguenti algoritmi per la riduzione dei componenti:
+        \unexpanded{
+        \begin{itemize}
+            \item PCA
+            \item UMAP
+            \item t-SNE
+        \end{itemize}},
+        NI,
+        RFF7.1 RFF7.2 RFF7.3
+    },
+    {   
+        TSOF8.,
+        Si verifica che l'utente che ha selezionato l'algoritmo PCA possa specificare i parametri,
+        NI,
+        RFO8
+    },
+    {   
+        TSOF8.1,
+        Si verifica che l'utente che ha selezionato l'algoritmo PCA possa specificare il numero di PCs da calcolare,
+        NI,
+        RFO8.1
+    },
+    {   
+        TSOF9,
+        Si verifica che la visualizzazione creata dal sistema sia salvabile in formato PNG,
+        NI,
+        RFO9
+    },
+    {   
+        TSOF10,
+        Si verifica che un messaggio di errore compaia a schermo se i files sono caricati scorrettamente,
+        NI,
+        RFO10
+    },
+    }
+    \input{source/tables/descrizione_test.tex}
+    %endTable
+    
+\subsubsection{Test di sistema per i requisiti di qualità}
+    %startTable
+    \def\testspecification{
+    {   
+        TSOQ1,
+        Si verifica che sia stato prodotto un manuale d'uso per l'utente,
+        NI,
+        RQO1
+    },
+    {   
+        TSOQ2,
+        Si verifica che sia stato prodotto un manuale manutentore,
+        NI,
+        RQO2
+    },
+    {   
+        TSOQ3,
+        Si verifica che il codice sia stato pubblicato su un repository pubblico,
+        NI,
+        RQO3
+    },
+    {   
+        TSOQ4,
+        Si verifica che il codice segua le norme di stile specificate nel documento Norme di Progetto,
+        NI,
+        RQO4
+    },
+    {   
+        TSOQ5,
+        Si verifica che nella codifica si eviti l'utilizzo di chiamate ricorsive dove è possibile,
+        NI,
+        RQO5
+    },
+      }
+    \input{source/tables/descrizione_test.tex}
+    %endTable  
+        
+\subsubsection{Test di sistema per i requisiti di vincolo}
+    %startTable
+    \def\testspecification{
+    {   
+        TSOV1,
+        Si verifica che il codice sorgente dell'applicazione sia open source,
+        NI,
+        RVO1
+    },
+    {   
+        TSOV2,
+        Si verifica che l'applicazione sia sviluppata in Javascript con l'utilizzo della libreria d3.js,
+        NI,
+        RVD2 RVD2.1
+    },
+    {   
+        TSDV2.1,
+        Si verifica che il backend dell'applicazione sia sviluppato con node.js con l'utilizzo del framework Express,
+        NI,
+        RVD2.2
+    },
+    {   
+        TSDV2.2,
+        Si verifica che il frontend dell'applicazione sia sviluppato con React con l'utilizzo del framework Ant Design,
+        NI,
+        RVD2.3
+    },
+    {   
+        TSOV3,
+        Si verifica che i dati siano convertibili in JSON,
+        NI,
+        RVO3
+    },
+    {   
+        TSOV4,
+        Si verifica che nella visualizzazione Scatter Plot Matrix si possano visualizzare al massimo 5 features,
+        NI,
+        RVO4
+    },
+    {   
+        TSDV5,
+        Si verifica che la libreria per PCA sia ml-pca,
+        NI,
+        RVD5
+    },
+    {   
+        TSDV6,
+        Si verifica che la libreria per Umap sia tsne-js,
+        NI,
+        RVD6
+    },
+    {   
+        TSDV7,
+        Si verifica che la libreria per t-SNE sia tsne-js,
+        NI,
+        RVD7
+    },
+    {   
+        TSDV8,
+        Si verifica che la libreria per le distanze sia ml-distance,
+        NI,
+        RVD8
+    },
+    {   
+        TSDV9,
+        Si verifica che la libreria per la matrice di correlazione sia jeezy,
+        NI,
+        RVD9
+    },
+      }
+    \input{source/tables/descrizione_test.tex}
+    %endTable
+    
+\subsection{Test di unità}
+    I test di Unità hanno l'obiettivo di verificare il funzionamento di ogni unità che compone l'applicazione. Questi test verrano definiti in una fase successiva, in particolare nella fase in cui ne verrà richiesta l'implementazione.
+    
+\subsection{Test di Integrazione}
+    I test d'integrazione verificano il funzionamento e l'interazione dell'insieme composto dalle singole unità. Questi test verranno definiti in una fase successiva, in particolare nella fase in cui ne verrà richiesta l'implementazione.
+    
+\subsection{Test di accettazione}
+    I test di accettazione vengono svolti insieme al proponente per assicurare il gradimento dell'utente. Questi test verranno definiti in una fase successiva, in particolare nella fase in cui ne verrà richiesta l'implementazione.
+    
+\subsection{Test di regressione}
+    I test di regressione vengono eseguiti ogni volta che viene apportata una modifica a un'unità del software. Questi test verranno definiti in una fase successiva, in particolare nella fase in cui ne verrà richiesta l'implementazione.
+

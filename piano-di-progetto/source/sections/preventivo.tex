@@ -1,0 +1,280 @@
+\section{Preventivo}
+Nel Preventivo è indicata la divisione delle ore per ogni fase individuata nella sezione 4 del presente documeno, insieme al prospetto economico. All'interno del Riepilogo è presentato il costo totale preventivato. Il tutto è corredato da diagrammi esemplificativi.
+Si noti che nelle tabelle sono state utilizzate delle sigle, definite nelle \textit{Norme di Progetto 2.0.0}. % mi porto avanti con le versioni
+\subsection{Analisi}
+
+    \subsubsection{Prospetto orario}
+    %startTable
+    \def\hourlycontent{
+        {Andrea Breggion,6,14,3,0,0,6,29},
+        {Matteo Falsetti,0,5,3,10,0,11,29},
+        {Alessandro Flori,2,4,3,8,0,12,29},
+        {Andrea Mascari,0,0,14,2,0,13,29},
+        {Diego Piola,6,13,3,0,0,7,29},
+        {Andrea Signori,12,6,4,0,0,7,29},
+        {Damiano Zanardo,0,7,14,0,0,8,29},
+        {Ore totali, 25, 51, 44, 19, 0, 64, 203},
+    }
+    %endTable
+    \input{source/tables/prospetto_orario.tex}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.8\textwidth]{source/img/analisi_orari.png}
+        \caption{Divisione oraria dell'attività di analisi}
+    \end{figure}
+    \subsubsection{Prospetto economico}
+    %startTable
+    \def\salarycontent{
+        {Amministratore,49,20,980},
+        {Analista,44,25,1100},
+        {Progettista,20,22,440},
+        {Programmatore,0,15,0},
+        {Responsabile,26,30,780},
+        {Verificatore,64,15,960},
+        {Totale,203,127,4260},
+    }
+    %endTable
+    \input{source/tables/prospetto_economico.tex}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.8\textwidth]{source/img/analisi_ruoli.png}
+        \caption{costo del personale nella fase di analisi}
+    \end{figure}
+\subsection{Consolidamento dei requisiti}
+    \subsubsection{Prospetto orario}
+    %startTable
+    \def\hourlycontent{
+        {Andrea Breggion,0,3,0,0,0,2,5},
+        {Matteo Falsetti,0,0,0,1,0,4,5},
+        {Alessandro Flori,0,0,0,1,0,4,5},
+        {Andrea Mascari,0,0,5,0,0,0,5},
+        {Diego Piola,2,0,3,0,0,0,5},
+        {Andrea Signori,0,0,2,0,0,3,5},
+        {Damiano Zanardo,0,0,5,0,0,0,5},
+        {Ore totali,2,3,15,2,0,13,35},
+    }
+    %endTable
+    \input{source/tables/prospetto_orario.tex} 
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.8\textwidth]{source/img/consolidamento_orari.png}
+        \caption{divisione oraria dell'attività di consolidamento dei requisiti}
+    \end{figure}
+    \subsubsection{Prospetto economico}
+    %startTable
+    \def\salarycontent{
+        {Amministratore,3,20,60},
+        {Analista,15,25,375},
+        {Progettista,2,22,44},
+        {Programmatore,0,15,0},
+        {Responsabile,2,30,60},
+        {Verificatore,13,15,195},
+        {Totale,35,127,734},
+    }
+    %endTable
+    \input{source/tables/prospetto_economico.tex}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.8\textwidth]{source/img/consolidamento_ruoli.png}
+        \caption{costo del personale nella fase di consolidamento dei requisiti}
+    \end{figure}
+\subsection{Progettazione architetturale}
+    \subsubsection{Prospetto orario}
+    %startTable
+    \def\hourlycontent{
+        {Andrea Breggion,0,7,4,6,5,4,26},
+        {Matteo Falsetti,0,0,5,7,0,14,26},
+        {Alessandro Flori,0,0,7,10,0,9,26},
+        {Andrea Mascari,4,0,0,11,6,5,26},
+        {Diego Piola,5,0,6,9,6,0,26},
+        {Andrea Signori,0,6,4,7,5,4,26},
+        {Damiano Zanardo,0,0,0,12,9,5,26},
+        {Ore totali, 9, 13, 26, 62, 31, 41, 182},
+    }
+    %endTable
+    \input{source/tables/prospetto_orario.tex}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.8\textwidth]{source/img/architettura_orari.png}
+        \caption{divisione oraria dell'attività di progettazione architetturale}
+    \end{figure}
+    \subsubsection{Prospetto economico}
+    %startTable
+    \def\salarycontent{
+        {Amministratore,13,20,260},
+        {Analista,26,25,650},
+        {Progettista,62,22,1364},
+        {Programmatore,31,15,465},
+        {Responsabile,31,15,465},
+        {Verificatore,41,15,615},
+        {Totale,182,127,3624},
+    }
+    %endTable
+    \input{source/tables/prospetto_economico.tex}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.8\textwidth]{source/img/architettura_ruoli.png}
+        \caption{costo del personale nella fase di progettazione architetturale}
+    \end{figure}
+\subsection{Progettazione di dettaglio e codifica}
+    \subsubsection{Prospetto orario}
+    %startTable
+    \def\hourlycontent{
+        {Andrea Breggion,5,6,0,7,20,10,48},
+        {Matteo Falsetti,5,0,0,15,15,13,48},
+        {Alessandro Flori,0,4,0,10,18,16,48},
+        {Andrea Mascari,0,0,0,14,22,12,48},
+        {Diego Piola,5,6,0,9,20,8,48},
+        {Andrea Signori,0,0,0,13,22,13,48},
+        {Damiano Zanardo,0,6,0,12,20,10,48},
+        {Ore totali, 15, 22, 0, 80, 137, 82, 336},
+    }
+    %endTable
+    \input{source/tables/prospetto_orario.tex}
+    
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.8\textwidth]{source/img/codifica_orari.png}
+        \caption{divisione oraria dell'attività di progettazione di dettaglio e codifica}
+    \end{figure}
+    \subsubsection{Prospetto economico}
+    %startTable
+    \def\salarycontent{
+        {Amministratore,22,20,440},
+        {Analista,0,25,0},
+        {Progettista,80,22,1760},
+        {Programmatore,137,15,2055},
+        {Responsabile,15,30,450},
+        {Verificatore,82,15,1230},
+        {Totale,336,127,5935},
+    }
+    %endTable
+    \input{source/tables/prospetto_economico.tex}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.8\textwidth]{source/img/codifica_ruoli.png}
+        \caption{costo del personale nella fase di progettazione di dettaglio e codifica}
+    \end{figure}
+\subsection{Validazione e collaudo}
+    \subsubsection{Prospetto orario}
+    %startTable
+    \def\hourlycontent{
+        {Andrea Breggion,0,5,0,5,8,8,26},
+        {Matteo Falsetti,0,5,0,10,5,6,26},
+        {Alessandro Flori,5,0,0,7,4,10,26},
+        {Andrea Mascari,0,6,0,6,5,9,26},
+        {Diego Piola,0,0,0,8,8,10,26},
+        {Andrea Signori,4,0,0,6,9,7,26},
+        {Damiano Zanardo,6,0,0,6,4,10,26},
+        {Ore totali,15,16,0,48,43,60,182},
+    }
+    %endTable
+    \input{source/tables/prospetto_orario.tex}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.8\textwidth]{source/img/validazione_orari.png}
+        \caption{divisione oraria dell'attività di validazione e collaudo}
+    \end{figure}
+    \subsubsection{Prospetto economico}
+    %startTable
+    \def\salarycontent{
+        {Amministratore,16,20,320},
+        {Analista,0,25,0},
+        {Progettista,48,22,1056},
+        {Programmatore,43,15,645},
+        {Responsabile,15,30,450},
+        {Verificatore,60,15,900},
+        {Totale,182,127,3371},
+    }
+    %endTable
+    \input{source/tables/prospetto_economico.tex}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.8\textwidth]{source/img/validazione_ruoli.png}
+        \caption{costo del personale nella fase di validazione e collaudo}
+    \end{figure}
+\subsection{Riepilogo}
+    \subsection{Ore totali}
+    All'interno di questa sottosezione è contenuto il riepilogo delle ore totali, comprensive dell'investimento, che non sarà rendicontato nell'offerta finale, ossia della fase di analisi.
+        \paragraph{Suddivisione del lavoro}
+        
+        %startTable
+        \def\hourlycontent{
+            {Andrea Breggion,11,35,7,18,33,30,134},
+            {Matteo Falsetti,5,10,8,43,20,48,134},
+            {Alessandro Flori,7,8,10,36,22,51,134},
+            {Andrea Mascari,4,6,19,33,33,39,134},
+            {Diego Piola,18,19,12,26,34,25,134},
+            {Andrea Signori,16,12,10,26,36,34,134},
+            {Damiano Zanardo,6,13,19,30,33,33,134},
+            {Ore totali,67,103,85,212,211,260,938},
+        }
+        %endTable
+        \input{source/tables/prospetto_orario.tex} 
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=0.8\textwidth]{source/img/totale_orari.png}
+            \caption{divisione oraria complessiva}
+        \end{figure}
+        \paragraph{Prospetto economico}
+        
+        %startTable
+        \def\salarycontent{
+            {Amministratore,103,20,2060},
+            {Analista,85,25,2125},
+            {Progettista,212,22,4664},
+            {Programmatore,211,15,3165},
+            {Responsabile,67,30,2010},
+            {Verificatore,260,15,3900},
+            {Totale,938,127,17924},
+        }
+        %endTable
+        \input{source/tables/prospetto_economico.tex}
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=0.8\textwidth]{source/img/totale_ruoli.png}
+            \caption{costo del personale complessivo}
+        \end{figure}
+    \subsection{Ore rendicontate}
+    All'interno di questa sottosezione è contenuto il riepilogo delle ore dedicate all'attività di progetto nonchè il riepilogo dei costi relativi al periodo successivo alla RR.
+        \paragraph{Suddivisione del lavoro}
+        
+        %startTable
+        \def\hourlycontent{
+            {Andrea Breggion,5,21,4,18,33,24,105},
+            {Matteo Falsetti,5,5,5,33,20,37,105},
+            {Alessandro Flori,5,4,7,28,22,39,105},
+            {Andrea Mascari,4,6,5,31,33,26,105},
+            {Diego Piola,12,6,9,26,34,18,105},
+            {Andrea Signori,4,6,6,26,36,27,105},
+            {Damiano Zanardo,6,6,5,30,33,25,105},
+            {Ore totali,41,54,41,192,211,196,735},
+        }
+        %endTable
+        \input{source/tables/prospetto_orario.tex}
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=0.8\textwidth]{source/img/no_investimento_orari.png}
+            \caption{divisione oraria totale senza l'investimento iniziale}
+        \end{figure}
+        \paragraph{Prospetto economico}
+        
+        %startTable
+        \def\salarycontent{
+            {Amministratore,54,20,1080},
+            {Analista,41,25,1025},
+            {Progettista,192,22,4224},
+            {Programmatore,211,15,3165},
+            {Responsabile,41,30,1230},
+            {Verificatore,196,15,2940},
+            {Totale,735,127,13664},
+        }
+        %endTable
+        \input{source/tables/prospetto_economico.tex}
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=0.8\textwidth]{source/img/consolidamento_orari.png}
+            \caption{costo totale del personale senza l'investimento iniziale}
+        \end{figure}
+    \subsection{Conclusioni}
+    All'interno della tabella di cui sopra è indicata l'offerta con cui Code of Duty si presenta al committente. Tale somma ammonta a \euro\ 13664.

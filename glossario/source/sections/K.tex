@@ -1,0 +1,20 @@
+\section{K}
+
+%startTable
+\def\definizioniK{
+{Kotlin,Linguaggio di programmazione orientato agli oggetti e all'approccio funzionale.},
+{Kubernetes,Piattaforma per la gestione di carichi di lavoro e servizi containerizzati.\\ \href{https://kubernetes.io/it/docs/concepts/overview/what-is-kubernetes/}{https://kubernetes.io/it/docs/concepts/overview/what-is-kubernetes/}},
+}
+%endTable
+
+\foreach \x [count=\nj] in \definizioniK
+{
+    \foreach \y [count=\ni] in \x
+    {
+        \ifnum\ni=1
+            \subsection\y \hfill\\
+        \else
+            \y
+        \fi
+    }
+}

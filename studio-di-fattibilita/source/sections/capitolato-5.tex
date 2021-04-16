@@ -1,0 +1,34 @@
+\section{Capitolato 5 - PORTACS}
+\subsection{Informazioni generali}
+\begin{itemize}
+    \item \textbf{Nome}: \emph{PORTACS}: piattaforma di controllo mobilità autonoma;
+    \item \textbf{Proponente}: \emph{Sanmarco Informatica};
+    \item \textbf{Committente}: \emph{Prof. Tullio Vardanega e Prof. Riccardo Cardin}.
+\end{itemize}
+\subsection{Descrizione capitolato}
+Il capitolato chiede lo sviluppo di un software che visualizzi in tempo reale delle unità generiche all'interno di una griglia il cui scopo è dirigersi verso dei POI (Point of Interest). Questa rappresentazione astratta trova applicazione in vari ambiti pratici, per esempio, nella geolocalizzazione di magazzino, di trasporti o di robot camerieri.
+\subsection{Finalità del progetto}
+\begin{itemize}
+    \item Ogni unità principale contiene un identificativo, una velocità massima, una posizione iniziale e una lista di POI che deve attraversare;
+    \item la griglia deve contenere i POI e definire al suo interno delle definizioni di percorrenza, come ad esempio dei sensi unici, o percorsi non attraversabili;
+    \item il sistema centrale dovrà muovere le unità facendole raggiungere i POI assegnati rispettando i vincoli di percorrenza della griglia ed evitando collisioni tra di loro;
+    \item il software può prevedere la presenza di pedoni all'interno della griglia, le unità devono essere in grado di evitare collisioni anche con i pedoni.
+\end{itemize}
+\subsection{Tecnologie interessate}
+Nel capitolato non vengono specificate particolari tecnologie da utilizzare per la realizzazione del software. Le tecnologie elencate di seguito sono state individuate dai membri del gruppo:
+\begin{itemize}
+    \item \textbf{Libreria pathfinding per Python}: utile per trovare i percorsi all’interno della griglia;
+    \item \textbf{React}: libreria JavaScript per lo sviluppo della real-time user interface.
+\end{itemize}
+\subsection{Aspetti positivi}
+\begin{itemize}
+	\item L'obiettivo presentato dal proponente è interessante e il suo sviluppo una sfida stimolante;
+    \item l'ottimizzazione dei percorsi non è una richiesta obbligatoria, ciò semplifica considerevolmente l'implementazione degli algoritmi di path finding. 
+\end{itemize}
+\subsection{Criticità e fattori di rischio}
+\begin{itemize}
+    \item Lo sviluppo del progetto richiede abilità di problem-solving;
+	\item difficoltà nel prevedere i tempi di realizzazione.
+\end{itemize}
+\subsection{Conclusioni}
+Sebbene il capitolato abbia destato interesse in alcuni membri del gruppo, non è stato scelto per mancanza di unanimità nel giudicare la difficoltà dello sviluppo di un sistema real-time, in particolare, il problema di definire in modo abbastanza rigoroso i costi che avrebbe richiesto in termini di tempo hanno convinto il gruppo a focalizzarsi su altri capitolati. 

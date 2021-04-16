@@ -1,0 +1,21 @@
+\section{F}
+
+%startTable
+\def\definizioniF{
+{Feature,Campo dati, solitamente numerico, che fornisce un'informazione su una caratteristica. (es: Lunghezza, Altezza)},
+{Force Field,Visualizzazione che simula forze tra particelle che si attraggono e respingono.},
+{Frontend,Parte di una soluzione software che interagisce con l'utente.},
+}
+%endTable
+
+\foreach \x [count=\nj] in \definizioniF
+{
+    \foreach \y [count=\ni] in \x
+    {
+        \ifnum\ni=1
+            \subsection\y \hfill\\
+        \else
+            \y
+        \fi
+    }
+}

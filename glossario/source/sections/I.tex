@@ -1,0 +1,19 @@
+\section{I}
+
+%startTable
+\def\definizioniI{
+{IAAS,Infrastructure as a service. Soluzioni cloud che forniscono infrastrutture come server, storage o connessioni di rete.},
+}
+%endTable
+
+\foreach \x [count=\nj] in \definizioniI
+{
+    \foreach \y [count=\ni] in \x
+    {
+        \ifnum\ni=1
+            \subsection\y \hfill\\
+        \else
+            \y
+        \fi
+    }
+}

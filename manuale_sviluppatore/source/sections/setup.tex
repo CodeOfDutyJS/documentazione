@@ -1,0 +1,56 @@
+\section{Setup}
+    \subsection{Requisiti hardware}
+    HD Viz richiede le seguenti specifiche hardware:
+    \begin{itemize}
+        \item \textbf{Processore}: Dual Core;
+        \item \textbf{Memoria}: 2GB.
+    \end{itemize}
+    \subsection{Requisiti software}
+        \myparagraph{Requisiti per l'installazione}
+        \begin{itemize}
+            \item \href{https://yarnpkg.com/}{Yarn v1.22.0} o superiore.
+        \end{itemize}
+        se si vuole eseguire il server:
+        \begin{itemize}
+            \item \href{https://nodejs.org/en/}{Node v14.0.0} o superiore.
+        \end{itemize}
+    \subsection{Installazione}
+    La repository si trova al seguente link:
+    \url{https://github.com/CodeOfDutyJS/hdviz}
+    \\
+    per clonare la repository con Git spostarsi nella cartella dove si desidera mettere il progetto ed eseguire:
+    \begin{verbatim}
+        git clone https://github.com/CodeOfDutyJS/hdviz
+    \end{verbatim}
+    alternativamente è possibile scaricare il codice direttamente da Github.
+        \myparagraph{Parte Server}
+        per eseguire la parte server aprire il terminale e spostarsi nella cartella server con il comando:
+        \begin{verbatim}
+        cd path/della/cartella/server
+        \end{verbatim}
+        a questo punto basta eseguire il comando:
+        \begin{verbatim}
+        node index.js
+        \end{verbatim}
+        \myparagraph{Parte Client}
+        Se si desidera eseguire solo la parte client spostarsi nella cartella client con il comando:
+        \begin{verbatim}
+        cd path/della/cartella/client
+        \end{verbatim}
+        a questo punto è necessario installare le dipendenze con il comando: 
+        \begin{verbatim}
+        yarn
+        \end{verbatim}
+        o alternativamente con:
+        \begin{verbatim}
+        yarn install
+        \end{verbatim}
+        a questo punto si può eseguire un Development Server con il comando:
+        \begin{verbatim}
+        yarn start
+        \end{verbatim}
+        la Web App sarà disponibile su localhost alla porta mostrata dal terminale (usualmente la porta 3000). A questo punto basta aprire uno dei browser supportati e immettere l'indirizzo:
+        \begin{verbatim}
+        http://localhost:3000/
+        \end{verbatim}
+        nel caso la porta mostrata dal terminale sia diversa dalla porta 3000 sostituire 3000 con la nuova porta nell'indirizzo.

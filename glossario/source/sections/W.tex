@@ -1,0 +1,20 @@
+\section{W}
+
+%startTable
+\def\definizioniW{
+    {Albero, è una pianta},
+    {Angelo, è una pianta},
+}
+%endTable
+
+\foreach \x [count=\nj] in \definizioniW
+{
+    \foreach \y [count=\ni] in \x
+    {
+        \ifnum\ni=1
+            \subsection\y \hfill\\
+        \else
+            \y
+        \fi
+    }
+}

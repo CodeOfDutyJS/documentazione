@@ -1,0 +1,21 @@
+\section{M}
+
+%startTable
+\def\definizioniM{
+{MAPI,Acronimo per Messaging Application Programming Interface. Architettura di messaggistica basata sulle API per Windows.},
+{Microservizio,Servizio che viene associato ad altri microservizi per organizzare un'applicazione completa.},
+{Modello a V,Modello di sviluppo software esteso dal modello a cascata. Pone la scrittura del test del software nelle fasi iniziali dello sviluppo e prima della codifica.},
+}
+%endTable
+
+\foreach \x [count=\nj] in \definizioniM
+{
+    \foreach \y [count=\ni] in \x
+    {
+        \ifnum\ni=1
+            \subsection\y \hfill\\
+        \else
+            \y
+        \fi
+    }
+}

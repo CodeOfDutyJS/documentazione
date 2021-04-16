@@ -1,0 +1,19 @@
+\section{H}
+
+%startTable
+\def\definizioniH{
+{Heatmap,Visualizzazione dove i dati contenuti in una matrice sono rappresentati da colori.},
+}
+%endTable
+
+\foreach \x [count=\nj] in \definizioniH
+{
+    \foreach \y [count=\ni] in \x
+    {
+        \ifnum\ni=1
+            \subsection\y \hfill\\
+        \else
+            \y
+        \fi
+    }
+}
