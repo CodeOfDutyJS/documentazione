@@ -11,6 +11,15 @@
 		    \item revisione e valutazione;
 		    \item consegna e completamento.
 		\end{itemize}
+		
+		\subsubsection{Aspettative}
+		Per permettere di avere un lavoro concorde con quanto il proponente richiede, il gruppo si impegna a partecipare attivamente ad un dialogo protratto nel tempo (sincrono e asincrono). Ciò permette di avere:
+		\begin{itemize}
+			\item una migliore visione per quanto riguarda gli aspetti cruciali del progetto;
+			\item un riscontro diretto sulle preferenze del proponente;
+			\item instaurare un rapporto sano e costruttivo con il proponente;
+		\end{itemize}
+		
 		\subsubsection{Descrizione}
 		Questa sezione norma le fasi di progettazione, sviluppo e consegna del prodotto \textit{HD viz}. 
 		\subsubsection{Attività}
@@ -127,21 +136,45 @@
 		\subsection{Sviluppo}
 		\subsubsection{Scopo}
 		Il processo di sviluppo contiene le attività da svolgere al fine di ottenere il prodotto finale.
+		
+		\subsubsection{Aspettative}
+		\begin{itemize}
+			\item dare obbiettivi di sviluppo;
+			\item fissare vincoli tecnologici e di design;
+			\item realizzare un prodotto che sia in grado di superare i test e che soddisfi i requisiti prefissati.
+		\end{itemize}
+		
+		\subsubsection{Descrizione}
+		Le attività che caratterizzano il processo di sviluppo sono:
+		\begin{itemize}
+			\item \textit{Analisi dei requisiti};
+			\item \textit{Codifica del software};
+			\item \textit{Progettazione architetturale}.
+		\end{itemize}
+		
 		\subsubsection{Attività}
 		\myparagraph{Analisi dei requisiti}
 		Gli analisti redigono un'\textit{Analisi dei Requisiti} volta  individuare ed elencare casi d'uso e requisiti, al fine di esemplificare il problema da trattare.
 		\mysubparagraph{Scopo}
 		L'analisi dei requisiti deve definire lo scopo del lavoro e mettere in evidenza funzionalità e requisiti in modo da fornire riferimenti tracciabili sia ai programmatori che ai verificatori.
-		\mysubparagraph{Contenuti}
-		L'\textit{Analisi dei requisiti} contiene le seguenti sezioni:
-		\begin{itemize}
-		    \item Descrizione
-		    \item Casi d'uso
-		    \item Requisiti
-		\end{itemize}
-		Di seguito verranno definite le sezioni nello specifico.
+		
+		\mysubparagraph{Aspettative}
+		Dall'attività di Analisi dei requisiti ci si aspetta la produzione di documentazione la quale contenga tutti i requisiti e le specifiche dettate dal proponente.
+	
 		\mysubparagraph{Descrizione}
 		Descrizione delle finalità del prodotto, degli attori in causa, dei vincoli imposti dal proponente, e delle assunzioni fatte dagli analisti.
+		
+		
+			\mysubparagraph{Contenuti}
+		L'\textit{Analisi dei requisiti} contiene le seguenti sezioni:
+		\begin{itemize}
+			\item Descrizione
+			\item Casi d'uso
+			\item Requisiti
+		\end{itemize}
+		Di seguito verranno definite le sezioni nello specifico.
+		
+		
 		\mysubparagraph{Casi d'uso}
 		I casi d'uso rappresentano una lista di azioni necessarie alla realizzazione di un obbiettivo desiderabile all'interazione fra un attore ed il sistema.
 		La struttura dei casi d'uso è così definita:
@@ -152,8 +185,8 @@
 		    \item postcondizione;
 		    \item scenario principale;
 		    \item estensioni (opzionale);
-		    \item generalizzazioni (opzionale);
-		    \item specializzazioni (opzionale).
+		    \item specializzazioni (opzionale);
+		    \item generalizzazioni (opzionale).
 		\end{itemize}
 		Ogni caso d'uso adotta un codice identificativo in questa forma:\\
 	    \centerline{\textbf{UC[codiceCaso].[codiceSpecializzazione].[ulterioreCodiceSpecializzazione]}}
@@ -192,7 +225,20 @@
 	    \end{itemize}
 	    Le tabelle sono divise per tipo di requisito. Ad ogni requisito corrisponde una riga di una ed una sola tabella.
 		\myparagraph{Progettazione}
+		
+		\mysubparagraph{Scopo}
+		Tale attività permette di definire la migliore soluzione che soddisfi i requisiti per gli stakeholders, tramite un individuazione delle caratteristiche che il prodotto software deve soddisfare.
+		
+		\mysubparagraph{Aspettative}
+		Prima della realizzazione dell'architettura:
+		\begin{itemize}
+			\item devono essere definite le tecnologie da utilizzare;
+			\item devono essere approfonditi gli aspetti positivi della realizzazione e le criticità emerse;
+			\item si deve produrre un prototipo, detto \textit{Proof of Concept}, il quale dimostri l'approfondimento svolto.
+		\end{itemize}
+		\mysubparagraph{Descrizione}
 		Messi in mostra i requisiti stilati nell'\textit{Analisi dei requisiti} gli analisti ricercano una possibile soluzione al problema compreso, identificando un'architettura di alto livello che comprenda una lista di sottosistemi hardware e software, specificandone le funzionalità ed assicurandosi che comprendano un'implementazione di tutti i requisiti tracciati.
+		
 		\mysubparagraph{Prodotti}
 		Vengono prodotte due parti, la \textbf{Technology baseline} e la \textbf{Product baseline}.
 		\mysubparagraph{Technology baseline}
@@ -221,17 +267,32 @@
 		\paragraph{Codifica}
 		\mysubparagraph{Scopo}
 	    Lo scopo della sezione è normare lo stile di codifica da utilizzare nella programmazione, intesa come effettiva implementazione software del prodotto. Lo stile di codifica è da considerarsi come parte integrante della qualità del prodotto stesso.
+	    \mysubparagraph{Aspettative}
+	    Le aspettative per l'attività di codifica sono:
+	    \begin{itemize}
+	    	\item generazione di codice leggibile e facilmente manutenibile; 
+	    	\item facilitare le attività di verifica e validazione;
+	    	\item più in generale, migliorare la qualità del prodotto.
+	    \end{itemize}
+	    \mysubparagraph{Descrizione}
+	    La stesura del codice deve rispettare quanto riportato nella documentazione di prodotto. Dovranno dunque essere perseguiti gli obiettivi posti all'interno del \textit{Piano di Progetto 2.0.0}, i quali garantiranno la stesura di codice di qualità. Il codice viene steso adottando le norme dello stile di codifica Airbnb, alcune norme notabili vengono riportate di seguito.
+	    
 	    \mysubparagraph{Indentazione}
-	    L'indentazione viene effettuata con quattro (4) spazi, e non con il carattere tab. Quando si parla di "tabulare" o di "tabulazione" si deve intendere, appunto, l'inserire quattro (4) spazi.
+	    L'indentazione viene effettuata con due (2) spazi, e non con il carattere "tab". Quando si parla di "tabulare" o di "tabulazione" si deve intendere, appunto, l'inserire due (2) spazi.
+	    
 	    \mysubparagraph{Blocchi innestati}
 	    Ciascun blocco innestato viene tabulato una volta.
+	    
 	    \mysubparagraph{Parentesizzazione}
 	    Le parentesi di delimitazione di un blocco di codice vanno inserite nel seguente modo:
 	    \begin{itemize}
 	        \item la prima và inserita alla fine della prima riga, preceduta da uno spazio;
 	        \item la seconda su una nuova riga, senza caratteri di spazio antecedenti;
 	    \end{itemize}
-	    
+
+        \mysubparagraph{Linter}
+        Al fine di ottenere uno stile di codifica uniforme tra tutti i membri del gruppo si è scelto di inserire nel build lifecycle Eslint, le cui impostazioni sono specificate nel file eslint.rc.
+
 	    \subparagraph{Casing}
 	    \begin{itemize}
 	        \item \textbf{Classi}: i nomi delle classi iniziano con la lettera maiuscola;
@@ -250,7 +311,7 @@
         Di seguito vengono elencate le metriche inerenti alla qualità del processo di \textbf{Sviluppo}. I valori sono normati nel piano di qualifica. La modalità di rilevazione non è indicata per tutte le metriche: tale dato sarà 
         inserito in fasi successive del progetto.
         \myparagraph{Percentuale di requisiti soddisfatti}
-        La percentuale in centesimi dei requisiti saddisfatti.
+        La percentuale in centesimi dei requisiti soddisfatti.
         \subparagraph{Formula}
         \begin{displaymath}
          PROS = Rs / Rt *100
