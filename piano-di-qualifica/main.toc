@@ -1,0 +1,71 @@
+\babel@toc {italian}{}
+\babel@toc {italian}{}
+\contentsline {section}{\numberline {1}Introduzione}{5}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Premessa}{5}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Scopo del documento}{5}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Scopo del prodotto}{5}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}Glossario}{5}{subsection.1.4}%
+\contentsline {subsection}{\numberline {1.5}Riferimenti}{5}{subsection.1.5}%
+\contentsline {subsubsection}{\numberline {1.5.1}Riferimento normativi}{5}{subsubsection.1.5.1}%
+\contentsline {subsubsection}{\numberline {1.5.2}Riferimenti informativi}{5}{subsubsection.1.5.2}%
+\contentsline {section}{\numberline {2}Qualità di processo}{6}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Processi primari}{6}{subsection.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}Fornitura}{6}{subsubsection.2.1.1}%
+\contentsline {paragraph}{\numberline {2.1.1.1}Strategie e Obiettivi}{6}{paragraph.2.1.1.1}%
+\contentsline {paragraph}{\numberline {2.1.1.2}Metriche}{6}{paragraph.2.1.1.2}%
+\contentsline {subsubsection}{\numberline {2.1.2}Pianificazione}{7}{subsubsection.2.1.2}%
+\contentsline {paragraph}{\numberline {2.1.2.1}Strategie e Obiettivi}{7}{paragraph.2.1.2.1}%
+\contentsline {paragraph}{\numberline {2.1.2.2}Metriche}{7}{paragraph.2.1.2.2}%
+\contentsline {subsubsection}{\numberline {2.1.3}Sviluppo}{8}{subsubsection.2.1.3}%
+\contentsline {paragraph}{\numberline {2.1.3.1}Strategie e obiettivi}{8}{paragraph.2.1.3.1}%
+\contentsline {paragraph}{\numberline {2.1.3.2}Metriche}{8}{paragraph.2.1.3.2}%
+\contentsline {subsection}{\numberline {2.2}Processi di supporto}{8}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}Documentazione}{8}{subsubsection.2.2.1}%
+\contentsline {paragraph}{\numberline {2.2.1.1}Strategie e Obiettivi}{8}{paragraph.2.2.1.1}%
+\contentsline {paragraph}{\numberline {2.2.1.2}Metriche}{9}{paragraph.2.2.1.2}%
+\contentsline {subsubsection}{\numberline {2.2.2}Quality assurance}{9}{subsubsection.2.2.2}%
+\contentsline {paragraph}{\numberline {2.2.2.1}Strategie e obiettivi}{9}{paragraph.2.2.2.1}%
+\contentsline {paragraph}{\numberline {2.2.2.2}Metriche}{9}{paragraph.2.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.3}Verification process}{10}{subsubsection.2.2.3}%
+\contentsline {paragraph}{\numberline {2.2.3.1}Strategie e obiettivi}{10}{paragraph.2.2.3.1}%
+\contentsline {paragraph}{\numberline {2.2.3.2}Metriche}{10}{paragraph.2.2.3.2}%
+\contentsline {section}{\numberline {3}Qualità di Prodotto}{11}{section.3}%
+\contentsline {subsection}{\numberline {3.1}ISO 9126}{11}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Funzionalità}{11}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Affidabilità}{11}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Usabilità}{11}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Efficienza}{12}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}Manutenibilità}{12}{subsection.3.6}%
+\contentsline {section}{\numberline {4}Specifica dei test}{13}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Test di Sistema}{13}{subsection.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.1}Test di sistema per i requisiti funzionali}{13}{subsubsection.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.2}Test di sistema per i requisiti di qualità}{16}{subsubsection.4.1.2}%
+\contentsline {subsubsection}{\numberline {4.1.3}Test di sistema per i requisiti di vincolo}{16}{subsubsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.2}Test di unità}{17}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Test di Integrazione}{17}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Test di accettazione}{17}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Test di regressione}{18}{subsection.4.5}%
+\contentsline {section}{\numberline {5}Resoconti di verifica ed esiti delle revisioni}{19}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Valori dell'indice di Gulpease}{19}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Errori ortografici}{21}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Metriche di pianificazione}{22}{subsection.5.3}%
+\contentsline {subsubsection}{\numberline {5.3.1}Earned value - EV}{22}{subsubsection.5.3.1}%
+\contentsline {subsubsection}{\numberline {5.3.2}Planned value - PV}{23}{subsubsection.5.3.2}%
+\contentsline {subsubsection}{\numberline {5.3.3}Actual cost - AC}{23}{subsubsection.5.3.3}%
+\contentsline {subsubsection}{\numberline {5.3.4}Schedule variance - SV}{24}{subsubsection.5.3.4}%
+\contentsline {subsubsection}{\numberline {5.3.5}Cost variance - CV}{24}{subsubsection.5.3.5}%
+\contentsline {subsection}{\numberline {5.4}percentuale di requisiti soddisfatti}{25}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Percentuale di metriche soddisfatte}{25}{subsection.5.5}%
+\contentsline {subsection}{\numberline {5.6}Code coverage}{26}{subsection.5.6}%
+\contentsline {subsection}{\numberline {5.7}Numero di test superati}{26}{subsection.5.7}%
+\contentsline {subsection}{\numberline {5.8}Densità degli erorri}{26}{subsection.5.8}%
+\contentsline {subsection}{\numberline {5.9}Numero di click}{26}{subsection.5.9}%
+\contentsline {subsection}{\numberline {5.10}Site depth}{26}{subsection.5.10}%
+\contentsline {subsection}{\numberline {5.11}Response Time}{26}{subsection.5.11}%
+\contentsline {subsection}{\numberline {5.12}Complessità Ciclomatica}{26}{subsection.5.12}%
+\contentsline {subsection}{\numberline {5.13}Grafico della complessità ciclomatica}{27}{subsection.5.13}%
+\contentsline {subsection}{\numberline {5.14}Stractural FAN-in and FAN-out [sfin and sfout]}{30}{subsection.5.14}%
+\contentsline {subsection}{\numberline {5.15}Conclusioni}{31}{subsection.5.15}%
+\contentsline {subsubsection}{\numberline {5.15.1}Analisi}{31}{subsubsection.5.15.1}%
+\contentsline {subsubsection}{\numberline {5.15.2}Consolidamento dei requisiti}{31}{subsubsection.5.15.2}%
+\contentsline {subsubsection}{\numberline {5.15.3}Programmazione architetturale}{31}{subsubsection.5.15.3}%
