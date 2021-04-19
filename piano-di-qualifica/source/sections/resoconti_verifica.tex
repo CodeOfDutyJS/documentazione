@@ -80,7 +80,7 @@ Le metriche di pianificazione che mostrano il rispettare dei costi e dei tempi s
     \item \textbf{PAS}: Progettazione architetturale con consegna "a sportell0", ovvero dal 02-03-2021 al 09-03-2021, che rappresenta la data spostata con consegna il 10 marzo
     \item \textbf{PDC}:Progettazione di dettaglio e codifica
 \end{itemize}
-In questo modo è più facile visualizzare l'andamento della pianificazione del progetto
+
 
 \begin{longtabu} to \textwidth {| X[0.1,c m] | X[0.1,c m]| X[0.1,c m]| X[0.1,c m]| X[0.1,c m]| X[0.1,c m] |}
     \hline
@@ -106,21 +106,6 @@ In questo modo è più facile visualizzare l'andamento della pianificazione del 
 
 \subsubsection{Earned value - EV}
 
-\begin{longtabu} to \textwidth {| X[0.1,c m] | X[0.1,c m] |}
-    \hline
-    \rowcolor{header}
-    \textbf{Fase} &
-    \textbf{Valore effettivo} \\
-    \hline
-    An & -  \\ 
-    \hline
-    CR & 734 \\
-    \hline
-    PA & 2588 \\
-    \hline
-    PAS & 1035 \\
-    \hline 
-    \end{longtabu}
 
     \begin{figure}[H]
         \centering
@@ -131,22 +116,6 @@ In questo modo è più facile visualizzare l'andamento della pianificazione del 
     \newpage
 \subsubsection{Planned value - PV}
 
-\begin{longtabu} to \textwidth {| X[0.1,c m] | X[0.1,c m] | }
-    \hline
-    \rowcolor{header}
-    \textbf{Fase} &
-    \textbf{Valore effettivo} \\
-    \hline
-    RR & - \\
-    \hline
-    CR & 734 \\
-    \hline
-    PA & 3624 \\
-    \hline
-    PAS & 1035 \\
-    \hline 
-    \end{longtabu}
-
     \begin{figure}[H]
         \centering
         \includegraphics[width=10 cm]{source/sections/images/planned_value.png}
@@ -155,23 +124,6 @@ In questo modo è più facile visualizzare l'andamento della pianificazione del 
 
 \subsubsection{Actual cost - AC}
 
-\begin{longtabu} to \textwidth {| X[0.1,c m] | X[0.1,c m] | X[0.1,c m] | X[0.1,c m] |}
-    \hline
-    \rowcolor{header}
-    \textbf{Fase} &
-    \textbf{Valore effettivo} & 
-    \textbf{Valore sufficiente} & 
-    \textbf{Valore ottimo} \\
-    \hline
-    An & - & - & - \\
-    \hline
-    CR & 650.66 & Si & Si \\ 
-    \hline    
-    PA & 3439,23 & No & No \\
-    \hline 
-    PAS & 966 & Si & Si \\
-    \hline
-    \end{longtabu}
 
     \begin{figure}[H]
         \centering
@@ -181,23 +133,6 @@ In questo modo è più facile visualizzare l'andamento della pianificazione del 
 
 \subsubsection{Schedule variance - SV}
 
-\begin{longtabu} to \textwidth {| X[0.1,c m] | X[0.1,c m] | X[0.1,c m] | X[0.1,c m]|}
-    \hline
-    \rowcolor{header}
-    \textbf{Fase} &
-    \textbf{Valore effettivo} & 
-    \textbf{Valore sufficiente} & 
-    \textbf{Valore ottimo} \\
-    \hline
-    An & - & - & - \\
-    \hline
-    CR & 0 & Si & Si \\ 
-    \hline
-    PA & -1035 & No & No \\
-    \hline 
-    PAS & 0 & Si & Si \\
-    \hline
-    \end{longtabu}
 
     \begin{figure}[H]
         \centering
@@ -207,23 +142,6 @@ In questo modo è più facile visualizzare l'andamento della pianificazione del 
 
 
 \subsubsection{Cost variance - CV}
-\begin{longtabu} to \textwidth {| X[0.1,c m] | X[0.1,c m] | X[0.1,c m] | X[0.1,c m]|}
-    \hline
-    \rowcolor{header}
-    \textbf{Fase} &
-    \textbf{Valore effettivo} & 
-    \textbf{Valore sufficiente} & 
-    \textbf{Valore ottimo} \\
-    \hline
-    Av & - & - & - \\ 
-    \hline
-    CR & 84 & Si & No \\
-    \hline
-    PA & -851 & No & No \\
-    \hline 
-    PAS & 69 & Si & No \\
-    \hline
-    \end{longtabu}
 
     \begin{figure}[H]
         \centering
@@ -231,135 +149,206 @@ In questo modo è più facile visualizzare l'andamento della pianificazione del 
         \caption{Grafico dei valori del Cost variance}
     \end{figure}
 
-\newpage
+
 \subsection{percentuale di requisiti soddisfatti}
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=10 cm]{source/sections/images/num-requisiti.png}
-    \caption{Grafico dei requisiti}
-\end{figure}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=15 cm]{source/sections/images/num-requisiti.png}
+        \caption{Grafico dei requisiti}
+    \end{figure}
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=10 cm]{source/sections/images/percentuale-requisiti.png}
-    \caption{percentuale dei requisiti soddisfatti}
-\end{figure}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=15 cm]{source/sections/images/percentuale-requisiti.png}
+        \caption{percentuale dei requisiti soddisfatti}
+    \end{figure}
 
-
+\newpage
 \subsection{Percentuale di metriche soddisfatte}
+    Per le metriche: Percentuale dei requisiti soddisfatti, complessità ciclomatica, sfin e sfout, alle quali sono stati determinati valori sufficienti e ottimi per ogni unità di calcolo,
+    verranno considerate ottime se la maggior parte delle unità presenteranno valori ottimi. L'equivalente
+    sarà considerato per i valori sufficienti e insufficienti. 
+
+
+    \begin{longtabu} to \textwidth {| X[0.2,c m] | X[0.1,c m] | X[0.1,c m] |}
+        \hline
+        \rowcolor{header}
+        \textbf{Metrica} &
+        \textbf{Valore} &
+        \textbf{Esito}\\
+        \hline
+        Percentuale dei requisiti soddisfatti & 74\% & insufficiente \\ 
+        \hline
+        Earned Value & 5935 & ottimo  \\ 
+        \hline
+        Planned Value & 5935 & ottimo \\ 
+        \hline
+        Actual cost & 5935 & ottimo \\
+        \hline
+        Schedule Variance & 0 & ottimo \\
+        \hline
+        Cost variance & 0 & ottimo \\
+        \hline
+        Gulpease index & - & - \\
+        \hline
+        Correzione ortorafica & 0 & ottimo \\
+        \hline
+        Code coverage & 12\% & insufficiente \\
+        \hline
+        Numero di test superati & 57,6\% & insufficiente \\
+        \hline
+        Numero di click & 2 & ottimo \\
+        \hline
+        Site depth & 1 & ottimo \\
+        \hline
+        Responde time & - & - \\
+        \hline
+        Complessità ciclomatica & 99\% & ottimo \\
+        \hline
+        Facilità di comprensione & 0.026 & insufficiente \\
+        \hline
+        sfin & 59\% & Sufficiente \\
+        \hline
+        sfout & 72\% & sufficiente \\
+        \hline
+        
+        \end{longtabu}
+
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=14 cm]{source/sections/images/percentuale-metriche-soddisfatte.png}
+            \caption{Grafico delle metriche soddisfatte}
+        \end{figure}
 
 \subsection{Code coverage}
-in questa fase del progetto didattico non si è data piena precedenza al numero di righe testate. E' stata comunque
-iniziata parzialmente una parte di testing. In seguito i valori del Code coverage calcolati dal 20 Marzo ad OGGI-MODIFICARE DATA
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=16 cm]{source/sections/images/CodeCoverage.png}
-    \caption{Grafico dei valori del Code coverage - github}
-\end{figure}
+    in questa fase del progetto didattico non si è data piena precedenza al numero di righe testate. E' stata comunque
+    iniziata parzialmente una parte di testing. In seguito i valori del Code coverage calcolati dal 20 Marzo ad OGGI-MODIFICARE DATA
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=16 cm]{source/sections/images/CodeCoverage.png}
+        \caption{Grafico dei valori del Code coverage - github}
+    \end{figure}
 
 
 \subsection{Numero di test superati}
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=10 cm]{source/sections/images/num-test.png}
-    \caption{Grafico numero di test}
-\end{figure}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=10 cm]{source/sections/images/torta-test.png}
-    \caption{Grafico della percentuale dei test}
-\end{figure}
-
-\subsection{Densità degli erorri}
-\subsection{Numero di click}
-\subsection{Site depth}
-L'applicazione web utilizza React e quindi fa in modo che la profondità del sito sia sempre pari ad 1, in quanto tutte le visualizzazioni vengono mostrate quando selezionate e calcolate sulla stessa pagina una alla volta
-
-\subsection{Response Time}
-calcolato per :recuero dati da csv, da database e tempo di calcolo per la visualizzazione -> Flori
-
-\subsection{Complessità Ciclomatica}
-Nella seguente tabell e grafico si può vedere i valori della complessità cicolmatica divisi per valori:
-
-    Cmoe si può notare dal segeuente graico il numero di funzioni al di sotto della soglia per considerarsi ottime è pari al 99\%
-
-
-\begin{figure}[!tbp]
-  \centering
-  \begin{minipage}[b]{0.43\textwidth}
-    \includegraphics[width=\textwidth]{source/sections/images/tabella_CC.JPG}
-    \caption{Tabella valori complessità ciclomatica.}
-  \end{minipage}
-  \hfill
-  \begin{minipage}[b]{0.51\textwidth}
-    \includegraphics[width=\textwidth]{source/sections/images/CC.png}
-    \caption{Flower two.}
-  \end{minipage}
-\end{figure}
-
-\subsection{Facilità di comprensione}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=10 cm]{source/sections/images/num-test.png}
+        \caption{Grafico numero di test}
+    \end{figure}
 
     \begin{figure}[H]
         \centering
-        \includegraphics[width=10 cm]{source/sections/images/facilitaDelCodice.png}
+        \includegraphics[width=10 cm]{source/sections/images/torta-test.png}
+        \caption{Grafico della percentuale dei test}
+    \end{figure}
+
+
+\subsection{Numero di click}
+
+\begin{longtabu} to \textwidth {| X[0.2,c m] | X[0.1,c m]| X[0.1,c m]| }
+    \hline
+    \rowcolor{header}
+    \textbf{Task} &
+    \textbf{Numero di click} &
+    \textbf{Esito}\\
+    \hline
+    caricamento dati da csv & 2 & ottimo \\ 
+    \hline
+    caricamento dati da server & 3 & ottimo \\
+    \hline
+    visualizzare i dati & 3 + numero di features & sufficiente \\
+    \hline 
+    \end{longtabu}
+
+
+\subsection{Site depth}
+    L'applicazione web utilizza React e quindi fa in modo che la profondità del sito sia sempre pari ad 1, in quanto tutte le visualizzazioni vengono mostrate quando selezionate e calcolate sulla stessa pagina una alla volta
+
+\subsection{Response Time}
+    calcolato per :recuero dati da csv, da database e tempo di calcolo per la visualizzazione -> Flori
+
+\subsection{Complessità Ciclomatica}
+    Nella seguente tabell e grafico si può vedere i valori della complessità cicolmatica divisi per valori:
+
+        Come si può notare dal segeuente graico il numero di funzioni al di sotto della soglia per considerarsi ottime è pari al 99\%
+
+
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=10 cm]{source/sections/images/tabella_CC.JPG}
+        \caption{Grafico della percentuale dei test}
+    \end{figure}
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=10 cm]{source/sections/images/CC.png}
+        \caption{Grafico della percentuale dei test}
+    \end{figure}
+
+    \subsection{Facilità di comprensione}
+
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=10 cm]{source/sections/images/facilitaDelCodice.png}
+            \caption{Grafico della facilità di comprensione}
+        \end{figure}
+
+    In seguito i grafici che mostrano l'andamento del numero di righe riguradnati, nel primo grafico il codice, e nel secondo
+    le righe di commento e righe vuote
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=10 cm]{source/sections/images/Valori-delle-righe.png}
+        \caption{Grafico del numero di righe dei commenti e righe vuote}
+    \end{figure}
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=10 cm]{source/sections/images/numCodice.png}
+        \caption{Grafico del numero di righe di codice}
+    \end{figure}
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=10 cm]{source/sections/images/facilita_comprensione.png}
         \caption{Grafico della facilità di comprensione}
     \end{figure}
 
-In seguito i grafici che mostrano l'andamento del numero di righe riguradnati, nel primo grafico il codice, e nel secondo
-le righe di commento e righe vuote
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=10 cm]{source/sections/images/Valori-delle-righe.png}
-    \caption{Grafico del numero di righe dei commenti e righe vuote}
-\end{figure}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=10 cm]{source/sections/images/numCodice.png}
-    \caption{Grafico del numero di righe di codice}
-\end{figure}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=10 cm]{source/sections/images/facilita_comprensione.png}
-    \caption{Grafico della facilità di comprensione}
-\end{figure}
-
-I forti cambiamenti nell'andamento delle funzioni sono dati da un aggiornamento del progetto fatto in data
-9 Aprile, nel quale si è implementato un comando yarn che si preoccpa di creare la maggiorparte del
-codice CSS, che ha fatto scendere in modo drastico il numero di righe di codice del progetto effettivo. Maggiori chiarimenti nella sezione conclusiva.
+    I forti cambiamenti nell'andamento delle funzioni sono dati da un aggiornamento del progetto fatto in data
+    9 Aprile, nel quale si è implementato un comando yarn che si preoccpa di creare la maggiorparte del
+    codice CSS, che ha fatto scendere in modo drastico il numero di righe di codice del progetto effettivo. Maggiori chiarimenti nella sezione conclusiva.
 
 \newpage
 \subsection{Stractural FAN-in and FAN-out  [sfin and sfout]}
-E' stato calcolato lo Stractural FAN-in e FAN-out di tutti i 44 file del progetto. I risultati sono esposti nella seguente tabella:
+    E' stato calcolato lo Stractural FAN-in e FAN-out di tutti i 44 file del progetto. I risultati sono esposti nella seguente tabella:
 
-\begin{longtabu} to \textwidth {| X[0.1,c m] | X[0.1,c m] | X[0.1,c m] | X[0.1,c m] | X[0.1,c m] |}
-    \hline
-    \rowcolor{header}
-    \textbf{} &
-    \textbf{IN} &
-    \textbf{percentiale sul totale} &
-    \textbf{OUT} &
-    \textbf{percentuale sul totale} \\
-    \hline
-    valori ottimi & 11 & 25\% & 5 & 11,36\% \\ 
-    \hline
-    valori sufficienti & 26 & 59,09\% & 32 & 72,72\% \\ 
-    \hline
-    valori insufficienti & 7 & 15,90\% & 7 & 15,90\% \\ 
-    \hline
+    \begin{longtabu} to \textwidth {| X[0.1,c m] | X[0.1,c m] | X[0.1,c m] | X[0.1,c m] | X[0.1,c m] |}
+        \hline
+        \rowcolor{header}
+        \textbf{Esito} &
+        \textbf{IN} &
+        \textbf{percentiale sul totale} &
+        \textbf{OUT} &
+        \textbf{percentuale sul totale} \\
+        \hline
+        Ottimo & 11 & 25\% & 5 & 11,36\% \\ 
+        \hline
+        Sufficiente & 26 & 59,09\% & 32 & 72,72\% \\ 
+        \hline
+        Insufficiente & 7 & 15,90\% & 7 & 15,90\% \\ 
+        \hline
 
-    \end{longtabu}
+        \end{longtabu}
 
-    \begin{figure}[H]
-        \centering
-        \includegraphics[width=13 cm]{source/sections/images/SfinSfout.png}
-        \caption{Grafico delo stractural FAN-in e FAN-out}
-    \end{figure}
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=13 cm]{source/sections/images/SfinSfout.png}
+            \caption{Grafico delo stractural FAN-in e FAN-out}
+        \end{figure}
 
 \newpage
 \subsection{Conclusioni}

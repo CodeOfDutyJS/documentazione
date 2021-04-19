@@ -54,22 +54,21 @@
 \contentsline {subsection}{\numberline {5.2}Errori ortografici}{24}{subsection.5.2}%
 \contentsline {subsection}{\numberline {5.3}Metriche di pianificazione}{25}{subsection.5.3}%
 \contentsline {subsubsection}{\numberline {5.3.1}Earned value - EV}{25}{subsubsection.5.3.1}%
-\contentsline {subsubsection}{\numberline {5.3.2}Planned value - PV}{27}{subsubsection.5.3.2}%
-\contentsline {subsubsection}{\numberline {5.3.3}Actual cost - AC}{27}{subsubsection.5.3.3}%
-\contentsline {subsubsection}{\numberline {5.3.4}Schedule variance - SV}{28}{subsubsection.5.3.4}%
-\contentsline {subsubsection}{\numberline {5.3.5}Cost variance - CV}{28}{subsubsection.5.3.5}%
-\contentsline {subsection}{\numberline {5.4}percentuale di requisiti soddisfatti}{30}{subsection.5.4}%
-\contentsline {subsection}{\numberline {5.5}Percentuale di metriche soddisfatte}{30}{subsection.5.5}%
+\contentsline {subsubsection}{\numberline {5.3.2}Planned value - PV}{26}{subsubsection.5.3.2}%
+\contentsline {subsubsection}{\numberline {5.3.3}Actual cost - AC}{26}{subsubsection.5.3.3}%
+\contentsline {subsubsection}{\numberline {5.3.4}Schedule variance - SV}{27}{subsubsection.5.3.4}%
+\contentsline {subsubsection}{\numberline {5.3.5}Cost variance - CV}{27}{subsubsection.5.3.5}%
+\contentsline {subsection}{\numberline {5.4}percentuale di requisiti soddisfatti}{28}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Percentuale di metriche soddisfatte}{29}{subsection.5.5}%
 \contentsline {subsection}{\numberline {5.6}Code coverage}{30}{subsection.5.6}%
 \contentsline {subsection}{\numberline {5.7}Numero di test superati}{31}{subsection.5.7}%
-\contentsline {subsection}{\numberline {5.8}Densità degli erorri}{32}{subsection.5.8}%
-\contentsline {subsection}{\numberline {5.9}Numero di click}{32}{subsection.5.9}%
-\contentsline {subsection}{\numberline {5.10}Site depth}{32}{subsection.5.10}%
-\contentsline {subsection}{\numberline {5.11}Response Time}{32}{subsection.5.11}%
-\contentsline {subsection}{\numberline {5.12}Complessità Ciclomatica}{32}{subsection.5.12}%
-\contentsline {subsection}{\numberline {5.13}Facilità di comprensione}{33}{subsection.5.13}%
-\contentsline {subsection}{\numberline {5.14}Stractural FAN-in and FAN-out [sfin and sfout]}{36}{subsection.5.14}%
-\contentsline {subsection}{\numberline {5.15}Conclusioni}{37}{subsection.5.15}%
-\contentsline {subsubsection}{\numberline {5.15.1}Analisi}{37}{subsubsection.5.15.1}%
-\contentsline {subsubsection}{\numberline {5.15.2}Consolidamento dei requisiti}{37}{subsubsection.5.15.2}%
-\contentsline {subsubsection}{\numberline {5.15.3}Programmazione architetturale}{37}{subsubsection.5.15.3}%
+\contentsline {subsection}{\numberline {5.8}Numero di click}{31}{subsection.5.8}%
+\contentsline {subsection}{\numberline {5.9}Site depth}{32}{subsection.5.9}%
+\contentsline {subsection}{\numberline {5.10}Response Time}{32}{subsection.5.10}%
+\contentsline {subsection}{\numberline {5.11}Complessità Ciclomatica}{32}{subsection.5.11}%
+\contentsline {subsection}{\numberline {5.12}Facilità di comprensione}{33}{subsection.5.12}%
+\contentsline {subsection}{\numberline {5.13}Stractural FAN-in and FAN-out [sfin and sfout]}{36}{subsection.5.13}%
+\contentsline {subsection}{\numberline {5.14}Conclusioni}{37}{subsection.5.14}%
+\contentsline {subsubsection}{\numberline {5.14.1}Analisi}{37}{subsubsection.5.14.1}%
+\contentsline {subsubsection}{\numberline {5.14.2}Consolidamento dei requisiti}{37}{subsubsection.5.14.2}%
+\contentsline {subsubsection}{\numberline {5.14.3}Programmazione architetturale}{37}{subsubsection.5.14.3}%
