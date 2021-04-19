@@ -36,7 +36,7 @@
 \contentsline {subsection}{\numberline {3.4}Usabilità}{11}{subsection.3.4}%
 \contentsline {subsection}{\numberline {3.5}Efficienza}{12}{subsection.3.5}%
 \contentsline {subsection}{\numberline {3.6}Manutenibilità}{12}{subsection.3.6}%
-\contentsline {section}{\numberline {4}Specifica dei test}{13}{section.4}%
+\contentsline {section}{\numberline {4}Specifica dei test}{12}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Test di Sistema}{13}{subsection.4.1}%
 \contentsline {subsubsection}{\numberline {4.1.1}Test di sistema per i requisiti funzionali}{13}{subsubsection.4.1.1}%
 \contentsline {subsubsection}{\numberline {4.1.2}Test di sistema per i requisiti di qualità}{16}{subsubsection.4.1.2}%
@@ -54,22 +54,22 @@
 \contentsline {subsection}{\numberline {5.2}Errori ortografici}{24}{subsection.5.2}%
 \contentsline {subsection}{\numberline {5.3}Metriche di pianificazione}{25}{subsection.5.3}%
 \contentsline {subsubsection}{\numberline {5.3.1}Earned value - EV}{25}{subsubsection.5.3.1}%
-\contentsline {subsubsection}{\numberline {5.3.2}Planned value - PV}{26}{subsubsection.5.3.2}%
-\contentsline {subsubsection}{\numberline {5.3.3}Actual cost - AC}{26}{subsubsection.5.3.3}%
-\contentsline {subsubsection}{\numberline {5.3.4}Schedule variance - SV}{27}{subsubsection.5.3.4}%
-\contentsline {subsubsection}{\numberline {5.3.5}Cost variance - CV}{27}{subsubsection.5.3.5}%
-\contentsline {subsection}{\numberline {5.4}percentuale di requisiti soddisfatti}{29}{subsection.5.4}%
-\contentsline {subsection}{\numberline {5.5}Percentuale di metriche soddisfatte}{29}{subsection.5.5}%
-\contentsline {subsection}{\numberline {5.6}Code coverage}{29}{subsection.5.6}%
-\contentsline {subsection}{\numberline {5.7}Numero di test superati}{29}{subsection.5.7}%
-\contentsline {subsection}{\numberline {5.8}Densità degli erorri}{30}{subsection.5.8}%
-\contentsline {subsection}{\numberline {5.9}Numero di click}{30}{subsection.5.9}%
-\contentsline {subsection}{\numberline {5.10}Site depth}{30}{subsection.5.10}%
-\contentsline {subsection}{\numberline {5.11}Response Time}{30}{subsection.5.11}%
-\contentsline {subsection}{\numberline {5.12}Complessità Ciclomatica}{30}{subsection.5.12}%
-\contentsline {subsection}{\numberline {5.13}Facilità di comprensione}{31}{subsection.5.13}%
-\contentsline {subsection}{\numberline {5.14}Stractural FAN-in and FAN-out [sfin and sfout]}{34}{subsection.5.14}%
-\contentsline {subsection}{\numberline {5.15}Conclusioni}{35}{subsection.5.15}%
-\contentsline {subsubsection}{\numberline {5.15.1}Analisi}{35}{subsubsection.5.15.1}%
-\contentsline {subsubsection}{\numberline {5.15.2}Consolidamento dei requisiti}{35}{subsubsection.5.15.2}%
-\contentsline {subsubsection}{\numberline {5.15.3}Programmazione architetturale}{35}{subsubsection.5.15.3}%
+\contentsline {subsubsection}{\numberline {5.3.2}Planned value - PV}{27}{subsubsection.5.3.2}%
+\contentsline {subsubsection}{\numberline {5.3.3}Actual cost - AC}{27}{subsubsection.5.3.3}%
+\contentsline {subsubsection}{\numberline {5.3.4}Schedule variance - SV}{28}{subsubsection.5.3.4}%
+\contentsline {subsubsection}{\numberline {5.3.5}Cost variance - CV}{28}{subsubsection.5.3.5}%
+\contentsline {subsection}{\numberline {5.4}percentuale di requisiti soddisfatti}{30}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Percentuale di metriche soddisfatte}{30}{subsection.5.5}%
+\contentsline {subsection}{\numberline {5.6}Code coverage}{30}{subsection.5.6}%
+\contentsline {subsection}{\numberline {5.7}Numero di test superati}{31}{subsection.5.7}%
+\contentsline {subsection}{\numberline {5.8}Densità degli erorri}{32}{subsection.5.8}%
+\contentsline {subsection}{\numberline {5.9}Numero di click}{32}{subsection.5.9}%
+\contentsline {subsection}{\numberline {5.10}Site depth}{32}{subsection.5.10}%
+\contentsline {subsection}{\numberline {5.11}Response Time}{32}{subsection.5.11}%
+\contentsline {subsection}{\numberline {5.12}Complessità Ciclomatica}{32}{subsection.5.12}%
+\contentsline {subsection}{\numberline {5.13}Facilità di comprensione}{33}{subsection.5.13}%
+\contentsline {subsection}{\numberline {5.14}Stractural FAN-in and FAN-out [sfin and sfout]}{36}{subsection.5.14}%
+\contentsline {subsection}{\numberline {5.15}Conclusioni}{37}{subsection.5.15}%
+\contentsline {subsubsection}{\numberline {5.15.1}Analisi}{37}{subsubsection.5.15.1}%
+\contentsline {subsubsection}{\numberline {5.15.2}Consolidamento dei requisiti}{37}{subsubsection.5.15.2}%
+\contentsline {subsubsection}{\numberline {5.15.3}Programmazione architetturale}{37}{subsubsection.5.15.3}%

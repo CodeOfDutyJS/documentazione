@@ -78,8 +78,31 @@ Le metriche di pianificazione che mostrano il rispettare dei costi e dei tempi s
     \item \textbf{CC}: periodo di consolidamento dei requisiti, ovvero dal 12-01-2021 al 18-01-2021
     \item \textbf{PA}: Progettazione architetturale, ovvero dal 19-01-2021 al 01-03-2021, che rappresenta la data progettata per la consegna
     \item \textbf{PAS}: Progettazione architetturale con consegna "a sportell0", ovvero dal 02-03-2021 al 09-03-2021, che rappresenta la data spostata con consegna il 10 marzo
+    \item \textbf{PDC}:Progettazione di dettaglio e codifica
 \end{itemize}
 In questo modo è più facile visualizzare l'andamento della pianificazione del progetto
+
+\begin{longtabu} to \textwidth {| X[0.1,c m] | X[0.1,c m]| X[0.1,c m]| X[0.1,c m]| X[0.1,c m]| X[0.1,c m] |}
+    \hline
+    \rowcolor{header}
+    \textbf{Fase} &
+    \textbf{EV} &
+    \textbf{PV} &
+    \textbf{AC} &
+    \textbf{SV} &
+    \textbf{CV} \\
+    \hline
+    An & - & - & - & - & -  \\ 
+    \hline
+    CR & 734 & 734 & 650 & 0 & 84 \\
+    \hline
+    PA & 2588 & 3624 & 3439 & -1035 & -841\\
+    \hline
+    PAS & 1035 & 0 & 966 & 0 & 69 \\
+    \hline
+    PDC & 5935 & 5935 & 5935 & 0 & 69 \\
+    \hline 
+    \end{longtabu}
 
 \subsubsection{Earned value - EV}
 
@@ -211,6 +234,18 @@ In questo modo è più facile visualizzare l'andamento della pianificazione del 
 \newpage
 \subsection{percentuale di requisiti soddisfatti}
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=10 cm]{source/sections/images/num-requisiti.png}
+    \caption{Grafico dei requisiti}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=10 cm]{source/sections/images/percentuale-requisiti.png}
+    \caption{percentuale dei requisiti soddisfatti}
+\end{figure}
+
 
 \subsection{Percentuale di metriche soddisfatte}
 
@@ -228,14 +263,14 @@ iniziata parzialmente una parte di testing. In seguito i valori del Code coverag
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=10 cm]{source/sections/images/percentuale-requisiti.png}
-    \caption{Grafico dei requisiti}
+    \includegraphics[width=10 cm]{source/sections/images/num-test.png}
+    \caption{Grafico numero di test}
 \end{figure}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=10 cm]{source/sections/images/torta-requisiti.png}
-    \caption{Grafico della percentuale dei requisiti}
+    \includegraphics[width=10 cm]{source/sections/images/torta-test.png}
+    \caption{Grafico della percentuale dei test}
 \end{figure}
 
 \subsection{Densità degli erorri}
