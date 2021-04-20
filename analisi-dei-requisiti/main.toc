@@ -1,0 +1,80 @@
+\babel@toc {italian}{}
+\babel@toc {italian}{}
+\contentsline {section}{\numberline {1}Introduzione}{5}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Scopo del documento}{5}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Scopo del Prodotto}{5}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Riferimenti}{5}{subsection.1.3}%
+\contentsline {subsubsection}{\numberline {1.3.1}Normativi}{5}{subsubsection.1.3.1}%
+\contentsline {subsubsection}{\numberline {1.3.2}Informativi}{5}{subsubsection.1.3.2}%
+\contentsline {section}{\numberline {2}Descrizione generale}{6}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Obiettivi del prodotto}{6}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Funzioni del prodotto}{6}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Caratteristiche degli utenti}{6}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Architettura del progetto}{6}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Vincoli generali}{6}{subsection.2.5}%
+\contentsline {section}{\numberline {3}Casi d'uso}{7}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Introduzione}{7}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Attori dei casi d'uso}{7}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Attori}{7}{subsubsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.3}UC1 - Inserimento dei dati }{7}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}UC1.1 - Scelta del caricamento dei dati}{8}{subsubsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.2}UC1.2 - Caricamento tramite file csv}{8}{subsubsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.3}UC1.3 - Caricamento tramite query ad un database}{9}{subsubsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.4}UC2 - Scelta della visualizzazione}{10}{subsection.3.4}%
+\contentsline {subsubsection}{\numberline {3.4.1}UC2.1 - Scatter Plot Matrix}{11}{subsubsection.3.4.1}%
+\contentsline {subsubsection}{\numberline {3.4.2}UC2.2 - Heatmap}{11}{subsubsection.3.4.2}%
+\contentsline {subsubsection}{\numberline {3.4.3}UC2.3 - Correlation Heatmap}{11}{subsubsection.3.4.3}%
+\contentsline {subsubsection}{\numberline {3.4.4}UC2.4 - Force Field}{12}{subsubsection.3.4.4}%
+\contentsline {subsubsection}{\numberline {3.4.5}UC2.5 - Linear Projection}{12}{subsubsection.3.4.5}%
+\contentsline {subsubsection}{\numberline {3.4.6}UC2.6 - Parallel Coordinates}{12}{subsubsection.3.4.6}%
+\contentsline {subsection}{\numberline {3.5}UC3 - Scelta delle Labels}{13}{subsection.3.5}%
+\contentsline {subsubsection}{\numberline {3.5.1}UC3.1 - Assegnazione delle classi di visualizzazione alle Labels}{13}{subsubsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.6}UC4 - Selezione manuale delle Features}{15}{subsection.3.6}%
+\contentsline {subsubsection}{\numberline {3.6.1}UC4.1 - Selezione manuale delle Features per Scatter Plot Matrix}{15}{subsubsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.7}UC5 - Impostazioni per Heatmap}{17}{subsection.3.7}%
+\contentsline {subsubsection}{\numberline {3.7.1}UC5.1 - Modificare il Range}{18}{subsubsection.3.7.1}%
+\contentsline {subsubsection}{\numberline {3.7.2}UC5.2 - Normalizzazione del dataset}{18}{subsubsection.3.7.2}%
+\contentsline {paragraph}{\numberline {3.7.2.1}UC5.2.1 - Normalizzazione Globale del dataset}{19}{paragraph.3.7.2.1}%
+\contentsline {paragraph}{\numberline {3.7.2.2}UC5.2.2 - Normalizzazione per Colonna del dataset}{19}{paragraph.3.7.2.2}%
+\contentsline {paragraph}{\numberline {3.7.2.3}UC5.2.3 - Normalizzazione per Riga del dataset}{19}{paragraph.3.7.2.3}%
+\contentsline {subsubsection}{\numberline {3.7.3}UC5.3 - Ordinamento delle righe di una Heatmap}{20}{subsubsection.3.7.3}%
+\contentsline {paragraph}{\numberline {3.7.3.1}UC5.3.1 - Ordinamento Heatmap in Ordine Alfabetico}{20}{paragraph.3.7.3.1}%
+\contentsline {paragraph}{\numberline {3.7.3.2}UC5.3.2 - Ordinamento Heatmap per Clusters}{21}{paragraph.3.7.3.2}%
+\contentsline {subsubsection}{\numberline {3.7.4}UC5.4 - Assegnare Colore al Range}{21}{subsubsection.3.7.4}%
+\contentsline {subsection}{\numberline {3.8}UC6 - Calcolo Matrice di Distanza}{22}{subsection.3.8}%
+\contentsline {subsubsection}{\numberline {3.8.1}UC6.1 - Selezione distanza}{23}{subsubsection.3.8.1}%
+\contentsline {paragraph}{\numberline {3.8.1.1}UC6.1.1 - Distanza Euclidea}{23}{paragraph.3.8.1.1}%
+\contentsline {paragraph}{\numberline {3.8.1.2}UC6.1.2 - Distanza di Manhattan}{23}{paragraph.3.8.1.2}%
+\contentsline {subsection}{\numberline {3.9}UC7 - Selezione algoritmo di riduzione delle componenti}{24}{subsection.3.9}%
+\contentsline {subsubsection}{\numberline {3.9.1}UC7.1 - PCA}{24}{subsubsection.3.9.1}%
+\contentsline {paragraph}{\numberline {3.9.1.1}UC7.1.1 - PCA - Inserimento numero di PCs da calcolare}{25}{paragraph.3.9.1.1}%
+\contentsline {subsubsection}{\numberline {3.9.2}UC7.2 - UMAP}{25}{subsubsection.3.9.2}%
+\contentsline {subsubsection}{\numberline {3.9.3}UC7.3 - t-SNE}{26}{subsubsection.3.9.3}%
+\contentsline {subsection}{\numberline {3.10}UC8 - Elaborazione dati}{27}{subsection.3.10}%
+\contentsline {subsubsection}{\numberline {3.10.1}UC8.1 - Avvio elaborazione dati con impostazioni di default}{27}{subsubsection.3.10.1}%
+\contentsline {subsubsection}{\numberline {3.10.2}UC8.2 - Avvio elaborazione dati con impostazioni utente}{28}{subsubsection.3.10.2}%
+\contentsline {subsection}{\numberline {3.11}UC9 - Visualizzazione dati}{29}{subsection.3.11}%
+\contentsline {subsubsection}{\numberline {3.11.1}UC9.1 - Creazione visualizzazione}{29}{subsubsection.3.11.1}%
+\contentsline {subsubsection}{\numberline {3.11.2}UC9.2 - Salvataggio visualizzazione}{30}{subsubsection.3.11.2}%
+\contentsline {subsection}{\numberline {3.12}UC10 - Visualizzazione errore in lettura dati}{31}{subsection.3.12}%
+\contentsline {section}{\numberline {4}Requisiti}{32}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Introduzione}{32}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Requisiti funzionali}{32}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Requisiti di qualità}{35}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Requisiti di vincolo}{36}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Requisiti prestazionali}{37}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}Tracciamento}{37}{subsection.4.6}%
+\contentsline {subsubsection}{\numberline {4.6.1}Fonte - Requisiti}{37}{subsubsection.4.6.1}%
+\contentsline {paragraph}{\numberline {4.6.1.1}Capitolato}{37}{paragraph.4.6.1.1}%
+\contentsline {paragraph}{\numberline {4.6.1.2}Interno}{38}{paragraph.4.6.1.2}%
+\contentsline {paragraph}{\numberline {4.6.1.3}UC1}{38}{paragraph.4.6.1.3}%
+\contentsline {paragraph}{\numberline {4.6.1.4}UC2}{38}{paragraph.4.6.1.4}%
+\contentsline {paragraph}{\numberline {4.6.1.5}UC3}{39}{paragraph.4.6.1.5}%
+\contentsline {paragraph}{\numberline {4.6.1.6}UC4}{39}{paragraph.4.6.1.6}%
+\contentsline {paragraph}{\numberline {4.6.1.7}UC5}{39}{paragraph.4.6.1.7}%
+\contentsline {paragraph}{\numberline {4.6.1.8}UC6}{39}{paragraph.4.6.1.8}%
+\contentsline {paragraph}{\numberline {4.6.1.9}UC7}{39}{paragraph.4.6.1.9}%
+\contentsline {paragraph}{\numberline {4.6.1.10}UC8}{39}{paragraph.4.6.1.10}%
+\contentsline {paragraph}{\numberline {4.6.1.11}UC9}{39}{paragraph.4.6.1.11}%
+\contentsline {paragraph}{\numberline {4.6.1.12}UC10}{39}{paragraph.4.6.1.12}%
+\contentsline {subsubsection}{\numberline {4.6.2}Riepilogo requisiti}{39}{subsubsection.4.6.2}%
