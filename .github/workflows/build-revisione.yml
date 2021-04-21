@@ -78,14 +78,14 @@ jobs:
           root_file: main.tex
 
       ## GLOSSARIO
-      - name: Glossario
-        run: echo "Start build Glossario"
+      # - name: Glossario
+      #   run: echo "Start build Glossario"
 
-      - name: Compile glossario LaTeX document
-        uses: damix48/latex-action@0.1
-        with:
-          working_directory: glossario/
-          root_file: main.tex
+      # - name: Compile glossario LaTeX document
+      #   uses: damix48/latex-action@0.1
+      #   with:
+      #     working_directory: glossario/
+      #     root_file: main.tex
 
       ## VERBALE verbale-interno_2021-03-18
       - name: verbale-interno_2021-03-18
@@ -183,16 +183,16 @@ jobs:
           asset_name: piano-di-qualifica.pdf
           asset_content_type: application/pdf
 
-      - name: Upload Glossario
-        id: upload-glossario
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: glossario/main.pdf
-          asset_name: glossario.pdf
-          asset_content_type: application/pdf
+      # - name: Upload Glossario
+      #   id: upload-glossario
+      #   uses: actions/upload-release-asset@v1
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #   with:
+      #     upload_url: ${{ steps.create_release.outputs.upload_url }}
+      #     asset_path: glossario/main.pdf
+      #     asset_name: glossario.pdf
+      #     asset_content_type: application/pdf
 
       - name: Upload verbale-interno_2021-03-18
         id: upload-verbale-interno_2021-03-18
