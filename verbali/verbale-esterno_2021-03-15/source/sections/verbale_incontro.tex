@@ -1,0 +1,16 @@
+\section{Verbale Incontro}
+L'obiettivo dell'incontro con il proponente era di mostrare \hd\ , nonché i risultati raggiunti durante la fase di Technology Baseline. Il proponente si è dimostrato particolarmente entusiasta. Gli è stata posta la seguente domanda, sorta proprio durante la definizione della Technology Baseline:
+\begin{itemize}
+    \item un dataset può avere una dimensione tale (diverse migliaia di record) da rendere estremamente lenta oltre che insensata all'occhio umano la visualizzazione.
+\end{itemize}
+
+Dalla discussione con il sig. Piccoli sono emerse le seguenti possibili soluzioni:
+\begin{itemize}
+    \item spostare l'elaborazione al server invece che al client, dando per scontato che il server abbia una potenza di calcolo molto superiore rispetto al client;
+    \item spostare l'elaborazione alla gpu, è molto facile che un client abbia una gpu superiore a quella del server;
+    \item campionare i dati (il proponente non ha suggerito tecniche di campionamento).
+\end{itemize}
+La prima e la seconda soluzione sono apparse rispettivamente impraticabili, dato che nel particolare caso di \hd\ è facile che server e client siano la stessa macchina, o eccessivamente complicate (la seconda), che avrebbe richiesto l'approfondimento di un'ulteriore tecnologia. La terza soluzione appare quindi la più semplice, nonché l'unica possibilità per fornire delle visualizzazioni analizzabili a occhio nudo.
+\\ \\ 
+\noindent \textbf{Conclusioni:}
+\cod\ implementerà una forma di campionamento in modo da ridurre la dimensione del dataset in input.

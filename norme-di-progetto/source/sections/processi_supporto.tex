@@ -5,6 +5,16 @@
 	    Lo scopo della documentazione è fornire riferimenti precisi ed universali su ogni attività e processo inerenti al progetto. Questa sezione norma come stilare tutti i documenti prodotti durante il ciclo di vita del software. I documenti sono reperibili al seguente repository:
 	    \url{https://github.com/CodeOfDutyJS/documentazione}
 	    
+	    \subsubsection{Aspettative}
+	    Le aspettative previste dal processo di Documentazione sono:
+	    \begin{itemize}
+	    	\item Individuare le norme che permettano al gruppo di scrivere documenti in maniera uniforme;
+	    	\item Produzione di documenti chiari, leggibili e facilmente consultabili.
+	    \end{itemize}
+	    
+	    \subsubsection{Descrizione}
+	    Questa sezione permette di collezionare tutte le norme che garantiscano una stesura uniforme dei documenti ufficiali.
+	    
 	    \subsubsection{Ciclo di vita del Documento}
 	    \begin{itemize}
 	        \item \textbf{Creazione} Il documento viene creato da fonti accettabili e conformamente alle norme. In particolare sono fonti accettabili push sul repository e viene usato un template LaTeX fornito nello stesso;
@@ -14,6 +24,9 @@
 	        \item \textbf{Approvazione della versione} Una volta che il documento contiene tutte le voci descritte nella struttura, viene approvato da un membro del gruppo che non deve aver contribuito precedentemente al documento stesso;
 	        \item \textbf{Manuntenzione} Una volta che il documento viene aggiornato come da normativa, viene di nuovo sottoposto a \textbf{Revisione} e \textbf{Approvazione}.
 	    \end{itemize}
+    
+    
+    	
 	    
 	    \subsubsection{Template LaTex e automazione}
 	    Allo scopo di uniformare lo stile e velocizzare la produzione dei documenti viene fornito un template LaTeX.
@@ -21,6 +34,7 @@
 	    Un file "main.tex" raccoglie le sezioni del documento. In testa raccoglie in input un file "package.tex" contenente tutti i package necessari alla compilazione ed un file "config.tex" contenente i comandi di configurazione.
 	    \myparagraph{Automazione}
 	    Vengono usate le Github Actions per automatizzare la compilazione del file LaTeX in modo da creare un artefatto consultabile da tutto il gruppo ad ogni cambiamento dello stesso ed in modo  da assicurarsi circa la compilazione stessa del file LaTeX. Inoltre uno script Python automaticamente appone l'apposito pedice alle voci da inserire nel glossario.
+	    
 	    \subsubsection{Pagine}
 	    Di seguito una descrizione di pagine sempre presenti nei documenti prodotti dal gruppo.
 	    \myparagraph{Frontespizio}
@@ -41,6 +55,7 @@
 	        \end{enumerate}
 	        \item il recapito mail del gruppo.
 	    \end{itemize}
+	    
 	    \myparagraph{Diario delle modifiche}
 	    La seconda pagina contiene sempre il diario delle modifiche: una tabella atta ad elencare ed a descrivere sinteticamente le modifiche in ordine cronologico apposte al documento.
 	    Il diario delle modifiche contiene le seguenti voci:
@@ -51,25 +66,41 @@
 	        \item \textbf{Ruolo}: chi ha apportato la modifica, revisione o approvazione;
 	        \item \textbf{Descrizione}: descrizione suntuaria delle attività effettuate.
 	    \end{enumerate}
+	    
 	    \myparagraph{Indice}
 	    Il documento contiene poi sempre un indice ordinato e facilmente consultabile contenente le voci all'interno del documento, in modo da informare sulla struttura dello stesso e di dare modo di trovare velocemente le sezioni ricercate.
+	    
+	    
 	    \myparagraph{Introduzione}
 	    Tutti i documenti devono iniziare con una breve sezione d'introduzione volta a spiegare lo scopo del documento e ad inserire eventuali riferimenti.
+	    
+	    
 	    \myparagraph{Intestazione del contenuto}
 	    Tutte le pagine di contenuto hanno separata da una linea orizzontale un'intestazione contenente:
 	    \begin{itemize}
 	        \item a sinistra il logo del gruppo, in versione apposita per intestazione;
 	        \item a destra il nome del documento.
 	    \end{itemize}
+	    
+	    
 	    \myparagraph{Piè di pagina}
 	    il piè di pagina contiene, centrato, i numeri di pagina corrente e pagine totali del documento.
+	    
+	    
 	    \myparagraph{Note}
 	    In caso di note, queste vanno numerate per pagina ed essere riportate con la loro numerazione a piè di pagina e descritte il più brevemente possibile.
+	    
+	    
+	    
 	    \subsubsection{Norme di stile}
+	    
 	    \myparagraph{Immagini}
 	    Le immagini vanno inserite centrate e fornite di apposita didascalia.
+	     
+	     
 	    \myparagraph{Date}
 	    Le date vanno inserite usando il formato YYYY-MM-DD (anno per esteso, mese a due cifre e giorno a due cifre) in conformità all' ISO-8601
+	    
 	    \myparagraph{Nomi di file}
 	    Quando ci si riferisce ad un particolare file, e più in generale tutti i file e le cartelle devono avere nomi chiari, descrittivi del contenuto, ma per quanto possibile sintetici.
 	    Per quanto riguarda la convenzione da usare per i nomi, si usa lo Snake Case e si devono seguire le seguenti norme:
@@ -77,27 +108,36 @@
 	        \item tutte le parole da cui è composto il nome devono iniziare con la lettera minuscola;
 	        \item nel caso siano presenti date queste sono scritte alla fine del nome seguendo le convenzioni date
 	    \end{itemize}
+	    
+	    \myparagraph{Codice}
+	    Tutto il codice riportato nei documenti deve essere scritto con font "typewriter monospaced".
+	    
 	    \myparagraph{Glossario}
 	    Ogni termine riportato nel glossario ha una lettera \textbf{G} maiuscola ed in grassetto apposta sotto il nome. Questa viene apposta automaticamente nel LaTeX del documento da uno script Python in base alle voci presenti nel file glossary.txt presente nella repository, che deve essere aggiornato con tutte le voci presenti nel Glossario.
+	    
 	    \myparagraph{Stile del testo}
 	    \begin{itemize}
 	        \item \textbf{Maiuscolo}: vengono scritti per intero in maiuscolo solo gli acronimi;
 	        \item \textbf{Corsivo}: vengono scritti in corsivo il nome del gruppo, del proponente, del progetto e dei documenti;
 	        \item \textbf{Grassetto}: vengono scritti in grassetto i termini su cui si vuole far ricadere l'attenzione del lettore.
 	    \end{itemize}
+	    
 	    \myparagraph{Riferimenti a documenti}
 	    \begin{itemize}
 	        \item nel caso il riferimento al documento sia in un titolo come voce di un elenco non si usa il corsivo ma il grassetto.
 	        \item ogni qualvolta si fa riferimento al documento in un testo o ad un suo contenuto il nome viene accompagnato, separato da uno spazio, dalla versione, anch'essa in corsivo
 	        \item il nome del documento viene scritto per intero, e ogni parola di cui è composto deve iniziare con la lettera maiuscola
 	    \end{itemize}
+	    
 	    \myparagraph{Elenchi}
 	    Ogni voce di un elenco può seguire due convenzioni stilistiche:
 	    \begin{itemize}
 	        \item nel caso la voce non abbia un titolo comincia con la lettera minuscola;
 	        \item \textbf{Titolo}: nel caso la voce abbia un titolo questo viene scritto in grassetto, comincia con la lettera maiuscola ed è seguito dai due punti ed da una descrizione.
 	    \end{itemize}
-	    a discapito della convenzione seguita ogni voce termina con il punto e virgola \textbf{";"} tranne l'ultima che termina con un punto \textbf{"."}, ogni sottoelenco segue le medesime regole.
+	    a discapito della convenzione seguita ogni voce termina con il punto e virgola \textbf{";"} tranne l'ultima che termina con un punto \textbf{"."}, ogni sottoelenco 
+	    segue le medesime regole.
+	    
 	    \myparagraph{Sigle}
 	    Nella stesura dei documenti vengono adottate le seguenti sigle:
 	    \begin{itemize}
@@ -113,12 +153,14 @@
 	        \item \textbf{Programmatore}: \textbf{Pg}
 	        \item \textbf{Verificatore}: \textbf{Ve}
 	    \end{itemize}
+	    
 	    \subsubsection{Elementi grafici}
 	    Di seguito si trovano le norme per gli elementi grafici. Si distinguono due tipi di elementi grafici:
 	    \begin{itemize}
 	        \item \textbf{Figure}: sono figure le tabelle, i grafici ed i diagrammi UML;
 	        \item \textbf{Immagini}: tutti gli altri elementi grafici. 
 	    \end{itemize}
+	    
 	    \myparagraph{Figure}
 	    Ogni figura deve essere contrassegnata da una didascalia descrittiva posta al di sotto di essa, seguita da una numerazione progressiva assegnata per sezione. È esente da questa convenzione il diario delle modifiche.
 	    la numerazione delle figure è composta da tre cifre \textbf{X.Y.Z}:
@@ -126,8 +168,17 @@
 	        \item \textbf{X.Y}: riferimento alla sezione;
 	        \item \textbf{Z}: riferimento progressivo all'interno della sezione.
 	    \end{itemize}
+	    
 	    \myparagraph{Immagini}
 	    Le immagini vanno inserite centrate e corredate di didascalia descrittiva sottostante all'immagine stessa.
+	    
+	    \subsubsection{Procedimento di stesura delle voci}
+	    Il seguente diagramma di attività indica il procedimento di stesura delle voci.\\
+	    
+	    \begin{figure}[hbt!]
+	       \centering \includegraphics[width=1.0\textwidth]{../_template/images/vociDocumenti.png}
+	        \caption{diagramma di attività della stesura delle voci}
+	    \end{figure}
 	    
 	    \subsubsection{Metriche}
 		Di seguito vengono elencate le metriche inerenti alla qualità del processo di \textbf{Documentazione}. I valori sono normati nel piano di qualifica. La modalità di rilevazione non è indicata per tutte le metriche: tale dato sarà inserito in fasi successive del progetto.
@@ -172,29 +223,54 @@
 			\end{itemize}
 		Inoltre, ogni elemento viene modificato secondo procedure note e sottoposto a versionamento.
 		
+		\subsubsection{Aspettative}
+		\begin{itemize}
+			\item permettere una stesura sistematica di codice e documentazione;
+			\item classificare i prodotti in maniera uniforme in base allo stato nel quale essi si trovano;
+			\item permettere di tracciare i cambiamenti apportati ai prodotti.
+		\end{itemize}
+		
+		\subsubsection{Descrizione}
+		Il processo di Gestione della configurazione permette di raggruppare ed organizzare gli strumenti utilizzati per la stesura di documenti e codice. Inoltre definisce gli aspetti riguardanti il versionamento e la coordinazione del gruppo.
+		
 		\subsubsection{Versionamento}
 			
 			\myparagraph{Codice di versione del documento}
-			Per tenere traccia di ogni documento, il gruppo ha deciso di ricorrere alla seguente notazione: \textbf{X.Y.Z}, dove
+			Per tenere traccia di ogni documento, il gruppo ha deciso di ricorrere al seguente formato di versione \textbf{X.Y.Z}, dove:
 			\begin{itemize}
 				
-				\item \textbf{X}: indica una versione del documento stabile (approvata dal responsabile di progetto). Numerazione progressiva (da 0) incrementata ogni qualvolta il responsabile di progetto approvi il documento in questione.
+				\item \textbf{X}: indica una versione del documento stabile, dove è stata chiaramente definita e implementata la struttura. Incrementi a questo numero devono essere fatti quando la struttura stessa cambia, sia per aggiunta o rimozione di voci. Indica inoltre una versione validata dal responsabile di progetto ed esposta al pubblico.
 				
-				\item \textbf{Y}: indica una versione del documento in fase di verifica o che è stata soggetta a verifica(da parte di un Verificatore). Numerazione progressiva (da 0), viene azzerata ogni qualvolta il valore 'X' venga incrementato.
+				\item \textbf{Y}: indica la completa implementazione di una sezione del documento e corrispettiva verifica, o il completamento di una lista pianificata di correzioni.
 				
-				\item \textbf{Z}: indica una versione instabile di tale documento, e che esso è in fase di lavorazione da parte dei redattori. Numerazione progressiva (da 0), incrementata ogni qualvolta un redattore aggiunge contenuto al documento.
+				\item \textbf{Z}: indica un cambiamento minore o correzione verificato/a del documento.
 			\end{itemize}
 			
-			\myparagraph{Tecnologie}
-			Come sistema di versionamento è stato scelto Git, il quale dispone del servizio Github per ospitare la repository remota. Altro strumento interessante messo a disposizione da Github è "Github Actions" il quale permette di realizzare un servizio di Continuos Integration.
+			\myparagraph{Codice di versione del codice}
+			Per tenere traccia del codice, il gruppo ha deciso di adottare il versionamento semantico, con il seguente formato di versione \textbf{X.Y.Z}, dove:
+			\begin{itemize}
+			    \item \textbf{X}: indica una versione dove l'API pubblica è considerata stabile; la versione 0 indica una API instabile. La definizione dei contratti d'interfaccia dovrebbe essere conosciuta a priori e definita tramite documentazione o definita dal codice stesso.
+			    \item \textbf{Y}: la versione Y deve essere incrementata se viene implementata completamente una funzionalità retrocompatibile, o se una funzionalità dell'API è marcata come deprecata. la versione Z deve essere riportata a 0 quando questa viene incrementata. essa può comprendere miglioramenti a funzionalità già esistenti.
+			    \item \textbf{Z}: la versione Z indica modifiche atte a correggere comportamenti errati (bug) del'API.  
+			\end{itemize}
 			
-			\myparagraph{Repository}
-			Per interagire con il sistema di versionamento scelto, ogni componente del gruppo può utilizzare la versione da linea di comando (Git) con opportuni plugin per facilitare l'uso del sistema di versionamento. Alternativamente è possibile utilizzare la versione GUI fornita su Github. La repository è disponibile all'indirizzo:\\
+			ogni incremento al codice di versionamento avviene a posteriori del completamento di un processo di verifica. L'incremento della versione Y comporta, oltre al completamento del processo di verifica il completamento di un processo di validazione.  
+			
+			\myparagraph{Tecnologie}
+			Come sistema di versionamento è stato scelto Git, il quale dispone del servizio Github per ospitare la repository remota. Altro strumento interessante messo a disposizione da Github è "Github Actions" il quale permette di realizzare un servizio di Continuous Integration.
+			
+			\myparagraph{Repository per la documentazione}
+			Per interagire con il sistema di versionamento scelto, ogni componente del gruppo può utilizzare la versione da linea di comando (Git) con opportuni plugin per facilitare l'uso del sistema di versionamento. Alternativamente è possibile utilizzare la versione GUI fornita su Github.\\
+			La repository dei documenti è disponibile all'indirizzo:\\
 			\begin{center}
-				$\underline{https://github.com/CodeOfDutyJS/documentazione}$
+				\url{https://github.com/CodeOfDutyJS/documentazione}
+			\end{center}
+			La repository del codice è disponibile all'indirizzo:\\
+			\begin{center}
+				\url{https://github.com/CodeOfDutyJS/hdviz}
 			\end{center}
 			
-			\myparagraph{Struttura del repository}
+			\subparagraph{Struttura del repository}
 			All'interno del repository è possibile trovare:
 			\begin{itemize}
 				\item \textbf{nome-del-documento}: tutti i documenti sono disponibili al livello più esterno del repository.
@@ -204,6 +280,21 @@
 				\item \textbf{\_glo\_replace.py}: script in python che genera un pedice G ad ogni occorenza di tutte le parole presentiin "glossario.txt"
 			\end{itemize}
 			
+			\myparagraph{Repository per il codice}
+			La repository del codice è disponibile all'indirizzo:\\
+			\begin{center}
+				\url{https://github.com/CodeOfDutyJS/hdviz}
+			\end{center}
+
+				\subparagraph{Struttura del repository}
+				Il repository per il codice è organizzato nel seguente modo:
+				\begin{itemize}
+					\item \textbf{.github/workflows}: è la cartella contenente i file di configurazione per la realizzazione della Continuous Integration
+					\item \textbf{client/}: è la cartella contenente i file sorgente della componente client;
+					\item \textbf{server/}: è la cartella contenente i file sorgente della componente server
+					\item \textbf{README.md}: file di markdown contenente informazioni per la configurazione.
+				\end{itemize}
+				
 			\myparagraph{Estensione dei file}
 			Per la documentazione saranno utilizzati solamente le seguenti estensioni di file:
 			\begin{itemize}
@@ -222,7 +313,8 @@
 			
 			\myparagraph{Gestione delle modifiche}
 			I membri del gruppo possono modificare i file presenti all'interno di ogni branch personale. È consigliato utilizzare la funzione di commit presente in Git per tenere traccia di ogni cambiamento nella struttura del repository e per identificare l'autore di un determinato cambiamento. Per modificare contenuti e strutture dei file è consigliato contattare il responsabile del file che si vuole modificare, proporre la modifica, e in caso di approvazione effettuare tali modifiche. Nel caso di errori grammaticali è possibile correggere autonomamente i documenti. 
-	
+	\subsubsection{Project manager}
+        Al fine di gestire le dipendenze ed uniformare ed automatizzare le attività di analisi statica del codice e di esecuzione dei test il gruppo ha deciso di adottare yarn.
 	\subsection{Gestione della Qualità}
 		\subsubsection{Scopo}
 		Lo scopo è quello di assicurare che il prodotto realizzato offra i servizi richiesti dal cliente, e che essi rispettino gli obbiettivi di qualità prefissati.
@@ -236,7 +328,7 @@
 		\end{itemize}
 		
 		\subsubsection{Descrizione}
-		La trattazione approfondita della gestione della qualità è presente all'interno del \textit{Piano di Qualifica v1.0.0}, all'interno del quale sono descritti tutti i protocolli utilizzati per garantire la qualità durante lo sviluppo del progetto. All'interno di tale documento in particolare sono approfonditi:
+		La trattazione approfondita della gestione della qualità è presente all'interno del \textit{Piano di Qualifica v2.0.0}, all'interno del quale sono descritti tutti i protocolli utilizzati per garantire la qualità durante lo sviluppo del progetto. All'interno di tale documento in particolare sono approfonditi:
 		\begin{itemize}
 			\item gli standard utilizzati;
 			\item i processi di interesse negli standard;
@@ -257,7 +349,25 @@
 			\item \textbf{Reazione}: in base ai risultati ottenuti, adattare le metodologie
 		\end{itemize}
 		
-		\subsubsection{Qualità del prodotto}
+		
+		\subsubsection{Code refactoring}
+		Il code refactoring è il processo di ristrutturazione di codice esistente che va ad influire sulla struttura piuttosto che sul comportamento. Il code refactoring si concentra sulla
+		modifica del design, struttura e/o implementazione del codice (i suoi attributi non-funzionali), andando a preservare la funzionalità.
+		Questa tecnica prevede diversi benefici:
+		\begin{itemize}
+			\item aumentare il grado di manutenibilità del codice;
+			\item garantire un estensione del codice più agevole;
+			\item facilità nello scovare nuovi bug/errori.
+		\end{itemize}
+		Il code refactoring verrà svolto da ciascun Programmatore una volta che la porzione di 
+		codice in esame avrà passato tutti i test definiti all'interno del \textit{Piano di Quallifica v3.0.0}
+			\myparagraph{Code smell}
+			È un espressione che viene usata per indicare una serie di caratteristiche che il 
+			codice sorgente può avere e che sono generalmente riconosciute come probabili indicazioni di un difetto di programmazione.
+			I code smell non sono (e non rivelano) bug, bensì debolezze di progettazione
+			che impattano in maniera negativa sulla qualità del software
+		
+		\subsubsection{metriche di qualità del prodotto}
 		\myparagraph{Correttezza dello scambio dei dati}
         Il prodotto software ha bisogno di dati provenienti da fonti esterne. Questa 
         metrica misura che i dati ricevuti da tali fonti non siano modificati o errati 
@@ -459,7 +569,6 @@
         \item[] $\textrm{Soddisfatte} =$ numero totale di metriche con valore soddisfacente
         \item[] $\textrm{Totali} =$ numero totale di metriche calcolate
         \end{itemize}
-        
     \subsubsection{Strumenti}
 		Gli strumenti utilizzati per la qualità sono:
 		\begin{itemize}
@@ -468,10 +577,25 @@
 			\item \textbf{Metriche}
 		\end{itemize}
 	
-	
 	\subsection{Verifica}
 	\subsubsection{Scopo}
 	Lo scopo del processo di verifica è dare prova materiale che un sistema o un elemento del sistema soddisfa i requisiti e specifiche richiesti.
+	
+	\subsubsection{Aspettative}
+	\begin{itemize}
+		\item garantire che i prodotti rispettino i requisiti prefissati e le specifiche richieste;
+		\item garantire la qualità dei prodotti ottenuti dai vari processi;
+		\item permettere di procedere alla fase di validazione.
+	\end{itemize}
+
+	\subsubsection{Descrizione}
+	Questa sezione raccoglie l'insieme delle norme dedicate alla verifica dei prodotti ottenuti e dei processi impiegati per ottenerli. Il processo di verifica viene applicato ad ogni prodotto/processo quando:
+	\begin{itemize}
+		\item il prodotto/processo ha raggiunto una quantità sufficiente di materiale;
+		\item ad ogni cambiamento di stato di un prodotto.
+	\end{itemize}
+	
+	 
 	\subsubsection{Attività}
 	Il processo di verifica contiene le seguenti attività:
 	\begin{itemize}
@@ -479,7 +603,7 @@
 	    \item \textbf{Eseguire verificazione}: si definiscono le procedure attraverso le quali verrà compiuta la verificazione e la si esegue;
 	    \item \textbf{Gestione dei risultati}: si controllano i risultati ed eventuali anomalie e si identificano le possibili risposte, si annotano problemi e incidenti accorsi durante la verificazione, si ottiene l'assenso del proponente sulla soddisfazione dei requisiti ed infine si aggiorna la tracciabilità del requisito.
 	\end{itemize}
-	\subsubsection{Analisi}
+	\subsubsection{Verifica della documentazione}
 	\myparagraph{Analisi statica}
 	L'analisi statica può essere eseguita sia manualmente che con supporto di applicazioni terze, il cui eventuale uso viene normato nel presente documento. Nel caso di verifica manuale andranno ricercati:
 	\begin{itemize}
@@ -487,6 +611,17 @@
 	    \item errori di formattazione;
 	    \item difformità da norme inserite nella presente.
 	\end{itemize}
+		
+		\subsubsection{Procedimento di verifica della documentazione}
+		Di seguito viene allegato il diagramma di attività riguardante l'attività di verifica della documentazione:
+		\begin{figure}[hbt!]
+	       \centering \includegraphics[width=1.0\textwidth]{../_template/images/verifica.png}
+	        \caption{diagramma di attività della verifica della documentazione}
+	    \end{figure}
+	
+	\subsubsection{Verifica del codice}
+	\myparagraph{Analisi statica}
+	L'analisi statica viene facilitata dall'utilizzo di ESlint, impostato secondo le norme di stile Airbnb.
 	\myparagraph{Analisi dinamica}
 	L'analisi dinamica viene svolta tramite l'ausilio di test, con lo scopo di verificare che il prodotto rispetti le specifiche di progettazione.
 	Per tutti i test si definicono:
@@ -497,7 +632,7 @@
 	    \item \textbf{Output}: output aspettato corrispondente ad un determinato input;
 	    \item \textbf{Istruzioni aggiuntive}: altre istruzioni riguardanti l'interpretazione dei risultati del test e la sua esecuzione.
 	\end{itemize}
-	tutti i test devono fornire un registro dei risultati in un file di log.
+	I test vengono eseguiti tramite il framework jest.js
 	\myparagraph{Approcci}
 	ci sono due tipi di approcci ai test:
 	\begin{itemize}
@@ -513,7 +648,7 @@
 	    \item \textbf{Test di accettazione}: il prodotto viene testato assieme ad i proponenti per verificare il gradimento dell'utente. Se viene superato il prodotto viene rilasciato.
 	    \item \textbf{Test di regressione}: Ogni volta che viene apportata una modifica ad un'unità del software vengono rieseguiti tutti i test già definiti per verificarne il corretto funzionamento.
 	\end{itemize}
-	Ad ogni test corrisponde il seguente codice identificativo:\\
+	Ad ogni test di accettazione e di sistema corrisponde il seguente codice identificativo:\\
 	
 	\centerline{\textbf{T[tipoTest][classeRequisito][tipoRequisito][identificativo].[specializzazione]}}
 	
@@ -521,11 +656,8 @@
 	\begin{itemize}
 	    \item \textbf{tipoTest}: può essere:
 	    \begin{itemize}
-	        \item \textbf{U}: test di unità;
-	        \item \textbf{I}: test di integrazione;
 	        \item \textbf{S}: test di sistema;
 	        \item \textbf{A}: test di accettazione;
-	        \item \textbf{R}: test di regressione;
 	    \end{itemize}
 	    \item \textbf{classeRequisito}: indica la classe del requisito corrispondente, può essere:
 	        \begin{itemize}
@@ -540,10 +672,23 @@
 	            \item \textbf{Q}: requisito di qualità;
 	            \item \textbf{P}: requisito prestazionale. 
 	        \end{itemize}
-	  \item \textbf{identificativo}: identificativo progressivo;
-	  \item \textbf{identificativo}: identificativo progressivo della specializzazione.
+	  \item \textbf{identificativo}: identificativo progressivo del requisito;
+	  \item \textbf{specializzazione}: identificativo progressivo della specializzazione.
 	\end{itemize}
+	Ad ogni test di unità , integrazione e regressione corrisponde il seguente codice identificativo:\\
 	
+	\centerline{\textbf{T[tipoTest][identificativo]}}
+	
+	che è composto da:
+	\begin{itemize}
+	    \item \textbf{tipoTest}: può essere:
+	    \begin{itemize}
+	        \item \textbf{U}: test di unità;
+	        \item \textbf{I}: test di integrazione;
+	        \item \textbf{R}: test di regressione.
+	    \end{itemize}
+	  \item \textbf{identificativo}: identificativo univoco progressivo.
+	\end{itemize}
 	\subsubsection{Metriche}
 	Di seguito vengono elencate le metriche inerenti alla qualità del processo di \textbf{Verifica}. I valori sono normati nel piano di qualifica. La modalità di rilevazione non è indicata per tutte le metriche: tale dato sarà inserito in fasi successive del progetto.
 	    \myparagraph{Code coverage}
@@ -561,12 +706,25 @@
         
         
         \myparagraph{Numero di test superati}
-        Indica il nuemero totale intero di test superati. Questa metrica non ha formula in quanto il valore è dato dal calcolo del programmatore in fase di test del codice.
+        Indica il numero totale intero di test superati. Questa metrica non ha formula in quanto il valore è dato dal calcolo del programmatore in fase di test del codice.
 	
+	   \subsubsection{Procedimento di verifica del codice}
+		Di seguito viene allegato il diagramma di attività riguardante la verifica del codice:
+		\begin{figure}[hbt!]
+	       \centering \includegraphics[width=1.0\textwidth]{../_template/images/verificaCodice.png}
+	        \caption{diagramma di attività della verifica della documentazione}
+	    \end{figure}
+
 	\subsection{Validazione}
 
 	\subsubsection{Scopo}
-	La validazione è il processo che si occupa di stabilire se il prodotto soddisfi o meno i requisiti. Se il software li soddisfa, allora viene validato.
+	La validazione è il processo che si occupa di stabilire se il prodotto soddisfi o meno i requisiti funzionali richiesti. 
+	
+	\subsubsection{Aspettative}
+		Un prodotto validato garantisce che esso soddisfi i requisiti proposti e che soddisfi i bisogni del committente.
+	
+	\subsubsection{Descrizione}
+	L'input per la fase di Validazione è l'output della fase di Verifica. Il compito viene poi demandato al \textit{Responsabile di progetto} il quale potrà accettare ed approvare il prodotto, oppure, rimandarlo alla fase di Verifica.
 	\subsubsection{Attività}
 	Per il processo di validazione vengono definite le seguenti attività:
 	\begin{itemize}
@@ -575,4 +733,17 @@
 	    \item \textbf{Implementazione della validazione}: il piano viene implementato ed eseguito;
 	    \item \textbf{Risultati}: i risultati vengono analizzati, assicurandosi che riflettano le aspettative.
 	\end{itemize}
-
+	
+	\subsubsection{Procedimento di validazione della documentazione}
+		Di seguito viene allegato il diagramma di attività riguardante la validazione della documentazione:
+		\begin{figure}[hbt!]
+	       \centering \includegraphics[width=1.0\textwidth]{../_template/images/Validazione.png}
+	        \caption{diagramma di attività della validazione della documentazione}
+	    \end{figure}
+	   
+	\subsubsection{Procedimento validazione del codice}
+	    di seguito viene allegato il diagramma di attività riguardante la validazione del codice:
+	    \begin{figure}[hbt!]
+	       \centering \includegraphics[width=1.0\textwidth]{../_template/images/validazioneCodice.png}
+	        \caption{diagramma di attività della validazione della documentazione}
+	    \end{figure}

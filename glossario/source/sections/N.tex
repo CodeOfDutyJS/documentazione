@@ -7,16 +7,14 @@
 }
 %endTable
 
-\begin{description}
 \foreach \x [count=\nj] in \definizioniN
 {
     \foreach \y [count=\ni] in \x
     {
         \ifnum\ni=1
-            \item[\y] \hfill\\
+            \subsection\y \hfill\\
         \else
             \y
         \fi
     }
 }
-\end{description}

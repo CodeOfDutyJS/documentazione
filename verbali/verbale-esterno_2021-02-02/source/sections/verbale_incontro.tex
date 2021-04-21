@@ -1,0 +1,18 @@
+\section{Verbale Incontro}
+Durante l'incontro con la proponente Zucchetti e in particolare il referente Gregorio Piccoli è stato discusso il seguente:
+\begin{itemize}
+    \item come impostare la connessione a un database e se è necessario che \hd\ sia distribuita insieme a un database;
+    \item database e sicurezza;
+    \item sviluppo visualizzazione proiezione lineare multiasse.
+\end{itemize}
+Per quanto riguarda la connessione a un database è emerso che è naturale che \hd\ possa essere collegata a diversi tipi di database: il referente Gregorio Piccoli suggerisce inoltre che per acquisire le credenziali necessarie al collegamento si potrebbe utilizzare un file di configurazione (uno per ogni database).
+Successivamente sono state discusse diverse problematiche di sicurezza: 
+\begin{itemize}
+    \item all'utente non devono essere visibili le credenziali di accesso del database, se non durante l'inserimento di queste;
+    \item è scorretto permettere l'interrogazione del database tramite query direttamente da \hd , ma potrebbe ad esempio essere disponibile un'interfaccia che permetta operazioni limitate;
+    \item se la connessione a un database avviene tramite interfaccia grafica e non tramite un file di configurazione, è necessario impedire gli attacchi brute force, ad esempio inserendo un CAPTCHA dopo il terzo tentativo di accesso errato.
+\end{itemize}
+Riguardo alla proiezione lineare multiasse: il referente suggerisce di implementarla manualmente invece di affidarsi a librerie di terze parti, essendo un tipo di visualizzazione particolarmente semplice.
+\\ \\ \noindent
+\textbf{Conclusioni:}
+In una breve discussione successiva all'incontro è emerso che, per limitare i problemi di sicurezza \hd\ sarà pensata e sviluppata per essere distribuita in una sola rete nella sua interezza, ciò significa che database e server dovranno risiedere nella stessa rete.

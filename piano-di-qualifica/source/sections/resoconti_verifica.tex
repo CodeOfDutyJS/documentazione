@@ -1,56 +1,49 @@
+
 \section{Resoconti di verifica ed esiti delle revisioni}
 
-In questa sezione vengono mostrati i valori delle metriche calcolate a termine del periodo di revisione dei requisiti. Saranno mostrati sia i valori che rientrano nel range prestabilito sia quelli che non rientrano, nel secondo caso verranno segnalati come problemi nella parte finale della sezione.
+In questa sezione vengono mostrati i valori delle metriche calcolate a termine del periodo di progettazione di dettaglio e codifica. Saranno mostrati sia i valori che rientrano nel range prestabilito sia quelli che non rientrano, nel secondo caso verranno segnalati come problemi nelle conclusioni che sranno divise per fasi.
 
-\subsection{Riassunto delle attività di verifica}
-Durante il periodo di analisi tutta la documentazione da presentare in ingresso alla revisione dei requisiti è stata sottoposta ad un'analisi meticolosa della struttura del documento, della chiarezza e degli errori ortografici. La verifica di ogni documento è stata svolta da 2 componenti del gruppo per assicurare il minor numero di errori possibili.
+\subsection{Metriche dei processi primari}
+\input{source/sections/metriche/metriche-processi-primari.tex}
 
-\subsection{Risultati delle verifiche tramite analisi}
-
-\subsubsection{Valori dell'indice di Gulpease}
-
-Per ogni documento stilato è stato calcolato l'indice di Gulpease\glo{} in due momenti: al 2021/12/03 e al 2021/01/10 alla versione v1.0.0 che è stata consegnata per la revisione dei requisiti. I valori sono dati dalla seguente tabella ed il rispettivo grafico con valore sufficiente >40 e valore ottimo >80.
-
-\hphantom{}
-\tabulinesep = 2mm % padding
-\taburowcolors [1] 2{pari .. dispari} % colori delle righe
-
-\begin{longtabu} to \textwidth {| X[0.2,c m] | X[0.1,c m] | X[0.1,c m] | X[0.1,c m]| X[0.1,c m] | X[0.1,c m] |}
-\hline
-\rowcolor{header}
-\textbf{Data del calcolo} & 
-\textbf{Studio di Fattibilità} & 
-\textbf{Norme di Progetto} & 
-\textbf{Analisi dei Requisiti} & 
-\textbf{Piano di Qualifica} & 
-\textbf{Piano di Progetto} \\
-\hline
-
-\multirow[c]{2}{*}{2020-12-03} & v0.0.8 & v0.1.0 & v0.2.4 & v0.2.1 & v0.1.0 \\
-\cline{2-6} 
-& 95 & 65 & 61 & 80 & 91 \\ 
-\hline
-\multirow[c]{2}{*}{data} & v1.0.0 & v1.0.0 & v1.0.0 & v1.0.0 & v1.0.0 \\ 
-\cline{2-6} 
-& 100 & 68 & 69 & 70 & 79 \\ 
-\hline
-\end{longtabu}
-
-
+\subsection{Metriche dei processi di supporto}
+\input{source/sections/metriche/metriche-processi-di-supporto.tex}
 \newpage
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=15 cm]{source/sections/images/gulpeaseGrafico.JPG}
-    \caption{Grafico dei valori dell'indice di Gulpease}
-\end{figure}
 
-
-\subsubsection{Errori ortografici}
-
-Per quanto riguarda gli errori ortografici, oltre alla revisione fatta dai membri del gruppo, si è utilizzato anche lo spellchecker di Overleaf.
-
+\subsection{Metriche sulla qualità di prodotto}
+\input{source/sections/metriche/metriche-qualita-di-prodotto.tex}
 
 \subsection{Conclusioni}
 
+\subsubsection{Analisi}
+Durante il periodo di analisi tutta la documentazione da presentare in ingresso alla revisione dei requisiti è stata sottoposta ad un'analisi meticolosa della struttura del documento, della chiarezza e degli errori ortografici. La verifica di ogni documento è stata svolta da 2 componenti del gruppo per assicurare il minor numero di errori possibili.
+\newline
 In conclusione dai valori raggiunti dal grafico e dalla tabella soprastanti, si evince un discreto lavoro di redattori e verificatori. In particolare sono stati utili il Piano di Qualifica e le Norme di Progetto per avere un punto di riferimento, sia agli analisti nella scrittura dei documenti, sia ai verificatori per controllare con metriche e con parametri oggettivi.
 
+\subsubsection{Consolidamento dei requisiti}
+Durante questo periodo si sono svolte le attività di consolidamento in anticipazione alla Revisione dei Requisiti.
+In Conclusione i valori delle metriche in questo periodo sono tutte soddifacenti ed alcune ottime, ciò indica il rispetto delle tempistiche ed una buona pianificazione da parte dei redatori del Piano di Progetto
+
+\subsubsection{Programmazione architetturale}
+Durante questo periodo si è individuata una soluzione architetturale del progetto e si è redatto il Proof of concept.
+Gli scopi della programmazione architetturale non sono stati rispettati come si può vedere dalla Schedule variance con valore negativo, che indica un ritardo tamporale da parte del gruppo.
+Si è così deciso di sfruttare la consegna a sportello e recuperare la progettazione, recuperando codì la perdita precedente. Si può vedere che la schedule variance del PAS è 0 che indica il rispetto delle tempistiche e l'Earned value della PAS corrisponde alle perdite del PA.
+I valori del Cost variance leggermente positivi indicano una riuscita del rispetto dei costi e delle tempistiche ma senza un grande margine.
+In Conclusione il gruppo è riuscito a recuperare grazie alla consegna a sportello, e non ha dovuto riconsegnare nella consegna successiva che avrebbe portato un ritardo e una perdita nei costi decisamente maggiore.
+
+\subsubsection{Proggettazione di dettaglio e codifica}
+
+Durante questo periodo il progetto didattico ha preso forma. In particolare il guppo ha posto l'accento sulla concretizzazione della product baseline, quindi dei design pattern, classi e attività necessarie alla codifica.
+Infatti l'esito delle metriche inerenti a questi scopi è ottima il che conferma che una buona pianificazione aumenta la qualità del prodotto finale.
+In particolare le metriche di pianificazione mostrano che non ci sono stati ritardi rispetto alla pianificazione e che si è rispettato il costo pianificato.
+Le metriche della qualità di prodotto sono anch'esse tutte ottime, il che indica una buona direzione dell'andamento del progetto.
+
+Una fonte di rischio di bassa qualità potrebbe essere il valore insufficiente di alcune metriche. Le metriche che hanno avuto un'esito insufficiente ovvero la percentuale dei requisiti soddisfatti, il code coverage e la facilità di comprensione del codice, saranno migliorate
+nella fase finale di validazione e collaudo mediante una maggiore esecuzione di test e facendo leva sull'uso del ciclo di Deming, nel quale
+vengono individuati i problemi, pianificate le soluzioni, verificare la soluzione e infine applicarla.
+In particolare  verranno applicate le seguenti soluzioni:
+\begin{itemize}
+    \item \textbf{Facilità di comprensione del codice}: inserire commenti nelle parti di codice del progetto dove la complessità ciclomatica è superiore a 2
+    \item \textbf{Code coverage}: aumentarne il valore nella fase di validazione e collaudo secondo la pianificazione della prossima fase  ponendo l'accento sui file con valori di FAN-in e FAN-out insufficienti
+    \item \textbf{percentuale requisiti soddisfatti}: soddisfare il 26\% di requisiti rimanenti implementandoli nel progetto
+\end{itemize} 

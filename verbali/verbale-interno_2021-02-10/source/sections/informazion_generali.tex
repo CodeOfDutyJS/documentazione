@@ -1,0 +1,28 @@
+\section{Informazioni generali}
+    % popolare tabella - mettere sempre la virgola al termine di una riga
+    %startTable
+    \def\modifiche { 
+        {Data, 2021-02-10},
+        {Ora inizio, 10:20},
+        {Ora fine, 11:30},
+        {Luogo, Discord},
+        {Presenze, \unexpanded{
+            \begin{itemize}
+                % default: tutti :-))
+                \item Andrea Breggion;
+                \item Matteo Falsetti;
+                \item Alessandro Flori;
+                \item Andrea Mascari;
+                \item Diego Piola;
+                \item Damiano Zanardo;
+            \end{itemize}}
+        },
+        {Ordine del giorno, \unexpanded{
+            \begin{itemize}
+                % elenco punti discussi
+                \item Scelte le tecnologie da utilizzare per il POC;
+            \end{itemize}}
+        },
+    }
+    %endTable
+    \input{../_template/tables/informazioni_generali_table.tex}

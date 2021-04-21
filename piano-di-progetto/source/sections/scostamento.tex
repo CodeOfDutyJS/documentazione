@@ -1,8 +1,7 @@
-\section{Analisi degli scostamenti} % ho studiato economia o.o
+\section{Analisi degli scostamenti} 
 
-\subsection{Consuntivo di periodo}
+\subsection{Consuntivo del periodo di analisi}
 
-\subsubsection{Analisi}
 Durante il periodo di analisi sono state rilevate più ore rispetto a quanto preventivato per i ruoli di:
 
 \begin{itemize}
@@ -37,10 +36,89 @@ Per completezza viene mostrato il preventivo a finire tenendo conto del periodo 
 %endTable
 \input{source/tables/prospetto_economico.tex}
 \noindent Con una differenza rispetto a quanto preventivato di \euro\ 450.
-\subsection{Preventivo a finire}
-\subsubsection{Analisi}
+\subsubsection{Preventivo a finire}
 Il preventivo e quindi l'offerta rimangono invariati rispetto a quanto è stato presentato nella sezione dedicata. Le ore aggiuntive rilevate per quanto riguarda i ruoli di Amministratore e Verificatore sono considerate (esattamente come l'intero periodo di Analisi) un investimento e non sono causa di aggiustamenti in aumento: 
 \begin{itemize}
     \item \textbf{Amministratore:} l'aver speso più ore del previsto per impostare l'ambiente di lavoro sarà sicuramente un vantaggio nelle fasi successive del progetto;
     \item \textbf{Verificatore:} ora che i documenti sono stati avviati, si stima che l'attività di verifica rientrerà nei limiti previsti.
 \end{itemize}
+
+\subsection{Consuntivo del periodo di consolidamento dei requisiti}
+Durante questa fase non si sono verificati scostamenti per quanto riguarda le ore preventivate. 
+
+\subsection{Consuntivo del periodo di progettazione architetturale}
+Durante il periodo di progettazione architetturale il team ha realizzato un Proof of Concept che dimostrasse la fattibilità di \hd\ con le tecnologie individuate (VI021), questo ha richiesto un grande impegno per quanto riguarda l'autoformazione, impegno purtroppo non contabilizzabile. 
+Si riporta quanto segue:
+\begin{itemize}
+    \item \textbf{Analista}: le segnalazioni riportate in fase della correzione della RR hanno richiesto maggior impegno da parte degli analisti;
+    \item \textbf{Programmatore e Progettista}: una volta scelte le tecnologie l'integrazione di queste ha richiesto più lavoro rispetto a quanto preventivato, è stato quindi scelto di dedicare più ore alla programmazione a discapito della progettazione.
+\end{itemize}
+%startTable
+\def\salarycontent{
+    {Amministratore,13,20,260},
+    {Analista,$26+\noexpand\textbf{6}$,25,800},
+    {Progettista,$62-\noexpand\textbf{10}$,22,1144},
+    {Programmatore,$31+\noexpand\textbf{10}$,15,615},
+    {Responsabile,9,30,270},
+    {Verificatore,41,15,615},
+    {Totale,188,127,3704},
+}
+%endTable
+\input{source/tables/prospetto_economico.tex}
+\noindent Gli scostamenti rilevati hanno quindi causato un aumento del costo del periodo di $3704 - 3624 =$ \euro\ 80.
+
+\subsubsection{Preventivo a finire}
+L'aver dedicato più tempo alla programmazione a discapito della progettazione ha le seguenti conseguenze:
+\begin{itemize}
+    \item potrebbe essere causa di refactoring che aumenterebbe il carico di lavoro dei programmatori;
+    \item i programmatori hanno confidenza con le tecnologie adottate.
+\end{itemize}
+È stato deciso di modificare il prospetto orario della fase successiva (Progettazione di dettaglio e codifica) ridistribuendo le ore tra programmatori e progettisti allo scopo di evitare i problemi sopra citati e ridurre l'aumento dell'offerta causato dallo scostamento riportato.
+
+\label{table:nuovo_orario_codifica}
+%startTable
+\def\salarycontent{
+    {Amministratore,22,20,440},
+    {Analista,0,25,0},
+    {Progettista,$80+\noexpand\textbf{10}$,22,1980},
+    {Programmatore,$137-\noexpand\textbf{17}$,15,1800},
+    {Responsabile,15,30,450},
+    {Verificatore,82,15,1230},
+    {Totale,329,127,$5935-\noexpand\textbf{35} = 5900 $ },
+}
+%endTable
+\input{source/tables/prospetto_economico.tex}
+
+\noindent I costi rilevati ammontano quindi a: \euro\ 13704. \cod\ si impegna a riportare i costi a quanto preventivato in sede di RA.
+
+\subsection{Consuntivo del periodo di progettazione di dettaglio e codifica}
+Durante questa fase il team ha portato a termine la Product Baseline, arrivando ad una architettura definitiva.
+In particolare sono già stati implementati la maggior parte dei requisiti funzionali indicati nel documento \AdR .
+Nonostante il verificarsi dei rischi \hyperref[section:rischi_rilevati]{RO3-0}, \hyperref[section:rischi_rilevati]{RO2-1},
+è stato rispettato il preventivo orario deciso nel periodo precedente. 
+Per semplicità è fornito un riferimento al prospetto economico sopra citato: \hyperref[table:nuovo_orario_codifica]{link}.
+    \subsubsection{Preventivo a finire}
+        A seguito del periodo, si riporta comunque una differenza in positivo rispetto all'offerta finale di \euro\ 45,
+        tale differenza \textbf{non} porta ad una effettiva modifica dell'offerta finale, tuttavia è segno di una pianificazione non precisa,
+        oltre che di uno spreco di risorse.
+        Il team si impegna entro il termine della prossima e ultima fase a riportare i costi entro l'offerta fissata e a tal proposito propone
+        un nuovo prospetto orario per la fase successiva di verifica e validazione.
+        %startTable
+        \def\salarycontent{
+            {Amministratore,16,20,320},
+            {Analista,0,25,0},
+            {Progettista,$48-\noexpand\textbf{8}$,22,880},
+            {Programmatore,$43+\noexpand\textbf{7}$,15,750},
+            {Responsabile,15,30,450},
+            {Verificatore,60,15,900},
+            {Totale,176,127,$3371-\noexpand\textbf{71} = 3300 $ },
+        }
+        %endTable
+        \input{source/tables/prospetto_economico.tex}
+        \label{table:nuovo_orario_verifica}
+        Si può notare una diminuzione delle ore del ruolo di progettista, possibile grazie
+        al buon lavoro svolto durante la fase di progettazione di dettaglio e codifica.
+        Inoltre sono state assegnate più ore al programmatore in quanto sono ancora da definire
+        i test di unità e integrazione, nonché alcuni requisiti da implementare. \\
+        \noindent Queste modifiche portano l'offerta finale al nuovo valore di \euro\ 13638 contro
+        i \euro\ 13664 preventivati. 

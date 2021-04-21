@@ -1,0 +1,106 @@
+\section{Analisi dei rischi}
+\label{section:anal_rischi}
+	Nel corso dello sviluppo di un progetto è naturale incorrere in problemi, tuttavia è possibile evitarne alcuni attraverso l'analisi dei rischi. \\ Questa attività è stata effettuata attraverso l'analisi dei principali fattori di rischio, per ogni fattore rilevato è stata utilizzata la medesima procedura di identificazione e risoluzione:
+	\begin{enumerate}
+		\item \textbf{Individuazione}: Individuazione dei fattori di rischio che rallenterebbero o impedirebbero il proseguimento del progetto;
+		\item \textbf{Analisi}: Attività di studio dei fattori di rischio, a ognuno di essi è stata assegnata una probabilità che si verifichi e un indice di gravità, basato sull'impatto che potrebbe avere sul progetto;
+		\item \textbf{Pianificazione di controllo}: Studio di un metodologia per evitare il verificarsi di un determinato fattore di rischio e un piano di risoluzione nel caso essa si verifichi;
+		\item \textbf{Monitoraggio}: I fattori di rischio vanno tenuti sotto constante controllo, cercando di evitare che si verifichino se possibile oppure agire tempestivamente per minimizzarne i danni;
+	\end{enumerate}
+	Ogni fattore di rischio rilevato è stato definito e raggruppato secondo varie tipologie:
+	\begin{itemize}
+		\item \textbf{RT}: Rischio tecnologici;
+		\item \textbf{RO}: Rischi organizzativi;
+		\item \textbf{RI}: Rischi interpersonali;
+	\end{itemize}
+	\subsection{Rischi tecnologici}
+	\def\productquality{
+    		{
+        		Inesperienza tecnologica RT1,
+        		La maggior parte delle tecnologie richieste nello sviluppo del progetto sono nuove per molti componenti del team, 
+        		Il responsabile dovrà rilevare conoscenze e lacune dei vari componenti del team provando a indicare una via ottimale per risolvere la mancanza di conoscenze,
+        		Occorrenza: Alta 
+			Pericolosità: Alta
+    		},
+	}
+	\input{source/tables/tabella_rischi.tex}
+	\textbf{Piano di contingenza}: I compiti più onerosi verranno assegnati a più persone, questo favorirà l'assistenza reciproca e velocizzerà l'esecuzione delle task.
+	\pagebreak
+	\subsection{Rischi organizzativi}
+
+		\def\productquality{
+    			{
+        			Calcolo	tempistiche e costi	
+							RO1,
+        			Causa RT1 le valutazioni sulle tempistiche e i costi economici potrebbero essere imprecisi, 
+        			Vengono predisposte delle tabelle sulle tempistiche e sarà compito del responsabile monitorare l'andamento dello sviluppo,
+        			Occorrenza: Alta 
+							Pericolosità: Alta
+    			},
+		}
+		\input{source/tables/tabella_rischi.tex}
+		\textbf{Piano di contingenza}: Il responsabile in accordo con il task owner provvederà all'assegnazione di maggiori risorse per evitare un prolungarsi delle tempistiche.
+		\def\productquality{
+			{
+        			Impegni
+				Accademici
+				RO2,
+        			Il periodo di sviluppo del progetto inizia a ridosso della sessione d'esami universitaria a cui tutti i membri del gruppo si vedono impegnati in diverse occasioni, 
+        			In sede di riunione il team ha deciso di condividere i periodi di tempo in cui il loro contributo al progetto potrebbe calare o venir meno,
+        			Occorrenza: Media 
+				Pericolosità: Media
+    			},
+		}
+		\input{source/tables/tabella_rischi.tex}
+		\textbf{Piano di contingenza}: Le task verranno assegnate nel rispetto degli altri impegni accademici.
+		\pagebreak
+		\def\productquality{
+			{
+        			Impegni
+				Personali
+				RO3,
+        			è possibile il verificarsi di imprevisti personali che potrebbero influire nel corretto sviluppo del progetto, 
+        			è compito di ogni membro del gruppo segnalare un eventuale imprevisto al responsabile del gruppo in modo da permettergli di riorganizzare l'agenda,
+        			Occorrenza: Bassa 
+				Pericolosità: Bassa
+    			},
+		}
+		\input{source/tables/tabella_rischi.tex}
+		\textbf{Piano di contingenza}: Il responsabile provvederà a riallocare delle risorse cercando di limitare i danni di una possibile temporanea mancanza del task owner.
+		
+		\def\productquality{
+			{
+        			Rischi legati al lavoro a distanza
+				RO4,
+        			La pandemia COVID ci impedisce il lavoro in presenza esponendoci ai rischi del lavoro a distanza, 
+        			Malfunzionamenti hardware o instabilità della connessione a internet non sono fattori di rischio controllabili o pronosticabili,
+        			Occorrenza: Bassa 
+				Pericolosità: Media
+    			},
+		}
+		\input{source/tables/tabella_rischi.tex}
+		\textbf{Piano di contingenza}: Ogni membro del team proverà a sopperire per quanto possibile ai diversi rischi che possono incorrere nel lavoro a distanza
+
+	\subsection{Rischi interpersonali}
+		\def\productquality{
+			{
+        			Irreperibilità momentanea	RI1,
+        			Potrebbero verificarsi momenti in cui uno o più membri del team siano irreperibili, 
+        			è responsabilità di ogni membro del gruppo comunicare eventuali imprevisti e organizzarsi in modo da non ostacolare il calendario delle consegne,
+        			Occorrenza: Bassa 
+				Pericolosità: Media
+    			},
+		}
+		\input{source/tables/tabella_rischi.tex}
+		\textbf{Piano di contingenza}: Il gruppo si è organizzato in modo da avere molteplici vie di comunicazione, rendendo l'irreperibilità momentanea quasi impossibile.
+		\def\productquality{
+			{
+        			Contrasti interni	RI2,
+        			Potrebbero verificarsi divergenze tra i membri del gruppo, 
+        			Ciascuno dei membri del team si impegna ad agire al fine di non ostacolare il naturale svolgimento del progetto e discutere di eventuali problemi solo in seduta di riunione,
+        			Occorrenza: Bassa 
+				Pericolosità: Media
+    			},
+		}
+		\input{source/tables/tabella_rischi.tex}
+		\textbf{Piano di contingenza}: Il responsabile avrà il compito di mediare nel caso si verifichino contrasti interni tra i membri del gruppo.
