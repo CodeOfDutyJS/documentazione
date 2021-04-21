@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2020.12.25)  21 APR 2021 12:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2020.12.25)  9 JAN 2021 10:55
 entering extended mode
-**"c:/Users/Matteo/Documents/HD VIZ/documentazione/piano-di-qualifica/main.tex"
-("c:/Users/Matteo/Documents/HD VIZ/documentazione/piano-di-qualifica/main.tex"
+**"c:/Users/Matteo/Documents/HD VIZ/documentazione/analisi-dei-requisiti/main.tex"
+("c:/Users/Matteo/Documents/HD VIZ/documentazione/analisi-dei-requisiti/main.tex"
 LaTeX2e <2020-10-01> patch level 2
 L3 programming layer <2020-12-07> xparse <2020-03-03> (C:\Users\Matteo\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
 Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
@@ -354,7 +354,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 )
 \Hy@SectionHShift=\skip69
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 31.
+Package hyperref Info: Option `colorlinks' set `true' on input line 29.
  (C:\Users\Matteo\AppData\Local\Programs\MiKTeX\tex/latex/tools\tabularx.sty
 Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
 \TX@col@width=\dimen184
@@ -433,11 +433,11 @@ Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
 \mult@nat@firstbox=\box108
 \colbreak@box=\box109
 \mc@col@check@num=\count304
-) (../_config/config.tex) ("c:/Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source/title_page.tex") ("c:/Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source/changelog.tex") (C:\Users\Matteo\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+) (../_config/config.tex) ("c:/Users\Matteo\Documents\HD VIZ\documentazione\analisi-dei-requisiti\source/title_page.tex") ("c:/Users\Matteo\Documents\HD VIZ\documentazione\analisi-dei-requisiti\source/changelog.tex") (C:\Users\Matteo\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
 \l__kernel_color_stack_int=\count305
 \l__pdf_internal_box=\box110
-) ("c:/Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\main.aux")
+) ("c:/Users\Matteo\Documents\HD VIZ\documentazione\analisi-dei-requisiti\main.aux")
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
@@ -525,12 +525,12 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 12.
 LaTeX Info: Redefining \pageref on input line 12.
 LaTeX Info: Redefining \nameref on input line 12.
- ("c:/Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\main.out") ("c:/Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\main.out")
+ ("c:/Users\Matteo\Documents\HD VIZ\documentazione\analisi-dei-requisiti\main.out") ("c:/Users\Matteo\Documents\HD VIZ\documentazione\analisi-dei-requisiti\main.out")
 \@outlinefile=\write3
 \openout3 = `main.out'.
 
  (../_template/title_page.tex
-<../_template/images/logo.png, id=223, 355.82938pt x 355.82938pt>
+<../_template/images/logo.png, id=235, 355.82938pt x 355.82938pt>
 File: ../_template/images/logo.png Graphic file (type png)
 <use ../_template/images/logo.png>
 Package pdftex.def Info: ../_template/images/logo.png  used on input line 8.
@@ -539,60 +539,22 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 20.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 20.
-
-Underfull \hbox (badness 10000) in paragraph at lines 23--23
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 24--24
-
- []
-
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 38.
-(C:\Users\Matteo\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
+ (C:\Users\Matteo\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 ) [1
 
 {C:/Users/Matteo/AppData/Local/MiKTeX/pdftex/config/pdftex.map} <../_template/images/logo.png>]) (../_template/changelog.tex
-Overfull \hbox (3.84398pt too wide) in paragraph at lines 29--29
- []\T1/cmr/bx/n/10 Versione| 
- []
-
-
-Overfull \hbox (4.01909pt too wide) in paragraph at lines 29--29
- []\T1/cmr/bx/n/10 Nominativo| 
- []
-
-
-Overfull \hbox (3.60252pt too wide) in paragraph at lines 29--29
- []\T1/cmr/bx/n/10 Verificatore| 
- []
-
-
-Overfull \hbox (1.98486pt too wide) in paragraph at lines 29--29
- []\T1/cmr/m/n/10 Responsabile 
- []
-
-
-Overfull \hbox (1.98486pt too wide) in paragraph at lines 29--29
- []\T1/cmr/m/n/10 Responsabile 
- []
-
-
-Overfull \hbox (14.62067pt too wide) in paragraph at lines 29--29
- []\T1/cmr/m/n/10 Amministratore| 
- []
-
-
 Underfull \vbox (badness 10000) detected at line 29
  []
 
-<../_template/images/logo_crop.png, id=237, 848.16875pt x 261.47687pt>
+)
+<../_template/images/logo_crop.png, id=249, 848.16875pt x 261.47687pt>
 File: ../_template/images/logo_crop.png Graphic file (type png)
 <use ../_template/images/logo_crop.png>
-Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 29.
+Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 19.
 (pdftex.def)             Requested size: 50.88792pt x 15.68793pt.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
 Make it at least 19.28796pt.
@@ -602,18 +564,13 @@ This may cause the page layout to be inconsistent, however.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.29 \end{longtabu}
-                    [1 <../_template/images/logo_crop.png>])
+l.19 
+      [1 <../_template/images/logo_crop.png>] ("c:/Users\Matteo\Documents\HD VIZ\documentazione\analisi-dei-requisiti\main.toc"
 File: ../_template/images/logo_crop.png Graphic file (type png)
 <use ../_template/images/logo_crop.png>
-Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 19.
+Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 57.
 (pdftex.def)             Requested size: 50.88792pt x 15.68793pt.
- [2] ("c:/Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\main.toc"
-File: ../_template/images/logo_crop.png Graphic file (type png)
-<use ../_template/images/logo_crop.png>
-Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 60.
-(pdftex.def)             Requested size: 50.88792pt x 15.68793pt.
- [3])
+ [2])
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
@@ -621,426 +578,283 @@ File: ../_template/images/logo_crop.png Graphic file (type png)
 <use ../_template/images/logo_crop.png>
 Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 23.
 (pdftex.def)             Requested size: 50.88792pt x 15.68793pt.
- [4] ("c:/Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source/sections/introduzione.tex"
-Overfull \hbox (12.51115pt too wide) in paragraph at lines 31--32
-[]\T1/cmr/bx/n/10 Complessità ci-clo-ma-ti-ca\T1/cmr/m/n/10 : [][]https://it.wikipedia.org/wiki/Complessit%C3%A0_ciclomatica[][]; 
- []
+ [3] ("c:/Users\Matteo\Documents\HD VIZ\documentazione\analisi-dei-requisiti\main.lot")
+\tf@lot=\write5
+\openout5 = `main.lot'.
 
-
-Overfull \hbox (6.4057pt too wide) in paragraph at lines 32--33
-[]\T1/cmr/bx/n/10 Sfin e Sfout\T1/cmr/m/n/10 : [][]https://www.math.unipd.it/ tullio/IS-1/2004/Approfondimenti/Fan-in_Fan-
- []
-
-
-Overfull \hbox (45.21579pt too wide) in paragraph at lines 33--34
-[]\T1/cmr/bx/n/10 Diverse me-tri-che e ri-fe-ri-men-ti a ISO 9126\T1/cmr/m/n/10 : [][]http://www.colonese.it/00-Manuali_Pubblicatii/07-
+File: ../_template/images/logo_crop.png Graphic file (type png)
+<use ../_template/images/logo_crop.png>
+Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 28.
+(pdftex.def)             Requested size: 50.88792pt x 15.68793pt.
+ [4] ("c:/Users\Matteo\Documents\HD VIZ\documentazione\analisi-dei-requisiti\source/sections/introduzione.tex"
+Overfull \hbox (0.40022pt too wide) in paragraph at lines 15--17
+[][]$\T1/cmtt/m/n/10 https : / / www . math . unipd . it / ~rcardin / swea / 2021 / Diagrammi % 20Use % 20Case _ 4x4 . pdf$[][] 
  []
 
 )
 File: ../_template/images/logo_crop.png Graphic file (type png)
 <use ../_template/images/logo_crop.png>
-Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 31.
+Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 32.
 (pdftex.def)             Requested size: 50.88792pt x 15.68793pt.
- [5] ("c:/Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source/sections/qualita_di_processo.tex" ("c:/Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source/tables/metriche_qualita.tex"
-Underfull \vbox (badness 10000) detected at line 33
- []
-
-)
+ [5] ("c:/Users\Matteo\Documents\HD VIZ\documentazione\analisi-dei-requisiti\source/sections/descrizione_generale.tex") ("c:/Users\Matteo\Documents\HD VIZ\documentazione\analisi-dei-requisiti\source/sections/casi_uso.tex"
 File: ../_template/images/logo_crop.png Graphic file (type png)
 <use ../_template/images/logo_crop.png>
-Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 34.
+Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 1.
 (pdftex.def)             Requested size: 50.88792pt x 15.68793pt.
- [6] ("c:/Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source/tables/metriche_qualita.tex"
-Underfull \vbox (badness 10000) detected at line 33
- []
-
-)
+ [6] ("c:/Users\Matteo\Documents\HD VIZ\documentazione\analisi-dei-requisiti\source/sections/casi-uso/uc1.tex"
+<source/sections/casi-uso/diagrams/uc1.pdf, id=358, 624.41275pt x 254.8722pt>
+File: source/sections/casi-uso/diagrams/uc1.pdf Graphic file (type pdf)
+<use source/sections/casi-uso/diagrams/uc1.pdf>
+Package pdftex.def Info: source/sections/casi-uso/diagrams/uc1.pdf  used on input line 6.
+(pdftex.def)             Requested size: 418.25368pt x 170.7207pt.
 File: ../_template/images/logo_crop.png Graphic file (type png)
 <use ../_template/images/logo_crop.png>
-Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 84.
+Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 25.
 (pdftex.def)             Requested size: 50.88792pt x 15.68793pt.
- [7]
+ [7 <c:/Users/Matteo/Documents/HD VIZ/documentazione/analisi-dei-requisiti/source/sections/casi-uso/diagrams/uc1.pdf
+
+pdfTeX warning: pdflatex (file c:/Users/Matteo/Documents/HD VIZ/documentazione/analisi-dei-requisiti/source/sections/casi-uso/diagrams/uc1.pdf): PDF inclusion: invalid other resource which is no dict (key 'ProcSets', type <array>); ignored.
+>]
 File: ../_template/images/logo_crop.png Graphic file (type png)
 <use ../_template/images/logo_crop.png>
-Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 112.
+Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 91.
 (pdftex.def)             Requested size: 50.88792pt x 15.68793pt.
- [8] ("c:/Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source/tables/metriche_qualita.tex"
-Underfull \vbox (badness 10000) detected at line 33
- []
-
-) ("c:/Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source/tables/metriche_qualita.tex"
-Underfull \vbox (badness 10000) detected at line 33
- []
-
-)
+ [8])
 File: ../_template/images/logo_crop.png Graphic file (type png)
 <use ../_template/images/logo_crop.png>
-Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 163.
+Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 14.
 (pdftex.def)             Requested size: 50.88792pt x 15.68793pt.
- [9] ("c:/Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source/tables/metriche_qualita.tex"
-Underfull \vbox (badness 10000) detected at line 33
- []
+ [9] ("c:/Users\Matteo\Documents\HD VIZ\documentazione\analisi-dei-requisiti\source/sections/casi-uso/uc2.tex"
+<source/sections/casi-uso/diagrams/uc2.pdf, id=436, 364.48169pt x 413.62529pt>
+File: source/sections/casi-uso/diagrams/uc2.pdf Graphic file (type pdf)
+<use source/sections/casi-uso/diagrams/uc2.pdf>
+Package pdftex.def Info: source/sections/casi-uso/diagrams/uc2.pdf  used on input line 6.
+(pdftex.def)             Requested size: 313.69025pt x 355.99481pt.
+File: ../_template/images/logo_crop.png Graphic file (type png)
+<use ../_template/images/logo_crop.png>
+Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 29.
+(pdftex.def)             Requested size: 50.88792pt x 15.68793pt.
+ [10 <c:/Users/Matteo/Documents/HD VIZ/documentazione/analisi-dei-requisiti/source/sections/casi-uso/diagrams/uc2.pdf
 
-))
+pdfTeX warning: pdflatex (file c:/Users/Matteo/Documents/HD VIZ/documentazione/analisi-dei-requisiti/source/sections/casi-uso/diagrams/uc2.pdf): PDF inclusion: invalid other resource which is no dict (key 'ProcSets', type <array>); ignored.
+>]
+File: ../_template/images/logo_crop.png Graphic file (type png)
+<use ../_template/images/logo_crop.png>
+Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 93.
+(pdftex.def)             Requested size: 50.88792pt x 15.68793pt.
+ [11])
+File: ../_template/images/logo_crop.png Graphic file (type png)
+<use ../_template/images/logo_crop.png>
+Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 16.
+(pdftex.def)             Requested size: 50.88792pt x 15.68793pt.
+ [12] ("c:/Users\Matteo\Documents\HD VIZ\documentazione\analisi-dei-requisiti\source/sections/casi-uso/uc3.tex"
+<source/sections/casi-uso/diagrams/uc3.pdf, id=492, 212.71469pt x 204.765pt>
+File: source/sections/casi-uso/diagrams/uc3.pdf Graphic file (type pdf)
+<use source/sections/casi-uso/diagrams/uc3.pdf>
+Package pdftex.def Info: source/sections/casi-uso/diagrams/uc3.pdf  used on input line 6.
+(pdftex.def)             Requested size: 209.12683pt x 201.32132pt.
+File: ../_template/images/logo_crop.png Graphic file (type png)
+<use ../_template/images/logo_crop.png>
+Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 36.
+(pdftex.def)             Requested size: 50.88792pt x 15.68793pt.
+ [13 <c:/Users/Matteo/Documents/HD VIZ/documentazione/analisi-dei-requisiti/source/sections/casi-uso/diagrams/uc3.pdf
+
+pdfTeX warning: pdflatex (file c:/Users/Matteo/Documents/HD VIZ/documentazione/analisi-dei-requisiti/source/sections/casi-uso/diagrams/uc3.pdf): PDF inclusion: invalid other resource which is no dict (key 'ProcSets', type <array>); ignored.
+>])
+File: ../_template/images/logo_crop.png Graphic file (type png)
+<use ../_template/images/logo_crop.png>
+Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 18.
+(pdftex.def)             Requested size: 50.88792pt x 15.68793pt.
+ [14] ("c:/Users\Matteo\Documents\HD VIZ\documentazione\analisi-dei-requisiti\source/sections/casi-uso/uc4.tex"
+<source/sections/casi-uso/diagrams/uc4.pdf, id=534, 212.71469pt x 189.8292pt>
+File: source/sections/casi-uso/diagrams/uc4.pdf Graphic file (type pdf)
+<use source/sections/casi-uso/diagrams/uc4.pdf>
+Package pdftex.def Info: source/sections/casi-uso/diagrams/uc4.pdf  used on input line 6.
+(pdftex.def)             Requested size: 209.12683pt x 186.6367pt.
+File: ../_template/images/logo_crop.png Graphic file (type png)
+<use ../_template/images/logo_crop.png>
+Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 42.
+(pdftex.def)             Requested size: 50.88792pt x 15.68793pt.
+ [15 <c:/Users/Matteo/Documents/HD VIZ/documentazione/analisi-dei-requisiti/source/sections/casi-uso/diagrams/uc4.pdf>])
+File: ../_template/images/logo_crop.png Graphic file (type png)
+<use ../_template/images/logo_crop.png>
+Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 20.
+(pdftex.def)             Requested size: 50.88792pt x 15.68793pt.
+ [16] ("c:/Users\Matteo\Documents\HD VIZ\documentazione\analisi-dei-requisiti\source/sections/casi-uso/uc5.tex"
+<source/sections/casi-uso/diagrams/uc5.pdf, id=574, 364.48169pt x 363.27718pt>
+File: source/sections/casi-uso/diagrams/uc5.pdf Graphic file (type pdf)
+<use source/sections/casi-uso/diagrams/uc5.pdf>
+Package pdftex.def Info: source/sections/casi-uso/diagrams/uc5.pdf  used on input line 6.
+(pdftex.def)             Requested size: 292.77629pt x 291.81392pt.
 File: ../_template/images/logo_crop.png Graphic file (type png)
 <use ../_template/images/logo_crop.png>
 Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 33.
 (pdftex.def)             Requested size: 50.88792pt x 15.68793pt.
- [10] ("c:/Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source/sections/qualita_di_prodotto.tex" ("c:/Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source/tables/metriche_qualita.tex"
-Overfull \hbox (4.4211pt too wide) in paragraph at lines 13--21
-\T1/cmr/m/n/10 ces-sa-rie per ope-ra-re in de-ter-mi-na-te con-di-zio-ni, cioè in un de-ter-mi-na-to con-te-sto.                      
- []
-
-
-Underfull \vbox (badness 10000) detected at line 33
- []
-
-) ("c:/Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source/tables/metriche_qualita.tex"
-Underfull \vbox (badness 10000) detected at line 33
- []
-
-) ("c:/Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source/tables/metriche_qualita.tex"
-Overfull \hbox (97.48195pt too wide) in paragraph at lines 43--21
-\T1/cmr/m/n/10 di ri-sul-ta-re at-traen-te da par-te di un uten-te sot-to de-ter-mi-na-te con-di-zio-ni d'u-so.                                              
- []
-
-
-Underfull \vbox (badness 10000) detected at line 33
- []
-
+ [17 <c:/Users/Matteo/Documents/HD VIZ/documentazione/analisi-dei-requisiti/source/sections/casi-uso/diagrams/uc5.pdf>]
 File: ../_template/images/logo_crop.png Graphic file (type png)
 <use ../_template/images/logo_crop.png>
-Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 33.
+Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 81.
 (pdftex.def)             Requested size: 50.88792pt x 15.68793pt.
-[11]) ("c:/Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source/tables/metriche_qualita.tex"
-Underfull \vbox (badness 10000) detected at line 33
- []
-
-) ("c:/Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source/tables/metriche_qualita.tex"
-Underfull \vbox (badness 10000) detected at line 33
- []
-
-)) ("c:/Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source/sections/specifiche_dei_test.tex"
+ [18]
 File: ../_template/images/logo_crop.png Graphic file (type png)
 <use ../_template/images/logo_crop.png>
-Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 9.
+Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 120.
 (pdftex.def)             Requested size: 50.88792pt x 15.68793pt.
- [12]
-Underfull \hbox (badness 10000) in paragraph at lines 18--19
-
- []
-
-("c:/Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source/tables/descrizione_test.tex"
-Underfull \vbox (badness 10000) detected at line 27
- []
-
+ [19]
 File: ../_template/images/logo_crop.png Graphic file (type png)
 <use ../_template/images/logo_crop.png>
-Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 27.
+Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 176.
 (pdftex.def)             Requested size: 50.88792pt x 15.68793pt.
-[13]
+ [20])
 File: ../_template/images/logo_crop.png Graphic file (type png)
 <use ../_template/images/logo_crop.png>
-Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 27.
+Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 22.
 (pdftex.def)             Requested size: 50.88792pt x 15.68793pt.
- [14]
+ [21] ("c:/Users\Matteo\Documents\HD VIZ\documentazione\analisi-dei-requisiti\source/sections/casi-uso/uc6.tex"
+<source/sections/casi-uso/diagrams/uc6.pdf, id=678, 364.48169pt x 277.035pt>
+File: source/sections/casi-uso/diagrams/uc6.pdf Graphic file (type pdf)
+<use source/sections/casi-uso/diagrams/uc6.pdf>
+Package pdftex.def Info: source/sections/casi-uso/diagrams/uc6.pdf  used on input line 6.
+(pdftex.def)             Requested size: 313.69025pt x 238.43567pt.
 File: ../_template/images/logo_crop.png Graphic file (type png)
 <use ../_template/images/logo_crop.png>
-Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 27.
+Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 38.
 (pdftex.def)             Requested size: 50.88792pt x 15.68793pt.
- [15]) ("c:/Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source/tables/descrizione_test.tex"
-Underfull \vbox (badness 10000) detected at line 27
- []
-
-) ("c:/Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source/tables/descrizione_test.tex"
-Underfull \vbox (badness 10000) detected at line 27
- []
-
+ [22 <c:/Users/Matteo/Documents/HD VIZ/documentazione/analisi-dei-requisiti/source/sections/casi-uso/diagrams/uc6.pdf>])
 File: ../_template/images/logo_crop.png Graphic file (type png)
 <use ../_template/images/logo_crop.png>
-Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 27.
+Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 24.
 (pdftex.def)             Requested size: 50.88792pt x 15.68793pt.
-[16]) ("c:/Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source/tables/descrizione_test.tex"
-Overfull \hbox (126.05785pt too wide) in paragraph at lines 305--15
-[]                                                                                                                                                                                                                                                      
- []
-
-
-Underfull \vbox (badness 10000) detected at line 27
- []
-
+ [23] ("c:/Users\Matteo\Documents\HD VIZ\documentazione\analisi-dei-requisiti\source/sections/casi-uso/uc7.tex"
+<source/sections/casi-uso/diagrams/uc7.pdf, id=735, 516.00781pt x 232.9503pt>
+File: source/sections/casi-uso/diagrams/uc7.pdf Graphic file (type pdf)
+<use source/sections/casi-uso/diagrams/uc7.pdf>
+Package pdftex.def Info: source/sections/casi-uso/diagrams/uc7.pdf  used on input line 6.
+(pdftex.def)             Requested size: 376.42575pt x 169.935pt.
 File: ../_template/images/logo_crop.png Graphic file (type png)
 <use ../_template/images/logo_crop.png>
-Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 27.
+Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 46.
 (pdftex.def)             Requested size: 50.88792pt x 15.68793pt.
-[17]
+ [24 <c:/Users/Matteo/Documents/HD VIZ/documentazione/analisi-dei-requisiti/source/sections/casi-uso/diagrams/uc7.pdf>]
 File: ../_template/images/logo_crop.png Graphic file (type png)
 <use ../_template/images/logo_crop.png>
-Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 27.
+Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 100.
 (pdftex.def)             Requested size: 50.88792pt x 15.68793pt.
- [18]) ("c:/Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source/tables/descrizione_test.tex"
-Underfull \vbox (badness 10000) detected at line 27
- []
-
-File: ../_template/images/logo_crop.png Graphic file (type png)
-<use ../_template/images/logo_crop.png>
-Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 27.
-(pdftex.def)             Requested size: 50.88792pt x 15.68793pt.
-[19]) ("c:/Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source/tables/descrizione_test.tex"
-Underfull \vbox (badness 10000) detected at line 27
- []
-
-)) ("c:/Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source/sections/resoconti_verifica.tex" ("c:/Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source/sections/metriche/metriche-processi-primari.tex"
-<source/sections/images/num-requisiti.png, id=440, 723.70375pt x 359.3425pt>
-File: source/sections/images/num-requisiti.png Graphic file (type png)
-<use source/sections/images/num-requisiti.png>
-Package pdftex.def Info: source/sections/images/num-requisiti.png  used on input line 5.
-(pdftex.def)             Requested size: 426.79134pt x 211.91702pt.
-
-Overfull \hbox (8.53766pt too wide) in paragraph at lines 5--6
- [][] 
- []
-
-File: ../_template/images/logo_crop.png Graphic file (type png)
-<use ../_template/images/logo_crop.png>
-Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 8.
-(pdftex.def)             Requested size: 50.88792pt x 15.68793pt.
-[20]
-<source/sections/images/percentuale-requisiti.png, id=448, 756.8275pt x 372.39125pt>
-File: source/sections/images/percentuale-requisiti.png Graphic file (type png)
-<use source/sections/images/percentuale-requisiti.png>
-Package pdftex.def Info: source/sections/images/percentuale-requisiti.png  used on input line 11.
-(pdftex.def)             Requested size: 426.79134pt x 209.998pt.
-
-Overfull \hbox (8.53766pt too wide) in paragraph at lines 11--12
- [][] 
- []
-
-File: ../_template/images/logo_crop.png Graphic file (type png)
-<use ../_template/images/logo_crop.png>
-Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 19.
-(pdftex.def)             Requested size: 50.88792pt x 15.68793pt.
-[21 <c:/Users/Matteo/Documents/HD VIZ/documentazione/piano-di-qualifica/source/sections/images/num-requisiti.png> <c:/Users/Matteo/Documents/HD VIZ/documentazione/piano-di-qualifica/source/sections/images/percentuale-requisiti.png>]
-Underfull \vbox (badness 10000) detected at line 46
- []
-
-<source/sections/images/Earned_value.png, id=458, 602.25pt x 372.39125pt>
-File: source/sections/images/Earned_value.png Graphic file (type png)
-<use source/sections/images/Earned_value.png>
-Package pdftex.def Info: source/sections/images/Earned_value.png  used on input line 51.
-(pdftex.def)             Requested size: 369.88582pt x 228.72093pt.
-<source/sections/images/planned_value.png, id=459, 602.25pt x 372.39125pt>
-File: source/sections/images/planned_value.png Graphic file (type png)
-<use source/sections/images/planned_value.png>
-Package pdftex.def Info: source/sections/images/planned_value.png  used on input line 57.
-(pdftex.def)             Requested size: 369.88582pt x 228.72093pt.
-File: ../_template/images/logo_crop.png Graphic file (type png)
-<use ../_template/images/logo_crop.png>
-Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 60.
-(pdftex.def)             Requested size: 50.88792pt x 15.68793pt.
-[22 <c:/Users/Matteo/Documents/HD VIZ/documentazione/piano-di-qualifica/source/sections/images/Earned_value.png>]
-<source/sections/images/actual_cost.png, id=468, 602.25pt x 372.39125pt>
-File: source/sections/images/actual_cost.png Graphic file (type png)
-<use source/sections/images/actual_cost.png>
-Package pdftex.def Info: source/sections/images/actual_cost.png  used on input line 64.
-(pdftex.def)             Requested size: 369.88582pt x 228.72093pt.
-<source/sections/images/schedule_variance.png, id=469, 602.25pt x 460.72125pt>
-File: source/sections/images/schedule_variance.png Graphic file (type png)
-<use source/sections/images/schedule_variance.png>
-Package pdftex.def Info: source/sections/images/schedule_variance.png  used on input line 71.
-(pdftex.def)             Requested size: 369.88582pt x 282.97281pt.
-File: ../_template/images/logo_crop.png Graphic file (type png)
-<use ../_template/images/logo_crop.png>
-Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 74.
-(pdftex.def)             Requested size: 50.88792pt x 15.68793pt.
- [23 <c:/Users/Matteo/Documents/HD VIZ/documentazione/piano-di-qualifica/source/sections/images/planned_value.png> <c:/Users/Matteo/Documents/HD VIZ/documentazione/piano-di-qualifica/source/sections/images/actual_cost.png>]
-<source/sections/images/cost_variance.png, id=479, 602.25pt x 460.72125pt>
-File: source/sections/images/cost_variance.png Graphic file (type png)
-<use source/sections/images/cost_variance.png>
-Package pdftex.def Info: source/sections/images/cost_variance.png  used on input line 78.
-(pdftex.def)             Requested size: 284.52756pt x 217.67085pt.
-) ("c:/Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source/sections/metriche/metriche-processi-di-supporto.tex"
-File: ../_template/images/logo_crop.png Graphic file (type png)
-<use ../_template/images/logo_crop.png>
-Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 5.
-(pdftex.def)             Requested size: 50.88792pt x 15.68793pt.
- [24 <c:/Users/Matteo/Documents/HD VIZ/documentazione/piano-di-qualifica/source/sections/images/schedule_variance.png> <c:/Users/Matteo/Documents/HD VIZ/documentazione/piano-di-qualifica/source/sections/images/cost_variance.png>]
-Underfull \vbox (badness 10000) detected at line 39
- []
-
-<source/sections/images/IdG_NdP.png, id=490, 602.25pt x 372.39125pt>
-File: source/sections/images/IdG_NdP.png Graphic file (type png)
-<use source/sections/images/IdG_NdP.png>
-Package pdftex.def Info: source/sections/images/IdG_NdP.png  used on input line 44.
-(pdftex.def)             Requested size: 369.88582pt x 228.72093pt.
-<source/sections/images/IdG_AR.png, id=491, 602.25pt x 372.39125pt>
-File: source/sections/images/IdG_AR.png Graphic file (type png)
-<use source/sections/images/IdG_AR.png>
-Package pdftex.def Info: source/sections/images/IdG_AR.png  used on input line 50.
-(pdftex.def)             Requested size: 369.88582pt x 228.72093pt.
-<source/sections/images/IdG_PdQ.png, id=492, 602.25pt x 372.39125pt>
-File: source/sections/images/IdG_PdQ.png Graphic file (type png)
-<use source/sections/images/IdG_PdQ.png>
-Package pdftex.def Info: source/sections/images/IdG_PdQ.png  used on input line 55.
-(pdftex.def)             Requested size: 369.88582pt x 228.72093pt.
-File: ../_template/images/logo_crop.png Graphic file (type png)
-<use ../_template/images/logo_crop.png>
-Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 57.
-(pdftex.def)             Requested size: 50.88792pt x 15.68793pt.
-[25 <c:/Users/Matteo/Documents/HD VIZ/documentazione/piano-di-qualifica/source/sections/images/IdG_NdP.png>]
-<source/sections/images/IdG_PdP.png, id=501, 602.25pt x 372.39125pt>
-File: source/sections/images/IdG_PdP.png Graphic file (type png)
-<use source/sections/images/IdG_PdP.png>
-Package pdftex.def Info: source/sections/images/IdG_PdP.png  used on input line 60.
-(pdftex.def)             Requested size: 369.88582pt x 228.72093pt.
-File: ../_template/images/logo_crop.png Graphic file (type png)
-<use ../_template/images/logo_crop.png>
-Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 63.
-(pdftex.def)             Requested size: 50.88792pt x 15.68793pt.
- [26 <c:/Users/Matteo/Documents/HD VIZ/documentazione/piano-di-qualifica/source/sections/images/IdG_AR.png> <c:/Users/Matteo/Documents/HD VIZ/documentazione/piano-di-qualifica/source/sections/images/IdG_PdQ.png>]
-Underfull \vbox (badness 10000) detected at line 114
- []
-
-File: ../_template/images/logo_crop.png Graphic file (type png)
-<use ../_template/images/logo_crop.png>
-Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 114.
-(pdftex.def)             Requested size: 50.88792pt x 15.68793pt.
-[27 <c:/Users/Matteo/Documents/HD VIZ/documentazione/piano-di-qualifica/source/sections/images/IdG_PdP.png>]
-<source/sections/images/percentuale-metriche-soddisfatte.png, id=567, 602.25pt x 372.39125pt>
-File: source/sections/images/percentuale-metriche-soddisfatte.png Graphic file (type png)
-<use source/sections/images/percentuale-metriche-soddisfatte.png>
-Package pdftex.def Info: source/sections/images/percentuale-metriche-soddisfatte.png  used on input line 118.
-(pdftex.def)             Requested size: 398.33858pt x 246.31311pt.
-<source/sections/images/CodeCoverage.png, id=568, 1103.12125pt x 351.3125pt>
-File: source/sections/images/CodeCoverage.png Graphic file (type png)
-<use source/sections/images/CodeCoverage.png>
-Package pdftex.def Info: source/sections/images/CodeCoverage.png  used on input line 127.
-(pdftex.def)             Requested size: 455.24408pt x 144.98251pt.
-
-Overfull \hbox (36.9904pt too wide) in paragraph at lines 127--128
- [][] 
- []
-
-File: ../_template/images/logo_crop.png Graphic file (type png)
-<use ../_template/images/logo_crop.png>
-Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 130.
-(pdftex.def)             Requested size: 50.88792pt x 15.68793pt.
-[28 <c:/Users/Matteo/Documents/HD VIZ/documentazione/piano-di-qualifica/source/sections/images/percentuale-metriche-soddisfatte.png>]
-<source/sections/images/num-test.png, id=576, 602.25pt x 372.39125pt>
-File: source/sections/images/num-test.png Graphic file (type png)
-<use source/sections/images/num-test.png>
-Package pdftex.def Info: source/sections/images/num-test.png  used on input line 136.
-(pdftex.def)             Requested size: 284.52756pt x 175.93874pt.
-<source/sections/images/torta-test.png, id=577, 602.25pt x 304.13625pt>
-File: source/sections/images/torta-test.png Graphic file (type png)
-<use source/sections/images/torta-test.png>
-Package pdftex.def Info: source/sections/images/torta-test.png  used on input line 142.
-(pdftex.def)             Requested size: 284.52756pt x 143.69121pt.
-)
-File: ../_template/images/logo_crop.png Graphic file (type png)
-<use ../_template/images/logo_crop.png>
-Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 11.
-(pdftex.def)             Requested size: 50.88792pt x 15.68793pt.
- [29 <c:/Users/Matteo/Documents/HD VIZ/documentazione/piano-di-qualifica/source/sections/images/CodeCoverage.png> <c:/Users/Matteo/Documents/HD VIZ/documentazione/piano-di-qualifica/source/sections/images/num-test.png>]
-File: ../_template/images/logo_crop.png Graphic file (type png)
-<use ../_template/images/logo_crop.png>
-Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 11.
-(pdftex.def)             Requested size: 50.88792pt x 15.68793pt.
- [30 <c:/Users/Matteo/Documents/HD VIZ/documentazione/piano-di-qualifica/source/sections/images/torta-test.png>] ("c:/Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source/sections/metriche/metriche-qualita-di-prodotto.tex"
-Underfull \vbox (badness 10000) detected at line 16
- []
-
-<source/sections/images/response-time.png, id=595, 602.25pt x 372.39125pt>
-File: source/sections/images/response-time.png Graphic file (type png)
-<use source/sections/images/response-time.png>
-Package pdftex.def Info: source/sections/images/response-time.png  used on input line 28.
-(pdftex.def)             Requested size: 284.52756pt x 175.93874pt.
-<source/sections/images/tabella_CC.JPG, id=596, 280.04625pt x 208.98074pt>
-File: source/sections/images/tabella_CC.JPG Graphic file (type jpg)
-<use source/sections/images/tabella_CC.JPG>
-Package pdftex.def Info: source/sections/images/tabella_CC.JPG  used on input line 41.
-(pdftex.def)             Requested size: 284.52756pt x 212.33482pt.
-File: ../_template/images/logo_crop.png Graphic file (type png)
-<use ../_template/images/logo_crop.png>
-Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 44.
-(pdftex.def)             Requested size: 50.88792pt x 15.68793pt.
-[31 <c:/Users/Matteo/Documents/HD VIZ/documentazione/piano-di-qualifica/source/sections/images/response-time.png>]
-<source/sections/images/CC.png, id=605, 506.89375pt x 386.44376pt>
-File: source/sections/images/CC.png Graphic file (type png)
-<use source/sections/images/CC.png>
-Package pdftex.def Info: source/sections/images/CC.png  used on input line 47.
-(pdftex.def)             Requested size: 284.52756pt x 216.92003pt.
-<source/sections/images/facilitaDelCodice.png, id=606, 607.26875pt x 386.44376pt>
-File: source/sections/images/facilitaDelCodice.png Graphic file (type png)
-<use source/sections/images/facilitaDelCodice.png>
-Package pdftex.def Info: source/sections/images/facilitaDelCodice.png  used on input line 55.
-(pdftex.def)             Requested size: 284.52756pt x 181.0625pt.
-File: ../_template/images/logo_crop.png Graphic file (type png)
-<use ../_template/images/logo_crop.png>
-Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 58.
-(pdftex.def)             Requested size: 50.88792pt x 15.68793pt.
- [32 <c:/Users/Matteo/Documents/HD VIZ/documentazione/piano-di-qualifica/source/sections/images/tabella_CC.JPG> <c:/Users/Matteo/Documents/HD VIZ/documentazione/piano-di-qualifica/source/sections/images/CC.png>]
-<source/sections/images/Valori-delle-righe.png, id=615, 602.25pt x 372.39125pt>
-File: source/sections/images/Valori-delle-righe.png Graphic file (type png)
-<use source/sections/images/Valori-delle-righe.png>
-Package pdftex.def Info: source/sections/images/Valori-delle-righe.png  used on input line 64.
-(pdftex.def)             Requested size: 284.52756pt x 175.93874pt.
-<source/sections/images/numCodice.png, id=616, 602.25pt x 372.39125pt>
-File: source/sections/images/numCodice.png Graphic file (type png)
-<use source/sections/images/numCodice.png>
-Package pdftex.def Info: source/sections/images/numCodice.png  used on input line 70.
-(pdftex.def)             Requested size: 284.52756pt x 175.93874pt.
-File: ../_template/images/logo_crop.png Graphic file (type png)
-<use ../_template/images/logo_crop.png>
-Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 73.
-(pdftex.def)             Requested size: 50.88792pt x 15.68793pt.
- [33 <c:/Users/Matteo/Documents/HD VIZ/documentazione/piano-di-qualifica/source/sections/images/facilitaDelCodice.png> <c:/Users/Matteo/Documents/HD VIZ/documentazione/piano-di-qualifica/source/sections/images/Valori-delle-righe.png>]
-<source/sections/images/facilita_comprensione.png, id=626, 602.25pt x 372.39125pt>
-File: source/sections/images/facilita_comprensione.png Graphic file (type png)
-<use source/sections/images/facilita_comprensione.png>
-Package pdftex.def Info: source/sections/images/facilita_comprensione.png  used on input line 76.
-(pdftex.def)             Requested size: 284.52756pt x 175.93874pt.
-
-Underfull \vbox (badness 10000) detected at line 103
- []
-
-File: ../_template/images/logo_crop.png Graphic file (type png)
-<use ../_template/images/logo_crop.png>
-Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 103.
-(pdftex.def)             Requested size: 50.88792pt x 15.68793pt.
-[34 <c:/Users/Matteo/Documents/HD VIZ/documentazione/piano-di-qualifica/source/sections/images/numCodice.png> <c:/Users/Matteo/Documents/HD VIZ/documentazione/piano-di-qualifica/source/sections/images/facilita_comprensione.png>]
-<source/sections/images/SfinSfout.png, id=637, 602.25pt x 462.72874pt>
-File: source/sections/images/SfinSfout.png Graphic file (type png)
-<use source/sections/images/SfinSfout.png>
-Package pdftex.def Info: source/sections/images/SfinSfout.png  used on input line 107.
-(pdftex.def)             Requested size: 369.88582pt x 284.2058pt.
-)
+ [25])
 File: ../_template/images/logo_crop.png Graphic file (type png)
 <use ../_template/images/logo_crop.png>
 Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 26.
 (pdftex.def)             Requested size: 50.88792pt x 15.68793pt.
- [35 <c:/Users/Matteo/Documents/HD VIZ/documentazione/piano-di-qualifica/source/sections/images/SfinSfout.png>]) 
+ [26] ("c:/Users\Matteo\Documents\HD VIZ\documentazione\analisi-dei-requisiti\source/sections/casi-uso/uc8.tex"
+<source/sections/casi-uso/diagrams/uc8.pdf, id=797, 212.71469pt x 204.765pt>
+File: source/sections/casi-uso/diagrams/uc8.pdf Graphic file (type pdf)
+<use source/sections/casi-uso/diagrams/uc8.pdf>
+Package pdftex.def Info: source/sections/casi-uso/diagrams/uc8.pdf  used on input line 6.
+(pdftex.def)             Requested size: 209.12683pt x 201.32132pt.
+File: ../_template/images/logo_crop.png Graphic file (type png)
+<use ../_template/images/logo_crop.png>
+Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 42.
+(pdftex.def)             Requested size: 50.88792pt x 15.68793pt.
+ [27 <c:/Users/Matteo/Documents/HD VIZ/documentazione/analisi-dei-requisiti/source/sections/casi-uso/diagrams/uc8.pdf>])
+File: ../_template/images/logo_crop.png Graphic file (type png)
+<use ../_template/images/logo_crop.png>
+Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 28.
+(pdftex.def)             Requested size: 50.88792pt x 15.68793pt.
+ [28] ("c:/Users\Matteo\Documents\HD VIZ\documentazione\analisi-dei-requisiti\source/sections/casi-uso/uc9.tex"
+<source/sections/casi-uso/diagrams/uc9.pdf, id=870, 451.6875pt x 103.3461pt>
+File: source/sections/casi-uso/diagrams/uc9.pdf Graphic file (type pdf)
+<use source/sections/casi-uso/diagrams/uc9.pdf>
+Package pdftex.def Info: source/sections/casi-uso/diagrams/uc9.pdf  used on input line 6.
+(pdftex.def)             Requested size: 376.42575pt x 86.13046pt.
+File: ../_template/images/logo_crop.png Graphic file (type png)
+<use ../_template/images/logo_crop.png>
+Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 49.
+(pdftex.def)             Requested size: 50.88792pt x 15.68793pt.
+ [29 <c:/Users/Matteo/Documents/HD VIZ/documentazione/analisi-dei-requisiti/source/sections/casi-uso/diagrams/uc9.pdf>])
+File: ../_template/images/logo_crop.png Graphic file (type png)
+<use ../_template/images/logo_crop.png>
+Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 30.
+(pdftex.def)             Requested size: 50.88792pt x 15.68793pt.
+ [30] ("c:/Users\Matteo\Documents\HD VIZ\documentazione\analisi-dei-requisiti\source/sections/casi-uso/uc10.tex"))
+File: ../_template/images/logo_crop.png Graphic file (type png)
+<use ../_template/images/logo_crop.png>
+Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 36.
+(pdftex.def)             Requested size: 50.88792pt x 15.68793pt.
+ [31] ("c:/Users\Matteo\Documents\HD VIZ\documentazione\analisi-dei-requisiti\source/sections/requisiti.tex" ("c:/Users\Matteo\Documents\HD VIZ\documentazione\analisi-dei-requisiti\source/sections/requisiti/requisiti-funzionali.tex"
+Underfull \vbox (badness 10000) detected at line 82
+ []
+
+File: ../_template/images/logo_crop.png Graphic file (type png)
+<use ../_template/images/logo_crop.png>
+Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 82.
+(pdftex.def)             Requested size: 50.88792pt x 15.68793pt.
+[32]
+File: ../_template/images/logo_crop.png Graphic file (type png)
+<use ../_template/images/logo_crop.png>
+Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 82.
+(pdftex.def)             Requested size: 50.88792pt x 15.68793pt.
+ [33]
+File: ../_template/images/logo_crop.png Graphic file (type png)
+<use ../_template/images/logo_crop.png>
+Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 82.
+(pdftex.def)             Requested size: 50.88792pt x 15.68793pt.
+ [34]) ("c:/Users\Matteo\Documents\HD VIZ\documentazione\analisi-dei-requisiti\source/sections/requisiti/requisiti-qualita.tex"
+Underfull \vbox (badness 10000) detected at line 58
+ []
+
+File: ../_template/images/logo_crop.png Graphic file (type png)
+<use ../_template/images/logo_crop.png>
+Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 58.
+(pdftex.def)             Requested size: 50.88792pt x 15.68793pt.
+[35]) ("c:/Users\Matteo\Documents\HD VIZ\documentazione\analisi-dei-requisiti\source/sections/requisiti/requisiti-vincolo.tex"
+Underfull \vbox (badness 10000) detected at line 58
+ []
+
+File: ../_template/images/logo_crop.png Graphic file (type png)
+<use ../_template/images/logo_crop.png>
+Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 58.
+(pdftex.def)             Requested size: 50.88792pt x 15.68793pt.
+[36]) ("c:/Users\Matteo\Documents\HD VIZ\documentazione\analisi-dei-requisiti\source/sections/requisiti/requisiti-prestazionali.tex") ("c:/Users\Matteo\Documents\HD VIZ\documentazione\analisi-dei-requisiti\source/sections/requisiti/fonte-requisiti.tex"
+File: ../_template/images/logo_crop.png Graphic file (type png)
+<use ../_template/images/logo_crop.png>
+Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 6.
+(pdftex.def)             Requested size: 50.88792pt x 15.68793pt.
+ [37]
+Overfull \vbox (0.43872pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (0.43872pt too high) has occurred while \output is active []
+
+File: ../_template/images/logo_crop.png Graphic file (type png)
+<use ../_template/images/logo_crop.png>
+Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 104.
+(pdftex.def)             Requested size: 50.88792pt x 15.68793pt.
+ [38])
+Underfull \vbox (badness 10000) detected at line 32
+ []
+
+) 
 AED: lastpage setting LastPage
 File: ../_template/images/logo_crop.png Graphic file (type png)
 <use ../_template/images/logo_crop.png>
 Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 38.
 (pdftex.def)             Requested size: 50.88792pt x 15.68793pt.
-[36] ("c:/Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\main.aux")
+[39] ("c:/Users\Matteo\Documents\HD VIZ\documentazione\analisi-dei-requisiti\main.aux")
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 9F3710CC21BBF14827469278BD0D716F;4243.
+(rerunfilecheck)             Checksum: E75BCDF1BC66EA8C59EEB1803EEFDCE2;4655.
  ) 
 Here is how much of TeX's memory you used:
- 14970 strings out of 479696
- 265432 string characters out of 2866639
- 619154 words of memory out of 3000000
- 31543 multiletter control sequences out of 15000+200000
- 413855 words of font info for 42 fonts, out of 3000000 for 9000
+ 15052 strings out of 479696
+ 263384 string characters out of 2866639
+ 630374 words of memory out of 3000000
+ 31551 multiletter control sequences out of 15000+200000
+ 412713 words of font info for 41 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 70i,17n,74p,597b,594s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\Matteo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk> <C:\Users\Matteo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti0700.pk> <C:\Users\Matteo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1000.pk> <C:\Users\Matteo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\Matteo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt0900.pk> <C:\Users\Matteo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\Matteo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\Matteo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2074.pk> <C:\Users\Matteo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbi1200.pk> <C:\Users\Matteo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk><C:/Users/Matteo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Matteo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Matteo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Matteo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Matteo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on "c:/Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\main.pdf" (37 pages, 609184 bytes).
+ 70i,17n,74p,629b,666s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\Matteo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1000.pk> <C:\Users\Matteo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk> <C:\Users\Matteo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1000.pk> <C:\Users\Matteo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\Matteo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt0900.pk> <C:\Users\Matteo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\Matteo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\Matteo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2074.pk> <C:\Users\Matteo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbi1200.pk> <C:\Users\Matteo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk><C:/Users/Matteo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Matteo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/Matteo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Matteo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Matteo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Matteo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on "c:/Users\Matteo\Documents\HD VIZ\documentazione\analisi-dei-requisiti\main.pdf" (40 pages, 956302 bytes).
 PDF statistics:
- 1018 PDF objects out of 1200 (max. 8388607)
- 151 named destinations out of 1000 (max. 500000)
- 566 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1580 PDF objects out of 1728 (max. 8388607)
+ 248 named destinations out of 1000 (max. 500000)
+ 520 words of extra memory for PDF output out of 10000 (max. 10000000)
 

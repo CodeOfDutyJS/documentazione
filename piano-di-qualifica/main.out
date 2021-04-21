@@ -32,15 +32,24 @@
 \BOOKMARK [3][-]{subsubsection.4.2.2}{Test di accettazione per i requisiti di qualit\340}{subsection.4.2}% 32
 \BOOKMARK [3][-]{subsubsection.4.2.3}{Test di accettazione per i requisiti di vincolo}{subsection.4.2}% 33
 \BOOKMARK [1][-]{section.5}{Resoconti di verifica ed esiti delle revisioni}{}% 34
-\BOOKMARK [2][-]{subsection.5.1}{Valori dell'indice di Gulpease}{section.5}% 35
-\BOOKMARK [2][-]{subsection.5.2}{Errori ortografici}{section.5}% 36
-\BOOKMARK [2][-]{subsection.5.3}{Metriche di pianificazione}{section.5}% 37
-\BOOKMARK [3][-]{subsubsection.5.3.1}{Earned value - EV}{subsection.5.3}% 38
-\BOOKMARK [3][-]{subsubsection.5.3.2}{Planned value - PV}{subsection.5.3}% 39
-\BOOKMARK [3][-]{subsubsection.5.3.3}{Actual cost - AC}{subsection.5.3}% 40
-\BOOKMARK [3][-]{subsubsection.5.3.4}{Schedule variance - SV}{subsection.5.3}% 41
-\BOOKMARK [3][-]{subsubsection.5.3.5}{Cost variance - CV}{subsection.5.3}% 42
-\BOOKMARK [2][-]{subsection.5.4}{Conclusioni}{section.5}% 43
-\BOOKMARK [3][-]{subsubsection.5.4.1}{Analisi}{subsection.5.4}% 44
-\BOOKMARK [3][-]{subsubsection.5.4.2}{Consolidamento dei requisiti}{subsection.5.4}% 45
-\BOOKMARK [3][-]{subsubsection.5.4.3}{Programmazione architetturale}{subsection.5.4}% 46
+\BOOKMARK [2][-]{subsection.5.1}{Metriche dei processi primari}{section.5}% 35
+\BOOKMARK [3][-]{subsubsection.5.1.1}{percentuale di requisiti soddisfatti}{subsection.5.1}% 36
+\BOOKMARK [3][-]{subsubsection.5.1.2}{Metriche di pianificazione}{subsection.5.1}% 37
+\BOOKMARK [2][-]{subsection.5.2}{Metriche dei processi di supporto}{section.5}% 38
+\BOOKMARK [3][-]{subsubsection.5.2.1}{Valori dell'indice di Gulpease}{subsection.5.2}% 39
+\BOOKMARK [3][-]{subsubsection.5.2.2}{Errori ortografici}{subsection.5.2}% 40
+\BOOKMARK [3][-]{subsubsection.5.2.3}{Percentuale di metriche soddisfatte}{subsection.5.2}% 41
+\BOOKMARK [3][-]{subsubsection.5.2.4}{Code coverage}{subsection.5.2}% 42
+\BOOKMARK [3][-]{subsubsection.5.2.5}{Numero di test superati}{subsection.5.2}% 43
+\BOOKMARK [2][-]{subsection.5.3}{Metriche sulla qualit\340 di prodotto}{section.5}% 44
+\BOOKMARK [3][-]{subsubsection.5.3.1}{Numero di click}{subsection.5.3}% 45
+\BOOKMARK [3][-]{subsubsection.5.3.2}{Site depth}{subsection.5.3}% 46
+\BOOKMARK [3][-]{subsubsection.5.3.3}{Response Time}{subsection.5.3}% 47
+\BOOKMARK [3][-]{subsubsection.5.3.4}{Complessit\340 Ciclomatica}{subsection.5.3}% 48
+\BOOKMARK [3][-]{subsubsection.5.3.5}{Facilit\340 di comprensione}{subsection.5.3}% 49
+\BOOKMARK [3][-]{subsubsection.5.3.6}{Stractural FAN-in and FAN-out [sfin and sfout]}{subsection.5.3}% 50
+\BOOKMARK [2][-]{subsection.5.4}{Conclusioni}{section.5}% 51
+\BOOKMARK [3][-]{subsubsection.5.4.1}{Analisi}{subsection.5.4}% 52
+\BOOKMARK [3][-]{subsubsection.5.4.2}{Consolidamento dei requisiti}{subsection.5.4}% 53
+\BOOKMARK [3][-]{subsubsection.5.4.3}{Programmazione architetturale}{subsection.5.4}% 54
+\BOOKMARK [3][-]{subsubsection.5.4.4}{Proggettazione di dettaglio e codifica}{subsection.5.4}% 55
