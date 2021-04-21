@@ -23,7 +23,7 @@ La parte server gestisce le chiamate API. Il suo scopo è di fare da interfaccia
     Per la selezione di una visualizzazione e le operazioni che devono essere eseguite viene utilizzato il pattern \emph{Template Method}.
     Quando un utente seleziona una visualizzazione:
     \begin{itemize}
-        \item viene inizializzato il corretto modello di visualizzazione tramite un elemento contenuto nell'enumerazione \emph{VisualizationType};
+        \item viene inizializzato il corretto modello di visualizzazione tramite l'oggetto di tipo VisualizationType contenuto all'interno del VisualizationManager.
         \item vengono visualizzate le opzioni relative alla giusta visualizzazione scelta.
     \end{itemize}
     
@@ -43,7 +43,7 @@ La parte server gestisce le chiamate API. Il suo scopo è di fare da interfaccia
     \subsubsection{Diagrammi delle classi}
     Segue il diagramma delle classi della web app.
     \begin{figure}[H]
-        \centering\includegraphics[width=1\textwidth]{source/img/classi.jpeg}
+        \centering\includegraphics[width=1\textwidth]{source/img/classi.pdf}
         \caption{Diagramma delle classi della web app}
     \end{figure}
     
