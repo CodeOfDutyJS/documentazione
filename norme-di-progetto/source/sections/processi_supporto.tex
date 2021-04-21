@@ -256,19 +256,16 @@
 			\myparagraph{Tecnologie}
 			Come sistema di versionamento è stato scelto Git, il quale dispone del servizio Github per ospitare la repository remota. Altro strumento interessante messo a disposizione da Github è "Github Actions" il quale permette di realizzare un servizio di Continuous Integration.
 			
-			\myparagraph{Repository}
+			\myparagraph{Repository per la documentazione}
 			Per interagire con il sistema di versionamento scelto, ogni componente del gruppo può utilizzare la versione da linea di comando (Git) con opportuni plugin per facilitare l'uso del sistema di versionamento. Alternativamente è possibile utilizzare la versione GUI fornita su Github.\\
 			La repository dei documenti è disponibile all'indirizzo:\\
 			\begin{center}
 				\url{https://github.com/CodeOfDutyJS/documentazione}
 			\end{center}
-			La repository del codice è disponibile all'indirizzo:\\
-			\begin{center}
-				\url{https://github.com/CodeOfDutyJS/hdviz}
-			\end{center}
 			
-			\myparagraph{Struttura del repository}
-			All'interno del repository è possibile trovare:
+			
+			\subparagraph{Struttura del repository }
+			Il repository per la documentazione è organizzato nel seguente modo:
 			\begin{itemize}
 				\item \textbf{nome-del-documento}: tutti i documenti sono disponibili al livello più esterno del repository.
 				\item \textbf{\_config e \_template}: permettono la gestione separata della configurazione dei file .tex
@@ -276,6 +273,24 @@
 				\item \textbf{glossario.txt}: elenca tutte le parole all'interno del glossario
 				\item \textbf{\_glo\_replace.py}: script in python che genera un pedice G ad ogni occorenza di tutte le parole presentiin "glossario.txt"
 			\end{itemize}
+
+
+			\myparagraph{Repository per il codice}
+			La repository del codice è disponibile all'indirizzo:\\
+			\begin{center}
+				\url{https://github.com/CodeOfDutyJS/hdviz}
+			\end{center}
+
+				\subparagraph{Struttura del repository}
+				Il repository per il codice è organizzato nel seguente modo:
+				\begin{itemize}
+					\item \textbf{.github/workflows}: è la cartella contenente i file di configurazione per la realizzazione della \glo{Continuous Integration}
+					\item \textbf{client/}: è la cartella contenente i file sorgente della componente client;
+					\item \textbf{server/}: è la cartella contenente i file sorgente della componente server
+					\item \textbf{README.md}: file di markdown contenente informazioni per la configurazione.
+				\end{itemize}
+
+
 			
 			\myparagraph{Estensione dei file}
 			Per la documentazione saranno utilizzati solamente le seguenti estensioni di file:
@@ -330,7 +345,25 @@
 			\item \textbf{Valutazione}: applicare ciò che è stato definito nella Pianificazione, monitorando e misurando i risultati
 			\item \textbf{Reazione}: in base ai risultati ottenuti, adattare le metodologie
 		\end{itemize}
-		
+
+		\subsubsection{Code refactoring}
+		Il \glo{code refactoring} è il processo di ristrutturazione di codice esistente che va ad influire sulla struttura piuttosto che sul comportamento. Il code refactoring si concentra sulla
+		modifica del design, struttura e/o implementazione del codice (i suoi attributi non-funzionali), andando a preservare la funzionalità.
+		Questa tecnica prevede diversi benefici:
+		\begin{itemize}
+			\item aumentare il grado di manutenibilità del codice;
+			\item garantire un estensione del codice più agevole;
+			\item facilità nello scovare nuovi bug/errori.
+		\end{itemize}
+		Il code refactoring verrà svolto da ciascun Programmatore una volta che la porzione di 
+		codice in esame avrà passato tutti i test definiti all'interno del \textit{Piano di Quallifica v3.0.0}
+			\myparagraph{\glo{Code smell}}
+			È un espressione che viene usata per indicare una serie di caratteristiche che il 
+			codice sorgente può avere e che sono generalmente riconosciute come probabili indicazioni di un difetto di programmazione.
+			I code smell non sono (e non rivelano) bug, bensì debolezze di progettazione
+			che impattano in maniera negativa sulla qualità del software
+
+
 		\subsubsection{metriche di qualità del prodotto}
 		\myparagraph{Correttezza dello scambio dei dati}
         Il prodotto software ha bisogno di dati provenienti da fonti esterne. Questa 
