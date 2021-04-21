@@ -38,16 +38,6 @@ jobs:
           working_directory: analisi-dei-requisiti/
           root_file: main.tex
 
-      ## MANUALE SVILUPPATORE
-      - name: Manuale sviluppatore
-        run: echo "Start build manuale sviluppatore"
-       
-      - name: Compile manuale sviluppatore LaTeX document
-        uses: damix48/latex-action@0.1
-        with:
-          working_directory: manuale-sviluppatore/
-          root_file: main.tex
-
       ## NORME DI PROGETTO
       - name: Norme di progetto
         run: echo "Start build norme di progetto"
@@ -226,17 +216,6 @@ jobs:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: studio-di-fattibilita/main.pdf
           asset_name: studio-di-fattibilita.pdf
-          asset_content_type: application/pdf
-
-      - name: Upload Manuale sviluppatore
-        id: upload-manuale-sviluppatore
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: manuale-sviluppatore/main.pdf
-          asset_name: manuale-sviluppatore.pdf
           asset_content_type: application/pdf
 
       - name: Upload verbale-interno_2021-03-18
