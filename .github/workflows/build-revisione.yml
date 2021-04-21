@@ -38,18 +38,18 @@ jobs:
           working_directory: analisi-dei-requisiti/
           root_file: main.tex
 
-      ## NORME DI PROGETTO
-      # - name: Norme di progetto
-      #   run: echo "Start build norme di progetto"
+      # NORME DI PROGETTO
+      - name: Norme di progetto
+        run: echo "Start build norme di progetto"
 
-      # - name: Add glossario to norme di progetto
-      #   run: python _glo_replace.py /norme-di-progetto/ glossario.txt
+      - name: Add glossario to norme di progetto
+        run: python _glo_replace.py /norme-di-progetto/ glossario.txt
 
-      # - name: Compile norme di progetto LaTeX document
-      #   uses: damix48/latex-action@0.1
-      #   with:
-      #     working_directory: norme-di-progetto/
-      #     root_file: main.tex
+      - name: Compile norme di progetto LaTeX document
+        uses: damix48/latex-action@0.1
+        with:
+          working_directory: norme-di-progetto/
+          root_file: main.tex
 
       ## PIANO DI PROGETTO
       - name: Piano di progetto
@@ -163,16 +163,16 @@ jobs:
           asset_name: analisi-dei-requisiti.pdf
           asset_content_type: application/pdf
 
-      # - name: Upload Norme di progetto
-      #   id: upload-norme
-      #   uses: actions/upload-release-asset@v1
-      #   env:
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      #   with:
-      #     upload_url: ${{ steps.create_release.outputs.upload_url }}
-      #     asset_path: norme-di-progetto/main.pdf
-      #     asset_name: norme-di-progetto.pdf
-      #     asset_content_type: application/pdf
+      - name: Upload Norme di progetto
+        id: upload-norme
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: norme-di-progetto/main.pdf
+          asset_name: norme-di-progetto.pdf
+          asset_content_type: application/pdf
 
       - name: Upload Piano di progetto
         id: upload-piano-progetto
