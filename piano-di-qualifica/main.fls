@@ -880,10 +880,6 @@ INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\
 INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\tables\descrizione_test.tex
 INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\tables\descrizione_test.tex
 INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\tables\descrizione_test.tex
-INPUT ..\_template\images\logo_crop.png
-INPUT ..\_template\images\logo_crop.png
-INPUT ..\_template\images\logo_crop.png
-INPUT ..\_template\images\logo_crop.png
 INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\resoconti_verifica.tex
 INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\resoconti_verifica.tex
 INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\resoconti_verifica.tex
@@ -899,17 +895,17 @@ INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\
 INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\num-requisiti.png
 INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\num-requisiti.png
 INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\num-requisiti.png
-INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\percentuale-requisiti.png
-INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\percentuale-requisiti.png
-INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\percentuale-requisiti.png
-INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\percentuale-requisiti.png
-INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\percentuale-requisiti.png
-INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\percentuale-requisiti.png
-INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\percentuale-requisiti.png
 INPUT ..\_template\images\logo_crop.png
 INPUT ..\_template\images\logo_crop.png
 INPUT ..\_template\images\logo_crop.png
 INPUT ..\_template\images\logo_crop.png
+INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\percentuale-requisiti.png
+INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\percentuale-requisiti.png
+INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\percentuale-requisiti.png
+INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\percentuale-requisiti.png
+INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\percentuale-requisiti.png
+INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\percentuale-requisiti.png
+INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\percentuale-requisiti.png
 INPUT ..\_template\images\logo_crop.png
 INPUT ..\_template\images\logo_crop.png
 INPUT ..\_template\images\logo_crop.png
@@ -928,6 +924,10 @@ INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\
 INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\planned_value.png
 INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\planned_value.png
 INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\planned_value.png
+INPUT ..\_template\images\logo_crop.png
+INPUT ..\_template\images\logo_crop.png
+INPUT ..\_template\images\logo_crop.png
+INPUT ..\_template\images\logo_crop.png
 INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\actual_cost.png
 INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\actual_cost.png
 INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\actual_cost.png
@@ -935,10 +935,6 @@ INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\
 INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\actual_cost.png
 INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\actual_cost.png
 INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\actual_cost.png
-INPUT ..\_template\images\logo_crop.png
-INPUT ..\_template\images\logo_crop.png
-INPUT ..\_template\images\logo_crop.png
-INPUT ..\_template\images\logo_crop.png
 INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\schedule_variance.png
 INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\schedule_variance.png
 INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\schedule_variance.png
@@ -946,32 +942,32 @@ INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\
 INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\schedule_variance.png
 INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\schedule_variance.png
 INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\schedule_variance.png
-INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\cost_variance.png
-INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\cost_variance.png
-INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\cost_variance.png
-INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\cost_variance.png
-INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\cost_variance.png
-INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\cost_variance.png
-INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\cost_variance.png
 INPUT ..\_template\images\logo_crop.png
 INPUT ..\_template\images\logo_crop.png
 INPUT ..\_template\images\logo_crop.png
 INPUT ..\_template\images\logo_crop.png
+INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\cost_variance.png
+INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\cost_variance.png
+INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\cost_variance.png
+INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\cost_variance.png
+INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\cost_variance.png
+INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\cost_variance.png
+INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\cost_variance.png
 INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\metriche\metriche-processi-di-supporto.tex
 INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\metriche\metriche-processi-di-supporto.tex
 INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\metriche\metriche-processi-di-supporto.tex
 INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\metriche\metriche-processi-di-supporto.tex
-INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\IdG_NdP.png
-INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\IdG_NdP.png
-INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\IdG_NdP.png
-INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\IdG_NdP.png
-INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\IdG_NdP.png
-INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\IdG_NdP.png
-INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\IdG_NdP.png
 INPUT ..\_template\images\logo_crop.png
 INPUT ..\_template\images\logo_crop.png
 INPUT ..\_template\images\logo_crop.png
 INPUT ..\_template\images\logo_crop.png
+INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\IdG_NdP.png
+INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\IdG_NdP.png
+INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\IdG_NdP.png
+INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\IdG_NdP.png
+INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\IdG_NdP.png
+INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\IdG_NdP.png
+INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\IdG_NdP.png
 INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\IdG_AR.png
 INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\IdG_AR.png
 INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\IdG_AR.png
@@ -986,6 +982,10 @@ INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\
 INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\IdG_PdQ.png
 INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\IdG_PdQ.png
 INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\IdG_PdQ.png
+INPUT ..\_template\images\logo_crop.png
+INPUT ..\_template\images\logo_crop.png
+INPUT ..\_template\images\logo_crop.png
+INPUT ..\_template\images\logo_crop.png
 INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\IdG_PdP.png
 INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\IdG_PdP.png
 INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\IdG_PdP.png
@@ -1008,10 +1008,6 @@ INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\
 INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\percentuale-metriche-soddisfatte.png
 INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\percentuale-metriche-soddisfatte.png
 INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\percentuale-metriche-soddisfatte.png
-INPUT ..\_template\images\logo_crop.png
-INPUT ..\_template\images\logo_crop.png
-INPUT ..\_template\images\logo_crop.png
-INPUT ..\_template\images\logo_crop.png
 INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\CodeCoverage.png
 INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\CodeCoverage.png
 INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\CodeCoverage.png
@@ -1019,17 +1015,17 @@ INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\
 INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\CodeCoverage.png
 INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\CodeCoverage.png
 INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\CodeCoverage.png
-INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\num-test.png
-INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\num-test.png
-INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\num-test.png
-INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\num-test.png
-INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\num-test.png
-INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\num-test.png
-INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\num-test.png
 INPUT ..\_template\images\logo_crop.png
 INPUT ..\_template\images\logo_crop.png
 INPUT ..\_template\images\logo_crop.png
 INPUT ..\_template\images\logo_crop.png
+INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\num-test.png
+INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\num-test.png
+INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\num-test.png
+INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\num-test.png
+INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\num-test.png
+INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\num-test.png
+INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\num-test.png
 INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\torta-test.png
 INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\torta-test.png
 INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\torta-test.png
@@ -1037,6 +1033,10 @@ INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\
 INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\torta-test.png
 INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\torta-test.png
 INPUT c:\Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\source\sections\images\torta-test.png
+INPUT ..\_template\images\logo_crop.png
+INPUT ..\_template\images\logo_crop.png
+INPUT ..\_template\images\logo_crop.png
+INPUT ..\_template\images\logo_crop.png
 INPUT ..\_template\images\logo_crop.png
 INPUT ..\_template\images\logo_crop.png
 INPUT ..\_template\images\logo_crop.png

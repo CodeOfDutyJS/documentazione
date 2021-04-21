@@ -1,23 +1,17 @@
-
 \section{Specifica dei test}
 
-Sono stati determinati, come descritto anche nel documento \textit{Norme di Progetto 1.0.0}, 5 tipi di test ovvero: \textit{Test di unità, Test di Integrazione, Test di sistema, Test di accettazione} e \textit{Test di regressione}. Si adotterà quindi il \textbf{Modello a V}\glo{} che permette lo sviluppo dei test in parallelo alle attività di analisi e progettazione. Così facendo i test sviluppati saranno in grado di verificare sia la correttezza del programma software sia l'implementazione. Sara disponibile inoltre una tabella degli esiti dei test per una facile consultazione.
-
+Sono stati determinati, come descritto anche nel documento \NdP , 5 tipi di test ovvero: 
+\textit{Test di unità, Test di Integrazione, Test di sistema, Test di accettazione} e \textit{Test di regressione}. 
+Si adotterà quindi il \textbf{Modello a V} che permette lo sviluppo dei test in parallelo alle attività di analisi e progettazione. 
+Così facendo i test sviluppati saranno in grado di verificare sia la correttezza del programma software sia l'implementazione. 
+Sara disponibile inoltre una tabella degli esiti dei test per una facile consultazione.
 Per i test valgono le seguenti sigle:
 
     \begin{itemize}
-        \item \textbf{I}: per indicare che il è effettivamente implementato.
+        \item \textbf{S}: il test è stato implementato e ha esito soddisfacente.
+        \item \textbf{NS}: il test è stato implementato e non ha esito soddisfacente.
         \item \textbf{NI}: per indicare che il test è ancora non implementato.
     \end{itemize}
-    
-Mentre per lo stato valgono le seguenti sigle:
-
-    \begin{itemize}
-        \item \textbf{S}: il test ha esito soddisfacente.
-        \item \textbf{NS}: il test ha esito non soddisfacente.
-    \end{itemize}
-    
-
  
 \subsection{Test di Sistema}
 
@@ -515,17 +509,6 @@ Mentre per lo stato valgono le seguenti sigle:
             },
         }
         \input{source/tables/descrizione_test.tex}
-    %endTable
+        %endTable
+         
     
-\subsection{Test di unità}
-    I test di Unità hanno l'obiettivo di verificare il funzionamento di ogni unità che compone l'applicazione. Questi test verrano definiti in una fase successiva, in particolare nella fase in cui ne verrà richiesta l'implementazione.
-    
-\subsection{Test di Integrazione}
-    I test d'integrazione verificano il funzionamento e l'interazione dell'insieme composto dalle singole unità. Questi test verranno definiti in una fase successiva, in particolare nella fase in cui ne verrà richiesta l'implementazione.
-    
-\subsection{Test di accettazione}
-    I test di accettazione vengono svolti insieme al proponente per assicurare il gradimento dell'utente. Questi test verranno definiti in una fase successiva, in particolare nella fase in cui ne verrà richiesta l'implementazione.
-    
-\subsection{Test di regressione}
-    I test di regressione vengono eseguiti ogni volta che viene apportata una modifica a un'unità del software. Questi test verranno definiti in una fase successiva, in particolare nella fase in cui ne verrà richiesta l'implementazione.
-
