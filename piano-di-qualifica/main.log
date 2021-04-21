@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2020.12.25)  21 APR 2021 10:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2020.12.25)  21 APR 2021 11:44
 entering extended mode
 **"c:/Users/Matteo/Documents/HD VIZ/documentazione/piano-di-qualifica/main.tex"
 ("c:/Users/Matteo/Documents/HD VIZ/documentazione/piano-di-qualifica/main.tex"
@@ -611,7 +611,7 @@ Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 1
  [2] ("c:/Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\main.toc"
 File: ../_template/images/logo_crop.png Graphic file (type png)
 <use ../_template/images/logo_crop.png>
-Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 65.
+Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 60.
 (pdftex.def)             Requested size: 50.88792pt x 15.68793pt.
  [3])
 \tf@toc=\write4
@@ -832,33 +832,33 @@ Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 4
 <source/sections/images/Earned_value.png, id=484, 602.25pt x 372.39125pt>
 File: source/sections/images/Earned_value.png Graphic file (type png)
 <use source/sections/images/Earned_value.png>
-Package pdftex.def Info: source/sections/images/Earned_value.png  used on input line 52.
-(pdftex.def)             Requested size: 284.52756pt x 175.93874pt.
+Package pdftex.def Info: source/sections/images/Earned_value.png  used on input line 51.
+(pdftex.def)             Requested size: 369.88582pt x 228.72093pt.
 <source/sections/images/planned_value.png, id=485, 602.25pt x 372.39125pt>
 File: source/sections/images/planned_value.png Graphic file (type png)
 <use source/sections/images/planned_value.png>
-Package pdftex.def Info: source/sections/images/planned_value.png  used on input line 60.
-(pdftex.def)             Requested size: 284.52756pt x 175.93874pt.
+Package pdftex.def Info: source/sections/images/planned_value.png  used on input line 57.
+(pdftex.def)             Requested size: 369.88582pt x 228.72093pt.
 <source/sections/images/actual_cost.png, id=486, 602.25pt x 372.39125pt>
 File: source/sections/images/actual_cost.png Graphic file (type png)
 <use source/sections/images/actual_cost.png>
-Package pdftex.def Info: source/sections/images/actual_cost.png  used on input line 68.
-(pdftex.def)             Requested size: 284.52756pt x 175.93874pt.
+Package pdftex.def Info: source/sections/images/actual_cost.png  used on input line 64.
+(pdftex.def)             Requested size: 369.88582pt x 228.72093pt.
 File: ../_template/images/logo_crop.png Graphic file (type png)
 <use ../_template/images/logo_crop.png>
-Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 71.
+Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 67.
 (pdftex.def)             Requested size: 50.88792pt x 15.68793pt.
  [23 <c:/Users/Matteo/Documents/HD VIZ/documentazione/piano-di-qualifica/source/sections/images/Earned_value.png> <c:/Users/Matteo/Documents/HD VIZ/documentazione/piano-di-qualifica/source/sections/images/planned_value.png>]
-<source/sections/images/schedule_variance.png, id=498, 602.25pt x 372.39125pt>
+<source/sections/images/schedule_variance.png, id=496, 602.25pt x 460.72125pt>
 File: source/sections/images/schedule_variance.png Graphic file (type png)
 <use source/sections/images/schedule_variance.png>
-Package pdftex.def Info: source/sections/images/schedule_variance.png  used on input line 76.
-(pdftex.def)             Requested size: 284.52756pt x 175.93874pt.
-<source/sections/images/cost_variance.png, id=499, 602.25pt x 372.39125pt>
+Package pdftex.def Info: source/sections/images/schedule_variance.png  used on input line 71.
+(pdftex.def)             Requested size: 369.88582pt x 282.97281pt.
+<source/sections/images/cost_variance.png, id=497, 602.25pt x 460.72125pt>
 File: source/sections/images/cost_variance.png Graphic file (type png)
 <use source/sections/images/cost_variance.png>
-Package pdftex.def Info: source/sections/images/cost_variance.png  used on input line 84.
-(pdftex.def)             Requested size: 284.52756pt x 175.93874pt.
+Package pdftex.def Info: source/sections/images/cost_variance.png  used on input line 78.
+(pdftex.def)             Requested size: 284.52756pt x 217.67085pt.
 )
 File: ../_template/images/logo_crop.png Graphic file (type png)
 <use ../_template/images/logo_crop.png>
@@ -868,7 +868,7 @@ Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 8
 Underfull \vbox (badness 10000) detected at line 39
  []
 
-<source/sections/images/IdG_NdP.png, id=512, 602.25pt x 372.39125pt>
+<source/sections/images/IdG_NdP.png, id=508, 602.25pt x 372.39125pt>
 File: source/sections/images/IdG_NdP.png Graphic file (type png)
 <use source/sections/images/IdG_NdP.png>
 Package pdftex.def Info: source/sections/images/IdG_NdP.png  used on input line 44.
@@ -878,17 +878,17 @@ File: ../_template/images/logo_crop.png Graphic file (type png)
 Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 47.
 (pdftex.def)             Requested size: 50.88792pt x 15.68793pt.
 [25 <c:/Users/Matteo/Documents/HD VIZ/documentazione/piano-di-qualifica/source/sections/images/cost_variance.png>]
-<source/sections/images/IdG_AR.png, id=522, 602.25pt x 372.39125pt>
+<source/sections/images/IdG_AR.png, id=517, 602.25pt x 372.39125pt>
 File: source/sections/images/IdG_AR.png Graphic file (type png)
 <use source/sections/images/IdG_AR.png>
 Package pdftex.def Info: source/sections/images/IdG_AR.png  used on input line 50.
 (pdftex.def)             Requested size: 369.88582pt x 228.72093pt.
-<source/sections/images/IdG_PdQ.png, id=523, 602.25pt x 372.39125pt>
+<source/sections/images/IdG_PdQ.png, id=518, 602.25pt x 372.39125pt>
 File: source/sections/images/IdG_PdQ.png Graphic file (type png)
 <use source/sections/images/IdG_PdQ.png>
 Package pdftex.def Info: source/sections/images/IdG_PdQ.png  used on input line 55.
 (pdftex.def)             Requested size: 369.88582pt x 228.72093pt.
-<source/sections/images/IdG_PdP.png, id=524, 602.25pt x 372.39125pt>
+<source/sections/images/IdG_PdP.png, id=519, 602.25pt x 372.39125pt>
 File: source/sections/images/IdG_PdP.png Graphic file (type png)
 <use source/sections/images/IdG_PdP.png>
 Package pdftex.def Info: source/sections/images/IdG_PdP.png  used on input line 60.
@@ -906,7 +906,7 @@ Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 7
 Underfull \vbox (badness 10000) detected at line 114
  []
 
-<source/sections/images/percentuale-metriche-soddisfatte.png, id=591, 602.25pt x 372.39125pt>
+<source/sections/images/percentuale-metriche-soddisfatte.png, id=586, 602.25pt x 372.39125pt>
 File: source/sections/images/percentuale-metriche-soddisfatte.png Graphic file (type png)
 <use source/sections/images/percentuale-metriche-soddisfatte.png>
 Package pdftex.def Info: source/sections/images/percentuale-metriche-soddisfatte.png  used on input line 118.
@@ -916,7 +916,7 @@ File: ../_template/images/logo_crop.png Graphic file (type png)
 Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 121.
 (pdftex.def)             Requested size: 50.88792pt x 15.68793pt.
 [28]
-<source/sections/images/CodeCoverage.png, id=598, 1103.12125pt x 351.3125pt>
+<source/sections/images/CodeCoverage.png, id=593, 1103.12125pt x 351.3125pt>
 File: source/sections/images/CodeCoverage.png Graphic file (type png)
 <use source/sections/images/CodeCoverage.png>
 Package pdftex.def Info: source/sections/images/CodeCoverage.png  used on input line 127.
@@ -926,7 +926,7 @@ Overfull \hbox (36.9904pt too wide) in paragraph at lines 127--128
  [][] 
  []
 
-<source/sections/images/num-test.png, id=599, 602.25pt x 372.39125pt>
+<source/sections/images/num-test.png, id=594, 602.25pt x 372.39125pt>
 File: source/sections/images/num-test.png Graphic file (type png)
 <use source/sections/images/num-test.png>
 Package pdftex.def Info: source/sections/images/num-test.png  used on input line 136.
@@ -936,7 +936,7 @@ File: ../_template/images/logo_crop.png Graphic file (type png)
 Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 139.
 (pdftex.def)             Requested size: 50.88792pt x 15.68793pt.
 [29 <c:/Users/Matteo/Documents/HD VIZ/documentazione/piano-di-qualifica/source/sections/images/percentuale-metriche-soddisfatte.png> <c:/Users/Matteo/Documents/HD VIZ/documentazione/piano-di-qualifica/source/sections/images/CodeCoverage.png>]
-<source/sections/images/torta-test.png, id=609, 602.25pt x 304.13625pt>
+<source/sections/images/torta-test.png, id=604, 602.25pt x 304.13625pt>
 File: source/sections/images/torta-test.png Graphic file (type png)
 <use source/sections/images/torta-test.png>
 Package pdftex.def Info: source/sections/images/torta-test.png  used on input line 142.
@@ -950,12 +950,12 @@ Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 1
 Underfull \vbox (badness 10000) detected at line 16
  []
 
-<source/sections/images/response-time.png, id=620, 602.25pt x 372.39125pt>
+<source/sections/images/response-time.png, id=615, 602.25pt x 372.39125pt>
 File: source/sections/images/response-time.png Graphic file (type png)
 <use source/sections/images/response-time.png>
 Package pdftex.def Info: source/sections/images/response-time.png  used on input line 28.
 (pdftex.def)             Requested size: 284.52756pt x 175.93874pt.
-<source/sections/images/tabella_CC.JPG, id=621, 280.04625pt x 208.98074pt>
+<source/sections/images/tabella_CC.JPG, id=616, 280.04625pt x 208.98074pt>
 File: source/sections/images/tabella_CC.JPG Graphic file (type jpg)
 <use source/sections/images/tabella_CC.JPG>
 Package pdftex.def Info: source/sections/images/tabella_CC.JPG  used on input line 41.
@@ -965,12 +965,12 @@ File: ../_template/images/logo_crop.png Graphic file (type png)
 Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 44.
 (pdftex.def)             Requested size: 50.88792pt x 15.68793pt.
 [31 <c:/Users/Matteo/Documents/HD VIZ/documentazione/piano-di-qualifica/source/sections/images/response-time.png>]
-<source/sections/images/CC.png, id=630, 506.89375pt x 386.44376pt>
+<source/sections/images/CC.png, id=625, 506.89375pt x 386.44376pt>
 File: source/sections/images/CC.png Graphic file (type png)
 <use source/sections/images/CC.png>
 Package pdftex.def Info: source/sections/images/CC.png  used on input line 47.
 (pdftex.def)             Requested size: 284.52756pt x 216.92003pt.
-<source/sections/images/facilitaDelCodice.png, id=631, 607.26875pt x 386.44376pt>
+<source/sections/images/facilitaDelCodice.png, id=626, 607.26875pt x 386.44376pt>
 File: source/sections/images/facilitaDelCodice.png Graphic file (type png)
 <use source/sections/images/facilitaDelCodice.png>
 Package pdftex.def Info: source/sections/images/facilitaDelCodice.png  used on input line 55.
@@ -980,12 +980,12 @@ File: ../_template/images/logo_crop.png Graphic file (type png)
 Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 58.
 (pdftex.def)             Requested size: 50.88792pt x 15.68793pt.
  [32 <c:/Users/Matteo/Documents/HD VIZ/documentazione/piano-di-qualifica/source/sections/images/tabella_CC.JPG> <c:/Users/Matteo/Documents/HD VIZ/documentazione/piano-di-qualifica/source/sections/images/CC.png>]
-<source/sections/images/Valori-delle-righe.png, id=640, 602.25pt x 372.39125pt>
+<source/sections/images/Valori-delle-righe.png, id=635, 602.25pt x 372.39125pt>
 File: source/sections/images/Valori-delle-righe.png Graphic file (type png)
 <use source/sections/images/Valori-delle-righe.png>
 Package pdftex.def Info: source/sections/images/Valori-delle-righe.png  used on input line 64.
 (pdftex.def)             Requested size: 284.52756pt x 175.93874pt.
-<source/sections/images/numCodice.png, id=641, 602.25pt x 372.39125pt>
+<source/sections/images/numCodice.png, id=636, 602.25pt x 372.39125pt>
 File: source/sections/images/numCodice.png Graphic file (type png)
 <use source/sections/images/numCodice.png>
 Package pdftex.def Info: source/sections/images/numCodice.png  used on input line 70.
@@ -995,7 +995,7 @@ File: ../_template/images/logo_crop.png Graphic file (type png)
 Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 73.
 (pdftex.def)             Requested size: 50.88792pt x 15.68793pt.
  [33 <c:/Users/Matteo/Documents/HD VIZ/documentazione/piano-di-qualifica/source/sections/images/facilitaDelCodice.png> <c:/Users/Matteo/Documents/HD VIZ/documentazione/piano-di-qualifica/source/sections/images/Valori-delle-righe.png>]
-<source/sections/images/facilita_comprensione.png, id=651, 602.25pt x 372.39125pt>
+<source/sections/images/facilita_comprensione.png, id=646, 602.25pt x 372.39125pt>
 File: source/sections/images/facilita_comprensione.png Graphic file (type png)
 <use source/sections/images/facilita_comprensione.png>
 Package pdftex.def Info: source/sections/images/facilita_comprensione.png  used on input line 76.
@@ -1009,7 +1009,7 @@ File: ../_template/images/logo_crop.png Graphic file (type png)
 Package pdftex.def Info: ../_template/images/logo_crop.png  used on input line 103.
 (pdftex.def)             Requested size: 50.88792pt x 15.68793pt.
 [34 <c:/Users/Matteo/Documents/HD VIZ/documentazione/piano-di-qualifica/source/sections/images/numCodice.png> <c:/Users/Matteo/Documents/HD VIZ/documentazione/piano-di-qualifica/source/sections/images/facilita_comprensione.png>]
-<source/sections/images/SfinSfout.png, id=662, 602.25pt x 462.72874pt>
+<source/sections/images/SfinSfout.png, id=657, 602.25pt x 462.72874pt>
 File: source/sections/images/SfinSfout.png Graphic file (type png)
 <use source/sections/images/SfinSfout.png>
 Package pdftex.def Info: source/sections/images/SfinSfout.png  used on input line 107.
@@ -1030,17 +1030,17 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 7405EB1B7C3CE39B1C30FFBC2B60DA29;4518.
  ) 
 Here is how much of TeX's memory you used:
- 14978 strings out of 479696
- 265622 string characters out of 2866639
+ 14973 strings out of 479696
+ 265537 string characters out of 2866639
  619074 words of memory out of 3000000
  31542 multiletter control sequences out of 15000+200000
  413855 words of font info for 42 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  70i,17n,74p,748b,594s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Matteo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk> <C:\Users\Matteo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti0700.pk> <C:\Users\Matteo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1000.pk> <C:\Users\Matteo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\Matteo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt0900.pk> <C:\Users\Matteo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\Matteo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\Matteo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2074.pk> <C:\Users\Matteo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbi1200.pk> <C:\Users\Matteo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk><C:/Users/Matteo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Matteo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Matteo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Matteo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Matteo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on "c:/Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\main.pdf" (37 pages, 606007 bytes).
+Output written on "c:/Users\Matteo\Documents\HD VIZ\documentazione\piano-di-qualifica\main.pdf" (37 pages, 612503 bytes).
 PDF statistics:
- 1045 PDF objects out of 1200 (max. 8388607)
- 160 named destinations out of 1000 (max. 500000)
+ 1039 PDF objects out of 1200 (max. 8388607)
+ 155 named destinations out of 1000 (max. 500000)
  598 words of extra memory for PDF output out of 10000 (max. 10000000)
 

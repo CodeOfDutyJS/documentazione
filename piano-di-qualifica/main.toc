@@ -53,11 +53,6 @@
 \contentsline {subsection}{\numberline {5.1}Metriche dei processi primari}{21}{subsection.5.1}%
 \contentsline {subsubsection}{\numberline {5.1.1}percentuale di requisiti soddisfatti}{21}{subsubsection.5.1.1}%
 \contentsline {subsubsection}{\numberline {5.1.2}Metriche di pianificazione}{22}{subsubsection.5.1.2}%
-\contentsline {paragraph}{\numberline {5.1.2.1}Earned value - EV}{23}{figure.3}%
-\contentsline {paragraph}{\numberline {5.1.2.2}Planned value - PV}{23}{figure.4}%
-\contentsline {paragraph}{\numberline {5.1.2.3}Actual cost - AC}{24}{figure.5}%
-\contentsline {paragraph}{\numberline {5.1.2.4}Schedule variance - SV}{24}{figure.6}%
-\contentsline {paragraph}{\numberline {5.1.2.5}Cost variance - CV}{25}{figure.7}%
 \contentsline {subsection}{\numberline {5.2}Metriche dei processi di supporto}{25}{subsection.5.2}%
 \contentsline {subsubsection}{\numberline {5.2.1}Valori dell'indice di Gulpease}{25}{subsubsection.5.2.1}%
 \contentsline {subsubsection}{\numberline {5.2.2}Errori ortografici}{27}{subsubsection.5.2.2}%
