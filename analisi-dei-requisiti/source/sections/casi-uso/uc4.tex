@@ -14,7 +14,7 @@
     \item \textbf{Precondizione}: 
     \begin{itemize}
         \item eseguito l'upload del dataset come matrice $N\times M$ (\hyperref[uc1]{UC1});
-        \item selezionata una tra le visualizzazioni Scatter Plot Matrix (\hyperref[uc2.1]{UC2.1}), Force Field (\hyperref[uc2.4]{UC2.4}), Linear Projection (\hyperref[uc2.5]{UC2.5}), Parallel Coordinates.
+        \item selezionata una tra le visualizzazioni Scatter Plot Matrix (\hyperref[uc2.1.1]{UC2.1.1}), Force Field (\hyperref[uc2.1.4]{UC2.1.4}), Linear Projection (\hyperref[uc2.1.5]{UC2.1.5}), Parallel Coordinates.
     \end{itemize}  
     \item \textbf{Postcondizione}: l'utente ha regolato secondo le proprie necessità le impostazioni relative alla visualizzazione scelta;
     \item \textbf{Scenario Principale}: 
@@ -31,14 +31,14 @@
     \item \textbf{Descrizione}: l'utente decide di assegnare dei diversi modi per distinguere un punto nel grafico, assegnando una classe di visualizzazione (colore, forma, size) ad ogni variabile target, in questo modo risulta più semplice per l'analista vedere dei pattern nella visualizzazione del grafico;
     \item \textbf{Precondizione}:
     \begin{itemize}
-        \item eseguito l'upload del dataset come matrice $N\times M$ (\hyperref[uc2]{UC2});
-        \item selezionato una tra le visualizzazioni Scatter Plot Matrix (\hyperref[uc2.1]{UC2.1}), Force Field (\hyperref[uc2.4]{UC2.4}) Linear Projection (\hyperref[uc2.5]{UC2.5});
+        \item eseguito l'upload del dataset come matrice $N\times M$ (\hyperref[uc2.1]{UC2.1});
+        \item selezionato una tra le visualizzazioni Scatter Plot Matrix (\hyperref[uc2.1.1]{UC2.1.1}), Force Field (\hyperref[uc2.1.4]{UC2.1.4}) Linear Projection (\hyperref[uc2.1.5]{UC2.1.5});
         \item nel dataset, almeno una feature è stata selezionata come variabile target
     \end{itemize}
     \item \textbf{Postcondizione}: al variare del valore della variabile target $X$, i punti visualizzati assumono un diverso attributo della classe assegnata a quest'ultima;
     \item \textbf{Scenario Principale}: 
     \begin{enumerate}
-        \item l'utente visualizza tutte le varibili target selezionate;
+        \item l'utente visualizza tutte le variabili target selezionate;
         \item l'utente associa ad ogni variabile target una classe di visualizzazione.
     \end{enumerate}  
     \end{itemize}
@@ -51,7 +51,7 @@
     \item \textbf{Precondizione}: 
     \begin{itemize}
         \item eseguito l'upload del dataset come matrice $N\times M$ (\hyperref[uc1]{UC1});
-        \item selezionato Heatmap come visualizzazione (\hyperref[uc2.2]{UC2.2}).
+        \item selezionato Heatmap come visualizzazione (\hyperref[uc2.1.2]{UC2.1.2}).
     \end{itemize}  
     \item \textbf{Postcondizione}: ricolorazione della Heatmap in base al range selezionato;
     \item \textbf{Scenario Principale}: 
@@ -68,7 +68,7 @@
     \item \textbf{Descrizione}: l'utente seleziona i colori con cui vuole evidenziare i valori di una Heatmap;
     \item \textbf{Precondizione}: 
     \begin{itemize}
-        \item selezionato Heatmap o Correlation Heatmap come visualizzazione (\hyperref[uc2.2]{UC2.2} o \hyperref[uc2.3]{UC2.3});
+        \item selezionato Heatmap o Correlation Heatmap come visualizzazione (\hyperref[uc2.1.2]{UC2.1.2} o \hyperref[uc2.1.3]{UC2.1.3});
     \end{itemize}  
     \item \textbf{Postcondizione}: la Heatmap conterrà nelle sue caselle le sfumature del colore selezionato;
     \item \textbf{Scenario Principale}: 
@@ -79,19 +79,14 @@
 
     \subsubsection{UC4.4 - Ordinamento delle righe di una Heatmap}
     \label{uc4.4}
-    \begin{figure}[htbp]
-        \centering
-        \includegraphics[width=0.45\textwidth]{source/sections/casi-uso/diagrams/uc4_4.pdf}
-        \caption{UC4.4 - Ordinamento delle righe di una Heatmap}
-        \label{fig:uc4.4}
-    \end{figure}
+    
     \begin{itemize}
     \item \textbf{Attore}: utente;
     \item \textbf{Descrizione}: l'utente seleziona in che modo organizzare la visualizzazione delle righe di una heatmap, scegliendo tra l'ordine alfabetico o raggruppamento in clusters;
     \item \textbf{Precondizione}: 
     \begin{itemize}
         \item eseguito l'upload del dataset come matrice $N\times M$ (\hyperref[uc1]{UC1});
-        \item selezionato Heatmap come visualizzazione (\hyperref[uc2.2]{UC2.2}).
+        \item selezionato Heatmap come visualizzazione (\hyperref[uc2.1.2]{UC2.1.2}).
     \end{itemize}  
     \item \textbf{Postcondizione}: riordinazione della Heatmap in base all'ordinamento selezionato;
     \item \textbf{Scenario Principale}: 
@@ -116,7 +111,7 @@
     \item \textbf{Precondizione}: 
     \begin{itemize}
         \item eseguito l'upload del dataset come matrice $N\times M$ (\hyperref[uc1]{UC1});
-        \item selezionato Heatmap come visualizzazione (\hyperref[uc2.2]{UC2.2});
+        \item selezionato Heatmap come visualizzazione (\hyperref[uc2.1.2]{UC2.1.2});
         \item selezionata una etichetta di categoria su cui effettuare l'ordinamento.
     \end{itemize}  
     \item \textbf{Postcondizione}: riordinazione delle righe della Heatmap in ordine alfabetico;
@@ -134,7 +129,7 @@
     \item \textbf{Precondizione}: 
     \begin{itemize}
         \item eseguito l'upload del dataset come matrice $N\times M$ (\hyperref[uc1]{UC1});
-        \item selezionato Heatmap come visualizzazione (\hyperref[uc2.2]{UC2.2}).
+        \item selezionato Heatmap come visualizzazione (\hyperref[uc2.1.2]{UC2.1.2}).
     \end{itemize}  
     \item \textbf{Postcondizione}: le righe sono raggruppate secondo l'algoritmo di Cluster Gerarchico ed è visualizzato il dendrogramma sviluppato dall'algoritmo;
     \item \textbf{Scenario Principale}: 
