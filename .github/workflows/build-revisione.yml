@@ -77,19 +77,6 @@ jobs:
           working_directory: piano-di-qualifica/
           root_file: main.tex
 
-      ## STUDIO DI FATTIBILITÀ
-      - name: Studio di fattibilità
-        run: echo "Start build studio di fattibilita"
-
-      - name: Add glossario to studio di fattibilità
-        run: python _glo_replace.py /studio-di-fattibilita/ glossario.txt
-
-      - name: Compile studio di fattibilità LaTeX document
-        uses: damix48/latex-action@0.1
-        with:
-          working_directory: studio-di-fattibilita/
-          root_file: main.tex
-
       ## GLOSSARIO
       - name: Glossario
         run: echo "Start build Glossario"
@@ -205,17 +192,6 @@ jobs:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: glossario/main.pdf
           asset_name: glossario.pdf
-          asset_content_type: application/pdf
-
-      - name: Upload Studio di fattibilità
-        id: upload-studio
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: studio-di-fattibilita/main.pdf
-          asset_name: studio-di-fattibilita.pdf
           asset_content_type: application/pdf
 
       - name: Upload verbale-interno_2021-03-18
