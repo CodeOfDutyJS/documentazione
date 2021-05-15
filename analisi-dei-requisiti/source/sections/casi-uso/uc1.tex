@@ -20,6 +20,34 @@
     \item \textbf{Scenario Principale}: 
         \begin{enumerate}
             \item l'utente accede alla pagina dell'applicazione;
+            \item l'utente sceglie di caricare un dataset.
+        \end{enumerate}  
+    \item \textbf{Estensioni}:
+        \begin{enumerate}
+            \item l'utente inserisce dei dati non validi o non nel formato corretto:
+                \begin{enumerate}
+                    \item fallisce l'inserimento dei dati;
+                    \item viene visualizzato un messaggio di errore in lettura dei dati (\hyperref[uc8]{UC8}).
+                \end{enumerate}
+        \end{enumerate}
+    \end{itemize}
+    
+    \subsubsection{UC1.1 Inserimento Dataset}
+    \label{uc1.1}
+    \begin{itemize}
+    
+    \item \textbf{Attore}: utente;
+    \item \textbf{Descrizione}: l'utente carica il dataset per ottenere una visualizzazione;
+    \item \textbf{Precondizione}:
+    \begin{itemize}
+        \item il sistema è funzionante e raggiungibile;
+        \item l'utente accede alla pagina dell'applicazione;
+        \item l'utente è in possesso di un dataset da caricare.
+    \end{itemize}
+    \item \textbf{Postcondizione}: l'utente ha caricato il dataset come matrice $N\times M$;
+    \item \textbf{Scenario Principale}: 
+        \begin{enumerate}
+            \item l'utente accede alla pagina dell'applicazione;
             \item l'utente sceglie come caricare i dati:
                 \begin{enumerate}
                     \item l'utente ha scelto di ricavare i dati caricando un file csv;
@@ -31,31 +59,31 @@
             \item l'utente inserisce dei dati non validi o non nel formato corretto:
                 \begin{enumerate}
                     \item fallisce l'inserimento dei dati;
-                    \item viene visualizzato un messaggio di errore in lettura dei dati (\hyperref[uc10]{UC10}).
+                    \item viene visualizzato un messaggio di errore in lettura dei dati (\hyperref[uc8]{UC8}).
                 \end{enumerate}
         \end{enumerate}  
     \item \textbf{Generalizzazioni}:
         \begin{enumerate}
             \item l'utente sceglie come caricare i dati:
                 \begin{enumerate}
-                    \item caricando un file csv (\hyperref[uc1.1]{UC1.1});
-                    \item caricamento di una tabella di un database (\hyperref[uc1.2]{UC1.2}).
+                    \item caricando un file csv (\hyperref[uc1.1.1]{UC1.1.1});
+                    \item caricamento di una tabella di un database (\hyperref[uc1.1.2]{UC1.1.2}).
                 \end{enumerate}
         \end{enumerate}  
     \end{itemize}
     
     %%%
-    \subsubsection{UC1.1 - Caricamento tramite file csv}
-    \label{uc1.1}
+    \paragraph{UC1.1.1 - Caricamento tramite file csv}
+    \label{uc1.1.1}
     
     \begin{itemize}
     \item \textbf{Attore}: utente;
-    \item \textbf{Descrizione}: l'utente sceglie di caricare i dati tramite un file csv;
+    \item \textbf{Descrizione}: l'utente sceglie di caricare il dataset tramite un file csv;
     \item \textbf{Precondizione}:
     \begin{itemize}
         \item il sistema è funzionante e raggiungibile;
         \item l'utente accede alla pagina dell'applicazione;
-        \item l'utente è in possesso di un file csv contenete i dati.
+        \item l'utente è in possesso di un file csv contenente il dataset.
     \end{itemize}
     \item \textbf{Input}: file csv contenente i dati da visualizzare;
     \item \textbf{Postcondizione}: l'utente ha caricato il suo file csv come matrice $N\times M$;
@@ -66,40 +94,40 @@
         \end{enumerate}
         \item \textbf{Estensioni}:
         \begin{enumerate}
-            \item l'utente inserisce dei dati non validi o non nel formato corretto:
+            \item l'utente inserisce un dataset non valido o non nel formato corretto:
                 \begin{enumerate}
                     \item fallisce l'inserimento dei dati;
-                    \item viene visualizzato un messaggio di errore in lettura dei dati. (\hyperref[uc10]{UC10}):
+                    \item viene visualizzato un messaggio di errore in lettura dei dati. (\hyperref[uc8]{UC8}):
                 \end{enumerate}
         \end{enumerate}  
     \end{itemize}
 
     
     %%%
-    \subsubsection{UC1.2 - Caricamento di una tabella di un database}
-    \label{uc1.2}
+    \paragraph{UC1.1.2 - Caricamento di una tabella di un database}
+    \label{uc1.1.2}
     
     \begin{itemize}
     \item \textbf{Attore}: utente;
-    \item \textbf{Descrizione}: l'utente sceglie di caricare i dati tramite una tabella di un database;
+    \item \textbf{Descrizione}: l'utente sceglie di caricare il dataset tramite una tabella di un database;
     \item \textbf{Precondizione}:
     \begin{itemize}
         \item il sistema è funzionante e raggiungibile;
         \item l'utente accede alla pagina dell'applicazione;
         \item l'utente ha correttamente creato un file di configurazione dei database all'interno del server
     \end{itemize}
-    \item \textbf{Postcondizione}: l'utente si è collegato al database e ha recuperato i dati dalla tabella del database come matrice $N\times M$;
+    \item \textbf{Postcondizione}: l'utente si è collegato al database e ha recuperato il dataset dalla tabella del database come matrice $N\times M$;
     \item \textbf{Scenario Principale}: 
         \begin{enumerate}
-            \item l'utente sceglie di caricare i dati tramite una tabella di un database;
+            \item l'utente sceglie di caricare il dataset tramite una tabella di un database;
             \item l'utente seleziona la tabella di uno dei database correttamente configurati.
         \end{enumerate}
         \item \textbf{Estensioni}:
         \begin{enumerate}
-            \item l'utente inserisce dei dati non validi o non nel formato corretto:
+            \item l'utente inserisce un dataset non valido o non nel formato corretto:
                 \begin{enumerate}
                     \item fallisce l'inserimento dei dati;
-                    \item viene visualizzato un messaggio di errore in lettura dei dati (\hyperref[uc10]{UC10}).
+                    \item viene visualizzato un messaggio di errore in lettura dei dati (\hyperref[uc8]{UC8}).
                 \end{enumerate}
         \end{enumerate}  
     \end{itemize}

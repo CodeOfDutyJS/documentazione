@@ -3,7 +3,7 @@
 {
     \foreach \y [count=\ni] in \x
     {
-        \ifnum\ni=5
+        \ifnum\ni=6
             \xappto\mytablecontents{\y}
             \gappto\mytablecontents{\\}
             \gappto\mytablecontents{\hline}
@@ -18,11 +18,11 @@
 % Impostazioni della tabella
 \tabulinesep = 2mm % padding
 \taburowcolors [1] 2{pari .. dispari} % colori delle righe
-\begin{longtabu} to \textwidth {| X[0.5, c m] | X[0.6,c m] | X[0.9,c m] | X[0.8,c m] | X[1.2,l m]|} % larghezza delle colonne
+\begin{longtabu} to \textwidth {| X[0.3, c m] | X[0.6,c m] | X[0.7,c m] | X[0.9,c m] | X[0.7,c m] | X[1.2,l m]|} % larghezza delle colonne
 \hline
 \rowcolor{header} % colore dell'header
 
-\textbf{Versione} & \textbf{Data} & \textbf{Nominativo} & \textbf{Ruolo} & \multicolumn{1}{c|}{\textbf{Descrizione}}\\
+\textbf{Ver.} & \textbf{Data} & \textbf{Nominativo} & \textbf{Ruolo} & \textbf{Verificatore} & \multicolumn{1}{c|}{\textbf{Descrizione}}\\
 \hline
 \mytablecontents
 
