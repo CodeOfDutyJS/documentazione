@@ -2,12 +2,12 @@
 
 name: Build PDF Revisioni
 
-# Controls when the action will run. 
+# Controls when the action will run.
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
   push:
     tags:
-    - 'revisione-*'
+      - "revisione-*"
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -21,53 +21,43 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Set up Git repository
         uses: actions/checkout@v2
-      
+
       - name: Setup Python enviroment
         uses: actions/setup-python@v2.1.4
-      
+
       ## ANALISI DEI REQUISITI
       - name: Analisi dei requisiti
         run: echo "Start build analisi dei requisiti"
-      
+
       - name: Add glossario to analisi dei requisiti
         run: python _glo_replace.py /analisi-dei-requisiti/ glossario.txt
-       
+
       - name: Compile analisi dei requisiti LaTeX document
         uses: damix48/latex-action@0.1
         with:
           working_directory: analisi-dei-requisiti/
           root_file: main.tex
 
-      ## MANUALE SVILUPPATORE
-      - name: Manuale sviluppatore
-        run: echo "Start build manuale sviluppatore"
-       
-      - name: Compile manuale sviluppatore LaTeX document
-        uses: damix48/latex-action@0.1
-        with:
-          working_directory: manuale-sviluppatore/
-          root_file: main.tex
-
-      ## NORME DI PROGETTO
+      # NORME DI PROGETTO
       - name: Norme di progetto
         run: echo "Start build norme di progetto"
-      
+
       - name: Add glossario to norme di progetto
         run: python _glo_replace.py /norme-di-progetto/ glossario.txt
-        
+
       - name: Compile norme di progetto LaTeX document
         uses: damix48/latex-action@0.1
         with:
           working_directory: norme-di-progetto/
           root_file: main.tex
-        
+
       ## PIANO DI PROGETTO
       - name: Piano di progetto
         run: echo "Start build piano di progetto"
-      
+
       - name: Add glossario to piano di progetto
         run: python _glo_replace.py /piano-di-progetto/ glossario.txt
-        
+
       - name: Compile piano di progetto LaTeX document
         uses: damix48/latex-action@0.1
         with:
@@ -77,46 +67,33 @@ jobs:
       ## PIANO DI QUALIFICA
       - name: Piano di qualifica
         run: echo "Start build piano di qualifica"
-      
+
       - name: Add glossario to piano di qualifica
         run: python _glo_replace.py /piano-di-qualifica/ glossario.txt
-        
+
       - name: Compile piano di qualifica LaTeX document
         uses: damix48/latex-action@0.1
         with:
           working_directory: piano-di-qualifica/
           root_file: main.tex
 
-      ## STUDIO DI FATTIBILITÀ
-      - name: Studio di fattibilità
-        run: echo "Start build studio di fattibilita"
-      
-      - name: Add glossario to studio di fattibilità
-        run: python _glo_replace.py /studio-di-fattibilita/ glossario.txt
-        
-      - name: Compile studio di fattibilità LaTeX document
-        uses: damix48/latex-action@0.1
-        with:
-          working_directory: studio-di-fattibilita/
-          root_file: main.tex
-
       ## GLOSSARIO
-      - name: Glossario
-        run: echo "Start build Glossario"
-        
-      - name: Compile glossario LaTeX document
-        uses: damix48/latex-action@0.1
-        with:
-          working_directory: glossario/
-          root_file: main.tex
+      # - name: Glossario
+      #   run: echo "Start build Glossario"
+
+      # - name: Compile glossario LaTeX document
+      #   uses: damix48/latex-action@0.1
+      #   with:
+      #     working_directory: glossario/
+      #     root_file: main.tex
 
       ## VERBALE verbale-interno_2021-03-18
       - name: verbale-interno_2021-03-18
         run: echo "Start build verbale-interno_2021-03-18"
-      
+
       - name: Add glossario to verbale-interno_2021-03-18
         run: python _glo_replace.py /verbali/verbale-interno_2021-03-18/ glossario.txt
-        
+
       - name: Compile verbale-interno_2021-03-18 LaTeX document
         uses: damix48/latex-action@0.1
         with:
@@ -126,10 +103,10 @@ jobs:
       ## VERBALE verbale-interno_2021-04-20
       - name: verbale-interno_2021-04-20
         run: echo "Start build verbale-interno_2021-04-20"
-      
+
       - name: Add glossario to verbale-interno_2021-02-25
         run: python _glo_replace.py /verbali/verbale-interno_2021-04-20/ glossario.txt
-        
+
       - name: Compile verbale-interno_2021-04-20 LaTeX document
         uses: damix48/latex-action@0.1
         with:
@@ -139,10 +116,10 @@ jobs:
       ## VERBALE verbale-esterno_2021-03-15
       - name: verbale-esterno_2021-03-15
         run: echo "Start build verbale-esterno_2021-03-15"
-      
+
       - name: Add glossario to verbale-esterno_2021-03-15
         run: python _glo_replace.py /verbali/verbale-esterno_2021-03-15/ glossario.txt
-        
+
       - name: Compile verbale-esterno_2021-03-15 LaTeX document
         uses: damix48/latex-action@0.1
         with:
@@ -159,8 +136,8 @@ jobs:
           tag_name: ${{ github.ref }}
           release_name: Release ${{ github.ref }}
           draft: false
-          prerelease: false      
-      
+          prerelease: false
+
       ## UPLOAD
       - name: Upload Analisi dei requisiti
         id: upload-analisi
@@ -171,8 +148,8 @@ jobs:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: analisi-dei-requisiti/main.pdf
           asset_name: analisi-dei-requisiti.pdf
-          asset_content_type: application/pdf      
-      
+          asset_content_type: application/pdf
+
       - name: Upload Norme di progetto
         id: upload-norme
         uses: actions/upload-release-asset@v1
@@ -183,7 +160,7 @@ jobs:
           asset_path: norme-di-progetto/main.pdf
           asset_name: norme-di-progetto.pdf
           asset_content_type: application/pdf
-      
+
       - name: Upload Piano di progetto
         id: upload-piano-progetto
         uses: actions/upload-release-asset@v1
@@ -206,42 +183,20 @@ jobs:
           asset_name: piano-di-qualifica.pdf
           asset_content_type: application/pdf
 
-      - name: Upload Glossario
-        id: upload-glossario
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: glossario/main.pdf
-          asset_name: glossario.pdf
-          asset_content_type: application/pdf
-
-      - name: Upload Studio di fattibilità
-        id: upload-studio
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: studio-di-fattibilita/main.pdf
-          asset_name: studio-di-fattibilita.pdf
-          asset_content_type: application/pdf
-
-      - name: Upload Manuale sviluppatore
-        id: upload-manuale-sviluppatore
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: manuale-sviluppatore/main.pdf
-          asset_name: manuale-sviluppatore.pdf
-          asset_content_type: application/pdf
+      # - name: Upload Glossario
+      #   id: upload-glossario
+      #   uses: actions/upload-release-asset@v1
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #   with:
+      #     upload_url: ${{ steps.create_release.outputs.upload_url }}
+      #     asset_path: glossario/main.pdf
+      #     asset_name: glossario.pdf
+      #     asset_content_type: application/pdf
 
       - name: Upload verbale-interno_2021-03-18
         id: upload-verbale-interno_2021-03-18
-        
+
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -250,10 +205,10 @@ jobs:
           asset_name: verbale-interno_2021-03-18.pdf
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_content_type: application/pdf
-          
+
       - name: Upload verbale-interno_2021-04-20
         id: upload-verbale-interno_2021-04-20
-        
+
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -262,10 +217,10 @@ jobs:
           asset_name: verbale-interno_2021-04-20.pdf
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_content_type: application/pdf
-      
+
       - name: Upload verbale-esterno_2021-03-15
         id: upload-verbale-esterno_2021-03-15
-        
+
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

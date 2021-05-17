@@ -18,7 +18,7 @@
             \item esegue il commit della modifica;
             \item esegue L'intera batteria di test;
             \item esegue il linter;
-            \item nel caso sia i test che il linter diano riusultato positivo esegue una pull request;
+            \item nel caso sia i test che il linter diano risultato positivo esegue una pull request;
             \item un membro del gruppo \textit{HD Viz} esegue la review della pull request;
             \item in caso la review dia esito negativo viene stesa una lista di correzioni da eseguire;
             \item in caso la review dia esito positivo viene approvata la pull request.
@@ -65,12 +65,12 @@
     \begin{verbatim}
         import * as d3 from 'd3';
     \end{verbatim}
-    \textit{HD Viz} contiene un unico elemento svg con id \#area, questo è utile per la mainpolazione del DOM in quanto rende l'svg selezionabile con un sola istruzione d3:
+    \textit{HD Viz} contiene un unico elemento svg con id \#area, questo è utile per la manipolazione del DOM in quanto rende l'svg selezionabile con un sola istruzione d3:
     \begin{verbatim}
         const svg = d3.select('#area');
     \end{verbatim}
         \subsubsection{Inserire la nuova visualizzazione}
-        Ogni visualizzazione deve essere associata ad un modello. Ogni modello implementa la funzione  \texttt{getPreparedDataset()}, che ritorna i dati alla visualizzazione. Se si vuole sfruttare un modello già esistente è necessario creare una nuova classe che eredita dal modello e reimplementare \texttt{getPreparedDataset()} con i dati necessari alla propria visualizzazione. Successivamente perchè la visualizzazione sia disponibile e selezionabile dalla UI è sufficiente aggiungere un \texttt{VisualizationType} nel \texttt{VisualizationCollector}, in questo modo:
+        Ogni visualizzazione deve essere associata ad un modello. Ogni modello implementa la funzione  \texttt{getPreparedDataset()}, che ritorna i dati alla visualizzazione. Se si vuole sfruttare un modello già esistente è necessario creare una nuova classe che eredita dal modello e reimplementare \texttt{getPreparedDataset()} con i dati necessari alla propria visualizzazione. Successivamente perché la visualizzazione sia disponibile e selezionabile dalla UI è sufficiente aggiungere un \texttt{VisualizationType} nel \texttt{VisualizationCollector}, in questo modo:
         \begin{verbatim}
             VisualizationCollector.addVisualization({
               id: 'myviz',
@@ -92,7 +92,7 @@
             \item \textbf{options}: le opzioni che la UI deve visualizzare, nell'esempio distance, quindi verrà visualizzata la selezione del tipo di distanza.
         \end{itemize}
     
-        Una volta aggiunta la visualizzazione al \texttt{VisualizationCollector} è necesario importare il nuovo file all'interno del file index.js nella cartella VisualizationModels.
+        Una volta aggiunta la visualizzazione al \texttt{VisualizationCollector} è necessario importare il nuovo file all'interno del file index.js nella cartella VisualizationModels.
         
         \subsubsection{Pratiche usate dal gruppo usando d3}
             Questa sezione contiene pratiche che pur non essendo convenzionate sono considerate dal gruppo utili per la creazione di visualizzazioni d3.
