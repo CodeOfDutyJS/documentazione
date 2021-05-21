@@ -1,0 +1,495 @@
+Per rispettare i requisiti identificati nel documento \textit{Analisi dei Requisiti 2.0.0} e per garantire il funzionamento del prodotto si eseguono i seguenti Test di sistema:\\
+    
+\subsubsection{Test di sistema per i requisiti funzionali}
+    \hphantom{}
+
+    %startTable
+    \def\testspecification{
+    {   
+        TSOF1,
+        Si verifica che l'utente possa caricare i dati per la visualizzazione tramite file CSV,
+        S,
+        RFO1 RFO1.1
+    },
+    {   
+        TSOF1.1,
+        Si verifica che l'utente possa inserire i dati tramite query al database,
+        S,
+        RFO1.2
+    },
+    {   
+        TSOF1.2,
+        Si verifica che appaia un messaggio d'errore in caso di errore nell'inserimento dei dati,
+        NI,
+        RFO1.3
+    },
+    {   
+        TSOF1.3,
+        Si verifica che i dati caricati provenienti da qualsiasi fonte siano convertiti in JSON,
+        S,
+        RFO1.4
+    },
+    {   
+        TSOF2,
+        Si verifica la possibilità di scelta nella visualizzazione dei dati. In particolare devono essere presenti le seguenti visualizzazioni:
+        \unexpanded{
+        \begin{itemize}
+            \item Scatter Plot Matrix
+            \item Heatmap
+            \item Force Field
+            \item Linear Projection
+        \end{itemize}},
+        S,
+        RFO2 RFO2.1 RFO2.2 RFO2.4 RFO2.5
+    },
+    {   
+        TSFF2.1,
+        Si verifica che nella scelta per la visualizzazione deve esserci: Correlation Heatmap,
+        S,
+        RFF2.3
+    },
+    {   
+        TSFF2.2,
+        Si verifica che nella scelta per la visualizzazione deve esserci: Parallel Coordinates,
+        S,
+        RFF2.6
+    },
+    {   
+        TSOF3,
+        Si verifica che l'utente possa manipolare i dati nel dataset,
+        S,
+        RFO3
+    },
+    {   
+        TSOF3.1,
+        SI verifica che l'utente possa selezionare le variabili target tra le feauteres del dataset,
+        S,
+        RFO3.1
+    },
+    {   
+        TSOF3.2,
+        SI verifica che l'utente possa selezionare le features a cui è interessato,
+        S,
+        RFO3.2
+    },
+    {   
+        TSOF3.3,
+        SI verifica che l'utente possa normalizzare i dati presenti nel dataset nei seguenti modi:
+        \unexpanded{
+        \begin{itemize}
+            \item Globalmente
+            \item Per colonna
+        \end{itemize}},
+        S,
+        RFO3.3 RFO3.3.1 RFO 3.3.2 RFO 3.3.3
+    },
+    {   
+        TSFF3.4,
+        SI verifica che l'utente possa selezionare le righe del dataset a cui è interessato,
+        NI,
+        RFF3.4
+    },
+    {   
+        TSOF4,
+        Si verifica che l'utente possa modificare le impostazioni che influenzano la visualizzazione,
+        S,
+        RFO4
+    },
+    {   
+        TSOF4.1,
+        Si verifica che l'utente possa assegnare una classe di visualizzazione ad ogni variabile target selezionata,
+        NI,
+        RFO4.1
+    },
+    {   
+        TSOF4.2,
+        Si verifica che l'utente possa modificare il range dei dati da considerare nella Heatmap,
+        NI,
+        RFO4.2
+    },
+    {   
+        TSOF4.3,
+        Si verifica che l'utente possa assegnare un colore al range di un Heatmap,
+        NI,
+        RFO4.3
+    },
+    {   
+        TSOF4.4,
+        Si verifica che l'utente che ha selezionato la visualizzazione Heatmap possa ordinare in ordine alfabetico e in cluster il dataset,
+        S,
+        RFO4.4 RFO4.4.1 RFO4.4.2
+    },
+    {   
+        TSOF5,
+        Si verifica che l'utente possa calcolare la matrice di distanza se ha scelto la visualizzazione Heatmap o Forcefield,
+        S,
+        RFO5
+    },    
+    {   
+        TSOF5.1,
+        Si verifica che siano disponibili i seguenti tipi di distanze per calcolare la matrice di distanza:
+        \unexpanded{
+            \begin{itemize}
+                \item euclidea;
+                \item Manhattan.
+            \end{itemize}
+        }
+        E che siano disponibili per Forcefield e Heatmap,
+        S,
+        RFO5.1 RFO5.1.1 RFO5.1.2
+    },
+    {   
+        TSOF6,
+        Si verifica che quando viene scelta la visualizzazione Linear Projection sia calcolata la riduzione delle componenti,
+        S,
+        RFO6
+    },
+    {   
+        TSFF6.1,
+        Si verifica che l'utente possa scegliere tra i seguenti algoritmi per la riduzione dei componenti:
+        \unexpanded{
+        \begin{itemize}
+            \item PCA;
+            \item UMAP;
+            \item t-SNE.
+        \end{itemize}},
+        NI,
+        RFO6.1 RFF6.1.1 RFF6.1.2 6.1.3
+    },
+    {   
+        TSOF7,
+        Si verifica che la visualizzazione creata dal sistema sia salvabile in formato PNG,
+        NI,
+        RFO7
+    },
+    {   
+        TSOF8,
+        Si verifica che un messaggio di errore compaia a schermo se i files sono caricati scorrettamente,
+        NI,
+        RFO8
+    },
+    }
+    \input{source/tables/descrizione_test.tex}
+    %endTable
+    
+\subsubsection{Test di sistema per i requisiti di qualità}
+    %startTable
+    \def\testspecification{
+    {   
+        TSOQ1,
+        Si verifica che sia stato prodotto un manuale d'uso per l'utente,
+        S,
+        RQO1
+    },
+    {   
+        TSOQ2,
+        Si verifica che sia stato prodotto un manuale manutentore,
+        S,
+        RQO2
+    },
+    {   
+        TSOQ3,
+        Si verifica che il codice sia stato pubblicato su un repository pubblico,
+        S,
+        RQO3
+    },
+    {   
+        TSOQ4,
+        Si verifica che il codice segua le norme di stile specificate nel documento Norme di Progetto,
+        NI,
+        RQO4
+    },
+    {   
+        TSOQ5,
+        Si verifica che nella codifica si eviti l'utilizzo di chiamate ricorsive dove è possibile,
+        S,
+        RQO5
+    },
+      }
+    \input{source/tables/descrizione_test.tex}
+    %endTable  
+        
+\subsubsection{Test di sistema per i requisiti di vincolo}
+    %startTable
+    \def\testspecification{
+    {   
+        TSOV1,
+        Si verifica che il codice sorgente dell'applicazione sia open source,
+        NI,
+        RVO1
+    },
+    {   
+        TSOV2,
+        Si verifica che l'applicazione sia sviluppata in Javascript con l'utilizzo della libreria d3.js,
+        S,
+        RVD2 RVD2.1
+    },
+    {   
+        TSDV2.1,
+        Si verifica che il backend dell'applicazione sia sviluppato con node.js con l'utilizzo del framework Express,
+        S,
+        RVD2.2
+    },
+    {   
+        TSDV2.2,
+        Si verifica che il frontend dell'applicazione sia sviluppato con React con l'utilizzo del framework Ant Design,
+        S,
+        RVD2.3
+    },
+    {   
+        TSOV3,
+        Si verifica che i dati siano convertibili in JSON,
+        S,
+        RVO3
+    },
+    {   
+        TSOV4,
+        Si verifica che nella visualizzazione Scatter Plot Matrix si possano visualizzare al massimo 5 features,
+        S,
+        RVO4
+    },
+    {   
+        TSDV5,
+        Si verifica che la libreria per PCA sia ml-pca,
+        S,
+        RVD5
+    },
+    {   
+        TSDV6,
+        Si verifica che la libreria per Umap sia tsne-js,
+        NI,
+        RVD6
+    },
+    {   
+        TSDV7,
+        Si verifica che la libreria per t-SNE sia tsne-js,
+        NI,
+        RVD7
+    },
+    {   
+        TSDV8,
+        Si verifica che la libreria per le distanze sia ml-distance,
+        S,
+        RVD8
+    },
+    {   
+        TSDV9,
+        Si verifica che la libreria per la matrice di correlazione sia jeezy,
+        NI,
+        RVD9
+    },
+      }
+    \input{source/tables/descrizione_test.tex}
+    %endTable
+     
+\subsection{Test di accettazione}
+    \subsubsection{Test di accettazione per i requisiti funzionali}
+        \hphantom{}
+        %startTable
+        \def\testspecification{
+        {   
+            TAOF1,
+            Si verifica che l'utente possa caricare i dati per la visualizzazione tramite file CSV,
+            S,
+            RFO1 RFO1.1
+        },
+        {   
+            TAOF1.1,
+            Si verifica che l'utente possa inserire i dati tramite query al database,
+            S,
+            RFO1.2
+        },
+        {   
+            TAOF1.2,
+            Si verifica che appaia un messaggio d'errore in caso di errore nell'inserimento dei dati,
+            NI,
+            RFO1.3
+        },
+        {   
+            TAOF1.3,
+            Si verifica che i dati caricati provenienti da qualsiasi fonte siano convertiti in JSON,
+            S,
+            RFO1.4
+        },
+        {   
+            TAOF2,
+            Si verifica la possibilità di scelta nella visualizzazione dei dati. In particolare devono essere presenti le seguenti visualizzazioni:
+            \unexpanded{
+            \begin{itemize}
+                \item Scatter Plot Matrix
+                \item Heatmap
+                \item Force Field
+                \item Linear Projection
+            \end{itemize}},
+            S,
+            RFO2 RFO2.1 RFO2.2 RFO2.4 RFO2.5
+        },
+        {   
+            TAOF3,
+            Si verifica che l'utente possa manipolare i dati nel dataset,
+            NI,
+            RFO3
+        },
+        {   
+            TAOF3.1,
+            SI verifica che l'utente possa selezionare le variabili target tra le feauteres del dataset,
+            S,
+            RFO3.1
+        },
+        {   
+            TAOF3.2,
+            SI verifica che l'utente possa selezionare le features a cui è interessato,
+            S,
+            RFO3.2
+        },
+        {   
+            TAOF3.3,
+            SI verifica che l'utente possa normalizzare i dati presenti nel dataset nei seguenti modi:
+            \unexpanded{
+            \begin{itemize}
+                \item Globalmente
+                \item Per riga
+                \item Per colonna
+            \end{itemize}},
+            NI,
+            RFO3.3 RFO3.3.1 RFO3.3.2 RFO3.3.3
+        },
+        {   
+            TAOF4,
+            Si verifica che l'utente possa modificare le impostazioni che influenzano la visualizzazione,
+            NI,
+            RFO4
+        },
+        {   
+            TAOF4.1,
+            Si verifica che l'utente possa assegnare una classe di visualizzazione ad ogni variabile target selezionata,
+            NI,
+            RFO4.1
+        },
+        {   
+            TAOF4.2,
+            Si verifica che l'utente possa modificare il range dei dati da considerare nella Heatmap,
+            NI,
+            RFO4.2
+        },
+        {   
+            TAOF4.3,
+            Si verifica che l'utente possa assegnare un colore al range di un Heatmap,
+            NI,
+            RFO4.3
+        },
+        {   
+            TAOF4.4,
+            Si verifica che l'utente che ha selezionato la visualizzazione Heatmap possa ordinare in ordine alfabetico e in cluster il dataset,
+            S,
+            RFO4.4 RFO4.4.1 RFO4.4.2
+        },
+        {   
+            TAOF5,
+            Si verifica che l'utente possa calcolare la matrice di distanza se ha scelto la visualizzazione Heatmap o Forcefield,
+            S,
+            RFO5
+        },    
+        {   
+            TAOF5.1,
+            Si verifica che siano disponibili i seguenti tipi di distanze per calcolare la matrice di distanza:
+            \unexpanded{
+                \begin{itemize}
+                    \item euclidea;
+                    \item Manhattan.
+                \end{itemize}
+            }
+            E che siano disponibili per Forcefield e Heatmap,
+            S,
+            RFO5.1 RFO5.1.1 RFO5.1.2
+        },
+        {   
+            TAOF6,
+            Si verifica che quando viene scelta la visualizzazione Linear Projection sia calcolata la riduzione delle componenti,
+            S,
+            RFO6
+        },
+        {   
+            TAFF6.1,
+            Si verifica che l'utente possa scegliere tra i seguenti algoritmi per la riduzione dei componenti:
+            \unexpanded{
+            \begin{itemize}
+                \item PCA;
+                \item UMAP;
+                \item t-SNE.
+            \end{itemize}}
+            Due o più di questi algoritmi devono essere implementati,
+            NI,
+            RFO6.1 RFF6.1.1 RFF6.1.2 6.1.3
+        },
+        {   
+            TAOF7,
+            Si verifica che la visualizzazione creata dal sistema sia salvabile in formato PNG,
+            NI,
+            RFO7
+        },
+        {   
+            TAOF8,
+            Si verifica che un messaggio di errore compaia a schermo se i files sono caricati scorrettamente,
+            NI,
+            RFO8
+        },
+        }
+        \input{source/tables/descrizione_test.tex}
+        %endTable
+    \subsubsection{Test di accettazione per i requisiti di qualità}
+        %startTable
+        \def\testspecification{
+            {   
+                TAOQ1,
+                Si verifica che sia stato prodotto un manuale d'uso per l'utente,
+                S,
+                RQO1
+            },
+            {   
+                TAOQ2,
+                Si verifica che sia stato prodotto un manuale manutentore,
+                S,
+                RQO2
+            },
+            {   
+                TAOQ3,
+                Si verifica che il codice sia stato pubblicato su un repository pubblico,
+                S,
+                RQO3
+            },
+        }
+        \input{source/tables/descrizione_test.tex}
+        %endTable  
+            
+    \subsubsection{Test di accettazione per i requisiti di vincolo}
+        %startTable
+        \def\testspecification{
+            {   
+                TAOV1,
+                Si verifica che il codice sorgente dell'applicazione sia open source,
+                NI,
+                RVO1
+            },
+            {   
+                TAOV2,
+                Si verifica che l'applicazione sia sviluppata in Javascript con l'utilizzo della libreria d3.js,
+                S,
+                RVD2 RVD2.1
+            },
+            {   
+                TADV2.1,
+                Si verifica che il backend dell'applicazione sia sviluppato con node.js con l'utilizzo del framework Express,
+                S,
+                RVD2.2
+            },
+            {   
+                TADV2.2,
+                Si verifica che il frontend dell'applicazione sia sviluppato con React con l'utilizzo del framework Ant Design,
+                S,
+                RVD2.3
+            },
+        }
+        \input{source/tables/descrizione_test.tex}
+        %endTable
+         

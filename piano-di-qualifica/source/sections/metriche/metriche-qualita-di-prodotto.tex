@@ -1,3 +1,10 @@
+\subsubsection{Correttezza dello scambio dei dati}
+In accordo con il proponente del progetto la correttezza dello scambio dei dati, ovvero
+il controllo su i possibili errori presenti nei dati, non è a carico del gruppo del progetto
+ma verranno forniti dati pronti per l'elaborazione.
+In conclusione la mterica può ritenersi con valore pari a zero e di conseguenza ottima.
+
+
 \subsubsection{Numero di click}
 
 \begin{longtabu} to \textwidth {| X[0.2,c m] | X[0.1,c m]| X[0.1,c m]| }
@@ -32,7 +39,7 @@
 \subsubsection{Complessità Ciclomatica}
     Nella seguente tabell e grafico si può vedere i valori della complessità cicolmatica divisi per valori:
 
-        Come si può notare dal segeuente graico il numero di funzioni al di sotto della soglia per considerarsi ottime è pari al 99\%
+        Come si può notare dal segeuente graico il numero di funzioni al di sotto della soglia per considerarsi ottime è pari al 97,82\%
 
 
 
@@ -78,11 +85,11 @@
     \end{figure}
 
     I forti cambiamenti nell'andamento delle funzioni sono dati da un aggiornamento del progetto fatto in data
-    9 Aprile, nel quale si è implementato un comando yarn che si preoccpa di creare la maggiorparte del
-    codice CSS, che ha fatto scendere in modo drastico il numero di righe di codice del progetto effettivo. Maggiori chiarimenti nella sezione conclusiva.
-
-\subsubsection{Stractural FAN-in and FAN-out  [sfin and sfout]}
-    E' stato calcolato lo Stractural FAN-in e FAN-out di tutti i 44 file del progetto. I risultati sono esposti nella seguente tabella:
+    9 Aprile (in fase di progettazione e collado), nel quale si è implementato un comando yarn che si preoccpa di creare la maggiorparte del
+    codice CSS, che ha fatto scendere in modo drastico il numero di righe di codice del progetto effettivo.
+\newpage
+\subsubsection{SFIN and SFOUT}
+    E' stato calcolato lo SFIN e SFOUT di tutti i 44 file del progetto. I risultati sono esposti nella seguente tabella:
 
     \begin{longtabu} to \textwidth {| X[0.1,c m] | X[0.1,c m] | X[0.1,c m] | X[0.1,c m] | X[0.1,c m] |}
         \hline
@@ -93,11 +100,11 @@
         \textbf{OUT} &
         \textbf{percentuale sul totale} \\
         \hline
-        Ottimo & 11 & 25\% & 5 & 11,36\% \\ 
+        Ottimo & 36 & 38,29\% & 32 & 34,04\% \\ 
         \hline
-        Sufficiente & 26 & 59,09\% & 32 & 72,72\% \\ 
+        Sufficiente & 46 & 51,11\% & 50 & 53,19\% \\ 
         \hline
-        Insufficiente & 7 & 15,90\% & 7 & 15,90\% \\ 
+        Insufficiente & 12 & 12,76\% & 12 & 12,76\% \\ 
         \hline
 
         \end{longtabu}
@@ -105,5 +112,5 @@
         \begin{figure}[H]
             \centering
             \includegraphics[width=13 cm]{source/sections/images/SfinSfout.png}
-            \caption{Grafico delo stractural FAN-in e FAN-out}
+            \caption{Grafico dello sfin e sfout}
         \end{figure}

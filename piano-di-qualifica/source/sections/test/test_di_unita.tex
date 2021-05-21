@@ -1,0 +1,359 @@
+\subsubsection{Test di unità - test sul modello}
+    \hphantom{}
+
+    %startTable
+    \def\testspecification{
+    {   
+        TU1,
+        Si verifica la creazione di un oggetto JSON con feature e colonne target a partire da i dati prelevati,
+        S
+       },
+       {   
+        TU2,
+        Si verifica la corretta creazione di un oggetto per la visualizzazione Force field ,
+        S
+       },
+       {   
+        TU3,
+        Si verifica che la visualizzazinoe Force Field abbia il corretto numero di cerchi ,
+        S
+       },
+       {   
+        TU4,
+        Si verifica l'ottenimento di una copia profonda del dataset originale nella visualizzazione Force field,
+        S
+       },
+       {   
+        TU5,
+        Si verifica l'otenimento corretto dei dati di tutte le colonne feature nella visualizzazione Heatmap,
+        S
+       },
+       {   
+        TU6,
+        Si verifica l'ottenimento dei dati di tutte le colonne target,
+        S
+       },
+       {   
+        TU7,
+        Si verifica che il calcolo della distanza euclidea tra nodi sia esatto,
+        S
+       },
+       {   
+        TU8,
+        Si verifica la corretta proiezione dei punti nella visualizzazione Linea projection usando PCA ,
+        S
+       },
+       {   
+        TU9,
+        Si verifica la proiezione degli assi nella Linear projection sfruttando PCA,
+        S
+       },
+       {   
+        TU10,
+        Si verifica la corretta visualizzazione dei punti sul piano nella Linear Projection,
+        S
+       },
+       {   
+        TU11,
+        Si verifica che la visualizzazinone Linear Projection abbia il corretto numero di assi ,
+        S
+       },
+       {   
+        TU12,
+        Si verifica che la visualizzazione Liinear Projection abbia il corretto numero di punti,
+        S
+       },
+       {   
+        TU13,
+        Si verifica la corretta creazione degli oggetti usati nella visualizzazione Parallel Coordinates,
+        S
+       },
+       {   
+        TU14,
+        Si verifica che la visualizzazione Parallel Coordinates abbia il corretto numero di assi ,
+        S
+       },
+       {   
+        TU15,
+        Si verifica che la visualizzazione Parallel Coordinates abbia il corretto numero di punti ,
+        S
+       },
+       {   
+        TU16,
+        Si verifica la corretta creazione degli oggetti usati nella  visualizzazione Scatter Plot Matrix,
+        S
+       },
+       {   
+        TU17,
+        Si verifica che la visualizzazione Scatter Plot Matrix abbia il corretto numero di assi,
+        S
+       },
+       {   
+        TU18,
+        Si verifica che la visualizzazione Scatter Plot Matrix abbia il corretto numero di punti,
+        S
+       },
+       {   
+        TU19,
+        Si verifica che il dataset sia preparato per la visualizzazione UMAP,
+        S
+       },
+       {   
+        TU20,
+        Si verifica la corretta creazione degli oggetti usati nella  visualizzazione Scatter Plot Matrix,
+        S
+       },
+    }
+    \input{source/tables/descrizione_test_unita.tex}
+    %endTable
+
+    \subsubsection{Test di unità - test sullo store}
+    \hphantom{}
+
+    %startTable
+    \def\testspecification{
+    {   
+        TU21,
+        Si verifica la corretta selezione dei database,
+        S
+       },
+       {
+       TU22,
+        Si verifica la corretta gestione del possibile errore di database selezionato,
+        S
+       },
+       {
+       TU23,
+        Si verifica la corretta selezione delle tabelle del database,
+        S
+       },
+       {
+       TU24,
+        Si verifica la corretta gestione del possibile errore nel selezionare una tabella del database,
+        S
+       },
+       {
+       TU25,
+        Si verifica il corretto ottenimento dei dati delle colonne di una tabella,
+        S
+       },
+       {
+       TU26,
+        Si verifica la corretta gestione di errore da ottenimento dei dati,
+        S
+       },
+       {
+       TU27,
+        Si verifica la corretta sequenza di chiamate di oggetti osservabili,
+        S
+       },
+       {
+       TU28,
+        Si verifica il corretto caricamento dei dati,
+        S
+       },
+       {
+       TU29,
+        Si verifica la gestione di errori da caricamento dei dati,
+        S
+       },
+       {
+       TU30,
+        Si verifica che il numero di feature non superi il limite massimo,
+        S
+       },
+       {
+       TU31,
+        Si verifica che il numero di target deve essere superiore a 2,
+        S
+       },
+       {
+       TU32,
+        Si verifica se è impostato il numero massimo di target,
+        S
+       },
+       {
+       TU33,
+        Si verifica che sia possibile la corretta impostazinoe delle colonne,
+        S
+       },
+       {
+       TU34,
+        Si verifica che sia possibile impostare correttamente le feature,
+        S
+       },
+       {
+       TU35,
+        Si verifica la corretta creazione di visualization Store,
+        S
+       },
+       {
+       TU36,
+        Si verifica la corretta selezione delle visualizzazioni,
+        S
+       },
+       {
+       TU37,
+        Si verifica la corretta selezione della normalizzazinoe delle visualizzazioni,
+        S
+       },
+       {
+       TU38,
+        Si verifica la corretta impostazinoe della distanza euclidea,
+        S
+       },
+       {
+       TU39,
+        Si verifica l'avvenuta impostazinoe di clustering in modo corretto,
+        S
+       },
+       {
+       TU40,
+        Si verifica che l'impostazinoe del colore iniale dell'Heatmap avvenga in modo corretto ,
+        S
+       },
+       {
+       TU41,
+        Si verifica che l'impostazinoe del colore finale dell'Heatmap avvenga in modo corretto ,
+        S
+       },
+       {
+       TU42,
+        Si verifica che l'impostazione del primo range nell' Heatmap visualization avvenga nel modo corretto,
+        S
+       },
+       {
+       TU43,
+       Si verifica che l'impostazione del secondo range nell' Heatmap visualization avvenga nel modo corretto,
+        S
+       },
+       {
+       TU44,
+       Si verifica la corretta impostazinoe del Neighbor,
+        S
+       },
+       {
+       TU45,
+       Si verifica la corretta avvenuta dell'impostazinoe di distanza minima,
+        S
+       },
+       {
+       TU46,
+       Si verifica la corretta avvenuta dell'impostazinoe di Spread,
+        S
+       },
+       {
+       TU47,
+       Si verifica la corretta inizializzazinoe della visualizzazinoe,
+        S
+       },
+    }
+    \input{source/tables/descrizione_test_unita.tex}
+    %endTable
+
+    \subsubsection{Test di unità - server}
+    \hphantom{}
+
+    %startTable
+    \def\testspecification{
+    {   
+        TU48,
+        Si verifica il corretto ottenimento dei database presenti nel server,
+        S
+       },
+       {   
+        TU49,
+        Si verifica il corretto ottenimento delle tabelle dal database,
+        S
+       },
+       {   
+        TU50,
+        Si verifica il corretto ottenimento dei dati dal database,
+        S
+       },
+       {   
+        TU51,
+        Si verifica la corretta connessine a database MySQL,
+        S
+       },
+       {   
+        TU52,
+        Si verifica il corretto ottenimento dei nomi delle tabelle Mysql,
+        S
+       },
+       {   
+        TU53,
+        Si verifica il corretto ottenimento dei dati da database Mysql,
+        S
+       },
+       {   
+        TU54,
+        Si verifica la correttta gestione degli errori nell'ottenimento dei dati da database Mysql,
+        S
+       },
+       {   
+        TU55,
+        Si verifica la corretta connessine a database PostgreSQL,
+        S
+       },
+       {   
+        TU56,
+        Si verifica il corretto ottenimento dei nomi delle tabelle PostgreSQL,
+        S
+       },
+       {   
+        TU57,
+        Si verifica il corretto ottenimento dei dati da database PostgreSQL,
+        S
+       },
+       {   
+        TU58,
+        Si verifica la correttta gestione degli errori nell'ottenimento dei dati da database PostgreSQL,
+        S
+       },
+       {   
+        TU59,
+        Si verifica la corretta connessine a database SQLite,
+        S
+       },
+       {   
+        TU60,
+        Si verifica il corretto ottenimento dei nomi delle tabelle SQLite,
+        S
+       },
+       {   
+        TU61,
+        Si verifica il corretto ottenimento dei dati da database SQLite,
+        S
+       },
+       {   
+        TU62,
+        Si verifica la correttta gestione degli errori nell'ottenimento dei dati da database SQLite,
+        S
+       },
+       {   
+        TU63,
+        Si verifica la corretta connessine a database MongoDB,
+        S
+       },
+       {   
+        TU64,
+        Si verifica il corretto ottenimento dei nomi delle collezioni MongoDB,
+        S
+       },
+       {   
+        TU65,
+        Si verifica il corretto ottenimento dei dati da database MongoDB,
+        S
+       },
+       {   
+        TU66,
+        Si verifica la correttta gestione degli errori nell'ottenimento dei dati da database MongoDB,
+        S
+       },
+    }
+    \input{source/tables/descrizione_test_unita.tex}
+    %endTable
+
+       
+    
