@@ -1,14 +1,17 @@
 \section{Estendere HD Viz}
     \subsection{Descrizione}
-    HD Viz è un prodotto open source ed in quanto tale ogni utente può modificare, estendere e ridistribuire la propria versione del codice sorgente. In questa sezione è possibile consultare le norme e le modalità attraverso le quali si può estendere e modificare il progetto HD Viz.
+    \hd\ è un prodotto open source\glo\ ed in quanto tale ogni utente può modificare, estendere e ridistribuire la propria versione del codice sorgente. In questa sezione è possibile consultare le norme e le modalità attraverso le quali si può estendere e modificare il progetto \hd .
     \subsection{Contribuire al progetto principale}
-    Il progetto principale è gestito dai componenti del gruppo \textit{HD Viz}, e si può trovare al seguente repository Github: \url{https://github.com/CodeOfDutyJS/hdviz}.
-    Il gruppo \textit{HD Viz} si riserva il diritto di approvare e verificare ogni modifica apportata al progetto principale.
+    Il progetto principale è gestito dai componenti del gruppo \cod , e si può trovare al seguente repository\glo\ GitHub\glo : \href{https://github.com/CodeOfDutyJS/hdviz}{https://github.com/CodeOfDutyJS/hdviz}.
+    Il gruppo \cod\ si riserva il diritto di approvare e verificare ogni modifica apportata al progetto principale.
         \subsubsection{Diagramma di attività di modifica e/o estensione al progetto}
         Il seguente diagramma illustra l'attività di modifica e/o estensione del progetto:
         \\
         \\
-        \includegraphics[width=1\textwidth]{source/img/estensione_progetto.png}
+        \begin{figure}[H]
+            \centering\includegraphics[width=1\textwidth]{source/img/estensione_progetto.png}
+            \caption{Diagramma di sequenza per modificare/estendere \hd}
+        \end{figure}
         \subsubsection{Descrizione attività di modifica e/o estensione al progetto}
         L'attività di modifica e/o estensione al progetto si svolge nel seguente modo:
         \begin{itemize}
@@ -16,18 +19,18 @@
             \item codifica la modifica;
             \item codifica eventuali test necessari;
             \item esegue il commit della modifica;
-            \item esegue L'intera batteria di test;
+            \item esegue l'intera batteria di test;
             \item esegue il linter;
-            \item nel caso sia i test che il linter diano riusultato positivo esegue una pull request;
-            \item un membro del gruppo \textit{HD Viz} esegue la review della pull request;
+            \item nel caso sia i test che il linter diano risultato positivo esegue una pull request;
+            \item un membro del gruppo \cod\ esegue la review della pull request;
             \item in caso la review dia esito negativo viene stesa una lista di correzioni da eseguire;
             \item in caso la review dia esito positivo viene approvata la pull request.
         \end{itemize}
         \subsubsection{Issue}
-        Alla pagina Github di \textit{HD Viz} è possibile trovare una board con tutte le Issue attive in un dato momento. La gestione delle Issue stesse è riservata al gruppo \textit{HD Viz}, ma chiunque può contribuire suggerendo miglioramenti e correzioni, o segnalando eventuali bug. 
+        Alla pagina GitHub\glo\ di \hd\ è possibile trovare una board con tutte le Issue attive in un dato momento. La gestione delle Issue stesse è riservata al gruppo \cod , ma chiunque può contribuire suggerendo miglioramenti e correzioni, o segnalando eventuali bug. 
         \subsubsection{Effettuare il fork}
-        Per effettuare il fork del progetto è sufficiente andare alla pagina Github e cliccare sul pulsante "fork" in alto a destra.
-        \subsubsection{Pull Request}
+        Per effettuare il fork del progetto è sufficiente andare alla pagina GitHub\glo\ e cliccare sul pulsante "fork" in alto a destra.
+        \subsubsection{Pull request}
         Le pull request sono soggette alle seguenti norme:
         \begin{itemize}
             \item ogni pull request deve contenere una descrizione estensiva delle modifiche e correzioni apportate al progetto, se con la pull request vengono risolte delle Issue si deve porre un riferimento alle stesse;
@@ -39,7 +42,7 @@
         \subsubsection{Stesura dei test}
         La stesura dei test viene riconosciuta dal gruppo \textit{Code of Duty} come buona pratica per la stesura di codice di qualità. Chiunque voglia contribuire scrivendo test per l'applicazione o per testare la propria estensione e/o modifica del codice deve:
         \begin{itemize}
-            \item usare il framework jest
+            \item usare il framework Jest
             \item seguire le convenzioni del gruppo sul nome dei file di test, cioè usare la seguente convenzione per i nomi dei file:
             \begin{verbatim}
                 nomeClasse.spec.js
@@ -55,7 +58,7 @@
             \end{verbatim}.
         \end{itemize}
     \subsection{Usare HD Viz come base per un altro progetto}
-    HD Viz è un progetto open-source, chiunque può usare il codice del progetto in parte o nella sua interezza e ridistribuirlo gratuitamente o dietro pagamento.
+    \hd\ è un progetto open source\glo , chiunque può usare il codice del progetto in parte o nella sua interezza e ridistribuirlo gratuitamente o dietro pagamento.
     \subsection{Aggiungere una visualizzazione}
     Per aggiungere una visualizzazione creare un nuovo file .js in:
     \begin{verbatim}
@@ -65,12 +68,12 @@
     \begin{verbatim}
         import * as d3 from 'd3';
     \end{verbatim}
-    \textit{HD Viz} contiene un unico elemento svg con id \#area, questo è utile per la mainpolazione del DOM in quanto rende l'svg selezionabile con un sola istruzione d3:
+    \hd\ contiene un unico elemento svg con id \#area, questo è utile per la manipolazione del DOM in quanto rende il svg selezionabile con un sola istruzione d3:
     \begin{verbatim}
         const svg = d3.select('#area');
     \end{verbatim}
         \subsubsection{Inserire la nuova visualizzazione}
-        Ogni visualizzazione deve essere associata ad un modello. Ogni modello implementa la funzione  \texttt{getPreparedDataset()}, che ritorna i dati alla visualizzazione. Se si vuole sfruttare un modello già esistente è necessario creare una nuova classe che eredita dal modello e reimplementare \texttt{getPreparedDataset()} con i dati necessari alla propria visualizzazione. Successivamente perchè la visualizzazione sia disponibile e selezionabile dalla UI è sufficiente aggiungere un \texttt{VisualizationType} nel \texttt{VisualizationCollector}, in questo modo:
+        Ogni visualizzazione deve essere associata ad un modello. Ogni modello implementa la funzione  \texttt{getPreparedDataset()}, che ritorna i dati alla visualizzazione. Se si vuole sfruttare un modello già esistente è necessario creare una nuova classe che eredita dal modello e implementare nuovamente \texttt{getPreparedDataset()} con i dati necessari alla propria visualizzazione. Successivamente perché la visualizzazione sia disponibile e selezionabile dalla UI è sufficiente aggiungere un \texttt{VisualizationType} nel \texttt{VisualizationCollector}, in questo modo:
         \begin{verbatim}
             VisualizationCollector.addVisualization({
               id: 'myviz',
@@ -92,7 +95,7 @@
             \item \textbf{options}: le opzioni che la UI deve visualizzare, nell'esempio distance, quindi verrà visualizzata la selezione del tipo di distanza.
         \end{itemize}
     
-        Una volta aggiunta la visualizzazione al \texttt{VisualizationCollector} è necesario importare il nuovo file all'interno del file index.js nella cartella VisualizationModels.
+        Una volta aggiunta la visualizzazione al \texttt{VisualizationCollector} è necessario importare il nuovo file all'interno del file index.js nella cartella VisualizationModels.
         
         \subsubsection{Pratiche usate dal gruppo usando d3}
             Questa sezione contiene pratiche che pur non essendo convenzionate sono considerate dal gruppo utili per la creazione di visualizzazioni d3.
@@ -109,7 +112,7 @@
                 d3.select('#area').selectAll('*').remove();
             \end{verbatim}
             e poi successivamente a richiamare la propria funzione di visualizzazione.
-            Si rende però altresì necessario esprimere le dimensioni della visualizzazione rispetto alle dimensioni dell'svg. Queste possono essere trovate con:
+            Si rende però altresì necessario esprimere le dimensioni della visualizzazione rispetto alle dimensioni del svg. Queste possono essere trovate con:
             \begin{verbatim}
                 const { width, height } = svg.node().getBoundingClientRect();
             \end{verbatim}

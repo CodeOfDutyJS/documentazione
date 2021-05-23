@@ -1,7 +1,7 @@
 \section{Architettura del prodotto}
 
 \subsection{Descrizione generale}
-In fase di progettazione è stato deciso di dividere il sistema \emph{HD Viz} in due parti distinte: una web app e un server che riesca a recuperare i dati da diversi tipi di database.
+In fase di progettazione è stato deciso di dividere il sistema \hd\ in due parti distinte: una web app e un server che riesca a recuperare i dati da diversi tipi di database.
 
 La web app è in grado di recuperare i dati a partire da file csv o di collegarsi al server e recuperare i dati dal database. Sarà possibile scegliere diversi tipi di visualizzazioni e diverse opzioni per creare la visualizzazione più utile per l'analisi dei dati.
 
@@ -11,14 +11,14 @@ La parte server gestisce le chiamate API. Il suo scopo è di fare da interfaccia
     \subsubsection{Descrizione}
     Per sviluppare la web app è stato deciso di utilizzare il pattern architetturale MVVM. Le principali motivazioni dietro questa scelta sono: 
     \begin{itemize}
-        \item la web app è stata realizzata tramite React e il pattern MVVM è sembrato abbastanza semplice da integrare;
+        \item la web app è stata realizzata tramite React\glo\ e il pattern MVVM è sembrato abbastanza semplice da integrare;
         \item permette di utilizzare i modelli e gli Store in altri contesti senza doverli modificare;
         \item permette di disaccoppiare la parte di \emph{presentation logic} e \emph{business logic}.
     \end{itemize}
     
-    Il passaggio dei dati dai Model alle varie View avviene tramite l'utilizzo degli Store (\emph{Model View}). Grazie al \emph{Context} di React nelle View è possibile eseguire un binding tra le proprietà dei componenti React e gli attributi esposti dagli Store, inoltre è possibile eseguire un binding tra le funzioni dei componenti React e i metodi esposti dagli Store.
+    Il passaggio dei dati dai Model alle varie View avviene tramite l'utilizzo degli Store (\emph{Model View}). Grazie al \emph{Context} di React\glo\ nelle View è possibile eseguire un binding tra le proprietà dei componenti React\glo\ e gli attributi esposti dagli Store, inoltre è possibile eseguire un binding tra le funzioni dei componenti React\glo\ e i metodi esposti dagli Store.
     
-    L'aggiornamento dei dati e le notifiche dei cambiamenti a questi dati avviene grazie all'uso di \emph{MobX}, una libreria per l'implementazione del pattern \emph{Observer} non disponibile nativamente in React.
+    L'aggiornamento dei dati e le notifiche dei cambiamenti a questi dati avviene grazie all'uso di \emph{MobX}, una libreria per l'implementazione del pattern \emph{Observer} non disponibile nativamente in React\glo .
     
     Per la selezione di una visualizzazione e le operazioni che devono essere eseguite viene utilizzato il pattern \emph{Template Method}.
     Quando un utente seleziona una visualizzazione:
@@ -63,11 +63,11 @@ La parte server gestisce le chiamate API. Il suo scopo è di fare da interfaccia
                 \centering\includegraphics[width=1\textwidth]{source/img/sequenza2.jpeg}
                 \caption{Diagramma di sequenza per la scelta del tipo di visualizzazione}
             \end{figure}
-        \paragraph{Diagramma di sequenza per la selezione delle feature e target}
-        Segue il diagramma di sequenza che modella le interazioni fra le classi coinvolte nella selezione delle feature e target.
+        \paragraph{Diagramma di sequenza per la selezione delle feature\glo\ e target}
+        Segue il diagramma di sequenza che modella le interazioni fra le classi coinvolte nella selezione delle feature\glo\ e target.
         \begin{figure}[H]
                 \centering\includegraphics[width=1\textwidth]{source/img/sequenza3.jpeg}
-                \caption{Diagramma di sequenza per la selezione delle feature e target}
+                \caption{Diagramma di sequenza per la selezione delle feature\glo\ e target}
             \end{figure}
         
         \paragraph{Diagramma di sequenza per la selezione della distanza (opzioni generiche)}
@@ -91,7 +91,7 @@ La parte server gestisce le chiamate API. Il suo scopo è di fare da interfaccia
             \item Template method;
             \item Facade.
         \end{itemize}
-        Per quanto riguarda il \textbf{Template method pattern}: la classe VisualizationModel è il template e i diversi tipi di visualizzazioni (ForceFieldModel, HeatMapModel,...) devono implementare VisualizationModel e in particolare il metodo \texttt{getPreparedDataset()}. La realizzazione di tale pattern, per le caratteristiche di JavaScript, richiede di inserire all'interno dei metodi astratti un'eccezione, in questo modo le varie generalizzazioni sono obbligate a implementarli. L'utilizzo di questo pattern ha permesso di evitare un'espressione switch per richiamare la visualizzazione richiesta e facilita l'estensione di \emph{HD viz}.
+        Per quanto riguarda il \textbf{Template method pattern}: la classe VisualizationModel è il template e i diversi tipi di visualizzazioni (ForceFieldModel, HeatMapModel,...) devono implementare VisualizationModel e in particolare il metodo \texttt{getPreparedDataset()}. La realizzazione di tale pattern, per le caratteristiche di JavaScript\glo , richiede di inserire all'interno dei metodi astratti un'eccezione, in questo modo le varie generalizzazioni sono obbligate a implementarli. L'utilizzo di questo pattern ha permesso di evitare un'espressione switch per richiamare la visualizzazione richiesta e facilita l'estensione di \hd .
         
         Allo scopo di semplificare le interazioni con il modello è stata creata una classe VisualizationManager, che funge da \textbf{Facade}. VisualizationManager fornisce una interfaccia semplificata alle componenti Store.
         
@@ -107,9 +107,9 @@ La parte server gestisce le chiamate API. Il suo scopo è di fare da interfaccia
             \item Connection.js gestisce le diverse connessioni ai database.
             \item NoSQL-Function.js che contiene le funzioni per i database NoSQL.
         \end{itemize}
-    Avendo la necessità di gestire connessioni a database SQL e non, abbiamo modularizzato il nostro server in modo tale da facilitare la manutenibiltà e la possibilità di integrare nuove funzionalità.
+    Avendo la necessità di gestire connessioni a database SQL e non, abbiamo modularizzato il nostro server in modo tale da facilitare la manutenibilità e la possibilità di integrare nuove funzionalità.
     
-    La gestione delle richieste API è stata possibile tramite Express. Express è un framework per applicazioni web NodeJS che fornisce molti metodi di utilità HTTP che facilita la creazione di un API.
+    La gestione delle richieste API è stata possibile tramite Express. Express è un framework per applicazioni web Node.js\glo\ che fornisce molti metodi di utilità HTTP che facilita la creazione di un API.
     
     \subsubsection{Diagrammi di sequenza}
     
@@ -117,12 +117,12 @@ La parte server gestisce le chiamate API. Il suo scopo è di fare da interfaccia
      Segue il diagramma di sequenza della chiamata API getDatabases che fornisce in risposta tutti i database al quale è possibile connettersi.
             \begin{figure}[H]
                 \centering\includegraphics[width=0.6\textwidth]{source/img/API_getDatabases.png}
-                \caption{Diagramma di sequenza per l'API detDatabases}
+                \caption{Diagramma di sequenza per l'API getDatabases}
             \end{figure}
-            \pagebreak;
-            
+            \pagebreak
+
     \paragraph{Diagramma di sequenza per la ricerca dei nomi delle tabelle del database}
-        Segue il diagramma di sequenza della chiamata API getTable che fornisce in risposta i metadati delle tabelle presenti ne database rischiesto.
+        Segue il diagramma di sequenza della chiamata API getTable che fornisce in risposta i metadati delle tabelle presenti ne database richiesto.
             \begin{figure}[H]
                 \centering\includegraphics[width=1\textwidth]{source/img/API_getTable.png}
                 \caption{Diagramma di sequenza per l'API getTable}
