@@ -1,31 +1,23 @@
-\newcommand*\improvementeval{}
+\newcommand*\risktable{}
 \foreach \x [count=\nj] in \problems
 {
     \foreach \y [count=\ni] in \x
     {
-        \ifnum\ni=1
-            \xappto\improvementeval{\noexpand\textbf{\y}&}
-        \else\ifnum\ni=4
-            \xappto\improvementeval{\y}
-            \gappto\improvementeval{\\}
-            \gappto\improvementeval{\hline}
-        \else
-            \xappto\improvementeval{\y&}
-        \fi\fi
+        \xappto\risktable{\y}
+        \gappto\risktable{\\}
+        \gappto\risktable{\hline}
     }
 }
 
 % Impostazioni della tabella
 \tabulinesep = 2mm % padding
 \taburowcolors [1] 2{pari .. dispari} % colori delle righe
-\begin{longtabu} to \textwidth {| X[0.1,c m] | X[0.3,l m] | X[0.3,l m] | X[0.3,l m] |} % larghezza delle colonne
+\begin{longtabu} to \textwidth {| X[0.1,c m] |} % larghezza delle colonne
 \hline
 \rowcolor{header} % colore dell'header
 
-\textbf{Codice rischio} & \textbf{Descrizione} & \textbf{Mitigazione} & \textbf{Status} \\
-\hline
-\improvementeval
+\risktable
 
 \end{longtabu}
 
-\undef\improvementeval{}
+\undef\risktable{}
