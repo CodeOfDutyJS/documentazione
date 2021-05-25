@@ -1,74 +1,122 @@
-\section{Attualizzazione}
+\section{Attualizzazione dei rischi}
+\label{section:rischi_rilevati}
 In questo appendice sono raccolti i problemi verificati durante l'attività di progetto ed è riportata la soluzione attuata o la situazione del problema al momento della redazione di questo documento.
-\subsection{Analisi dei requisiti}
-\subsubsection{Rischi tecnologici verificati}
+Ogni rischio rilevato ha associato un codice: \\
+\textit{identificativoRischio-numeroIncrementale} e.g. RT1-0. \\
+
+\subsection{Rischi tecnologici verificati}
 %startTable
 \def\problems{
+    { RT1-0 },
+    { \noexpand\textbf{Fase di progettazione architetturale} },
     {   
-        RT1,
-        Github,
-        Alcuni membri del gruppo non conoscono o non sono pratici dello strumento Github.,
-        Tali membri hanno dedicato allo strumento un breve periodo di autoformazione prima d'iniziare l'esperienza sul campo. I membri più esperti del team sono stati e resteranno sempre disponibili per chiarimenti.
-    },
-    {
-        RT1,
-        LaTeX,
-        L'esperienza con LaTeX da parte del team (nella sua interezza) è poca o nulla.,
-        La redazione dei documenti si è inizialmente rivelato un processo lento e frustrante{,} tuttavia è stato considerato un male necessario. Ancora adesso si riscontrano difficoltà rispetto alla creazione di tabelle e posizionamento di immagini.
+        Alcuni membri del gruppo non conoscono o non sono pratici dello strumento GitHub. Tali membri hanno dedicato allo strumento un breve periodo di autoformazione prima d'iniziare l'esperienza sul campo. I membri più esperti del team sono stati e resteranno sempre disponibili per chiarimenti.
     },
 }
 %endTable
 \input{source/tables/rischi_rilevati_table.tex}
-\subsubsection{Rischi organizzativi verificati}
 %startTable
 \def\problems{
-    {
-        RO1,
-        Organizzazione incontri,
-        Risulta complicato trovare un giorno e anche un orario per svolgere gli incontri.,
-        Grazie al supporto dei canali di comunicazione individuati dalle \noexpand\textit{Norme di Progetto 2.0.0} e all'attività di verbalizzazione non è necessario che sia presente l'intero team ogni incontro. Per gli incontri più importanti{,} dove è necessario che sia presente tutto il gruppo{,} è necessario mettersi d'accordo con largo anticipo.
+    { RT1-1 },
+    { \noexpand\textbf{Fase di analisi} },
+    {   
+        L'esperienza con LaTeX da parte del team (nella sua interezza) è poca o nulla. La redazione dei documenti si è inizialmente rivelato un processo lento e frustrante{,} tuttavia è stato considerato un male necessario. Ancora adesso si riscontrano difficoltà rispetto alla creazione di tabelle e posizionamento di immagini.
     },
+    { \noexpand\textbf{Fase di progettazione di dettaglio e codifica} },
+    { 
+        I documenti sono ben avviati è l'attività di manutenzione di questi è prevalentemente ripetitiva e richiede conoscenze già maturate in precedenza. 
+    },
+}
+%endTable
+\input{source/tables/rischi_rilevati_table.tex}
+\def\problems {
+    { RT1-2 },
+    { \noexpand\textbf{Fase di progettazione architetturale } },
     {
-        RO1,
-        Amministratore e ambiente di sviluppo,
-        Il ruolo di amministratore ha richiesto più ore rispetto a quanto preventivato{,} come riportato nel \noexpand\textit{Piano di Progetto 2.0.0} {,} è stato dedicato molto tempo a impostare la repository e le Github Actions{,} con l'obiettivo di automatizzare il più possibile alcune operazioni.,
+        Nessun membro del gruppo è pratico o ha conoscenze approfondite delle tecnologie coinvolte per la realizzazione del POC. È stato dedicato un periodo di 2 settimane all'autoapprendimento delle tecnologie coinvolte{,} in particolare è stato deciso che ogni membro del gruppo deve avere per ognuna una conoscenza almeno superficiale.
+    },
+    { \noexpand\textbf{Fase di progettazione di dettaglio e codifica } },
+    {
+        Ogni membro del gruppo è specializzato in una particolare tecnologia{,} tuttavia queste non sono ancora completamente padroneggiate. Sebbene contenuto il rischio risulta parzialmente superato.
+    },
+    { \noexpand\textbf{Fase di validazione e collaudo} },
+    { 
+        Il rischio si è ripresentato per il testing{,} in particolare per il framework jest. Tuttavia in questa fase{,} a differenza delle precedenti progettazione e programmazione sono pressoché terminate per cui l'intero team si è specializzato nel framework e la curva di apprendimento è stata piuttosto veloce.
+    },
+}
+%endTable
+\input{source/tables/rischi_rilevati_table.tex}
+\subsection{Rischi organizzativi verificati}
+%startTable
+\def\problems{
+    { RO1-0 },
+    { \noexpand\textbf{Fase di analisi} },
+    {  
+        Risulta complicato trovare un giorno e anche un orario per svolgere gli incontri. Grazie al supporto dei canali di comunicazione individuati dalle \noexpand\NdP\ e all'attività di verbalizzazione non è necessario che sia presente l'intero team ogni incontro. Per gli incontri più importanti{,} dove è necessario che sia presente tutto il gruppo{,} è necessario mettersi d'accordo con largo anticipo.
+    },
+    { \noexpand\textbf{Fase di progettazione architetturale} },
+    { Il rischio non è stato tracciato durante questa fase. },
+    { \noexpand\textbf{Fase di progettazione di dettaglio e codifica} },
+    {
+        Il team è più affiatato{,} gli incontri sono molto più frequenti anche se si sono trasformati in lavoro collaborativo{,} la maggior parte delle decisioni viene presa in modalità asincrona. Il rischio risulta superato.
+    },
+}
+%endTable
+\input{source/tables/rischi_rilevati_table.tex}
+%startTable
+\def\problems{
+    { RO1-1 },
+    { \noexpand\textbf{Fase di analisi} },
+    {    
+        Il ruolo di amministratore ha richiesto più ore rispetto a quanto preventivato{,} come riportato nel \noexpand\PdP {,} è stato dedicato molto tempo a impostare la repository e le GitHub Actions{,} con l'obiettivo di automatizzare il più possibile alcune operazioni. Non sono state considerate azioni di mitigazione.
         L'aver dedicato molte ore nell'impostare l'ambiente di sviluppo è sicuramente un investimento per il futuro{,} sia per quanto riguarda il prodotto del processo di documentazione che per il prodotto software{,} infatti impostare la repository dedicata al codice sarà sicuramente un processo più agevole.
     },
-}
-%endTable
-\input{source/tables/rischi_rilevati_table.tex}
-
-\subsection{Consolidamento dei requisiti}
-In questa fase l'attività di progetto si è svolta senza che si verificassero problemi.
-
-\subsection{Progettazione architetturale}
-
-\subsubsection{Rischi tecnologici verificati}
-%startTable
-\def\problems{
-    {   
-        RT1,
-        Technology Baseline,
-        Nessun membro del gruppo è pratico o ha conoscenze approfondite delle tecnologie coinvolte per la realizzazione del POC.,
-        È stato dedicato un periodo di 2 settimane all'autoapprendimento delle tecnologie coinvolte{,} in particolare è stato deciso che ogni membro del gruppo deve avere per ognuna una conoscenza almeno superficiale.
+    { \noexpand\textbf{Fase di progettazione architetturale} },
+    {
+        La compilazione dei documenti a partire dalla sorgente \noexpand\LaTeX è automatizzata{,} l'aggiunta a pedice della \noexpand\textbf{G} è a sua volta automatizzata. L'aver dedicato più tempo all'impostazione della repository ha ripagato nel lungo termine. 
     },
 }
 %endTable
 \input{source/tables/rischi_rilevati_table.tex}
-\subsubsection{Rischi organizzativi verificati}
 %startTable
 \def\problems{
+    { RO1-2 },
+    { \noexpand\textbf{Fase di progettazione architetturale} }, 
     {
-        RO1,
-        Technology Baseline,
-        Causato dal rischio RT1{,} Technology Baseline{,} i programmatori hanno avuto bisogno di più tempo di quanto preventivato per utilizzare efficacemente le tecnologie richieste per la realizzazione del POC.,
-        È stato tolto del tempo alla progettazione per concentrarsi maggiormente alla programmazione.
+        Causato da RT1-2{,} i programmatori hanno avuto bisogno di più tempo di quanto preventivato per utilizzare efficacemente le tecnologie richieste per la realizzazione del POC. È stato tolto del tempo alla progettazione per concentrarsi maggiormente alla programmazione.
     },
+    { \noexpand\textbf{Fase di progettazione di dettaglio e codifica} }, 
+    { 
+        L'aver dedicato più tempo alla formazione e utilizzo delle tecnologie individuate ha permesso al team di procedere più speditamente durante questa fase{,} tuttavia ha costretto il team a ripetere la PB.  
+    },
+}
+%endTable
+\input{source/tables/rischi_rilevati_table.tex}
+%startTable
+\def\problems{
+    { RO2-0 },
+    { \noexpand\textbf{Fase di progettazione di architetturale} },
     {
-        RO2,
-        Sessione invernale,
-        La sessione invernale è stata particolarmente impegnativa per la maggior parte del gruppo.,
-        È stata utilizzata la revisione a modalità \noexpand\textit{Sportello}: il team ha deciso di ritardare la consegna della Technology Baseline{,} nonché la consegna dei documenti per la RP rispettivamente al 2021-03-09 e al 2021-03-10.
+        La sessione invernale è stata particolarmente impegnativa per la maggior parte del gruppo. È stata utilizzata la revisione a modalità \noexpand\textit{Sportello}: il team ha deciso di ritardare la consegna della Technology Baseline{,} nonché la consegna dei documenti per la RP rispettivamente al 2021-03-09 e al 2021-03-10.,
+    },
+    { \noexpand\textbf{Fase di progettazione di dettaglio e codifica} },
+    {
+        Tre membri del team hanno deciso di sostenere l'esame teorico di Ingegneria del Software{,} ha richiesto un periodo di preparazione. Il lavoro assegnato ai membri temporaneamente poco produttivi è stato ridistribuito{,} inoltre lo slittamento dell'inizio dei colloqui per l'approvazione della Product Baseline ha permesso un certo \noexpand\textit{slack}.
+    },
+    { \noexpand\textbf{Fase di validazione e collaudo} },
+    {
+        4 membri del team hanno sostenuto l'esame teorico di Ingegneria del Software{,} la preparazione richiesta per sostenere l'esame ha reso questi membri meno produttivi. L'applicazione della stessa misura di mitigazione usata nella fase precedente ha permesso al team di procedere nell'attività senza ritardi.
+    },
+}
+%endTable
+\input{source/tables/rischi_rilevati_table.tex}
+%startTable
+\def\problems{
+    { RO3-0 },
+    { \noexpand\textbf{Fase di progettazione di dettaglio e codifica}},
+    {
+        Un membro del team si è assentato per  una settimana.,
+        Non sono state effettuate azioni di mitigazione: le attività in gestione al membro erano buono stato di avanzamento.
     },
 }
 %endTable

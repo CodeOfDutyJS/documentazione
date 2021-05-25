@@ -31,7 +31,7 @@
 		        \item \textbf{Finalità del progetto}: descrizione del prodotto finito;
 		        \item \textbf{Aspetti positivi}: caratteristiche che rendono il gruppo più disponibile a proporre un'offerta verso il proponente;
 		        \item \textbf{Criticità e fattori di rischio}: aspetti negativi con potenziali ripercussioni sullo svolgimento del progetto;
-		        \item \textbf{Conclusioni}: breve spiegazione sul perchè il capitolato è stato scartato o accettato dal gruppo.
+		        \item \textbf{Conclusioni}: breve spiegazione sul perché il capitolato è stato scartato o accettato dal gruppo.
 		    \end{itemize}
 			\myparagraph{Piano di Progetto}
 			Il Responsabile di Progetto con gli amministratori redige un \textit{Piano di progetto} volto a fornire un preventivo ed una pianificazione dettagliata sullo svolgimento del progetto al proponente contiene:
@@ -50,12 +50,27 @@
 			    \item \textbf{Specifiche dei test}: vengono definiti i test che garantiscono la qualità del prodotto;
 			    \item \textbf{Resoconti di verifica ed esiti delle revisioni}: qui sono riportati gli esiti delle attività di verifica e delle revisioni.
 			\end{itemize}
+    	    \myparagraph{Manuale sviluppatore}
+    		Redatto dai progettisti dovrà contenere:
+    		\begin{itemize}
+    		    \item \textbf{Setup}: descrizione dei requisiti necessari all'installazione, e il procedimento della stessa;
+    		    \item \textbf{Tecnologie}: elenco e descrizione delle tecnologie scelte;
+    		    \item \textbf{Architettura del prodotto}: descrizione dell'architettura progettata, corredata di diagrammi UML di package, classi e sequenza, spiegazione di Design pattern utilizzati;
+    		    \item \textbf{Estensione}: descrizione delle modalità e delle norme atte ad estendere e/o modificare HD Viz.
+    		\end{itemize}
+    		\myparagraph{Manuale utente}
+    		Redatto dai progettisti dovrà contenere:
+    		\begin{itemize}
+    		    \item \textbf{Requisiti}: descrizione dei requisiti necessari all'installazione;
+    		    \item \textbf{Server}: procedimento d'installazione del server ed utilizzo dello stesso;
+    		    \item \textbf{Client}: procedimento d'installazione del client, ed utilizzo dello stesso;
+    		\end{itemize}
 		\subsubsection{Metriche}
         Di seguito vengono elencate le metriche inerenti alla qualità del processo di \textbf{Fornitura}. I valori sono normati nel piano di qualifica. La modalità di rilevazione non è indicata per tutte le metriche: tale dato sarà 
         inserito in fasi successive del progetto.
         
         \myparagraph{Percentuale di requisiti soddisfatti}
-        La percentuale in centesimi dei requisiti saddisfatti.
+        La percentuale in centesimi dei requisiti soddisfatti.
         \subparagraph{Formula}
         \begin{displaymath}
          PROS = Rs / Rt *100
@@ -79,7 +94,7 @@
         Dove:
         \begin{itemize}
             \item[] $EV =$ Earned value
-            \item[] $BAC =$ Budget at copletion
+            \item[] $BAC =$ Budget at completion
         \end{itemize}
         
         \myparagraph{Planned value}
@@ -182,7 +197,7 @@
 		    \item attore;
 		    \item descrizione;
 		    \item precondizione;
-		    \item postcondizione;
+		    \item post condizione;
 		    \item scenario principale;
 		    \item estensioni (opzionale);
 		    \item specializzazioni (opzionale);
@@ -257,13 +272,6 @@
 		    \end{itemize}
 		    \item \textbf{Tracciamento}: tracciamento dei componenti ai relativi requisiti che soddisfano.
 		\end{itemize}
-		\myparagraph{Product Baseline}
-		Redatta dai progettisti dovrà contenere:
-		\begin{itemize}
-		    \item \textbf{Definizione delle classi}: descrizione delle classi utilizzate;
-		    \item \textbf{Tracciamento delle classi}: collegamento delle classi ai relativi requisiti;
-		    \item \textbf{Test di unità}: definizione dei test di unità al fine di stabilire il corretto funzionamento delle classi.
-		\end{itemize}
 		\paragraph{Codifica}
 		\mysubparagraph{Scopo}
 	    Lo scopo della sezione è normare lo stile di codifica da utilizzare nella programmazione, intesa come effettiva implementazione software del prodotto. Lo stile di codifica è da considerarsi come parte integrante della qualità del prodotto stesso.
@@ -286,7 +294,7 @@
 	    \mysubparagraph{Parentesizzazione}
 	    Le parentesi di delimitazione di un blocco di codice vanno inserite nel seguente modo:
 	    \begin{itemize}
-	        \item la prima và inserita alla fine della prima riga, preceduta da uno spazio;
+	        \item la prima va inserita alla fine della prima riga, preceduta da uno spazio;
 	        \item la seconda su una nuova riga, senza caratteri di spazio antecedenti;
 	    \end{itemize}
 
@@ -324,7 +332,7 @@
         
         \subsubsection{Strumenti}
 	    \mysubparagraph{UML}
-	    Linguaggio di modellizzazione atto a visualizzare un sistema software. Viene utillizzata la versione 2.0 del linguaggio.
+	    Linguaggio di modellizzazione atto a visualizzare un sistema software. Viene utilizzata la versione 2.0 del linguaggio.
 	    \mysubparagraph{Diagrams.net}
 	    Applicazione web per la produzione di diagrammi, viene utilizzata per la produzione dei diagrammi UML.\\
 	    \centerline{\url{https://app.diagrams.net/}}
