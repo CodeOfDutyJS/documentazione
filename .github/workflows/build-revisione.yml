@@ -88,42 +88,42 @@ jobs:
       #     root_file: main.tex
 
       ## VERBALE verbale-interno_2021-03-18
-      - name: verbale-interno_2021-03-18
-        run: echo "Start build verbale-interno_2021-03-18"
+      - name: verbale-interno_2021-04-26
+        run: echo "Start build verbale-interno_2021-04-26"
 
-      - name: Add glossario to verbale-interno_2021-03-18
-        run: python _glo_replace.py /verbali/verbale-interno_2021-03-18/ glossario.txt
+      - name: Add glossario to verbale-interno_2021-04-26
+        run: python _glo_replace.py /verbali/verbale-interno_2021-04-26/ glossario.txt
 
-      - name: Compile verbale-interno_2021-03-18 LaTeX document
+      - name: Compile verbale-interno_2021-04-26 LaTeX document
         uses: damix48/latex-action@0.1
         with:
-          working_directory: verbali/verbale-interno_2021-03-18/
+          working_directory: verbali/verbale-interno_2021-04-26/
           root_file: main.tex
 
       ## VERBALE verbale-interno_2021-04-20
-      - name: verbale-interno_2021-04-20
-        run: echo "Start build verbale-interno_2021-04-20"
+      - name: verbale-interno_2021-05-12
+        run: echo "Start build verbale-interno_2021-05-12"
 
-      - name: Add glossario to verbale-interno_2021-02-25
-        run: python _glo_replace.py /verbali/verbale-interno_2021-04-20/ glossario.txt
+      - name: Add glossario to verbale-interno_2021-05-12
+        run: python _glo_replace.py /verbali/verbale-interno_2021-05-12/ glossario.txt
 
-      - name: Compile verbale-interno_2021-04-20 LaTeX document
+      - name: Compile verbale-interno_2021-05-12 LaTeX document
         uses: damix48/latex-action@0.1
         with:
-          working_directory: verbali/verbale-interno_2021-04-20/
+          working_directory: verbali/verbale-interno_2021-05-12/
           root_file: main.tex
 
       ## VERBALE verbale-esterno_2021-03-15
-      - name: verbale-esterno_2021-03-15
-        run: echo "Start build verbale-esterno_2021-03-15"
+      - name: verbale-verbale-esterno_2021-05-03
+        run: echo "Start build verbale-esterno_2021-05-03"
 
-      - name: Add glossario to verbale-esterno_2021-03-15
-        run: python _glo_replace.py /verbali/verbale-esterno_2021-03-15/ glossario.txt
+      - name: Add glossario to verbale-esterno_2021-05-03
+        run: python _glo_replace.py /verbali/verbale-esterno_2021-05-03/ glossario.txt
 
-      - name: Compile verbale-esterno_2021-03-15 LaTeX document
+      - name: Compile verbale-esterno_2021-05-03 LaTeX document
         uses: damix48/latex-action@0.1
         with:
-          working_directory: verbali/verbale-esterno_2021-03-15/
+          working_directory: verbali/verbale-esterno_2021-05-03/
           root_file: main.tex
 
       ## RELEASE
@@ -194,38 +194,38 @@ jobs:
       #     asset_name: glossario.pdf
       #     asset_content_type: application/pdf
 
-      - name: Upload verbale-interno_2021-03-18
-        id: upload-verbale-interno_2021-03-18
+      - name: Upload verbale-interno_2021-04-26
+        id: upload-verbale-interno_2021-04-26
 
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          asset_path: verbali/verbale-interno_2021-03-18/main.pdf
-          asset_name: verbale-interno_2021-03-18.pdf
+          asset_path: verbali/verbale-interno_2021-04-26/main.pdf
+          asset_name: verbale-interno_2021-04-26.pdf
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_content_type: application/pdf
 
-      - name: Upload verbale-interno_2021-04-20
-        id: upload-verbale-interno_2021-04-20
+      - name: Upload verbale-interno_2021-05-12
+        id: upload-verbale-interno_2021-05-12
 
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          asset_path: verbali/verbale-interno_2021-04-20/main.pdf
-          asset_name: verbale-interno_2021-04-20.pdf
+          asset_path: verbali/verbale-interno_2021-05-12/main.pdf
+          asset_name: verbale-interno_2021-05-12.pdf
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_content_type: application/pdf
 
-      - name: Upload verbale-esterno_2021-03-15
-        id: upload-verbale-esterno_2021-03-15
+      - name: Upload verbale-esterno_2021-05-03
+        id: upload-verbale-esterno_2021-05-03
 
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          asset_path: verbali/verbale-esterno_2021-03-15/main.pdf
-          asset_name: verbale-esterno_2021-03-15.pdf
+          asset_path: verbali/verbale-esterno_2021-05-03/main.pdf
+          asset_name: verbale-esterno_2021-05-03.pdf
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_content_type: application/pdf
