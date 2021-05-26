@@ -16,9 +16,8 @@ La funzionalità rappresenta la capacità del software di fornire le funzioni, e
     {
         Correttezza dello scambio dei dati,
         $D_{err} = \#\ di\ errori$, 
-        -,
-        $D_{err} = 0$,
-        un valore sufficiente sarà deciso in fasi successive del progetto
+        $D_{err} < 10\%$,
+        $D_{err} = 0$
     },
 }
 %endTable
@@ -31,14 +30,14 @@ Rappresenta la capacità di un prodotto software di mantenere il livello di pres
     {
         Densità di errori,
         $E_{density} = A_{err}/B_{tests}$, 
-        -,
-        -,
-        è stato ritenuto prematuro definire valori sufficienti e ottimi per la metrica
+        $E_{density} < 5\% $,
+        $E_{density} = 0$
     },
 }
 %endTable
 \input{source/tables/metriche_qualita.tex}
 
+\newpage
 \subsection{Usabilità}
 Rappresenta la capacità di un prodotto software di essere comprensibile, di poter essere studiato, di risultare attraente da parte di un utente sotto determinate condizioni d'uso.
 %startTable
